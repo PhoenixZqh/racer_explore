@@ -1,0 +1,21 @@
+Symlinking /home/racer_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake
+Symlinking /home/racer_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake
+Symlinking /home/racer_ws/devel/lib/libSO3Control.so
+Symlinking /home/racer_ws/devel/lib/libso3_control_nodelet.so
+Symlinking /home/racer_ws/devel/lib/pkgconfig/so3_control.pc
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/cmake.lock, /home/zqh/phoenixZ/racer_ws/devel/./cmake.lock)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig-version.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libSO3Control.so, /home/zqh/phoenixZ/racer_ws/devel/lib/libSO3Control.so)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so, /home/zqh/phoenixZ/racer_ws/devel/lib/libso3_control_nodelet.so)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/pkgconfig/so3_control.pc, /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/so3_control.pc)
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/libSO3Control.so
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/libso3_control_nodelet.so
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/so3_control.pc
+Already unlinked: {}

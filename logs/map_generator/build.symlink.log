@@ -1,0 +1,29 @@
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/map_generator/cmake/map_generatorConfig.cmake
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/map_generator/cmake/map_generatorConfig-version.cmake
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/map_generator.pc
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/map_generator/map_recorder
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/map_generator/pilar_map
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/map_generator/click_map
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/map_generator/map_pub
+Cleaning: (/home/racer_ws/devel/.private/map_generator/cmake.lock, /home/racer_ws/devel/./cmake.lock)
+Cleaning: (/home/racer_ws/devel/.private/map_generator/share/map_generator/cmake/map_generatorConfig.cmake, /home/racer_ws/devel/share/map_generator/cmake/map_generatorConfig.cmake)
+Cleaning: (/home/racer_ws/devel/.private/map_generator/share/map_generator/cmake/map_generatorConfig-version.cmake, /home/racer_ws/devel/share/map_generator/cmake/map_generatorConfig-version.cmake)
+Cleaning: (/home/racer_ws/devel/.private/map_generator/lib/pkgconfig/map_generator.pc, /home/racer_ws/devel/lib/pkgconfig/map_generator.pc)
+Cleaning: (/home/racer_ws/devel/.private/map_generator/lib/map_generator/map_recorder, /home/racer_ws/devel/lib/map_generator/map_recorder)
+Cleaning: (/home/racer_ws/devel/.private/map_generator/lib/map_generator/pilar_map, /home/racer_ws/devel/lib/map_generator/pilar_map)
+Cleaning: (/home/racer_ws/devel/.private/map_generator/lib/map_generator/click_map, /home/racer_ws/devel/lib/map_generator/click_map)
+Cleaning: (/home/racer_ws/devel/.private/map_generator/lib/map_generator/map_pub, /home/racer_ws/devel/lib/map_generator/map_pub)
+Unlinking: /home/racer_ws/devel/share/map_generator/cmake/map_generatorConfig.cmake
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/map_generator/cmake/map_generatorConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/pkgconfig/map_generator.pc
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/map_generator/map_recorder
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/map_generator/pilar_map
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/map_generator/click_map
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/map_generator/map_pub
+Already unlinked: {}

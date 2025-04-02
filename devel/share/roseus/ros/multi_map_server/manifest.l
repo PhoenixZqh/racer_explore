@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_ws/devel/.private/multi_map_server/share/roseus/ros/multi_map_server/manifest.l

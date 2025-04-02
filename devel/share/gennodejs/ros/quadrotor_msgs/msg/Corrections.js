@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/Corrections.js

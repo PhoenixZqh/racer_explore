@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_ws/devel/.private/multi_map_server/share/gennodejs/ros/multi_map_server/msg/_index.js

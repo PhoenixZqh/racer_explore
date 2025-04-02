@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_ws/devel/.private/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig.cmake

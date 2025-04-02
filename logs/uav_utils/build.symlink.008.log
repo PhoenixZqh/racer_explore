@@ -1,0 +1,13 @@
+Symlinking /home/racer_ws/devel/share/uav_utils/cmake/uav_utilsConfig-version.cmake
+Symlinking /home/racer_ws/devel/share/uav_utils/cmake/uav_utilsConfig.cmake
+Symlinking /home/racer_ws/devel/lib/pkgconfig/uav_utils.pc
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/uav_utils/cmake.lock, /home/zqh/phoenixZ/racer_ws/devel/./cmake.lock)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/uav_utils/share/uav_utils/cmake/uav_utilsConfig-version.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/uav_utils/cmake/uav_utilsConfig-version.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/uav_utils/share/uav_utils/cmake/uav_utilsConfig.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/uav_utils/cmake/uav_utilsConfig.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/uav_utils/lib/pkgconfig/uav_utils.pc, /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/uav_utils.pc)
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/uav_utils/cmake/uav_utilsConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/uav_utils/cmake/uav_utilsConfig.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/uav_utils.pc
+Already unlinked: {}

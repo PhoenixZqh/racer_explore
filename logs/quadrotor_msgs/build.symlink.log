@@ -1,0 +1,369 @@
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/OutputData.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/PolynomialTrajectory.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/Serial.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/LQRTrajectory.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/AuxCommand.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/Corrections.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/TRPYCommand.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/SO3Command.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/Gains.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/PPROutputData.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/PositionCommand.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/StatusData.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/include/quadrotor_msgs/Odometry.h
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/manifest.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/LQRTrajectory.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/AuxCommand.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PPROutputData.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/StatusData.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PositionCommand.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/OutputData.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PolynomialTrajectory.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Odometry.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Corrections.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Gains.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/TRPYCommand.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Serial.l
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Serial.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/TRPYCommand.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/OutputData.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Odometry.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_AuxCommand.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PPROutputData.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Gains.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PositionCommand.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/LQRTrajectory.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_OutputData.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Corrections.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Serial.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Corrections.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_StatusData.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PPROutputData.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_SO3Command.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PositionCommand.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/AuxCommand.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Gains.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_LQRTrajectory.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Odometry.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/StatusData.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/quadrotor_msgs-msg.asd
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/SO3Command.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PolynomialTrajectory.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_TRPYCommand.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PolynomialTrajectory.lisp
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-extras.cmake
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-paths.cmake
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/_index.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/_index.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PolynomialTrajectory.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Corrections.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/TRPYCommand.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/StatusData.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Serial.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/LQRTrajectory.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Gains.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PPROutputData.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/AuxCommand.js
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/libencode_msgs.so
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/libdecode_msgs.so
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/__init__.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Serial.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Gains.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TRPYCommand.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PolynomialTrajectory.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PPROutputData.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Corrections.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_AuxCommand.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_StatusData.py
+Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/quadrotor_msgs.pc
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/cmake.lock, /home/racer_ws/devel/./cmake.lock)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/OutputData.h, /home/racer_ws/devel/include/quadrotor_msgs/OutputData.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PolynomialTrajectory.h, /home/racer_ws/devel/include/quadrotor_msgs/PolynomialTrajectory.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Serial.h, /home/racer_ws/devel/include/quadrotor_msgs/Serial.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/LQRTrajectory.h, /home/racer_ws/devel/include/quadrotor_msgs/LQRTrajectory.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/AuxCommand.h, /home/racer_ws/devel/include/quadrotor_msgs/AuxCommand.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Corrections.h, /home/racer_ws/devel/include/quadrotor_msgs/Corrections.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/TRPYCommand.h, /home/racer_ws/devel/include/quadrotor_msgs/TRPYCommand.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/SO3Command.h, /home/racer_ws/devel/include/quadrotor_msgs/SO3Command.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Gains.h, /home/racer_ws/devel/include/quadrotor_msgs/Gains.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PPROutputData.h, /home/racer_ws/devel/include/quadrotor_msgs/PPROutputData.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PositionCommand.h, /home/racer_ws/devel/include/quadrotor_msgs/PositionCommand.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/StatusData.h, /home/racer_ws/devel/include/quadrotor_msgs/StatusData.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Odometry.h, /home/racer_ws/devel/include/quadrotor_msgs/Odometry.h)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/manifest.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/manifest.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/LQRTrajectory.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/LQRTrajectory.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/AuxCommand.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/AuxCommand.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/PPROutputData.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PPROutputData.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/StatusData.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/StatusData.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/PositionCommand.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PositionCommand.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/OutputData.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/OutputData.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/PolynomialTrajectory.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PolynomialTrajectory.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/Odometry.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Odometry.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/Corrections.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Corrections.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/Gains.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Gains.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/TRPYCommand.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/TRPYCommand.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/Serial.l, /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Serial.l)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/Serial.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Serial.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/TRPYCommand.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/TRPYCommand.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/OutputData.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/OutputData.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/Odometry.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Odometry.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_AuxCommand.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_AuxCommand.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_PPROutputData.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PPROutputData.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_Gains.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Gains.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/PositionCommand.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PositionCommand.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/LQRTrajectory.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/LQRTrajectory.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_OutputData.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_OutputData.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_Corrections.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Corrections.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_Serial.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Serial.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/Corrections.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Corrections.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_StatusData.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_StatusData.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/PPROutputData.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PPROutputData.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_SO3Command.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_SO3Command.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_PositionCommand.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PositionCommand.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/AuxCommand.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/AuxCommand.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/Gains.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Gains.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_LQRTrajectory.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_LQRTrajectory.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_Odometry.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Odometry.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/StatusData.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/StatusData.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/quadrotor_msgs-msg.asd, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/quadrotor_msgs-msg.asd)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/SO3Command.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/SO3Command.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/PolynomialTrajectory.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PolynomialTrajectory.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_TRPYCommand.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_TRPYCommand.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/_package_PolynomialTrajectory.lisp, /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PolynomialTrajectory.lisp)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake, /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-extras.cmake, /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-extras.cmake)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake, /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-paths.cmake, /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-paths.cmake)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/_index.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/_index.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/_index.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/_index.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/PolynomialTrajectory.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PolynomialTrajectory.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/Corrections.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Corrections.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/TRPYCommand.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/TRPYCommand.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/StatusData.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/StatusData.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/Serial.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Serial.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/LQRTrajectory.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/LQRTrajectory.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/Gains.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Gains.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/PPROutputData.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PPROutputData.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/AuxCommand.js, /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/AuxCommand.js)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so, /home/racer_ws/devel/lib/libencode_msgs.so)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so, /home/racer_ws/devel/lib/libdecode_msgs.so)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/__init__.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/__init__.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_Serial.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Serial.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_Gains.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Gains.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_TRPYCommand.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TRPYCommand.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_PolynomialTrajectory.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PolynomialTrajectory.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_PPROutputData.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PPROutputData.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_Corrections.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Corrections.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_AuxCommand.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_AuxCommand.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_StatusData.py, /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_StatusData.py)
+Cleaning: (/home/racer_ws/devel/.private/quadrotor_msgs/lib/pkgconfig/quadrotor_msgs.pc, /home/racer_ws/devel/lib/pkgconfig/quadrotor_msgs.pc)
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/OutputData.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/PolynomialTrajectory.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/Serial.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/LQRTrajectory.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/AuxCommand.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/Corrections.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/TRPYCommand.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/SO3Command.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/Gains.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/PPROutputData.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/PositionCommand.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/StatusData.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/include/quadrotor_msgs/Odometry.h
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/manifest.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/LQRTrajectory.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/AuxCommand.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PPROutputData.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/StatusData.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PositionCommand.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/OutputData.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/PolynomialTrajectory.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Odometry.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Corrections.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Gains.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/TRPYCommand.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/roseus/ros/quadrotor_msgs/msg/Serial.l
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Serial.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/TRPYCommand.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/OutputData.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Odometry.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_AuxCommand.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PPROutputData.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Gains.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PositionCommand.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/LQRTrajectory.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_OutputData.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Corrections.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Serial.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Corrections.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_StatusData.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PPROutputData.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_SO3Command.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PositionCommand.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/AuxCommand.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/Gains.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_LQRTrajectory.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_Odometry.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/StatusData.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/quadrotor_msgs-msg.asd
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/SO3Command.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/PolynomialTrajectory.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_TRPYCommand.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/common-lisp/ros/quadrotor_msgs/msg/_package_PolynomialTrajectory.lisp
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-extras.cmake
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-paths.cmake
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/_index.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/_index.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PolynomialTrajectory.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Corrections.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/TRPYCommand.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/StatusData.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Serial.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/LQRTrajectory.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/Gains.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/PPROutputData.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/share/gennodejs/ros/quadrotor_msgs/msg/AuxCommand.js
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/libencode_msgs.so
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/libdecode_msgs.so
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/__init__.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Serial.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Gains.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TRPYCommand.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PolynomialTrajectory.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PPROutputData.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Corrections.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_AuxCommand.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_StatusData.py
+Already unlinked: {}
+Unlinking: /home/racer_ws/devel/lib/pkgconfig/quadrotor_msgs.pc
+Already unlinked: {}

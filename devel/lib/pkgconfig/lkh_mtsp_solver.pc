@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_ws/devel/.private/lkh_mtsp_solver/lib/pkgconfig/lkh_mtsp_solver.pc

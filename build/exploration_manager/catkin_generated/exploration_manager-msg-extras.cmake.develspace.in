@@ -1,0 +1,2 @@
+set(exploration_manager_MESSAGE_FILES "/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/msg/DroneState.msg;/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/msg/PairOpt.msg;/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/msg/PairOptResponse.msg;/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/msg/HGrid.msg;/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/msg/GridTour.msg")
+set(exploration_manager_SERVICE_FILES "")

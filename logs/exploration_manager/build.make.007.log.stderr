@@ -1,0 +1,51 @@
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/include/exploration_manager/fast_exploration_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastExplorationFSM::FSMCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:213:26:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+  213 |                 ROS_INFO([01;35m[K"drone%d: start planner"[m[K, getId(), fd_->exec_start_time_.toSec());
+      |                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastExplorationFSM::visualize(int)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:421:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  421 |         for (int i = 0; [01;35m[Ki < ed_ptr->frontiers_.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:420:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_dftr_num[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  420 |         static int [01;35m[Klast_dftr_num[m[K = 0;
+      |                    [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:479:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  479 |             for (int i = 0; [01;35m[Ki < pts.size()[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:515:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  515 |         for (int i = 0; [01;35m[Ki < grid_tour.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:407:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kplan_data[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  407 |     auto [01;35m[Kplan_data[m[K = &planner_manager_->plan_data_;
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:410:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KgetColorVal[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  410 |     auto [01;35m[KgetColorVal[m[K = [&](const int& id, const int& num, const int& drone_id) {
+      |          [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastExplorationFSM::frontierCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:670:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  670 |         for (int i = 0; [01;35m[Ki < ed->frontiers_.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:648:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KgetColorVal[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  648 |         auto [01;35m[KgetColorVal[m[K = [&](const int& id, const int& num, const int& drone_id) {
+      |              [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastExplorationFSM::optTimerCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:859:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::DroneState>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  859 |     for (int i = 0; [01;35m[Ki < states.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:850:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kurgent[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  850 |     bool [01;35m[Kurgent[m[K = state1.grid_ids_.empty();
+      |          [01;35m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastExplorationFSM::swarmTrajCallback(const BsplineConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:1210:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+ 1210 |     for (int i = 0; [01;35m[Ki < msg->knots.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:1213:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::Point_<std::allocator<void> >, std::allocator<geometry_msgs::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+ 1213 |     for (int i = 0; [01;35m[Ki < msg->pos_pts.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager/src/fast_exploration_fsm.cpp:420:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Klast_dftr_num[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+  420 |         static int [01;35m[Klast_dftr_num[m[K = 0;
+      |                    [01;35m[K^~~~~~~~~~~~~[m[K

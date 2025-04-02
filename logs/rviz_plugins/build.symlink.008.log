@@ -1,0 +1,17 @@
+Symlinking /home/racer_ws/devel/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
+Symlinking /home/racer_ws/devel/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake
+Symlinking /home/racer_ws/devel/lib/librviz_plugins.so
+Symlinking /home/racer_ws/devel/lib/pkgconfig/rviz_plugins.pc
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/rviz_plugins/cmake.lock, /home/zqh/phoenixZ/racer_ws/devel/./cmake.lock)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/rviz_plugins/lib/librviz_plugins.so, /home/zqh/phoenixZ/racer_ws/devel/lib/librviz_plugins.so)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/rviz_plugins/lib/pkgconfig/rviz_plugins.pc, /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/rviz_plugins.pc)
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/librviz_plugins.so
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/rviz_plugins.pc
+Already unlinked: {}

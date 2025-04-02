@@ -1,0 +1,17 @@
+Symlinking /home/racer_ws/devel/share/active_perception/cmake/active_perceptionConfig.cmake
+Symlinking /home/racer_ws/devel/share/active_perception/cmake/active_perceptionConfig-version.cmake
+Symlinking /home/racer_ws/devel/lib/libactive_perception.so
+Symlinking /home/racer_ws/devel/lib/pkgconfig/active_perception.pc
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/active_perception/cmake.lock, /home/zqh/phoenixZ/racer_ws/devel/./cmake.lock)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/active_perception/share/active_perception/cmake/active_perceptionConfig.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/active_perception/cmake/active_perceptionConfig.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/active_perception/share/active_perception/cmake/active_perceptionConfig-version.cmake, /home/zqh/phoenixZ/racer_ws/devel/share/active_perception/cmake/active_perceptionConfig-version.cmake)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/active_perception/lib/libactive_perception.so, /home/zqh/phoenixZ/racer_ws/devel/lib/libactive_perception.so)
+Cleaning: (/home/zqh/phoenixZ/racer_ws/devel/.private/active_perception/lib/pkgconfig/active_perception.pc, /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/active_perception.pc)
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/active_perception/cmake/active_perceptionConfig.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/share/active_perception/cmake/active_perceptionConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/libactive_perception.so
+Already unlinked: {}
+Unlinking: /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/active_perception.pc
+Already unlinked: {}

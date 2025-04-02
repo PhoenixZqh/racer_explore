@@ -1,0 +1,153 @@
+[35m[1mScanning dependencies of target lkh_tsp_solver[0m
+[35m[1mScanning dependencies of target _lkh_tsp_solver_generate_messages_check_deps_SolveTSP[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  1%] Built target std_msgs_generate_messages_cpp
+[  1%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Activate.c.o[0m
+[  1%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  2%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/AddCandidate.c.o[0m
+[  2%] Built target std_msgs_generate_messages_py
+[  3%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/AddExtraCandidates.c.o[0m
+[  3%] Built target _lkh_tsp_solver_generate_messages_check_deps_SolveTSP
+[  3%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/AddTourCandidates.c.o[0m
+[  3%] Built target std_msgs_generate_messages_lisp
+[  3%] Built target std_msgs_generate_messages_eus
+[  4%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/AdjustCandidateSet.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/AdjustClusters.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/AllocateStructures.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Ascent.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Best2OptMove.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Best3OptMove.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Best4OptMove.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Best5OptMove.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/BestKOptMove.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Between_SL.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Between.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Between_SSL.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/BuildKDTree.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/BridgeGain.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/C.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ChooseInitialTour.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/CandidateReport.c.o[0m
+[35m[1mScanning dependencies of target lkh_tsp_solver_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target lkh_tsp_solver_generate_messages_py[0m
+[35m[1mScanning dependencies of target lkh_tsp_solver_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target lkh_tsp_solver_generate_messages_lisp[0m
+[ 19%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Connect.c.o[0m
+[35m[1mScanning dependencies of target lkh_tsp_solver_generate_messages_eus[0m
+[ 20%] [34m[1mGenerating C++ code from lkh_tsp_solver/SolveTSP.srv[0m
+[ 21%] [34m[1mGenerating Lisp code from lkh_tsp_solver/SolveTSP.srv[0m
+[ 22%] [34m[1mGenerating Python code from SRV lkh_tsp_solver/SolveTSP[0m
+[ 23%] [34m[1mGenerating Javascript code from lkh_tsp_solver/SolveTSP.srv[0m
+[ 23%] [34m[1mGenerating EusLisp code from lkh_tsp_solver/SolveTSP.srv[0m
+[ 24%] [34m[1mGenerating EusLisp manifest code for lkh_tsp_solver[0m
+[ 25%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/CreateCandidateSet.c.o[0m
+[ 25%] Built target lkh_tsp_solver_generate_messages_nodejs
+[ 25%] Built target lkh_tsp_solver_generate_messages_lisp
+[ 26%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/CreateNNCandidateSet.c.o[0m
+[ 27%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/CreateDelaunayCandidateSet.c.o[0m
+[ 27%] Built target lkh_tsp_solver_generate_messages_cpp
+[ 28%] [34m[1mGenerating Python srv __init__.py for lkh_tsp_solver[0m
+[ 29%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Create_POPMUSIC_CandidateSet.c.o[0m
+[ 29%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/CreateQuadrantCandidateSet.c.o[0m
+[ 30%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Delaunay.c.o[0m
+[ 31%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Distance.c.o[0m
+[ 32%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Distance_SPECIAL.c.o[0m
+[ 32%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ERXT.c.o[0m
+[ 32%] Built target lkh_tsp_solver_generate_messages_eus
+[ 32%] Built target lkh_tsp_solver_generate_messages_py
+[ 34%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Excludable.c.o[0m
+[ 35%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Exclude.c.o[0m
+[35m[1mScanning dependencies of target lkh_tsp_solver_generate_messages[0m
+[ 36%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/FindTour.c.o[0m
+[ 36%] Built target lkh_tsp_solver_generate_messages
+[ 37%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/FixedOrCommonCandidates.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Flip.c.o[0m
+[ 39%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Flip_SSL.c.o[0m
+[ 39%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Flip_SL.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Forbidden.c.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/FreeStructures.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Gain23.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/GenerateCandidates.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Genetic.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/GeoConversion.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/GetTime.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Hashing.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/GreedyTour.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Heap.c.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/IsCandidate.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/IsCommonEdge.c.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/IsBackboneCandidate.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/IsPossibleCandidate.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/KSwapKick.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/LinKernighan.c.o[0m
+[ 54%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Make2OptMove.c.o[0m
+[ 55%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Make3OptMove.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Make5OptMove.c.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/MakeKOptMove.c.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Make4OptMove.c.o[0m
+[ 58%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/MergeTourWithBestTour.c.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/MergeWithTourIPT.c.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/MergeWithTourGPX2.c.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Minimum1TreeCost.c.o[0m
+[ 62%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/MinimumSpanningTree.c.o[0m
+[ 62%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/NormalizeNodeList.c.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/NormalizeSegmentList.c.o[0m
+[ 64%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/OrderCandidateSet.c.o[0m
+[ 65%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/PatchCycles.c.o[0m
+[ 67%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/PrintParameters.c.o[0m
+[ 68%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ReadCandidates.c.o[0m
+[ 69%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ReadEdges.c.o[0m
+[ 69%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Random.c.o[0m
+[ 70%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ReadParameters.c.o[0m
+[ 71%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ReadLine.c.o[0m
+[ 72%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ReadPenalties.c.o[0m
+[ 72%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ReadProblem.c.o[0m
+[ 73%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/RecordBestTour.c.o[0m
+[ 74%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/RecordBetterTour.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/RemoveFirstActive.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/RestoreTour.c.o[0m
+[ 76%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/ResetCandidateSet.c.o[0m
+[ 77%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Sequence.c.o[0m
+[ 78%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SegmentSize.c.o[0m
+[ 79%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SFCTour.c.o[0m
+[ 80%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveCompressedSubproblem.c.o[0m
+[ 81%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveDelaunaySubproblems.c.o[0m
+[ 81%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveKCenterSubproblems.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveKarpSubproblems.c.o[0m
+[ 84%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveKMeansSubproblems.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveRoheSubproblems.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveSFCSubproblems.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveSubproblem.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveSubproblemBorderProblems.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SolveTourSegmentSubproblems.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/Statistics.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/StoreTour.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/SymmetrizeCandidateSet.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/TrimCandidateSet.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/WritePenalties.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/WriteCandidates.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/WriteTour.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/eprintf.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/fscanint.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/gpx.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/lkh_tsp_solver.dir/src/printff.c.o[0m
+[ 98%] [32mBuilding CXX object CMakeFiles/lkh_tsp_solver.dir/src/lkh_interface.cpp.o[0m
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:[m[K In function ‘[01m[Kint solveTSPLKH(const char*)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:61:19:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   61 |           printff([01;35m[K"[m[K  Merged with %d: Cost = " GainFormat, i + 1, Cost);
+      |                   [01;35m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:63:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   63 |             printff([01;35m[K", Gap = %0.4f%%"[m[K, 100.0 * (Cost - Optimum) / Optimum);
+      |                     [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:64:19:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   64 |           printff([01;35m[K"\n"[m[K);
+      |                   [01;35m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:94:15:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   94 |       printff([01;35m[K"*** New optimum = " GainFormat " ***\n\n"[m[K, Optimum);
+      |               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX shared library /home/zqh/phoenixZ/racer_ws/devel/.private/lkh_tsp_solver/lib/liblkh_tsp_solver.so[0m
+[100%] Built target lkh_tsp_solver

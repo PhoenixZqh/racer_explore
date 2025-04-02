@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_ws/devel/.private/bspline/share/gennodejs/ros/bspline/msg/Bspline.js
