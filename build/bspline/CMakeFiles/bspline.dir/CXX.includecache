@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h
 Eigen/Eigen
 -
 algorithm
@@ -14,9 +14,9 @@ algorithm
 iostream
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/bspline/src/non_uniform_bspline.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/src/non_uniform_bspline.cpp
 bspline/non_uniform_bspline.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/bspline/src/bspline/non_uniform_bspline.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/src/bspline/non_uniform_bspline.h
 ros/ros.h
 -
 

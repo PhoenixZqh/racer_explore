@@ -1,17 +1,4 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/poscmd_2_odom/poscmd_2_odom
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/poscmd_2_odom.pc
-Cleaning: (/home/racer_ws/devel/.private/poscmd_2_odom/cmake.lock, /home/racer_ws/devel/./cmake.lock)
-Cleaning: (/home/racer_ws/devel/.private/poscmd_2_odom/share/poscmd_2_odom/cmake/poscmd_2_odomConfig.cmake, /home/racer_ws/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig.cmake)
-Cleaning: (/home/racer_ws/devel/.private/poscmd_2_odom/share/poscmd_2_odom/cmake/poscmd_2_odomConfig-version.cmake, /home/racer_ws/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig-version.cmake)
-Cleaning: (/home/racer_ws/devel/.private/poscmd_2_odom/lib/poscmd_2_odom/poscmd_2_odom, /home/racer_ws/devel/lib/poscmd_2_odom/poscmd_2_odom)
-Cleaning: (/home/racer_ws/devel/.private/poscmd_2_odom/lib/pkgconfig/poscmd_2_odom.pc, /home/racer_ws/devel/lib/pkgconfig/poscmd_2_odom.pc)
-Unlinking: /home/racer_ws/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig-version.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/poscmd_2_odom/poscmd_2_odom
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/pkgconfig/poscmd_2_odom.pc
-Already unlinked: {}
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/poscmd_2_odom/share/poscmd_2_odom/cmake/poscmd_2_odomConfig.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/poscmd_2_odom/share/poscmd_2_odom/cmake/poscmd_2_odomConfig-version.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/poscmd_2_odom/cmake/poscmd_2_odomConfig-version.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/poscmd_2_odom/lib/poscmd_2_odom/poscmd_2_odom, /home/zqh/phoenixZ/racer_explore/devel/lib/poscmd_2_odom/poscmd_2_odom)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/poscmd_2_odom/lib/pkgconfig/poscmd_2_odom.pc, /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/poscmd_2_odom.pc)

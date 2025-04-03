@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/__init__.py
+/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/__init__.py

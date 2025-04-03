@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/map_generator
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/map_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/map_generator
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/map_generator
 
 # Utility rule file for geometry_msgs_generate_messages_eus.
 
@@ -67,6 +67,6 @@ CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
 CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/map_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/map_generator /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/map_generator /home/zqh/phoenixZ/racer_ws/build/map_generator /home/zqh/phoenixZ/racer_ws/build/map_generator /home/zqh/phoenixZ/racer_ws/build/map_generator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/map_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/map_generator /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/map_generator /home/zqh/phoenixZ/racer_explore/build/map_generator /home/zqh/phoenixZ/racer_explore/build/map_generator /home/zqh/phoenixZ/racer_explore/build/map_generator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
 

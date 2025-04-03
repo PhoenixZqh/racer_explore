@@ -1,6 +1,6 @@
 SPECIAL
-PROBLEM_FILE = /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/resource/amtsp3_1.atsp
+PROBLEM_FILE = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/resource/amtsp3_1.atsp
 TRACE_LEVEL = 1
 SEED = 0
 RUNS = 1
-TOUR_FILE = /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/resource/amtsp3_1.tour
+TOUR_FILE = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/resource/amtsp3_1.tour

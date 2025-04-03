@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/multi_map_server
-# Build directory: /home/zqh/phoenixZ/racer_ws/build/multi_map_server
+# Source directory: /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/multi_map_server
+# Build directory: /home/zqh/phoenixZ/racer_explore/build/multi_map_server
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

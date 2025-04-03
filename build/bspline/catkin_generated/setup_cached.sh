@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_ws/devel/.private/bspline:$CMAKE_PREFIX_PATH"
-export PWD='/home/zqh/phoenixZ/racer_ws/build/bspline'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_ws/devel/.private/bspline/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/bspline:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/bspline:$CMAKE_PREFIX_PATH"
+export PWD='/home/zqh/phoenixZ/racer_explore/build/bspline'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/bspline/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline:$ROS_PACKAGE_PATH"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/waypoint_generator/src/sample_waypoints.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator/src/sample_waypoints.h
 ros/ros.h
 -
 tf/tf.h
@@ -14,7 +14,7 @@ tf/tf.h
 nav_msgs/Path.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/waypoint_generator/src/waypoint_generator.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator/src/waypoint_generator.cpp
 iostream
 -
 ros/ros.h
@@ -32,7 +32,7 @@ geometry_msgs/Vector3.h
 nav_msgs/Path.h
 -
 sample_waypoints.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/waypoint_generator/src/sample_waypoints.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator/src/sample_waypoints.h
 vector
 -
 deque

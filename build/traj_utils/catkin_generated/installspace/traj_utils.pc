@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_ws/install
+prefix=/home/zqh/phoenixZ/racer_explore/install
 
 Name: traj_utils
 Description: Description of traj_utils

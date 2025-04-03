@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_ws/devel/.private/local_sensing_node
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/local_sensing_node
 
 Name: local_sensing_node
 Description: Description of local_sensing_node

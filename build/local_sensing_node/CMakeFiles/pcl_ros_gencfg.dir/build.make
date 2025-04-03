@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/local_sensing
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/local_sensing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/local_sensing_node
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/local_sensing_node
 
 # Utility rule file for pcl_ros_gencfg.
 
@@ -67,6 +67,6 @@ CMakeFiles/pcl_ros_gencfg.dir/clean:
 .PHONY : CMakeFiles/pcl_ros_gencfg.dir/clean
 
 CMakeFiles/pcl_ros_gencfg.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/local_sensing_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/local_sensing /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/local_sensing /home/zqh/phoenixZ/racer_ws/build/local_sensing_node /home/zqh/phoenixZ/racer_ws/build/local_sensing_node /home/zqh/phoenixZ/racer_ws/build/local_sensing_node/CMakeFiles/pcl_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/local_sensing_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/local_sensing /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/local_sensing /home/zqh/phoenixZ/racer_explore/build/local_sensing_node /home/zqh/phoenixZ/racer_explore/build/local_sensing_node /home/zqh/phoenixZ/racer_explore/build/local_sensing_node/CMakeFiles/pcl_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pcl_ros_gencfg.dir/depend
 

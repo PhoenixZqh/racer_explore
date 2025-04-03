@@ -1,13 +1,13 @@
-[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:[m[K In function ‘[01m[Kint solveTSPLKH(const char*)[m[K’:
-[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:61:19:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:[m[K In function ‘[01m[Kint solveTSPLKH(const char*)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:61:19:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
    61 |           printff([01;35m[K"[m[K  Merged with %d: Cost = " GainFormat, i + 1, Cost);
       |                   [01;35m[K^[m[K
-[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:63:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:63:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
    63 |             printff([01;35m[K", Gap = %0.4f%%"[m[K, 100.0 * (Cost - Optimum) / Optimum);
       |                     [01;35m[K^~~~~~~~~~~~~~~~~[m[K
-[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:64:19:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:64:19:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
    64 |           printff([01;35m[K"\n"[m[K);
       |                   [01;35m[K^~~~[m[K
-[01m[K/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:94:15:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/src/lkh_interface.cpp:94:15:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
    94 |       printff([01;35m[K"*** New optimum = " GainFormat " ***\n\n"[m[K, Optimum);
       |               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

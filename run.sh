@@ -1,4 +1,4 @@
-source ~/phoenixZ/racer_ws/devel/setup.bash
+source ~/phoenixZ/racer_explore/devel/setup.bash
 
 roslaunch exploration_manager swarm_exploration.launch &
 

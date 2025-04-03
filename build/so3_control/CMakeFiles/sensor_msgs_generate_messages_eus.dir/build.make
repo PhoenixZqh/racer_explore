@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/so3_control
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/so3_control
 
 # Utility rule file for sensor_msgs_generate_messages_eus.
 
@@ -67,6 +67,6 @@ CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 
 CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/so3_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_ws/build/so3_control /home/zqh/phoenixZ/racer_ws/build/so3_control /home/zqh/phoenixZ/racer_ws/build/so3_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/so3_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
 

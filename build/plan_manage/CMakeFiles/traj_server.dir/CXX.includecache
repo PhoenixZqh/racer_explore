@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/devel/.private/bspline/include/bspline/Bspline.h
+/home/zqh/phoenixZ/racer_explore/devel/.private/bspline/include/bspline/Bspline.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 geometry_msgs/Point.h
 -
 
-/home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PositionCommand.h
+/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PositionCommand.h
 string
 -
 vector
@@ -48,7 +48,7 @@ geometry_msgs/Vector3.h
 geometry_msgs/Vector3.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/active_perception/include/active_perception/perception_utils.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/perception_utils.h
 ros/ros.h
 -
 Eigen/Eigen
@@ -60,7 +60,7 @@ memory
 vector
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h
 plan_env/edt_environment.h
 -
 unordered_map
@@ -70,7 +70,7 @@ utility
 bspline/non_uniform_bspline.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h
 Eigen/Eigen
 -
 algorithm
@@ -78,13 +78,13 @@ algorithm
 iostream
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/path_searching/include/path_searching/topo_prm.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/topo_prm.h
 plan_env/edt_environment.h
 -
 random
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h
 Eigen/Eigen
 -
 iostream
@@ -94,7 +94,7 @@ utility
 plan_env/obj_predictor.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h
 Eigen/Eigen
 -
 algorithm
@@ -110,7 +110,7 @@ ros/ros.h
 visualization_msgs/Marker.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/include/plan_manage/backward.hpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/backward.hpp
 algorithm
 -
 cctype
@@ -230,19 +230,19 @@ utility
 map
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp
 bspline/non_uniform_bspline.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/bspline/non_uniform_bspline.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/bspline/non_uniform_bspline.h
 nav_msgs/Odometry.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/nav_msgs/Odometry.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/nav_msgs/Odometry.h
 bspline/Bspline.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/bspline/Bspline.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/bspline/Bspline.h
 quadrotor_msgs/PositionCommand.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/quadrotor_msgs/PositionCommand.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/quadrotor_msgs/PositionCommand.h
 std_msgs/Empty.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/std_msgs/Empty.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/std_msgs/Empty.h
 visualization_msgs/Marker.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/visualization_msgs/Marker.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/visualization_msgs/Marker.h
 ros/ros.h
 -
 poly_traj/polynomial_traj.h
@@ -254,13 +254,13 @@ traj_utils/planning_visualization.h
 plan_manage/backward.hpp
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h
 Eigen/Eigen
 -
 vector
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/traj_utils/include/traj_utils/planning_visualization.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/include/traj_utils/planning_visualization.h
 Eigen/Eigen
 -
 algorithm

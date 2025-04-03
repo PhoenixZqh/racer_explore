@@ -1,33 +1,8 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/libplan_manage.so
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/fast_planner_node
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/proc_msg2
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/traj_server
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/proc_msg
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/plan_manage.pc
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/cmake.lock, /home/racer_ws/devel/./cmake.lock)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/share/plan_manage/cmake/plan_manageConfig.cmake, /home/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig.cmake)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/share/plan_manage/cmake/plan_manageConfig-version.cmake, /home/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig-version.cmake)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/lib/libplan_manage.so, /home/racer_ws/devel/lib/libplan_manage.so)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node, /home/racer_ws/devel/lib/plan_manage/fast_planner_node)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/lib/plan_manage/proc_msg2, /home/racer_ws/devel/lib/plan_manage/proc_msg2)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/lib/plan_manage/traj_server, /home/racer_ws/devel/lib/plan_manage/traj_server)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/lib/plan_manage/proc_msg, /home/racer_ws/devel/lib/plan_manage/proc_msg)
-Cleaning: (/home/racer_ws/devel/.private/plan_manage/lib/pkgconfig/plan_manage.pc, /home/racer_ws/devel/lib/pkgconfig/plan_manage.pc)
-Unlinking: /home/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig-version.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/libplan_manage.so
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/plan_manage/fast_planner_node
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/plan_manage/proc_msg2
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/plan_manage/traj_server
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/plan_manage/proc_msg
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/pkgconfig/plan_manage.pc
-Already unlinked: {}
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/share/plan_manage/cmake/plan_manageConfig.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/plan_manage/cmake/plan_manageConfig.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/share/plan_manage/cmake/plan_manageConfig-version.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/plan_manage/cmake/plan_manageConfig-version.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/libplan_manage.so, /home/zqh/phoenixZ/racer_explore/devel/lib/libplan_manage.so)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/fast_planner_node, /home/zqh/phoenixZ/racer_explore/devel/lib/plan_manage/fast_planner_node)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg2, /home/zqh/phoenixZ/racer_explore/devel/lib/plan_manage/proc_msg2)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/traj_server, /home/zqh/phoenixZ/racer_explore/devel/lib/plan_manage/traj_server)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg, /home/zqh/phoenixZ/racer_explore/devel/lib/plan_manage/proc_msg)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/pkgconfig/plan_manage.pc, /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/plan_manage.pc)

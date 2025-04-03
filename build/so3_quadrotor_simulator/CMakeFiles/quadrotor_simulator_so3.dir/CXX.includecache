@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/AuxCommand.h
+/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include/quadrotor_msgs/AuxCommand.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/SO3Command.h
+/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include/quadrotor_msgs/SO3Command.h
 string
 -
 vector
@@ -46,17 +46,17 @@ geometry_msgs/Quaternion.h
 quadrotor_msgs/AuxCommand.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/uav_utils/include/uav_utils/geometry_utils.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/uav_utils/include/uav_utils/geometry_utils.h
 Eigen/Dense
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_quadrotor_simulator/include/quadrotor_simulator/Quadrotor.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator/include/quadrotor_simulator/Quadrotor.h
 Eigen/Core
 -
 boost/array.hpp
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_quadrotor_simulator/src/quadrotor_simulator_so3.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator/src/quadrotor_simulator_so3.cpp
 Eigen/Geometry
 -
 nav_msgs/Odometry.h

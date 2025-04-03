@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/catkin_tools_prebuild/env.sh
+/home/zqh/phoenixZ/racer_explore/devel/.private/catkin_tools_prebuild/env.sh

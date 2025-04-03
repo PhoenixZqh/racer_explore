@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/lkh_tsp_solver/share/common-lisp/ros/lkh_tsp_solver/srv/SolveTSP.lisp"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/share/common-lisp/ros/lkh_tsp_solver/srv/SolveTSP.lisp"
   "CMakeFiles/lkh_tsp_solver_generate_messages_lisp"
 )
 

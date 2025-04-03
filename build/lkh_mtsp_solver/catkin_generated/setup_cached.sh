@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_ws/devel/.private/lkh_mtsp_solver:$CMAKE_PREFIX_PATH"
-export PWD='/home/zqh/phoenixZ/racer_ws/build/lkh_mtsp_solver'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_ws/devel/.private/lkh_mtsp_solver/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_mtsp_solver:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver:$CMAKE_PREFIX_PATH"
+export PWD='/home/zqh/phoenixZ/racer_explore/build/lkh_mtsp_solver'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver:$ROS_PACKAGE_PATH"

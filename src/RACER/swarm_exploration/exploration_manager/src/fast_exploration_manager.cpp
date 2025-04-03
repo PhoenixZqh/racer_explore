@@ -30,7 +30,8 @@ namespace fast_planner
 {
 // SECTION interfaces for setup and query
 
-FastExplorationManager::FastExplorationManager() {}
+FastExplorationManager::FastExplorationManager()
+{}
 
 FastExplorationManager::~FastExplorationManager()
 {
@@ -39,13 +40,13 @@ FastExplorationManager::~FastExplorationManager()
     ViewNode::map_.reset();
 }
 
-void FastExplorationManager::initialize(ros::NodeHandle& nh)
+void FastExplorationManager::initialize(ros::NodeHandle &nh)
 {
     planner_manager_.reset(new FastPlannerManager);
     planner_manager_->initPlanModules(nh);
 
     edt_environment_ = planner_manager_->edt_environment_;
-    sdf_map_         = edt_environment_->sdf_map_;
+    sdf_map_ = edt_environment_->sdf_map_;
     frontier_finder_.reset(new FrontierFinder(edt_environment_, nh));
     // uniform_grid_.reset(new UniformGrid(edt_environment_, nh));
     hgrid_.reset(new HGrid(edt_environment_, nh));
@@ -71,8 +72,8 @@ void FastExplorationManager::initialize(ros::NodeHandle& nh)
     ed_->pair_opt_res_stamps_.resize(ep_->drone_num_);
     for (int i = 0; i < ep_->drone_num_; ++i)
     {
-        ed_->swarm_state_[i].stamp_  = 0.0;
-        ed_->pair_opt_stamps_[i]     = 0.0;
+        ed_->swarm_state_[i].stamp_ = 0.0;
+        ed_->pair_opt_stamps_[i] = 0.0;
         ed_->pair_opt_res_stamps_[i] = 0.0;
     }
     planner_manager_->swarm_traj_data_.init(ep_->drone_id_, ep_->drone_num_);
@@ -87,7 +88,7 @@ void FastExplorationManager::initialize(ros::NodeHandle& nh)
     ViewNode::astar_->init(nh, edt_environment_);
     ViewNode::map_ = sdf_map_;
 
-    double          resolution_ = sdf_map_->getResolution();
+    double resolution_ = sdf_map_->getResolution();
     Eigen::Vector3d origin, size;
     sdf_map_->getRegion(origin, size);
     ViewNode::caster_.reset(new RayCaster);
@@ -97,21 +98,21 @@ void FastExplorationManager::initialize(ros::NodeHandle& nh)
     // planner_manager_->path_finder_->max_search_time_ = 0.05;
     planner_manager_->path_finder_->max_search_time_ = 1.0;
 
-    tsp_client_   = nh.serviceClient<lkh_mtsp_solver::SolveMTSP>("/solve_tsp_" + to_string(ep_->drone_id_), true);
+    tsp_client_ = nh.serviceClient<lkh_mtsp_solver::SolveMTSP>("/solve_tsp_" + to_string(ep_->drone_id_), true);
     acvrp_client_ = nh.serviceClient<lkh_mtsp_solver::SolveMTSP>("/solve_acvrp_" + to_string(ep_->drone_id_), true);
 
     // Swarm
-    for (auto& state : ed_->swarm_state_)
+    for (auto &state : ed_->swarm_state_)
     {
-        state.stamp_                = 0.0;
+        state.stamp_ = 0.0;
         state.recent_interact_time_ = 0.0;
-        state.recent_attempt_time_  = 0.0;
+        state.recent_attempt_time_ = 0.0;
     }
-    ed_->last_grid_ids_  = {};
-    ed_->reallocated_    = true;
+    ed_->last_grid_ids_ = {};
+    ed_->reallocated_ = true;
     ed_->pair_opt_stamp_ = 0.0;
-    ed_->wait_response_  = false;
-    ed_->plan_num_       = 0;
+    ed_->wait_response_ = false;
+    ed_->plan_num_ = 0;
 
     // Analysis
     // ofstream fout;
@@ -122,34 +123,33 @@ void FastExplorationManager::initialize(ros::NodeHandle& nh)
 /**
  * @brief 根据当前网格和前沿情况，找到下一个视点，然后调用planTrajToView 生成具体的路径
  */
-int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3d& vel, const Vector3d& acc, const Vector3d& yaw)
+int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3d &vel, const Vector3d &acc, const Vector3d &yaw)
 {
     ros::Time t1 = ros::Time::now();
-    auto      t2 = t1;
+    auto t2 = t1;
 
     std::cout << "开始位置: " << pos.transpose() << ", 速度: " << vel.transpose() << ", 加速度: " << acc.transpose() << std::endl;
 
     //规划全局和局部巡游，找下个视点
     ed_->frontier_tour_.clear();
     Vector3d next_pos;
-    double   next_yaw;
+    double next_yaw;
     // Find the tour passing through viewpoints
     // Optimal tour is returned as indices of frontier
     vector<int> grid_ids, frontier_ids;
     // findGlobalTour(pos, vel, yaw, indices);
-    findGridAndFrontierPath(pos, vel, yaw, grid_ids, frontier_ids);  //查询有些网格和前沿
+    findGridAndFrontierPath(pos, vel, yaw, grid_ids, frontier_ids); //查询有些网格和前沿
 
     // 第一种情况：没网格
     if (grid_ids.empty())
     {
-
         return NO_GRID;
 
         // 没网格也得动，找到最近的前沿
         ROS_WARN("Empty grid");
 
-        double           min_cost    = 100000;
-        int              min_cost_id = -1;
+        double min_cost = 100000;
+        int min_cost_id = -1;
         vector<Vector3d> tmp_path;
 
         //! 在前沿视点中找一个最小路费的
@@ -158,7 +158,7 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
             auto tmp_cost = ViewNode::computeCost(pos, ed_->points_[i], yaw[0], ed_->yaws_[i], vel, yaw[1], tmp_path);
             if (tmp_cost < min_cost)
             {
-                min_cost    = tmp_cost;
+                min_cost = tmp_cost;
                 min_cost_id = i;
             }
         }
@@ -174,8 +174,8 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
         // 拿网格巡游的第二点为中心
         Eigen::Vector3d grid_center = ed_->grid_tour_[1];
 
-        double min_cost    = 100000;
-        int    min_cost_id = -1;
+        double min_cost = 100000;
+        int min_cost_id = -1;
 
         //! 计算中心到前沿平均位置的路费，不考虑当前无人机的状态
         for (int i = 0; i < ed_->points_.size(); ++i)
@@ -186,7 +186,7 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
             double cost = ViewNode::computeCost(grid_center, ed_->averages_[i], 0, 0, Eigen::Vector3d(0, 0, 0), 0, path);
             if (cost < min_cost)
             {
-                min_cost    = cost;
+                min_cost = cost;
                 min_cost_id = i;
             }
         }
@@ -206,29 +206,28 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
         if (ep_->refine_local_)
         {
             // Single frontier, find the min cost viewpoint for it
-            ed_->refined_ids_      = { frontier_ids[0] };
-            ed_->unrefined_points_ = { ed_->points_[frontier_ids[0]] };
+            ed_->refined_ids_ = {frontier_ids[0]};
+            ed_->unrefined_points_ = {ed_->points_[frontier_ids[0]]};
             ed_->n_points_.clear();
             vector<vector<double>> n_yaws;
 
             // 找当前前沿的视点信息
-            frontier_finder_->getViewpointsInfo(pos, { frontier_ids[0] }, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
+            frontier_finder_->getViewpointsInfo(pos, {frontier_ids[0]}, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
 
             //! 如果只有一个网格，在前沿网格中挑一个路费最低的视点
             if (grid_ids.size() <= 1)
             {
                 // Only one grid is assigned
-                double           min_cost    = 100000;
-                int              min_cost_id = -1;
+                double min_cost = 100000;
+                int min_cost_id = -1;
                 vector<Vector3d> tmp_path;
                 for (int i = 0; i < ed_->n_points_[0].size(); ++i)
                 {
-
                     // 算从当前位置到这个视点的路费
                     auto tmp_cost = ViewNode::computeCost(pos, ed_->n_points_[0][i], yaw[0], n_yaws[0][i], vel, yaw[1], tmp_path);
                     if (tmp_cost < min_cost)
                     {
-                        min_cost    = tmp_cost;
+                        min_cost = tmp_cost;
                         min_cost_id = i;
                     }
                 }
@@ -244,11 +243,11 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
                 // vector<double> grid_yaw = { atan2(dir[1], dir[0]) };
 
                 Eigen::Vector3d grid_pos;
-                double          grid_yaw;
+                double grid_yaw;
                 if (hgrid_->getNextGrid(grid_ids, grid_pos, grid_yaw))
                 {
-                    ed_->n_points_.push_back({ grid_pos });
-                    n_yaws.push_back({ grid_yaw });
+                    ed_->n_points_.push_back({grid_pos});
+                    n_yaws.push_back({grid_yaw});
                 }
 
                 // 优化局部巡游：把这些视点和朝向扔进去
@@ -260,8 +259,8 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
                 next_pos = ed_->refined_points_[0];
                 next_yaw = refined_yaws[0];
             }
-            ed_->refined_points_ = { next_pos };
-            ed_->refined_views_  = { next_pos + 2.0 * Vector3d(cos(next_yaw), sin(next_yaw), 0) };
+            ed_->refined_points_ = {next_pos};
+            ed_->refined_views_ = {next_pos + 2.0 * Vector3d(cos(next_yaw), sin(next_yaw), 0)};
         }
     }
 
@@ -319,7 +318,11 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
         ROS_INFO("Local refine time: %lf", local_time);
     }
 
-    std::cout << "下一个视点: " << next_pos.transpose() << ", " << next_yaw << std::endl;
+    std::cout << "┌─────────────────────────────────────────────────────────────────────────────────────────────┐ " << std::endl;
+    std::cout << "│ 下一个视点"
+              << "位置： " << next_pos.transpose() << ", 航向： " << next_yaw << std::endl;
+    std::cout << "└─────────────────────────────────────────────────────────────────────────────────────────────┘" << std::endl;
+
     ed_->next_pos_ = next_pos;
     ed_->next_yaw_ = next_yaw;
 
@@ -339,20 +342,18 @@ int FastExplorationManager::planExploreMotion(const Vector3d& pos, const Vector3
 /**
  * @brief 规划一条当前点到下一视点的飞行路径（位置、朝向）
  */
-int FastExplorationManager::planTrajToView(const Vector3d& pos, const Vector3d& vel, const Vector3d& acc, const Vector3d& yaw, const Vector3d& next_pos,
-                                           const double& next_yaw)
+int FastExplorationManager::planTrajToView(const Vector3d &pos, const Vector3d &vel, const Vector3d &acc, const Vector3d &yaw, const Vector3d &next_pos, const double &next_yaw)
 {
-
     auto t1 = ros::Time::now();
 
     // 算转头的最短时间，作为路径规划的下限
-    double diff0   = next_yaw - yaw[0];
-    double diff1   = fabs(diff0);
+    double diff0 = next_yaw - yaw[0];
+    double diff1 = fabs(diff0);
     double time_lb = min(diff1, 2 * M_PI - diff1) / ViewNode::yd_;
 
-    bool goal_unknown = (edt_environment_->sdf_map_->getOccupancy(next_pos) == SDFMap::UNKNOWN);  // 目标点是不是未知区域
+    bool goal_unknown = (edt_environment_->sdf_map_->getOccupancy(next_pos) == SDFMap::UNKNOWN); // 目标点是不是未知区域
     // bool start_unknown = (edt_environment_->sdf_map_->getOccupancy(pos) == SDFMap::UNKNOWN);
-    bool optimistic = ed_->plan_num_ < ep_->init_plan_num_;  // 前几次规划用乐观模式（更宽松）
+    bool optimistic = ed_->plan_num_ < ep_->init_plan_num_; // 前几次规划用乐观模式（更宽松）
 
     planner_manager_->path_finder_->reset();
 
@@ -362,14 +363,14 @@ int FastExplorationManager::planTrajToView(const Vector3d& pos, const Vector3d& 
         ROS_ERROR("No path to next viewpoint");
         return FAIL;
     }
-    ed_->path_next_goal_ = planner_manager_->path_finder_->getPath();  // 拿到路径
-    shortenPath(ed_->path_next_goal_);                                 // 修剪路径，去掉多余拐弯
+    ed_->path_next_goal_ = planner_manager_->path_finder_->getPath(); // 拿到路径
+    shortenPath(ed_->path_next_goal_);                                // 修剪路径，去掉多余拐弯
     ed_->kino_path_.clear();
 
     // 根据距离的长短分配不同的策略
-    const double radius_far   = 7.0;
+    const double radius_far = 7.0;
     const double radius_close = 1.5;
-    const double len          = Astar::pathLength(ed_->path_next_goal_);  // 算路径总长度
+    const double len = Astar::pathLength(ed_->path_next_goal_); // 算路径总长度
 
     // 目标很近，不用复杂计算，直接优化这条路
     if (len < radius_close || optimistic)
@@ -388,8 +389,8 @@ int FastExplorationManager::planTrajToView(const Vector3d& pos, const Vector3d& 
     else if (len > radius_far)
     {
         std::cout << "Far goal." << std::endl;
-        double                  len2           = 0.0;
-        vector<Eigen::Vector3d> truncated_path = { ed_->path_next_goal_.front() };
+        double len2 = 0.0;
+        vector<Eigen::Vector3d> truncated_path = {ed_->path_next_goal_.front()};
 
         // 沿着路径加点，直到 7 米
         for (int i = 1; i < ed_->path_next_goal_.size() && len2 < radius_far; ++i)
@@ -417,11 +418,11 @@ int FastExplorationManager::planTrajToView(const Vector3d& pos, const Vector3d& 
     if (planner_manager_->local_data_.position_traj_.getTimeSum() < time_lb - 0.5)
         ROS_ERROR("Lower bound not satified!");
 
-    double traj_plan_time = (ros::Time::now() - t1).toSec();  // 算位置路径花了多久
+    double traj_plan_time = (ros::Time::now() - t1).toSec(); // 算位置路径花了多久
 
     t1 = ros::Time::now();
-    planner_manager_->planYawExplore(yaw, next_yaw, true, ep_->relax_time_);  // 从现在朝向转到目标朝向
-    double yaw_time = (ros::Time::now() - t1).toSec();                        // 记录航向规划所需的时间
+    planner_manager_->planYawExplore(yaw, next_yaw, true, ep_->relax_time_); // 从现在朝向转到目标朝向
+    double yaw_time = (ros::Time::now() - t1).toSec();                       // 记录航向规划所需的时间
     ROS_INFO("Traj: %lf, yaw: %lf", traj_plan_time, yaw_time);
 
     return SUCCEED;
@@ -433,9 +434,8 @@ int FastExplorationManager::planTrajToView(const Vector3d& pos, const Vector3d& 
  *        in:   当前无人机位置
  *        out： 当前活跃的边界的数量
  **/
-int FastExplorationManager::updateFrontierStruct(const Eigen::Vector3d& pos)
+int FastExplorationManager::updateFrontierStruct(const Eigen::Vector3d &pos)
 {
-
     auto t1 = ros::Time::now();
     auto t2 = t1;
     ed_->views_.clear();
@@ -443,16 +443,16 @@ int FastExplorationManager::updateFrontierStruct(const Eigen::Vector3d& pos)
     // 从SDF地图中检测已知和未知区域的交界，并分组为簇
     frontier_finder_->searchFrontiers();
 
-    double frontier_time = (ros::Time::now() - t1).toSec();  //边界搜索耗时
-    t1                   = ros::Time::now();
+    double frontier_time = (ros::Time::now() - t1).toSec(); //边界搜索耗时
+    t1 = ros::Time::now();
 
     // 计算所有边界簇的候选视点 (x, y, z, yaw)，并筛选出信息量大的视点;  //确定哪些边界值得探索
     frontier_finder_->computeFrontiersToVisit();
 
     // 获取更新后的边界信息
-    frontier_finder_->getFrontiers(ed_->frontiers_);              // 获取活跃边界列表
-    frontier_finder_->getDormantFrontiers(ed_->dead_frontiers_);  // 获取休眠边界列表
-    frontier_finder_->getFrontierBoxes(ed_->frontier_boxes_);     // 获取边界框，用于可视化
+    frontier_finder_->getFrontiers(ed_->frontiers_);             // 获取活跃边界列表
+    frontier_finder_->getDormantFrontiers(ed_->dead_frontiers_); // 获取休眠边界列表
+    frontier_finder_->getFrontierBoxes(ed_->frontier_boxes_);    // 获取边界框，用于可视化
 
     // 获取边界的最佳视点信息
     frontier_finder_->getTopViewpointsInfo(pos, ed_->points_, ed_->yaws_, ed_->averages_);
@@ -474,12 +474,12 @@ int FastExplorationManager::updateFrontierStruct(const Eigen::Vector3d& pos)
     }
 
     double view_time = (ros::Time::now() - t1).toSec();
-    t1               = ros::Time::now();
+    t1 = ros::Time::now();
 
     // 更新边界成本矩阵, 为后续任务分配（如 CVRP）计算边界间的距离或信息增益成本
     frontier_finder_->updateFrontierCostMatrix();
 
-    double mat_time   = (ros::Time::now() - t1).toSec();
+    double mat_time = (ros::Time::now() - t1).toSec();
     double total_time = frontier_time + view_time + mat_time;
     ROS_INFO("Drone %d: frontier t: %lf, viewpoint t: %lf, mat: %lf", ep_->drone_id_, frontier_time, view_time, mat_time);
 
@@ -487,19 +487,18 @@ int FastExplorationManager::updateFrontierStruct(const Eigen::Vector3d& pos)
     return ed_->frontiers_.size();
 }
 
-void FastExplorationManager::findGridAndFrontierPath(const Vector3d& cur_pos, const Vector3d& cur_vel, const Vector3d& cur_yaw, vector<int>& grid_ids,
-                                                     vector<int>& frontier_ids)
+void FastExplorationManager::findGridAndFrontierPath(const Vector3d &cur_pos, const Vector3d &cur_vel, const Vector3d &cur_yaw, vector<int> &grid_ids, vector<int> &frontier_ids)
 {
     auto t1 = ros::Time::now();
 
     // Select nearby drones according to their states' stamp
-    vector<Eigen::Vector3d> positions = { cur_pos };
+    vector<Eigen::Vector3d> positions = {cur_pos};
     // vector<Eigen::Vector3d> velocities = { Eigen::Vector3d(0, 0, 0) };
-    vector<Eigen::Vector3d> velocities = { cur_vel };
-    vector<double>          yaws       = { cur_yaw[0] };
+    vector<Eigen::Vector3d> velocities = {cur_vel};
+    vector<double> yaws = {cur_yaw[0]};
 
     // Partitioning-based tour planning
-    vector<int>         ego_ids;
+    vector<int> ego_ids;
     vector<vector<int>> other_ids;
     if (!findGlobalTourOfGrid(positions, velocities, ego_ids, other_ids))
     {
@@ -526,12 +525,12 @@ void FastExplorationManager::findGridAndFrontierPath(const Vector3d& cur_pos, co
     }
 
     // Consider next grid in frontier tour planning
-    Eigen::Vector3d         grid_pos;
-    double                  grid_yaw;
+    Eigen::Vector3d grid_pos;
+    double grid_yaw;
     vector<Eigen::Vector3d> grid_pos_vec;
     if (hgrid_->getNextGrid(ego_ids, grid_pos, grid_yaw))
     {
-        grid_pos_vec = { grid_pos };
+        grid_pos_vec = {grid_pos};
     }
 
     findTourOfFrontier(cur_pos, cur_vel, cur_yaw, ftr_ids, grid_pos_vec, frontier_ids);
@@ -539,7 +538,7 @@ void FastExplorationManager::findGridAndFrontierPath(const Vector3d& cur_pos, co
     ROS_INFO("Grid tour t: %lf, frontier tour t: %lf.", grid_time, ftr_time);
 }
 
-void FastExplorationManager::shortenPath(vector<Vector3d>& path)
+void FastExplorationManager::shortenPath(vector<Vector3d> &path)
 {
     if (path.empty())
     {
@@ -547,8 +546,8 @@ void FastExplorationManager::shortenPath(vector<Vector3d>& path)
         return;
     }
     // Shorten the tour, only critical intermediate points are reserved.
-    const double     dist_thresh = 3.0;
-    vector<Vector3d> short_tour  = { path.front() };
+    const double dist_thresh = 3.0;
+    vector<Vector3d> short_tour = {path.front()};
     for (int i = 1; i < path.size() - 1; ++i)
     {
         if ((path[i] - short_tour.back()).norm() > dist_thresh)
@@ -577,7 +576,7 @@ void FastExplorationManager::shortenPath(vector<Vector3d>& path)
     path = short_tour;
 }
 
-void FastExplorationManager::findGlobalTour(const Vector3d& cur_pos, const Vector3d& cur_vel, const Vector3d cur_yaw, vector<int>& indices)
+void FastExplorationManager::findGlobalTour(const Vector3d &cur_pos, const Vector3d &cur_vel, const Vector3d cur_yaw, vector<int> &indices)
 {
     auto t1 = ros::Time::now();
 
@@ -588,16 +587,15 @@ void FastExplorationManager::findGlobalTour(const Vector3d& cur_pos, const Vecto
     std::cout << "mat:   " << cost_mat.rows() << std::endl;
 
     double mat_time = (ros::Time::now() - t1).toSec();
-    t1              = ros::Time::now();
+    t1 = ros::Time::now();
 
     // Initialize TSP par file
     ofstream par_file(ep_->tsp_dir_ + "/drone_" + to_string(ep_->drone_id_) + ".par");
     par_file << "PROBLEM_FILE = " << ep_->tsp_dir_ + "/drone_" + to_string(ep_->drone_id_) + ".tsp\n";
     par_file << "GAIN23 = NO\n";
     par_file << "OUTPUT_TOUR_FILE ="
-             << ep_->tsp_dir_ + "/drone_" + to_string(ep_->drone_id_)
-                    + ".tou"
-                      "r\n";
+             << ep_->tsp_dir_ + "/drone_" + to_string(ep_->drone_id_) + ".tou"
+                                                                        "r\n";
     par_file << "RUNS = 1\n";
     par_file.close();
 
@@ -605,9 +603,8 @@ void FastExplorationManager::findGlobalTour(const Vector3d& cur_pos, const Vecto
     ofstream prob_file(ep_->tsp_dir_ + "/drone_" + to_string(ep_->drone_id_) + ".tsp");
     // Problem specification part, follow the format of TSPLIB
     string prob_spec;
-    prob_spec = "NAME : single\nTYPE : ATSP\nDIMENSION : " + to_string(dimension)
-                + "\nEDGE_WEIGHT_TYPE : "
-                  "EXPLICIT\nEDGE_WEIGHT_FORMAT : FULL_MATRIX\nEDGE_WEIGHT_SECTION\n";
+    prob_spec = "NAME : single\nTYPE : ATSP\nDIMENSION : " + to_string(dimension) + "\nEDGE_WEIGHT_TYPE : "
+                                                                                    "EXPLICIT\nEDGE_WEIGHT_FORMAT : FULL_MATRIX\nEDGE_WEIGHT_SECTION\n";
     prob_file << prob_spec;
     // prob_file << "TYPE : TSP\n";
     // prob_file << "EDGE_WEIGHT_FORMAT : LOWER_ROW\n";
@@ -635,7 +632,7 @@ void FastExplorationManager::findGlobalTour(const Vector3d& cur_pos, const Vecto
 
     // Read optimal tour from the tour section of result file
     ifstream res_file(ep_->tsp_dir_ + "/drone_" + to_string(ep_->drone_id_) + ".tour");
-    string   res;
+    string res;
     while (getline(res_file, res))
     {
         // Go to tour section
@@ -648,11 +645,11 @@ void FastExplorationManager::findGlobalTour(const Vector3d& cur_pos, const Vecto
     {
         // Read indices of frontiers in optimal tour
         int id = stoi(res);
-        if (id == 1)  // Ignore the current state
+        if (id == 1) // Ignore the current state
             continue;
         if (id == -1)
             break;
-        indices.push_back(id - 2);  // Idx of solver-2 == Idx of frontier
+        indices.push_back(id - 2); // Idx of solver-2 == Idx of frontier
     }
 
     res_file.close();
@@ -671,12 +668,10 @@ void FastExplorationManager::findGlobalTour(const Vector3d& cur_pos, const Vecto
     // if (tsp_time > 0.1) ROS_BREAK();
 }
 
-void FastExplorationManager::refineLocalTour(const Vector3d& cur_pos, const Vector3d& cur_vel, const Vector3d& cur_yaw,
-                                             const vector<vector<Vector3d>>& n_points, const vector<vector<double>>& n_yaws, vector<Vector3d>& refined_pts,
-                                             vector<double>& refined_yaws)
+void FastExplorationManager::refineLocalTour(const Vector3d &cur_pos, const Vector3d &cur_vel, const Vector3d &cur_yaw, const vector<vector<Vector3d>> &n_points, const vector<vector<double>> &n_yaws, vector<Vector3d> &refined_pts, vector<double> &refined_yaws)
 {
     double create_time, search_time, parse_time;
-    auto   t1 = ros::Time::now();
+    auto t1 = ros::Time::now();
 
     // Create graph for viewpoints selection
     GraphSearch<ViewNode> g_search;
@@ -717,14 +712,14 @@ void FastExplorationManager::refineLocalTour(const Vector3d& cur_pos, const Vect
     }
     std::cout << "" << std::endl;
     create_time = (ros::Time::now() - t1).toSec();
-    t1          = ros::Time::now();
+    t1 = ros::Time::now();
 
     // Search optimal sequence
     vector<ViewNode::Ptr> path;
     g_search.DijkstraSearch(first->id_, final_node->id_, path);
 
     search_time = (ros::Time::now() - t1).toSec();
-    t1          = ros::Time::now();
+    t1 = ros::Time::now();
 
     // Return searched sequence
     for (int i = 1; i < path.size(); ++i)
@@ -752,39 +747,47 @@ void FastExplorationManager::refineLocalTour(const Vector3d& cur_pos, const Vect
     // ROS_WARN("create: %lf, search: %lf, parse: %lf", create_time, search_time, parse_time);
 }
 
-void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positions, const vector<Eigen::Vector3d>& velocities,
-                                           const vector<vector<int>>& first_ids, const vector<vector<int>>& second_ids, const vector<int>& grid_ids,
-                                           vector<int>& ego_ids, vector<int>& other_ids)
+/**
+ * @brief 合并网格之后再重分配
+ * @param 
+ *      in:  两架无人机的位置、速度、初始网格、次要网格、待分配的网格
+ *      out: 分配给自己的网格、分配给伙伴的网格
+ */
+void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d> &positions, const vector<Eigen::Vector3d> &velocities, const vector<vector<int>> &first_ids, const vector<vector<int>> &second_ids, const vector<int> &grid_ids, vector<int> &ego_ids, vector<int> &other_ids)
 {
-    // ROS_INFO("Allocate grid.");
+    ROS_INFO("Allocate grid.");
 
     auto t1 = ros::Time::now();
     auto t2 = t1;
 
+    // 只有一个网格，简单
     if (grid_ids.size() == 1)
-    {  // Only one grid, no need to run ACVRP
-        auto pt = hgrid_->getCenter(grid_ids.front());
+    {
+        auto pt = hgrid_->getCenter(grid_ids.front()); // 获取这个网格的中心
         // double d1 = (positions[0] - pt).norm();
         // double d2 = (positions[1] - pt).norm();
+        //计算我和伙伴到网格中心的成本(用距离计算)
         vector<Eigen::Vector3d> path;
-        double                  d1 = ViewNode::computeCost(positions[0], pt, 0, 0, Eigen::Vector3d(0, 0, 0), 0, path);
-        double                  d2 = ViewNode::computeCost(positions[1], pt, 0, 0, Eigen::Vector3d(0, 0, 0), 0, path);
+        double d1 = ViewNode::computeCost(positions[0], pt, 0, 0, Eigen::Vector3d(0, 0, 0), 0, path);
+        double d2 = ViewNode::computeCost(positions[1], pt, 0, 0, Eigen::Vector3d(0, 0, 0), 0, path);
+
+        // 谁近谁拿网格
         if (d1 < d2)
         {
-            ego_ids   = grid_ids;
+            ego_ids = grid_ids;
             other_ids = {};
         }
         else
         {
-            ego_ids   = {};
+            ego_ids = {};
             other_ids = grid_ids;
         }
         return;
     }
 
-    Eigen::MatrixXd mat;
+    Eigen::MatrixXd mat; //成本矩阵，记录每机到每个网格的距离
     // uniform_grid_->getCostMatrix(positions, velocities, prev_first_ids, grid_ids, mat);
-    hgrid_->getCostMatrix(positions, velocities, first_ids, second_ids, grid_ids, mat);
+    hgrid_->getCostMatrix(positions, velocities, first_ids, second_ids, grid_ids, mat); //计算矩阵
 
     // int unknown = hgrid_->getTotalUnknwon();
     int unknown;
@@ -792,21 +795,21 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
     double mat_time = (ros::Time::now() - t1).toSec();
 
     // Find optimal path through AmTSP
-    t1                  = ros::Time::now();
-    const int dimension = mat.rows();
-    const int drone_num = positions.size();
+    t1 = ros::Time::now();
+    const int dimension = mat.rows();       // 矩阵行数（无人机数 + 网格数）
+    const int drone_num = positions.size(); // 无人机数量
 
     vector<int> unknown_nums;
-    int         capacity = 0;
+    int capacity = 0;
     for (int i = 0; i < grid_ids.size(); ++i)
     {
-        int unum = hgrid_->getUnknownCellsNum(grid_ids[i]);
+        int unum = hgrid_->getUnknownCellsNum(grid_ids[i]); // 网格中有多少未知的体素
         unknown_nums.push_back(unum);
         capacity += unum;
         // std::cout << "Grid " << i << ": " << unum << std::endl;
     }
-    // std::cout << "Total: " << capacity << std::endl;
-    capacity = capacity * 0.75 * 0.1;
+    std::cout << "Total unkown cells: " << capacity << std::endl;
+    capacity = capacity * 0.75 * 0.1; //缩减容量，为了每机负载均衡
 
     // int prob_type;
     // if (grid_ids.size() >= 3)
@@ -814,7 +817,7 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
     // else
     //   prob_type = 1;  // Use AmTSP
 
-    const int prob_type = 2;
+    const int prob_type = 2; //用 ACVRP（带容量限制的车辆路径问题）
 
     // Create problem file--------------------------
     ofstream file(ep_->mtsp_dir_ + "/amtsp3_" + to_string(ep_->drone_id_) + ".atsp");
@@ -831,8 +834,8 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
 
     if (prob_type == 2)
     {
-        file << "CAPACITY : " + to_string(capacity) + "\n";   // ACVRP
-        file << "VEHICLES : " + to_string(drone_num) + "\n";  // ACVRP
+        file << "CAPACITY : " + to_string(capacity) + "\n";  // ACVRP
+        file << "VEHICLES : " + to_string(drone_num) + "\n"; // ACVRP
     }
 
     // Cost matrix
@@ -848,7 +851,7 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
     }
 
     if (prob_type == 2)
-    {  // Demand section, ACVRP only
+    { // Demand section, ACVRP only
         file << "DEMAND_SECTION\n";
         file << "1 0\n";
         for (int i = 0; i < drone_num; ++i)
@@ -884,8 +887,8 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
     }
     else if (prob_type == 2)
     {
-        file << "TRACE_LEVEL = 1\n";  // ACVRP
-        file << "SEED = 0\n";         // ACVRP
+        file << "TRACE_LEVEL = 1\n"; // ACVRP
+        file << "SEED = 0\n";        // ACVRP
     }
     file << "RUNS = 1\n";
     file << "TOUR_FILE = " + ep_->mtsp_dir_ + "/amtsp3_" + to_string(ep_->drone_id_) + ".tour\n";
@@ -893,7 +896,7 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
     file.close();
 
     auto par_dir = ep_->mtsp_dir_ + "/amtsp3_" + to_string(ep_->drone_id_) + ".atsp";
-    t1           = ros::Time::now();
+    t1 = ros::Time::now();
 
     lkh_mtsp_solver::SolveMTSP srv;
     srv.request.prob = 3;
@@ -912,8 +915,8 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
     // Read results
     t1 = ros::Time::now();
 
-    ifstream    fin(ep_->mtsp_dir_ + "/amtsp3_" + to_string(ep_->drone_id_) + ".tour");
-    string      res;
+    ifstream fin(ep_->mtsp_dir_ + "/amtsp3_" + to_string(ep_->drone_id_) + ".tour");
+    string res;
     vector<int> ids;
     while (getline(fin, res))
     {
@@ -931,7 +934,7 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
 
     // Parse the m-tour of grid
     vector<vector<int>> tours;
-    vector<int>         tour;
+    vector<int> tour;
     for (auto id : ids)
     {
         if (id > 0 && id <= drone_num)
@@ -966,11 +969,11 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
             other_ids.insert(other_ids.end(), tours[i].begin() + 1, tours[i].end());
         }
     }
-    for (auto& id : ego_ids)
+    for (auto &id : ego_ids)
     {
         id = grid_ids[id - 1 - drone_num];
     }
-    for (auto& id : other_ids)
+    for (auto &id : other_ids)
     {
         id = grid_ids[id - 1 - drone_num];
     }
@@ -988,13 +991,12 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d>& positi
     // sort(other_ids.begin(), other_ids.end());
 }
 
-double FastExplorationManager::computeGridPathCost(const Eigen::Vector3d& pos, const vector<int>& grid_ids, const vector<int>& first,
-                                                   const vector<vector<int>>& firsts, const vector<vector<int>>& seconds, const double& w_f)
+double FastExplorationManager::computeGridPathCost(const Eigen::Vector3d &pos, const vector<int> &grid_ids, const vector<int> &first, const vector<vector<int>> &firsts, const vector<vector<int>> &seconds, const double &w_f)
 {
     if (grid_ids.empty())
         return 0.0;
 
-    double                  cost = 0.0;
+    double cost = 0.0;
     vector<Eigen::Vector3d> path;
     cost += hgrid_->getCostDroneToGrid(pos, grid_ids[0], first);
     for (int i = 0; i < grid_ids.size() - 1; ++i)
@@ -1010,16 +1012,14 @@ double FastExplorationManager::computeGridPathCost(const Eigen::Vector3d& pos, c
  *          in： 无人机当前位置、 无人机当前速度、 是否初始化成功
  *          out：返回无人机要访问的网格ID序列、 多无人机下其他无人机的路径
  */
-bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>& positions, const vector<Eigen::Vector3d>& velocities, vector<int>& indices,
-                                                  vector<vector<int>>& others, bool init)
+bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d> &positions, const vector<Eigen::Vector3d> &velocities, vector<int> &indices, vector<vector<int>> &others, bool init)
 {
-
     ROS_INFO("Find grid tour---------------");
 
     auto t1 = ros::Time::now();
 
     // 获取当前无人机的网格ID列表
-    auto& grid_ids = ed_->swarm_state_[ep_->drone_id_ - 1].grid_ids_;
+    auto &grid_ids = ed_->swarm_state_[ep_->drone_id_ - 1].grid_ids_;
 
     // hgrid_->updateBaseCoor();  // Use the latest basecoor transform of swarm
 
@@ -1049,14 +1049,14 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
     Eigen::MatrixXd mat;
     // uniform_grid_->getCostMatrix(positions, velocities, first_ids, grid_ids, mat);
     if (!init)
-        hgrid_->getCostMatrix(positions, velocities, { first_ids }, { second_ids }, grid_ids, mat);
+        hgrid_->getCostMatrix(positions, velocities, {first_ids}, {second_ids}, grid_ids, mat);
     else
-        hgrid_->getCostMatrix(positions, velocities, { {} }, { {} }, grid_ids, mat);
+        hgrid_->getCostMatrix(positions, velocities, {{}}, {{}}, grid_ids, mat);
 
     double mat_time = (ros::Time::now() - t1).toSec();
 
     // 使用 ATSP 求解最优路径
-    t1                  = ros::Time::now();
+    t1 = ros::Time::now();
     const int dimension = mat.rows();
     const int drone_num = 1;
 
@@ -1064,10 +1064,10 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
     ofstream file(ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".atsp");
     // std::cout << "*** atsp file: " << ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".atsp" << std::endl;
 
-    file << "NAME : amtsp\n";                              // 任务名
-    file << "TYPE : ATSP\n";                               // 单向跑
-    file << "DIMENSION : " + to_string(dimension) + "\n";  //多少个点 （几个边界对应几个点）
-    file << "EDGE_WEIGHT_TYPE : EXPLICIT\n";               // 代价写清除
+    file << "NAME : amtsp\n";                             // 任务名
+    file << "TYPE : ATSP\n";                              // 单向跑
+    file << "DIMENSION : " + to_string(dimension) + "\n"; //多少个点 （几个边界对应几个点）
+    file << "EDGE_WEIGHT_TYPE : EXPLICIT\n";              // 代价写清除
     file << "EDGE_WEIGHT_FORMAT : FULL_MATRIX\n";
     file << "EDGE_WEIGHT_SECTION\n";
 
@@ -1085,9 +1085,9 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
     // Create par file
     file.open(ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".par");
     file << "SPECIAL\n";
-    file << "PROBLEM_FILE = " + ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".atsp\n";  //告知任务单地址
-    file << "SALESMEN = " << to_string(drone_num) << "\n";                                            //每个表对应单架飞机
-    file << "MTSP_OBJECTIVE = MINSUM\n";                                                              //算单价最少
+    file << "PROBLEM_FILE = " + ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".atsp\n"; //告知任务单地址
+    file << "SALESMEN = " << to_string(drone_num) << "\n";                                           //每个表对应单架飞机
+    file << "MTSP_OBJECTIVE = MINSUM\n";                                                             //算单价最少
 
     // file << "MTSP_MIN_SIZE = " << to_string(min(int(ed_->frontiers_.size()) / drone_num, 4)) <<
     // "\n"; file << "MTSP_MAX_SIZE = "
@@ -1098,7 +1098,7 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
     file.close();
 
     auto par_dir = ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".atsp";
-    t1           = ros::Time::now();
+    t1 = ros::Time::now();
 
     // 调用外部 MTSP 求解服务
     lkh_mtsp_solver::SolveMTSP srv;
@@ -1116,8 +1116,8 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
     t1 = ros::Time::now();
 
     //获取mtsp给出的路径单
-    ifstream    fin(ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".tour");
-    string      res;
+    ifstream fin(ep_->mtsp_dir_ + "/amtsp2_" + to_string(ep_->drone_id_) + ".tour");
+    string res;
     vector<int> ids;
     while (getline(fin, res))
     {
@@ -1137,7 +1137,7 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
 
     // 解析多路径结果
     vector<vector<int>> tours;
-    vector<int>         tour;
+    vector<int> tour;
     for (auto id : ids)
     {
         if (id > 0 && id <= drone_num)
@@ -1172,17 +1172,17 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
             others[tours[i][0] - 2].insert(others[tours[i][0] - 2].end(), tours[i].begin(), tours[i].end());
         }
     }
-    for (auto& id : indices)
+    for (auto &id : indices)
     {
         id -= 1 + drone_num;
     }
-    for (auto& other : others)
+    for (auto &other : others)
     {
-        for (auto& id : other)
+        for (auto &id : other)
             id -= 1 + drone_num;
     }
     std::cout << "网格巡游: ";
-    for (auto& id : indices)
+    for (auto &id : indices)
     {
         id = grid_ids[id];
         std::cout << id << ", ";
@@ -1194,22 +1194,20 @@ bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d>&
     hgrid_->getGridTour(grid_ids, positions[0], ed_->grid_tour_, ed_->grid_tour2_);
 
     ed_->last_grid_ids_ = grid_ids;
-    ed_->reallocated_   = false;
+    ed_->reallocated_ = false;
 
     // hgrid_->checkFirstGrid(grid_ids.front());
 
     return true;
 }
 
-void FastExplorationManager::findTourOfFrontier(const Vector3d& cur_pos, const Vector3d& cur_vel, const Vector3d& cur_yaw, const vector<int>& ftr_ids,
-                                                const vector<Eigen::Vector3d>& grid_pos, vector<int>& indices)
+void FastExplorationManager::findTourOfFrontier(const Vector3d &cur_pos, const Vector3d &cur_vel, const Vector3d &cur_yaw, const vector<int> &ftr_ids, const vector<Eigen::Vector3d> &grid_pos, vector<int> &indices)
 {
-
     auto t1 = ros::Time::now();
 
-    vector<Eigen::Vector3d> positions  = { cur_pos };
-    vector<Eigen::Vector3d> velocities = { cur_vel };
-    vector<double>          yaws       = { cur_yaw[0] };
+    vector<Eigen::Vector3d> positions = {cur_pos};
+    vector<Eigen::Vector3d> velocities = {cur_vel};
+    vector<double> yaws = {cur_yaw[0]};
 
     // frontier_finder_->getSwarmCostMatrix(positions, velocities, yaws, mat);
     Eigen::MatrixXd mat;
@@ -1258,7 +1256,7 @@ void FastExplorationManager::findTourOfFrontier(const Vector3d& cur_pos, const V
     file.close();
 
     auto par_dir = ep_->mtsp_dir_ + "/amtsp_" + to_string(ep_->drone_id_) + ".atsp";
-    t1           = ros::Time::now();
+    t1 = ros::Time::now();
 
     lkh_mtsp_solver::SolveMTSP srv;
     srv.request.prob = 1;
@@ -1274,8 +1272,8 @@ void FastExplorationManager::findTourOfFrontier(const Vector3d& cur_pos, const V
     // Read results
     t1 = ros::Time::now();
 
-    ifstream    fin(ep_->mtsp_dir_ + "/amtsp_" + to_string(ep_->drone_id_) + ".tour");
-    string      res;
+    ifstream fin(ep_->mtsp_dir_ + "/amtsp_" + to_string(ep_->drone_id_) + ".tour");
+    string res;
     vector<int> ids;
     while (getline(fin, res))
     {
@@ -1293,7 +1291,7 @@ void FastExplorationManager::findTourOfFrontier(const Vector3d& cur_pos, const V
 
     // Parse the m-tour
     vector<vector<int>> tours;
-    vector<int>         tour;
+    vector<int> tour;
     for (auto id : ids)
     {
         if (id > 0 && id <= drone_num)
@@ -1323,7 +1321,7 @@ void FastExplorationManager::findTourOfFrontier(const Vector3d& cur_pos, const V
         //       others[tours[i][0] - 2].end(), tours[i].begin() + 1, tours[i].end());
         // }
     }
-    for (auto& id : indices)
+    for (auto &id : indices)
     {
         id -= 1 + drone_num;
     }
@@ -1333,7 +1331,7 @@ void FastExplorationManager::findTourOfFrontier(const Vector3d& cur_pos, const V
     // }
 
     if (ed_->grid_tour_.size() > 2)
-    {  // Remove id for next grid, since it is considered in the TSP
+    { // Remove id for next grid, since it is considered in the TSP
         indices.pop_back();
     }
     // Subset of frontier inside first grid
@@ -1360,4 +1358,4 @@ void FastExplorationManager::findTourOfFrontier(const Vector3d& cur_pos, const V
     //     parse_time, indices.size());
 }
 
-}  // namespace fast_planner
+} // namespace fast_planner

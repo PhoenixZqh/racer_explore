@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/poly_traj
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/poly_traj
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/poly_traj
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/poly_traj
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/zqh/phoenixZ/racer_ws/build/poly_traj/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/zqh/phoenixZ/racer_explore/build/poly_traj/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/poly_traj && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/poly_traj /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/poly_traj /home/zqh/phoenixZ/racer_ws/build/poly_traj /home/zqh/phoenixZ/racer_ws/build/poly_traj /home/zqh/phoenixZ/racer_ws/build/poly_traj/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/poly_traj && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj /home/zqh/phoenixZ/racer_explore/build/poly_traj /home/zqh/phoenixZ/racer_explore/build/poly_traj /home/zqh/phoenixZ/racer_explore/build/poly_traj/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

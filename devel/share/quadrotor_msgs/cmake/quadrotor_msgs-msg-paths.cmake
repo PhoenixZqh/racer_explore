@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-paths.cmake
+/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-paths.cmake

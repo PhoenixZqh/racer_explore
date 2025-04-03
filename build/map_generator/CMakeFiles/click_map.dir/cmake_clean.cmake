@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/map_generator/lib/map_generator/click_map"
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/map_generator/lib/map_generator/click_map.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/click_map"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/click_map.pdb"
   "CMakeFiles/click_map.dir/src/click_map.cpp.o"
 )
 

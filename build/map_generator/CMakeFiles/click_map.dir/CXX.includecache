@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/map_generator/src/click_map.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/map_generator/src/click_map.cpp
 pcl/point_cloud.h
 -
 pcl/point_types.h

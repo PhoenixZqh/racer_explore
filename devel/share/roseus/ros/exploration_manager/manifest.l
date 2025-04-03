@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/manifest.l
+/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/manifest.l

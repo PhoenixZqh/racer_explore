@@ -1,49 +1,18 @@
-[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
-[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
-[35m[1mScanning dependencies of target _bspline_generate_messages_check_deps_Bspline[0m
-[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
-[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
-[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
-[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
-[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
-[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
-[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
-[35m[1mScanning dependencies of target bspline[0m
-[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
-[  0%] Built target std_msgs_generate_messages_nodejs
-[  0%] Built target geometry_msgs_generate_messages_eus
-[  0%] Built target geometry_msgs_generate_messages_nodejs
-[  0%] Built target std_msgs_generate_messages_eus
-[  0%] Built target std_msgs_generate_messages_cpp
-[  0%] Built target geometry_msgs_generate_messages_lisp
 [  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
 [  0%] Built target geometry_msgs_generate_messages_py
-[  0%] Built target std_msgs_generate_messages_lisp
-[  0%] Built target std_msgs_generate_messages_py
-[  0%] Built target _bspline_generate_messages_check_deps_Bspline
-[35m[1mScanning dependencies of target bspline_generate_messages_eus[0m
-[35m[1mScanning dependencies of target bspline_generate_messages_lisp[0m
-[35m[1mScanning dependencies of target bspline_generate_messages_nodejs[0m
-[35m[1mScanning dependencies of target bspline_generate_messages_py[0m
-[35m[1mScanning dependencies of target bspline_generate_messages_cpp[0m
-[ 11%] [32mBuilding CXX object CMakeFiles/bspline.dir/src/non_uniform_bspline.cpp.o[0m
-[ 33%] [34m[1mGenerating EusLisp code from bspline/Bspline.msg[0m
-[ 33%] [34m[1mGenerating EusLisp manifest code for bspline[0m
-[ 44%] [34m[1mGenerating C++ code from bspline/Bspline.msg[0m
-[ 66%] [34m[1mGenerating Javascript code from bspline/Bspline.msg[0m
-[ 66%] [34m[1mGenerating Python from MSG bspline/Bspline[0m
-[ 77%] [34m[1mGenerating Lisp code from bspline/Bspline.msg[0m
-[ 77%] Built target bspline_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[ 22%] Built target bspline
+[ 22%] Built target std_msgs_generate_messages_py
+[ 22%] Built target std_msgs_generate_messages_lisp
+[ 22%] Built target std_msgs_generate_messages_cpp
+[ 22%] Built target _bspline_generate_messages_check_deps_Bspline
+[ 44%] Built target bspline_generate_messages_py
+[ 55%] Built target bspline_generate_messages_cpp
+[ 66%] Built target bspline_generate_messages_nodejs
 [ 77%] Built target bspline_generate_messages_lisp
-[ 77%] Built target bspline_generate_messages_cpp
-[ 88%] [34m[1mGenerating Python msg __init__.py for bspline[0m
-[ 88%] Built target bspline_generate_messages_py
-[ 88%] Built target bspline_generate_messages_eus
-[35m[1mScanning dependencies of target bspline_generate_messages[0m
-[ 88%] Built target bspline_generate_messages
-[01m[K/home/racer_ws/src/RACER/swarm_exploration/bspline/src/non_uniform_bspline.cpp:[m[K In member function ‘[01m[Kbool fast_planner::NonUniformBspline::checkFeasibility(bool)[m[K’:
-[01m[K/home/racer_ws/src/RACER/swarm_exploration/bspline/src/non_uniform_bspline.cpp:477:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kratio[m[K’ [[01;35m[K-Wunused-variable[m[K]
-  477 |   double [01;35m[Kratio[m[K = max(max_vel / limit_vel_, sqrt(fabs(max_acc) / limit_acc_));
-      |          [01;35m[K^~~~~[m[K
-[100%] [32m[1mLinking CXX shared library /home/racer_ws/devel/.private/bspline/lib/libbspline.so[0m
-[100%] Built target bspline
+[100%] Built target bspline_generate_messages_eus
+[100%] Built target bspline_generate_messages

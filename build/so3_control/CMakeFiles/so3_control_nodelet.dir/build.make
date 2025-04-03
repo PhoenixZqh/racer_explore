@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/so3_control
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/so3_control
 
 # Include any dependencies generated for this target.
 include CMakeFiles/so3_control_nodelet.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/so3_control_nodelet.dir/progress.make
 include CMakeFiles/so3_control_nodelet.dir/flags.make
 
 CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o: CMakeFiles/so3_control_nodelet.dir/flags.make
-CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o: /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zqh/phoenixZ/racer_ws/build/so3_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o -c /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp
+CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o: /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zqh/phoenixZ/racer_explore/build/so3_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o -c /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp
 
 CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp > CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp > CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.i
 
 CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp -o CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/src/so3_control_nodelet.cpp -o CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.s
 
 # Object files for target so3_control_nodelet
 so3_control_nodelet_OBJECTS = \
@@ -77,50 +77,50 @@ so3_control_nodelet_OBJECTS = \
 # External object files for target so3_control_nodelet
 so3_control_nodelet_EXTERNAL_OBJECTS =
 
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: CMakeFiles/so3_control_nodelet.dir/build.make
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libtf.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libtf2_ros.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libactionlib.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libmessage_filters.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libtf2.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libnodeletlib.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libbondcpp.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libclass_loader.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libroslib.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librospack.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libroscpp.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librosconsole.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librostime.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: /home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libSO3Control.so
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so: CMakeFiles/so3_control_nodelet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zqh/phoenixZ/racer_ws/build/so3_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so"
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: CMakeFiles/so3_control_nodelet.dir/build.make
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/lib/libencode_msgs.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libtf.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libtf2_ros.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libactionlib.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libmessage_filters.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libtf2.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libnodeletlib.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libbondcpp.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libclass_loader.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libroslib.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librospack.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libroscpp.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librosconsole.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/librostime.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: /home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libSO3Control.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so: CMakeFiles/so3_control_nodelet.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/so3_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/so3_control_nodelet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/so3_control_nodelet.dir/build: /home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so
+CMakeFiles/so3_control_nodelet.dir/build: /home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so
 
 .PHONY : CMakeFiles/so3_control_nodelet.dir/build
 
@@ -129,6 +129,6 @@ CMakeFiles/so3_control_nodelet.dir/clean:
 .PHONY : CMakeFiles/so3_control_nodelet.dir/clean
 
 CMakeFiles/so3_control_nodelet.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/so3_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_ws/build/so3_control /home/zqh/phoenixZ/racer_ws/build/so3_control /home/zqh/phoenixZ/racer_ws/build/so3_control/CMakeFiles/so3_control_nodelet.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/so3_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control/CMakeFiles/so3_control_nodelet.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/so3_control_nodelet.dir/depend
 

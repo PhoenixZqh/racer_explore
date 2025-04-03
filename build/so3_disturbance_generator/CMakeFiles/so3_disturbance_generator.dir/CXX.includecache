@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_disturbance_generator/include/so3_disturbance_generator/DisturbanceUIConfig.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator/include/so3_disturbance_generator/DisturbanceUIConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,13 +24,13 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_disturbance_generator/src/pose_utils.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator/src/pose_utils.h
 iostream
 -
 armadillo
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_disturbance_generator/src/armadillo
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator/src/armadillo
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_disturbance_generator/src/so3_disturbance_generator.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator/src/so3_disturbance_generator.cpp
 iostream
 -
 string.h
@@ -48,7 +48,7 @@ dynamic_reconfigure/server.h
 so3_disturbance_generator/DisturbanceUIConfig.h
 -
 pose_utils.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_disturbance_generator/src/pose_utils.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator/src/pose_utils.h
 
 /opt/ros/noetic/include/dynamic_reconfigure/BoolParameter.h
 string

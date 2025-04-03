@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/local_sensing_node/lib/local_sensing_node/pcl_render_node"
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/local_sensing_node/lib/local_sensing_node/pcl_render_node.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/local_sensing_node/lib/local_sensing_node/pcl_render_node"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/local_sensing_node/lib/local_sensing_node/pcl_render_node.pdb"
   "CMakeFiles/pcl_render_node.dir/src/pointcloud_render_node.cpp.o"
 )
 

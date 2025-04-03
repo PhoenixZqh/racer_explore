@@ -1,8 +1,0 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/plan_manage/cmake/plan_manageConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/libplan_manage.so
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/fast_planner_node
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/proc_msg2
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/traj_server
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/plan_manage/proc_msg
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/plan_manage.pc

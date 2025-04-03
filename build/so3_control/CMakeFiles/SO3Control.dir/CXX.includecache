@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control/include/so3_control/SO3Control.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/include/so3_control/SO3Control.h
 Eigen/Geometry
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_control/src/SO3Control.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/src/SO3Control.cpp
 iostream
 -
 so3_control/SO3Control.h

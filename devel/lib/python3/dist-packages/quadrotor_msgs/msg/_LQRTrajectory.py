@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py
+/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py

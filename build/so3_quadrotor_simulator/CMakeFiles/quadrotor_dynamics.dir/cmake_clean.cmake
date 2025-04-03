@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/so3_quadrotor_simulator/lib/libquadrotor_dynamics.pdb"
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/so3_quadrotor_simulator/lib/libquadrotor_dynamics.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/so3_quadrotor_simulator/lib/libquadrotor_dynamics.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/so3_quadrotor_simulator/lib/libquadrotor_dynamics.so"
   "CMakeFiles/quadrotor_dynamics.dir/src/dynamics/Quadrotor.cpp.o"
 )
 

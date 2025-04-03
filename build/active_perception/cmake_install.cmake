@@ -1,8 +1,8 @@
-# Install script for directory: /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/active_perception
+# Install script for directory: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zqh/phoenixZ/racer_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zqh/phoenixZ/racer_explore/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,103 +49,103 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zqh/phoenixZ/racer_ws/install/_setup_util.py")
+   "/home/zqh/phoenixZ/racer_explore/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_ws/install" TYPE PROGRAM FILES "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE PROGRAM FILES "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zqh/phoenixZ/racer_ws/install/env.sh")
+   "/home/zqh/phoenixZ/racer_explore/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_ws/install" TYPE PROGRAM FILES "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE PROGRAM FILES "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zqh/phoenixZ/racer_ws/install/setup.bash;/home/zqh/phoenixZ/racer_ws/install/local_setup.bash")
+   "/home/zqh/phoenixZ/racer_explore/install/setup.bash;/home/zqh/phoenixZ/racer_explore/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_ws/install" TYPE FILE FILES
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/setup.bash"
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/setup.bash"
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zqh/phoenixZ/racer_ws/install/setup.sh;/home/zqh/phoenixZ/racer_ws/install/local_setup.sh")
+   "/home/zqh/phoenixZ/racer_explore/install/setup.sh;/home/zqh/phoenixZ/racer_explore/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_ws/install" TYPE FILE FILES
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/setup.sh"
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/setup.sh"
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zqh/phoenixZ/racer_ws/install/setup.zsh;/home/zqh/phoenixZ/racer_ws/install/local_setup.zsh")
+   "/home/zqh/phoenixZ/racer_explore/install/setup.zsh;/home/zqh/phoenixZ/racer_explore/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_ws/install" TYPE FILE FILES
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/setup.zsh"
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/setup.zsh"
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zqh/phoenixZ/racer_ws/install/.rosinstall")
+   "/home/zqh/phoenixZ/racer_explore/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_ws/install" TYPE FILE FILES "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/active_perception.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/active_perception.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/active_perception/cmake" TYPE FILE FILES
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/active_perceptionConfig.cmake"
-    "/home/zqh/phoenixZ/racer_ws/build/active_perception/catkin_generated/installspace/active_perceptionConfig-version.cmake"
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/active_perceptionConfig.cmake"
+    "/home/zqh/phoenixZ/racer_explore/build/active_perception/catkin_generated/installspace/active_perceptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/active_perception" TYPE FILE FILES "/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/active_perception/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/active_perception" TYPE FILE FILES "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/zqh/phoenixZ/racer_ws/build/active_perception/gtest/cmake_install.cmake")
+  include("/home/zqh/phoenixZ/racer_explore/build/active_perception/gtest/cmake_install.cmake")
 
 endif()
 
@@ -157,5 +157,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zqh/phoenixZ/racer_ws/build/active_perception/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zqh/phoenixZ/racer_explore/build/active_perception/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/include/plan_env/linear_obj_model.hpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/linear_obj_model.hpp
 Eigen/Eigen
 -
 algorithm
@@ -14,9 +14,9 @@ algorithm
 iostream
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/src/obj_generator.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/obj_generator.cpp
 visualization_msgs/Marker.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/src/visualization_msgs/Marker.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/visualization_msgs/Marker.h
 ros/ros.h
 -
 geometry_msgs/PoseStamped.h

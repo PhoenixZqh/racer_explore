@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/active_perception/include/active_perception/frontier_finder.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/frontier_finder.h
 ros/ros.h
 -
 Eigen/Eigen
@@ -20,7 +20,7 @@ list
 utility
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/active_perception/include/active_perception/heading_planner.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/heading_planner.h
 vector
 -
 unordered_map
@@ -42,7 +42,7 @@ pcl/point_types.h
 pcl/kdtree/kdtree_flann.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h
 plan_env/edt_environment.h
 -
 unordered_map
@@ -52,7 +52,7 @@ utility
 bspline/non_uniform_bspline.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h
 Eigen/Eigen
 -
 algorithm
@@ -60,7 +60,7 @@ algorithm
 iostream
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h
 Eigen/Eigen
 -
 active_perception/traj_visibility.h
@@ -70,7 +70,7 @@ bspline/non_uniform_bspline.h
 ros/ros.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h
 Eigen/Eigen
 -
 iostream
@@ -86,7 +86,7 @@ string
 unordered_map
 -
 plan_env/edt_environment.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/path_searching/include/path_searching/plan_env/edt_environment.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/plan_env/edt_environment.h
 boost/functional/hash.hpp
 -
 queue
@@ -94,7 +94,7 @@ queue
 path_searching/matrix_hash.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/path_searching/include/path_searching/kinodynamic_astar.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/kinodynamic_astar.h
 Eigen/Eigen
 -
 iostream
@@ -112,7 +112,7 @@ string
 unordered_map
 -
 plan_env/edt_environment.h
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/path_searching/include/path_searching/plan_env/edt_environment.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/plan_env/edt_environment.h
 boost/functional/hash.hpp
 -
 queue
@@ -120,15 +120,15 @@ queue
 path_searching/matrix_hash.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/path_searching/include/path_searching/matrix_hash.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/matrix_hash.h
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/path_searching/include/path_searching/topo_prm.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/topo_prm.h
 plan_env/edt_environment.h
 -
 random
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h
 Eigen/Eigen
 -
 iostream
@@ -138,7 +138,7 @@ utility
 plan_env/obj_predictor.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h
 Eigen/Eigen
 -
 algorithm
@@ -154,13 +154,13 @@ ros/ros.h
 visualization_msgs/Marker.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/include/plan_env/raycast.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/raycast.h
 Eigen/Eigen
 -
 vector
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h
 Eigen/Eigen
 -
 Eigen/StdVector
@@ -176,7 +176,7 @@ pcl/point_cloud.h
 pcl/point_types.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/include/plan_manage/plan_container.hpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/plan_container.hpp
 Eigen/Eigen
 -
 vector
@@ -192,7 +192,7 @@ path_searching/topo_prm.h
 active_perception/traj_visibility.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h
 bspline_opt/bspline_optimizer.h
 -
 bspline/non_uniform_bspline.h
@@ -214,7 +214,7 @@ plan_manage/plan_container.hpp
 ros/ros.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp
 plan_manage/planner_manager.h
 -
 plan_env/sdf_map.h
@@ -232,17 +232,7 @@ pcl_conversions/pcl_conversions.h
 visualization_msgs/Marker.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/src/planner_manager_dev.cpp
-plan_manage/planner_manager.h
--
-plan_env/sdf_map.h
--
-future
--
-pcl_conversions/pcl_conversions.h
--
-
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h
 Eigen/Eigen
 -
 vector

@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_ws/devel/.private/multi_map_server:$CMAKE_PREFIX_PATH"
-export PWD='/home/zqh/phoenixZ/racer_ws/build/multi_map_server'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_ws/devel/.private/multi_map_server/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/multi_map_server:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/multi_map_server:$CMAKE_PREFIX_PATH"
+export PWD='/home/zqh/phoenixZ/racer_explore/build/multi_map_server'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/multi_map_server/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/multi_map_server:$ROS_PACKAGE_PATH"

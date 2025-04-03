@@ -1,0 +1,155 @@
+[35m[1mScanning dependencies of target plan_manage[0m
+[35m[1mScanning dependencies of target fast_planner_node[0m
+[ 12%] Built target traj_server
+[ 25%] Built target proc_msg
+[ 37%] Built target proc_msg2
+[ 43%] [32mBuilding CXX object CMakeFiles/plan_manage.dir/src/planner_manager.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o[0m
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::kinodynamicReplan(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:160:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_pos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  160 |     Eigen::Vector3d [01;35m[Kinit_pos[m[K = start_pt;
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:161:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_vel[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  161 |     Eigen::Vector3d [01;35m[Kinit_vel[m[K = start_vel;
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:162:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_acc[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  162 |     Eigen::Vector3d [01;35m[Kinit_acc[m[K = start_acc;
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:184:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_search[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  184 |     double [01;35m[Kt_search[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:225:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_opt[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  225 |     double [01;35m[Kt_opt[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::kinodynamicReplan(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:160:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_pos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  160 |     Eigen::Vector3d [01;35m[Kinit_pos[m[K = start_pt;
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:161:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_vel[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  161 |     Eigen::Vector3d [01;35m[Kinit_vel[m[K = start_vel;
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:162:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_acc[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  162 |     Eigen::Vector3d [01;35m[Kinit_acc[m[K = start_acc;
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:184:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_search[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  184 |     double [01;35m[Kt_search[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:225:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_opt[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  225 |     double [01;35m[Kt_opt[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::planGlobalTraj(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:312:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  312 |     for (int i = 0; [01;35m[Ki < points.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::planGlobalTraj(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:312:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  312 |     for (int i = 0; [01;35m[Ki < points.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::topoReplan(bool)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:435:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  435 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:441:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  441 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i) optimize_threads[i].join();
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::topoReplan(bool)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:435:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  435 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:441:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  441 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i) optimize_threads[i].join();
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::refineTraj(fast_planner::NonUniformBspline&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:473:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kt1[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  473 |     ros::Time [01;35m[Kt1[m[K = ros::Time::now();
+      |               [01;35m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::reparamBspline(fast_planner::NonUniformBspline&, double, Eigen::MatrixXd&, double&, double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:519:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kprev_num[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  519 |     int [01;35m[Kprev_num[m[K = bspline.getControlPoint().rows();
+      |         [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::optimizeTopoBspline(double, double, std::vector<Eigen::Matrix<double, 3, 1> >, int)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:561:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  561 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 6[m[K) ROS_WARN("Incorrect guide for 3 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::refineTraj(fast_planner::NonUniformBspline&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:473:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kt1[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  473 |     ros::Time [01;35m[Kt1[m[K = ros::Time::now();
+      |               [01;35m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:566:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  566 |         for (int i = 0; [01;35m[Ki < tmp_pts.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:568:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  568 |             if (i % 2 == 1 && i >= 5 && [01;35m[Ki <= tmp_pts.size() - 6[m[K) guide_pts.push_back(tmp_pts[i]);
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:570:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  570 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 8[m[K) ROS_WARN("Incorrect guide for 4 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::reparamBspline(fast_planner::NonUniformBspline&, double, Eigen::MatrixXd&, double&, double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:519:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kprev_num[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  519 |     int [01;35m[Kprev_num[m[K = bspline.getControlPoint().rows();
+      |         [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:575:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  575 |     double [01;35m[Ktm1[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:584:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  584 |     double [01;35m[Ktm2[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:595:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm3[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  595 |     double [01;35m[Ktm3[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::optimizeTopoBspline(double, double, std::vector<Eigen::Matrix<double, 3, 1> >, int)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:561:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  561 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 6[m[K) ROS_WARN("Incorrect guide for 3 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:566:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  566 |         for (int i = 0; [01;35m[Ki < tmp_pts.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:568:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  568 |             if (i % 2 == 1 && i >= 5 && [01;35m[Ki <= tmp_pts.size() - 6[m[K) guide_pts.push_back(tmp_pts[i]);
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:570:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  570 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 8[m[K) ROS_WARN("Incorrect guide for 4 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:575:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  575 |     double [01;35m[Ktm1[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:584:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  584 |     double [01;35m[Ktm2[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:595:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm3[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  595 |     double [01;35m[Ktm3[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::planYaw(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:772:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  772 |     for (int i = 0; [01;35m[Ki < waypts.size()[m[K; ++i) path_yaw.push_back(waypts[i][0]);
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::planYaw(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:772:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  772 |     for (int i = 0; [01;35m[Ki < waypts.size()[m[K; ++i) path_yaw.push_back(waypts[i][0]);
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::planYawExplore(const Vector3d&, const double&, bool, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:816:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krelax_num1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  816 |         const int [01;35m[Krelax_num1[m[K = pp_.relax_time1_ / dt_yaw;
+      |                   [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:882:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kt1[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  882 |     auto [01;35m[Kt1[m[K = ros::Time::now();
+      |          [01;35m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::planYawExplore(const Vector3d&, const double&, bool, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:816:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krelax_num1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  816 |         const int [01;35m[Krelax_num1[m[K = pp_.relax_time1_ / dt_yaw;
+      |                   [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:882:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kt1[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  882 |     auto [01;35m[Kt1[m[K = ros::Time::now();
+      |          [01;35m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::findCollisionRange(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:674:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kt_e[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  674 |     sn = ceil([01;35m[K(t_mp - t_e)[m[K / dt);
+      |               [01;35m[K~~~~~~^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::findCollisionRange(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:674:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kt_e[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  674 |     sn = ceil([01;35m[K(t_mp - t_e)[m[K / dt);
+      |               [01;35m[K~~~~~~^~~~~~[m[K
+[ 62%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/fast_planner_node[0m
+[ 62%] [32m[1mLinking CXX shared library /home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/libplan_manage.so[0m
+[ 68%] Built target plan_manage
+[100%] Built target fast_planner_node

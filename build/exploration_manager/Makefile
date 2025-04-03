@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/exploration_manager
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/exploration_manager
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

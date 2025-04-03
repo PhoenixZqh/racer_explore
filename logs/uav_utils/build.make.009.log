@@ -1,7 +1,7 @@
-/usr/bin/cmake -S/home/racer_ws/src/RACER/uav_simulator/Utils/uav_utils -B/home/racer_ws/build/uav_utils --check-build-system CMakeFiles/Makefile.cmake 0
-/usr/bin/cmake -E cmake_progress_start /home/racer_ws/build/uav_utils/CMakeFiles /home/racer_ws/build/uav_utils/CMakeFiles/progress.marks
+/usr/bin/cmake -S/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/uav_utils -B/home/zqh/phoenixZ/racer_explore/build/uav_utils --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles /home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/progress.marks
 /usr/bin/make -f CMakeFiles/Makefile2 all
-make[1]: Entering directory '/home/racer_ws/build/uav_utils'
-make[1]: Nothing to be done for 'all'.
-make[1]: Leaving directory '/home/racer_ws/build/uav_utils'
-/usr/bin/cmake -E cmake_progress_start /home/racer_ws/build/uav_utils/CMakeFiles 0
+make[1]: 进入目录“/home/zqh/phoenixZ/racer_explore/build/uav_utils”
+make[1]: 对“all”无需做任何事。
+make[1]: 离开目录“/home/zqh/phoenixZ/racer_explore/build/uav_utils”
+/usr/bin/cmake -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles 0

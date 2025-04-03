@@ -1,46 +1,12 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./setup.bash
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./setup.sh
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./local_setup.sh
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./local_setup.zsh
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./_setup_util.py
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./setup.zsh
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./env.sh
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./cmake.lock
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/./local_setup.bash
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/setup.bash, /home/racer_ws/devel/./setup.bash)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/setup.sh, /home/racer_ws/devel/./setup.sh)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/local_setup.sh, /home/racer_ws/devel/./local_setup.sh)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/local_setup.zsh, /home/racer_ws/devel/./local_setup.zsh)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/_setup_util.py, /home/racer_ws/devel/./_setup_util.py)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/setup.zsh, /home/racer_ws/devel/./setup.zsh)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/env.sh, /home/racer_ws/devel/./env.sh)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/cmake.lock, /home/racer_ws/devel/./cmake.lock)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/local_setup.bash, /home/racer_ws/devel/./local_setup.bash)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake, /home/racer_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake, /home/racer_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake)
-Cleaning: (/home/racer_ws/devel/.private/catkin_tools_prebuild/lib/pkgconfig/catkin_tools_prebuild.pc, /home/racer_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc)
-Unlinking: /home/racer_ws/devel/./setup.bash
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/./setup.sh
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/./local_setup.sh
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/./local_setup.zsh
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/./_setup_util.py
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/./setup.zsh
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/./env.sh
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/./local_setup.bash
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
-Already unlinked: {}
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./setup.bash
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./setup.sh
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./local_setup.sh
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./local_setup.zsh
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./_setup_util.py
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./setup.zsh
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./env.sh
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./cmake.lock
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/./local_setup.bash
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/catkin_tools_prebuild.pc

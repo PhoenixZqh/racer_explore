@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/pose_utils/lib/libpose_utils.pdb"
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/pose_utils/lib/libpose_utils.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/pose_utils/lib/libpose_utils.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/pose_utils/lib/libpose_utils.so"
   "CMakeFiles/pose_utils.dir/src/pose_utils.cpp.o"
 )
 

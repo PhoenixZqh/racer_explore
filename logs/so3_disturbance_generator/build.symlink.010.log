@@ -1,17 +1,4 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/so3_disturbance_generator/so3_disturbance_generator
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/so3_disturbance_generator.pc
-Cleaning: (/home/racer_ws/devel/.private/so3_disturbance_generator/cmake.lock, /home/racer_ws/devel/./cmake.lock)
-Cleaning: (/home/racer_ws/devel/.private/so3_disturbance_generator/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig-version.cmake, /home/racer_ws/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig-version.cmake)
-Cleaning: (/home/racer_ws/devel/.private/so3_disturbance_generator/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig.cmake, /home/racer_ws/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig.cmake)
-Cleaning: (/home/racer_ws/devel/.private/so3_disturbance_generator/lib/so3_disturbance_generator/so3_disturbance_generator, /home/racer_ws/devel/lib/so3_disturbance_generator/so3_disturbance_generator)
-Cleaning: (/home/racer_ws/devel/.private/so3_disturbance_generator/lib/pkgconfig/so3_disturbance_generator.pc, /home/racer_ws/devel/lib/pkgconfig/so3_disturbance_generator.pc)
-Unlinking: /home/racer_ws/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig-version.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/so3_disturbance_generator/so3_disturbance_generator
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/pkgconfig/so3_disturbance_generator.pc
-Already unlinked: {}
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_disturbance_generator/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig-version.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig-version.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_disturbance_generator/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/so3_disturbance_generator/cmake/so3_disturbance_generatorConfig.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_disturbance_generator/lib/so3_disturbance_generator/so3_disturbance_generator, /home/zqh/phoenixZ/racer_explore/devel/lib/so3_disturbance_generator/so3_disturbance_generator)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_disturbance_generator/lib/pkgconfig/so3_disturbance_generator.pc, /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/so3_disturbance_generator.pc)

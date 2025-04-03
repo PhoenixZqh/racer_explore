@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/multi_map_server
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/multi_map_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/multi_map_server
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/multi_map_server
 
 # Utility rule file for multi_map_server_gennodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/multi_map_server_gennodejs.dir/clean:
 .PHONY : CMakeFiles/multi_map_server_gennodejs.dir/clean
 
 CMakeFiles/multi_map_server_gennodejs.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/multi_map_server && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/multi_map_server /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/multi_map_server /home/zqh/phoenixZ/racer_ws/build/multi_map_server /home/zqh/phoenixZ/racer_ws/build/multi_map_server /home/zqh/phoenixZ/racer_ws/build/multi_map_server/CMakeFiles/multi_map_server_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/multi_map_server && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/multi_map_server /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/multi_map_server /home/zqh/phoenixZ/racer_explore/build/multi_map_server /home/zqh/phoenixZ/racer_explore/build/multi_map_server /home/zqh/phoenixZ/racer_explore/build/multi_map_server/CMakeFiles/multi_map_server_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/multi_map_server_gennodejs.dir/depend
 

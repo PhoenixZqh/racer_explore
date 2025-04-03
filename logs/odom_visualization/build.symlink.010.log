@@ -1,17 +1,4 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/odom_visualization/cmake/odom_visualizationConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/odom_visualization/cmake/odom_visualizationConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/odom_visualization.pc
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/odom_visualization/odom_visualization
-Cleaning: (/home/racer_ws/devel/.private/odom_visualization/cmake.lock, /home/racer_ws/devel/./cmake.lock)
-Cleaning: (/home/racer_ws/devel/.private/odom_visualization/share/odom_visualization/cmake/odom_visualizationConfig-version.cmake, /home/racer_ws/devel/share/odom_visualization/cmake/odom_visualizationConfig-version.cmake)
-Cleaning: (/home/racer_ws/devel/.private/odom_visualization/share/odom_visualization/cmake/odom_visualizationConfig.cmake, /home/racer_ws/devel/share/odom_visualization/cmake/odom_visualizationConfig.cmake)
-Cleaning: (/home/racer_ws/devel/.private/odom_visualization/lib/pkgconfig/odom_visualization.pc, /home/racer_ws/devel/lib/pkgconfig/odom_visualization.pc)
-Cleaning: (/home/racer_ws/devel/.private/odom_visualization/lib/odom_visualization/odom_visualization, /home/racer_ws/devel/lib/odom_visualization/odom_visualization)
-Unlinking: /home/racer_ws/devel/share/odom_visualization/cmake/odom_visualizationConfig-version.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/odom_visualization/cmake/odom_visualizationConfig.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/pkgconfig/odom_visualization.pc
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/odom_visualization/odom_visualization
-Already unlinked: {}
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/odom_visualization/share/odom_visualization/cmake/odom_visualizationConfig-version.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/odom_visualization/cmake/odom_visualizationConfig-version.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/odom_visualization/share/odom_visualization/cmake/odom_visualizationConfig.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/odom_visualization/cmake/odom_visualizationConfig.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/odom_visualization/lib/pkgconfig/odom_visualization.pc, /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/odom_visualization.pc)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/odom_visualization/lib/odom_visualization/odom_visualization, /home/zqh/phoenixZ/racer_explore/devel/lib/odom_visualization/odom_visualization)

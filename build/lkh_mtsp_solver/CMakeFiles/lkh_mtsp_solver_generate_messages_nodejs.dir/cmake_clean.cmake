@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/lkh_mtsp_solver/share/gennodejs/ros/lkh_mtsp_solver/srv/SolveMTSP.js"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/share/gennodejs/ros/lkh_mtsp_solver/srv/SolveMTSP.js"
   "CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs"
 )
 

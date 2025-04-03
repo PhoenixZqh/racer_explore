@@ -1,4 +1,1 @@
-[35m[1mScanning dependencies of target so3_disturbance_generator[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/so3_disturbance_generator.dir/src/so3_disturbance_generator.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_ws/devel/.private/so3_disturbance_generator/lib/so3_disturbance_generator/so3_disturbance_generator[0m
 [100%] Built target so3_disturbance_generator

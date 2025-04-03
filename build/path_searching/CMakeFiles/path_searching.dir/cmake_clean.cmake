@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/path_searching/lib/libpath_searching.pdb"
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/path_searching/lib/libpath_searching.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/path_searching/lib/libpath_searching.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/path_searching/lib/libpath_searching.so"
   "CMakeFiles/path_searching.dir/src/astar2.cpp.o"
   "CMakeFiles/path_searching.dir/src/kinodynamic_astar.cpp.o"
   "CMakeFiles/path_searching.dir/src/topo_prm.cpp.o"

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /usr/src/googletest/googletest
-# Build directory: /home/zqh/phoenixZ/racer_ws/build/poscmd_2_odom/gtest/googletest
+# Build directory: /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/gtest/googletest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

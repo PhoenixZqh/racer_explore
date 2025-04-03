@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_ws/install
+prefix=/home/zqh/phoenixZ/racer_explore/install
 
 Name: cmake_utils
 Description: Description of cmake_utils

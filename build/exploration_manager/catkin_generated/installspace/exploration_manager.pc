@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_ws/install
+prefix=/home/zqh/phoenixZ/racer_explore/install
 
 Name: exploration_manager
 Description: Description of exploration_manager

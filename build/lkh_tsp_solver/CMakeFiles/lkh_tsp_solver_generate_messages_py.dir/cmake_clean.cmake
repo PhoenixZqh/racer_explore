@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/lkh_tsp_solver/lib/python3/dist-packages/lkh_tsp_solver/srv/_SolveTSP.py"
-  "/home/zqh/phoenixZ/racer_ws/devel/.private/lkh_tsp_solver/lib/python3/dist-packages/lkh_tsp_solver/srv/__init__.py"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/lib/python3/dist-packages/lkh_tsp_solver/srv/_SolveTSP.py"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/lib/python3/dist-packages/lkh_tsp_solver/srv/__init__.py"
   "CMakeFiles/lkh_tsp_solver_generate_messages_py"
 )
 

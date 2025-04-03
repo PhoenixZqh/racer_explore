@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_ws/devel/.private/uav_utils:$CMAKE_PREFIX_PATH"
-export PWD='/home/zqh/phoenixZ/racer_ws/build/uav_utils'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_ws/devel/.private/uav_utils/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/uav_utils:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/uav_utils:$CMAKE_PREFIX_PATH"
+export PWD='/home/zqh/phoenixZ/racer_explore/build/uav_utils'
+export PYTHONPATH="/home/zqh/phoenixZ/racer_explore/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/uav_utils/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/uav_utils:$ROS_PACKAGE_PATH"

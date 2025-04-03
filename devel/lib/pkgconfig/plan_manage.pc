@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/plan_manage/lib/pkgconfig/plan_manage.pc
+/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/pkgconfig/plan_manage.pc

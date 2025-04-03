@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/zqh/phoenixZ/racer_ws/build/uav_utils/CMakeFiles/CMakeTmp
+Change Dir: /home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1f6b2/fast && /usr/bin/make -f CMakeFiles/cmTC_1f6b2.dir/build.make CMakeFiles/cmTC_1f6b2.dir/build
-make[1]: 进入目录“/home/zqh/phoenixZ/racer_ws/build/uav_utils/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1f6b2.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1f6b2.dir/src.c.o   -c /home/zqh/phoenixZ/racer_ws/build/uav_utils/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1f6b2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f6b2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_1f6b2.dir/src.c.o  -o cmTC_1f6b2 
-/usr/bin/ld: CMakeFiles/cmTC_1f6b2.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_daaa8/fast && /usr/bin/make -f CMakeFiles/cmTC_daaa8.dir/build.make CMakeFiles/cmTC_daaa8.dir/build
+make[1]: 进入目录“/home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_daaa8.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_daaa8.dir/src.c.o   -c /home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_daaa8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daaa8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_daaa8.dir/src.c.o  -o cmTC_daaa8 
+/usr/bin/ld: CMakeFiles/cmTC_daaa8.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_1f6b2.dir/build.make:87：cmTC_1f6b2] 错误 1
-make[1]: 离开目录“/home/zqh/phoenixZ/racer_ws/build/uav_utils/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_1f6b2/fast] 错误 2
+make[1]: *** [CMakeFiles/cmTC_daaa8.dir/build.make:87：cmTC_daaa8] 错误 1
+make[1]: 离开目录“/home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_daaa8/fast] 错误 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/zqh/phoenixZ/racer_ws/build/uav_utils/CMakeFiles/CMakeTmp
+Change Dir: /home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_be481/fast && /usr/bin/make -f CMakeFiles/cmTC_be481.dir/build.make CMakeFiles/cmTC_be481.dir/build
-make[1]: 进入目录“/home/zqh/phoenixZ/racer_ws/build/uav_utils/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_be481.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_be481.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_be481
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be481.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_be481.dir/CheckFunctionExists.c.o  -o cmTC_be481  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_e2856/fast && /usr/bin/make -f CMakeFiles/cmTC_e2856.dir/build.make CMakeFiles/cmTC_e2856.dir/build
+make[1]: 进入目录“/home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e2856.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e2856.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e2856
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2856.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e2856.dir/CheckFunctionExists.c.o  -o cmTC_e2856  -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_be481.dir/build.make:87：cmTC_be481] 错误 1
-make[1]: 离开目录“/home/zqh/phoenixZ/racer_ws/build/uav_utils/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_be481/fast] 错误 2
+make[1]: *** [CMakeFiles/cmTC_e2856.dir/build.make:87：cmTC_e2856] 错误 1
+make[1]: 离开目录“/home/zqh/phoenixZ/racer_explore/build/uav_utils/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_e2856/fast] 错误 2
 
 
 

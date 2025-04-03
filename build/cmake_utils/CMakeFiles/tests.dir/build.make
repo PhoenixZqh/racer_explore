@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/cmake_utils
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/cmake_utils
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/cmake_utils
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/cmake_utils
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/cmake_utils && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/cmake_utils /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/cmake_utils /home/zqh/phoenixZ/racer_ws/build/cmake_utils /home/zqh/phoenixZ/racer_ws/build/cmake_utils /home/zqh/phoenixZ/racer_ws/build/cmake_utils/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/cmake_utils && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/cmake_utils /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/cmake_utils /home/zqh/phoenixZ/racer_explore/build/cmake_utils /home/zqh/phoenixZ/racer_explore/build/cmake_utils /home/zqh/phoenixZ/racer_explore/build/cmake_utils/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

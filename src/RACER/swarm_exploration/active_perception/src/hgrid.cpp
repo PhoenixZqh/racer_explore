@@ -7,10 +7,8 @@
 
 namespace fast_planner
 {
-
-HGrid::HGrid(const shared_ptr<EDTEnvironment>& edt, ros::NodeHandle& nh)
+HGrid::HGrid(const shared_ptr<EDTEnvironment> &edt, ros::NodeHandle &nh)
 {
-
     this->edt_ = edt;
     nh.param("partitioning/consistent_cost", consistent_cost_, 3.5);
     nh.param("partitioning/consistent_cost2", consistent_cost2_, 3.5);
@@ -25,7 +23,7 @@ HGrid::HGrid(const shared_ptr<EDTEnvironment>& edt, ros::NodeHandle& nh)
 
     // Swarm tf
     grid1_->use_swarm_tf_ = grid2_->use_swarm_tf_ = use_swarm_tf_;
-    double yaw                                    = 0.0;
+    double yaw = 0.0;
     rot_sw_ << cos(yaw), -sin(yaw), 0, sin(yaw), cos(yaw), 0, 0, 0, 1;
     trans_sw_ << 0.0, 0.0, 0;
     grid1_->rot_sw_ = grid2_->rot_sw_ = rot_sw_;
@@ -42,18 +40,18 @@ HGrid::HGrid(const shared_ptr<EDTEnvironment>& edt, ros::NodeHandle& nh)
     updateBaseCoor();
 }
 
-HGrid::~HGrid() {}
+HGrid::~HGrid()
+{}
 
 bool HGrid::updateBaseCoor()
 {
-
     // Eigen::Vector4d tf;
     // if (!edt_->sdf_map_->getBaseCoor(1, tf)) return false;
     // double yaw = tf[3];
     // rot_sw_ << cos(yaw), -sin(yaw), 0, sin(yaw), cos(yaw), 0, 0, 0, 1;
     // trans_sw_ = tf.head<3>();
 
-    rot_sw_   = Eigen::Matrix3d::Identity();
+    rot_sw_ = Eigen::Matrix3d::Identity();
     trans_sw_ = Eigen::Vector3d::Zero();
 
     grid1_->rot_sw_ = grid2_->rot_sw_ = rot_sw_;
@@ -64,26 +62,24 @@ bool HGrid::updateBaseCoor()
     return true;
 }
 
-void HGrid::inputFrontiers(const vector<Eigen::Vector3d>& avgs)
+void HGrid::inputFrontiers(const vector<Eigen::Vector3d> &avgs)
 {
     // Input frontier to both levels
     grid1_->inputFrontiers(avgs);
     grid2_->inputFrontiers(avgs);
 }
 
-void HGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, bool reallocated, const vector<int>& last_grid_ids, vector<int>& first_ids,
-                           vector<int>& second_ids)
+void HGrid::updateGridData(const int &drone_id, vector<int> &grid_ids, bool reallocated, const vector<int> &last_grid_ids, vector<int> &first_ids, vector<int> &second_ids)
 {
-
     // Convert grid_ids to the ids of bi-level uniform grid
     vector<int> grid_ids1, grid_ids2;
-    const int   grid_num1 = grid1_->grid_data_.size();
+    const int grid_num1 = grid1_->grid_data_.size();
     for (auto id : grid_ids)
     {
         if (id < grid_num1)
             grid_ids1.push_back(id);
         else
-            grid_ids2.push_back(id - grid_num1);  // Id of level 2 grid
+            grid_ids2.push_back(id - grid_num1); // Id of level 2 grid
     }
 
     // std::cout << "Input ids: ";
@@ -143,7 +139,7 @@ void HGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, bool real
     //   std::cout << id << ", ";
     // std::cout << "" << std::endl;
 
-    vector<int> parti_ids2, parti_ids2_all;  // Should be empty, no partition at level 2
+    vector<int> parti_ids2, parti_ids2_all; // Should be empty, no partition at level 2
     grid2_->updateGridData(drone_id, grid_ids2, parti_ids2, parti_ids2_all);
 
     // std::cout << "updated level 2 ids: ";
@@ -152,7 +148,7 @@ void HGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, bool real
     // std::cout << "" << std::endl;
 
     grid_ids = grid_ids1;
-    for (auto& id : grid_ids2)
+    for (auto &id : grid_ids2)
     {
         grid_ids.push_back(id + grid_num1);
     }
@@ -162,9 +158,8 @@ void HGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, bool real
     getConsistentGrid(last_grid_ids, grid_ids, first_ids, second_ids);
 }
 
-void HGrid::getConsistentGrid(const vector<int>& last_ids, const vector<int>& cur_ids, vector<int>& first_ids, vector<int>& second_ids)
+void HGrid::getConsistentGrid(const vector<int> &last_ids, const vector<int> &cur_ids, vector<int> &first_ids, vector<int> &second_ids)
 {
-
     if (last_ids.empty())
         return;
     // std::cout << "last id: ";
@@ -174,7 +169,7 @@ void HGrid::getConsistentGrid(const vector<int>& last_ids, const vector<int>& cu
 
     // Find the first two level 1 grids in last sequence
     const int grid_num1 = grid1_->grid_data_.size();
-    int       grid_id1  = last_ids[0];
+    int grid_id1 = last_ids[0];
     if (grid_id1 >= grid_num1)
     {
         int tmp = grid_id1 - grid_num1;
@@ -211,7 +206,7 @@ void HGrid::getConsistentGrid(const vector<int>& last_ids, const vector<int>& cu
     {
         if (id == grid_id1)
         {
-            first_ids = { id };
+            first_ids = {id};
             // std::cout << "1" << std::endl;
         }
     }
@@ -232,7 +227,7 @@ void HGrid::getConsistentGrid(const vector<int>& last_ids, const vector<int>& cu
         }
     }
 
-    vector<int>* ids_ptr;
+    vector<int> *ids_ptr;
     if (!first_ids.empty())
     {
         // Already find the first, should find the second
@@ -252,7 +247,7 @@ void HGrid::getConsistentGrid(const vector<int>& last_ids, const vector<int>& cu
     {
         if (id == grid_id2)
         {
-            *ids_ptr = { id };
+            *ids_ptr = {id};
             // std::cout << "3" << std::endl;
             return;
         }
@@ -273,13 +268,13 @@ void HGrid::getConsistentGrid(const vector<int>& last_ids, const vector<int>& cu
     return;
 }
 
-void HGrid::coarseToFineId(const int& coarse, vector<int>& fines)
+void HGrid::coarseToFineId(const int &coarse, vector<int> &fines)
 {
     // 0: 0, 1
     // 1: 2, 3
     // 2: 4, 5
     fines.clear();
-    Eigen::Vector3i cidx;  // coarse idx
+    Eigen::Vector3i cidx; // coarse idx
     grid1_->adrToIndex(coarse, cidx);
 
     vector<Eigen::Vector3i> fine_idxs;
@@ -294,7 +289,7 @@ void HGrid::coarseToFineId(const int& coarse, vector<int>& fines)
     }
 }
 
-void HGrid::fineToCoarseId(const int& fine, int& coarse)
+void HGrid::fineToCoarseId(const int &fine, int &coarse)
 {
     Eigen::Vector3i fidx;
     grid2_->adrToIndex(fine, fidx);
@@ -307,16 +302,27 @@ void HGrid::fineToCoarseId(const int& fine, int& coarse)
     coarse = grid1_->toAddress(cidx);
 }
 
-void HGrid::getCostMatrix(const vector<Eigen::Vector3d>& positions, const vector<Eigen::Vector3d>& velocities, const vector<vector<int>>& first_ids,
-                          const vector<vector<int>>& second_ids, const vector<int>& grid_ids, Eigen::MatrixXd& mat)
+/**
+ * @brief Hgrid生成成本矩阵
+ * @param
+ *      in:  两架无人机的位置、速度、初始网格、次要网格、待分配的网格
+ *      out: 成本矩阵
+ * @example 举例2架无人机，2个网格
+ *      1000, -1000, -1000, 1000, 1000
+ *      1000, 1000,  10000, 2,    3
+ *      1000, 10000, 1000,  3,    2
+ *      0,    0,     0,   1000,   1
+ *      0,    0,     0,    1,    1000
+ */
+void HGrid::getCostMatrix(const vector<Eigen::Vector3d> &positions, const vector<Eigen::Vector3d> &velocities, const vector<vector<int>> &first_ids, const vector<vector<int>> &second_ids, const vector<int> &grid_ids, Eigen::MatrixXd &mat)
 {
     // first_ids and second_ids are drone_num x 1-4 vectors
 
-    // Fill the cost matrix
+    // 设置矩阵尺寸
     const int drone_num = positions.size();
-    const int grid_num  = grid_ids.size();
-    const int dimen     = 1 + drone_num + grid_num;
-    mat                 = Eigen::MatrixXd::Zero(dimen, dimen);
+    const int grid_num = grid_ids.size();
+    const int dimen = 1 + drone_num + grid_num; //矩阵维度，1个虚拟起点+无人机数+网格数
+    mat = Eigen::MatrixXd::Zero(dimen, dimen);  //初始化为0， nxn
 
     // std::cout << "First id: ";
     // for (auto ids : first_ids)
@@ -330,58 +336,61 @@ void HGrid::getCostMatrix(const vector<Eigen::Vector3d>& positions, const vector
     //     std::cout << id << ", ";
     // std::cout << "" << std::endl;
 
-    // Virtual depot to drones
+    //虚拟起点到无人机
     for (int i = 0; i < drone_num; ++i)
     {
-        mat(0, 1 + i) = -1000;
-        mat(1 + i, 0) = 1000;
+        mat(0, 1 + i) = -1000; //从虚拟起点到无人机成本设为-1000 （负值鼓励出发）
+        mat(1 + i, 0) = 1000;  // 从无人机回到虚拟起点的成本设为1000 （大值避免直接返回）
     }
-    // Virtual depot to grid
+
+    //虚拟起点到网格
     for (int i = 0; i < grid_num; ++i)
     {
-        mat(0, 1 + drone_num + i) = 1000;
-        mat(1 + drone_num + i, 0) = 0;
+        mat(0, 1 + drone_num + i) = 1000; //虚拟起点到网格成本设为 1000（禁止直接去网格）
+        mat(1 + drone_num + i, 0) = 0;    // 网格回虚拟起点成本设为 0（允许结束）
     }
-    // Costs between drones
+
+    //无人机间的成本
     for (int i = 0; i < drone_num; ++i)
     {
         for (int j = 0; j < drone_num; ++j)
         {
-            mat(1 + i, 1 + j) = 10000;
+            mat(1 + i, 1 + j) = 10000; // 无人机之间成本设为 10000（超大值，禁止直接连通）
         }
     }
 
-    // Costs from drones to grid
+    //无人机到网格
     for (int i = 0; i < drone_num; ++i)
     {
         for (int j = 0; j < grid_num; ++j)
         {
-            double cost                   = getCostDroneToGrid(positions[i], grid_ids[j], first_ids[i]);
+            double cost = getCostDroneToGrid(positions[i], grid_ids[j], first_ids[i]);
             mat(1 + i, 1 + drone_num + j) = cost;
-            mat(1 + drone_num + j, 1 + i) = 0;
+            mat(1 + drone_num + j, 1 + i) = 0; // 网格到无人机的成本设为 0（单向路径）
         }
     }
-    // Costs between grid
+
+    //网格之间的成本
     for (int i = 0; i < grid_num; ++i)
     {
         for (int j = i + 1; j < grid_num; ++j)
         {
-            double cost                               = getCostGridToGrid(grid_ids[i], grid_ids[j], first_ids, second_ids, drone_num);
+            double cost = getCostGridToGrid(grid_ids[i], grid_ids[j], first_ids, second_ids, drone_num);
             mat(1 + drone_num + i, 1 + drone_num + j) = cost;
             mat(1 + drone_num + j, 1 + drone_num + i) = cost;
         }
     }
 
-    // Diag
+    // 对角线成本
     for (int i = 0; i < dimen; ++i)
     {
         mat(i, i) = 1000;
     }
 }
 
-double HGrid::getCostDroneToGrid(const Eigen::Vector3d& pos, const int& grid_id, const vector<int>& first)
+double HGrid::getCostDroneToGrid(const Eigen::Vector3d &pos, const int &grid_id, const vector<int> &first)
 {
-    auto&  grid = getGrid(grid_id);
+    auto &grid = getGrid(grid_id);
     double dist1, cost;
     dist1 = (pos - grid.center_).norm();
     if (dist1 < 5.0)
@@ -390,7 +399,7 @@ double HGrid::getCostDroneToGrid(const Eigen::Vector3d& pos, const int& grid_id,
         if (path_finder_->search(pos, grid.center_) == Astar::REACH_END)
         {
             auto path = path_finder_->getPath();
-            cost      = path_finder_->pathLength(path);
+            cost = path_finder_->pathLength(path);
         }
         else
         {
@@ -417,10 +426,10 @@ double HGrid::getCostDroneToGrid(const Eigen::Vector3d& pos, const int& grid_id,
     return cost;
 }
 
-double HGrid::getCostGridToGrid(const int& id1, const int& id2, const vector<vector<int>>& firsts, const vector<vector<int>>& seconds, const int& drone_num)
+double HGrid::getCostGridToGrid(const int &id1, const int &id2, const vector<vector<int>> &firsts, const vector<vector<int>> &seconds, const int &drone_num)
 {
-    auto&  grid1     = getGrid(id1);
-    auto&  grid2     = getGrid(id2);
+    auto &grid1 = getGrid(id1);
+    auto &grid2 = getGrid(id2);
     double dist_cost = 0.0;
 
     if (isClose(id1, id2))
@@ -449,7 +458,7 @@ double HGrid::getCostGridToGrid(const int& id1, const int& id2, const vector<vec
             bool is_first, is_second;
             for (int k = 0; k < drone_num; ++k)
             {
-                is_first  = false;
+                is_first = false;
                 is_second = false;
                 for (auto first_id : firsts[k])
                 {
@@ -486,18 +495,18 @@ double HGrid::getCostGridToGrid(const int& id1, const int& id2, const vector<vec
     return dist_cost;
 }
 
-int HGrid::getUnknownCellsNum(const int& grid_id)
+int HGrid::getUnknownCellsNum(const int &grid_id)
 {
     // Get unknown cell number of a grid
     return getGrid(grid_id).unknown_num_;
 }
 
-Eigen::Vector3d HGrid::getCenter(const int& id)
+Eigen::Vector3d HGrid::getCenter(const int &id)
 {
     return getGrid(id).center_;
 }
 
-GridInfo& HGrid::getGrid(const int& id)
+GridInfo &HGrid::getGrid(const int &id)
 {
     int grid_num1 = grid1_->grid_data_.size();
     if (id < grid_num1)
@@ -506,7 +515,7 @@ GridInfo& HGrid::getGrid(const int& id)
         return grid2_->grid_data_[id - grid_num1];
 }
 
-void HGrid::getActiveGrids(vector<int>& grid_ids)
+void HGrid::getActiveGrids(vector<int> &grid_ids)
 {
     grid_ids.clear();
     const int grid_num1 = grid1_->grid_data_.size();
@@ -526,16 +535,16 @@ void HGrid::getActiveGrids(vector<int>& grid_ids)
     }
 }
 
-bool HGrid::getNextGrid(const vector<int>& grid_ids, Eigen::Vector3d& grid_pos, double& grid_yaw)
+bool HGrid::getNextGrid(const vector<int> &grid_ids, Eigen::Vector3d &grid_pos, double &grid_yaw)
 {
     // Current level 1 grid id
     const int grid_num1 = grid1_->grid_data_.size();
-    int       grid_id1;
+    int grid_id1;
     if (grid_ids[0] < grid_num1)
         grid_id1 = grid_ids[0];
     else
     {
-        int fine = grid_ids[0] - grid_num1;  // level 2 id
+        int fine = grid_ids[0] - grid_num1; // level 2 id
         fineToCoarseId(fine, grid_id1);
     }
 
@@ -568,18 +577,18 @@ bool HGrid::getNextGrid(const vector<int>& grid_ids, Eigen::Vector3d& grid_pos, 
     if (grid_id2 == -1)
         return false;
 
-    auto& grid1         = getGrid(grid_id1);
-    auto& grid2         = getGrid(grid_id2);
-    grid_pos            = grid2.center_;
+    auto &grid1 = getGrid(grid_id1);
+    auto &grid2 = getGrid(grid_id2);
+    grid_pos = grid2.center_;
     Eigen::Vector3d dir = grid2.center_ - grid1.center_;
-    grid_yaw            = atan2(dir[1], dir[0]);
+    grid_yaw = atan2(dir[1], dir[0]);
 
     // std::cout << "grid pos: " << grid_pos.transpose() << std::endl;
 
     return true;
 }
 
-bool HGrid::isClose(const int& id1, const int& id2)
+bool HGrid::isClose(const int &id1, const int &id2)
 {
     // Convert to coarse level ids
     const int grid_num1 = grid1_->grid_data_.size();
@@ -612,7 +621,7 @@ bool HGrid::isClose(const int& id1, const int& id2)
     // return false;
 }
 
-bool HGrid::inSameLevel1(const int& id1, const int& id2)
+bool HGrid::inSameLevel1(const int &id1, const int &id2)
 {
     // Check whether two level 2 grids are contained in the same level 1 grid
     const int grid_num1 = grid1_->grid_data_.size();
@@ -629,7 +638,7 @@ bool HGrid::inSameLevel1(const int& id1, const int& id2)
     return false;
 }
 
-bool HGrid::isConsistent(const int& id1, const int& id2)
+bool HGrid::isConsistent(const int &id1, const int &id2)
 {
     const int grid_num1 = grid1_->grid_data_.size();
 
@@ -655,12 +664,12 @@ bool HGrid::isConsistent(const int& id1, const int& id2)
     return false;
 }
 
-void HGrid::getGridTour(const vector<int>& ids, const Eigen::Vector3d& pos, vector<Eigen::Vector3d>& tour, vector<Eigen::Vector3d>& tour2)
+void HGrid::getGridTour(const vector<int> &ids, const Eigen::Vector3d &pos, vector<Eigen::Vector3d> &tour, vector<Eigen::Vector3d> &tour2)
 {
     const int grid_num1 = grid1_->grid_data_.size();
 
     // Get the centers of the visited grids
-    vector<Eigen::Vector3d> centers = { pos };
+    vector<Eigen::Vector3d> centers = {pos};
     for (auto id : ids)
     {
         if (id < grid_num1)
@@ -676,7 +685,7 @@ void HGrid::getGridTour(const vector<int>& ids, const Eigen::Vector3d& pos, vect
     tour = centers;
 
     // Find the exact path visiting the grids
-    tour2 = { pos };
+    tour2 = {pos};
     for (int i = 0; i < centers.size() - 1; ++i)
     {
         path_finder_->reset();
@@ -692,15 +701,15 @@ void HGrid::getGridTour(const vector<int>& ids, const Eigen::Vector3d& pos, vect
     }
 }
 
-void HGrid::getFrontiersInGrid(const vector<int>& grid_ids, vector<int>& ftr_ids)
+void HGrid::getFrontiersInGrid(const vector<int> &grid_ids, vector<int> &ftr_ids)
 {
     ftr_ids.clear();
-    int tmp       = grid_ids.front();
+    int tmp = grid_ids.front();
     int grid_num1 = grid1_->grid_data_.size();
 
     if (tmp < grid_num1)
     {
-        auto& grid = grid1_->grid_data_[tmp];
+        auto &grid = grid1_->grid_data_[tmp];
         for (auto pair : grid.contained_frontier_ids_)
             ftr_ids.push_back(pair.first);
     }
@@ -713,7 +722,7 @@ void HGrid::getFrontiersInGrid(const vector<int>& grid_ids, vector<int>& ftr_ids
         vector<int> fines;
         coarseToFineId(coarse, fines);
 
-        vector<int> allocated_fines;  // level 2 grid allocated to current drone
+        vector<int> allocated_fines; // level 2 grid allocated to current drone
         for (auto fine : fines)
         {
             for (auto id : grid_ids)
@@ -728,16 +737,16 @@ void HGrid::getFrontiersInGrid(const vector<int>& grid_ids, vector<int>& ftr_ids
 
         for (auto fine : allocated_fines)
         {
-            auto& grid = grid2_->grid_data_[fine];
+            auto &grid = grid2_->grid_data_[fine];
             for (auto pair : grid.contained_frontier_ids_)
                 ftr_ids.push_back(pair.first);
         }
     }
 }
 
-void HGrid::checkFirstGrid(const int& id)
+void HGrid::checkFirstGrid(const int &id)
 {
-    auto& grid = getGrid(id);
+    auto &grid = getGrid(id);
 
     std::cout << "grid id: " << id << std::endl;
     std::cout << "unknown num: " << grid.unknown_num_ << std::endl;
@@ -745,12 +754,12 @@ void HGrid::checkFirstGrid(const int& id)
     std::cout << "relevant: " << grid.is_cur_relevant_ << ", " << grid.is_prev_relevant_ << std::endl;
 }
 
-void HGrid::getGridMarker(vector<Eigen::Vector3d>& pts1, vector<Eigen::Vector3d>& pts2)
+void HGrid::getGridMarker(vector<Eigen::Vector3d> &pts1, vector<Eigen::Vector3d> &pts2)
 {
     pts1.clear();
     pts2.clear();
 
-    for (auto& grid : grid1_->grid_data_)
+    for (auto &grid : grid1_->grid_data_)
     {
         if (!grid.active_)
             continue;
@@ -760,7 +769,7 @@ void HGrid::getGridMarker(vector<Eigen::Vector3d>& pts1, vector<Eigen::Vector3d>
             pts2.push_back(grid.vertices_[(i + 1) % 4]);
         }
     }
-    for (auto& grid : grid2_->grid_data_)
+    for (auto &grid : grid2_->grid_data_)
     {
         if (!grid.active_)
             continue;
@@ -770,20 +779,20 @@ void HGrid::getGridMarker(vector<Eigen::Vector3d>& pts1, vector<Eigen::Vector3d>
             pts2.push_back(grid.vertices_[(i + 1) % 4]);
         }
     }
-    for (auto& pt : pts1)
+    for (auto &pt : pts1)
         pt[2] = 0.5;
-    for (auto& pt : pts2)
+    for (auto &pt : pts2)
         pt[2] = 0.5;
 }
 
-void HGrid::getGridMarker2(vector<Eigen::Vector3d>& pts, vector<string>& texts)
+void HGrid::getGridMarker2(vector<Eigen::Vector3d> &pts, vector<string> &texts)
 {
     pts.clear();
     texts.clear();
 
     for (int i = 0; i < grid1_->grid_data_.size(); ++i)
     {
-        auto& grid = grid1_->grid_data_[i];
+        auto &grid = grid1_->grid_data_[i];
         if (!grid.active_ || !grid.is_cur_relevant_)
             continue;
         pts.push_back(grid.center_);
@@ -792,7 +801,7 @@ void HGrid::getGridMarker2(vector<Eigen::Vector3d>& pts, vector<string>& texts)
     const int grid_num1 = grid1_->grid_data_.size();
     for (int i = 0; i < grid2_->grid_data_.size(); ++i)
     {
-        auto& grid = grid2_->grid_data_[i];
+        auto &grid = grid2_->grid_data_[i];
         if (!grid.active_ || !grid.is_cur_relevant_)
             continue;
         pts.push_back(grid.center_);
@@ -800,4 +809,4 @@ void HGrid::getGridMarker2(vector<Eigen::Vector3d>& pts, vector<string>& texts)
     }
 }
 
-}  // namespace fast_planner
+} // namespace fast_planner

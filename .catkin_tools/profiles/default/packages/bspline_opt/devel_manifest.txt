@@ -1,0 +1,6 @@
+RACER/swarm_exploration/bspline_opt
+/home/zqh/phoenixZ/racer_explore/devel/.private/bspline_opt/cmake.lock /home/zqh/phoenixZ/racer_explore/devel/./cmake.lock
+/home/zqh/phoenixZ/racer_explore/devel/.private/bspline_opt/share/bspline_opt/cmake/bspline_optConfig.cmake /home/zqh/phoenixZ/racer_explore/devel/share/bspline_opt/cmake/bspline_optConfig.cmake
+/home/zqh/phoenixZ/racer_explore/devel/.private/bspline_opt/share/bspline_opt/cmake/bspline_optConfig-version.cmake /home/zqh/phoenixZ/racer_explore/devel/share/bspline_opt/cmake/bspline_optConfig-version.cmake
+/home/zqh/phoenixZ/racer_explore/devel/.private/bspline_opt/lib/libbspline_opt.so /home/zqh/phoenixZ/racer_explore/devel/lib/libbspline_opt.so
+/home/zqh/phoenixZ/racer_explore/devel/.private/bspline_opt/lib/pkgconfig/bspline_opt.pc /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/bspline_opt.pc

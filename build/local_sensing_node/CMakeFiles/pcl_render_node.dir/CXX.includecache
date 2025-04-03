@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/local_sensing/src/backward.hpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/local_sensing/src/backward.hpp
 algorithm
 -
 cctype
@@ -126,7 +126,7 @@ utility
 map
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/local_sensing/src/pointcloud_render_node.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/local_sensing/src/pointcloud_render_node.cpp
 fstream
 -
 iostream
@@ -148,7 +148,7 @@ std_msgs/Bool.h
 pcl_conversions/pcl_conversions.h
 -
 opencv2/highgui/highgui.hpp
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/local_sensing/src/opencv2/highgui/highgui.hpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/local_sensing/src/opencv2/highgui/highgui.hpp
 opencv2/opencv.hpp
 -
 opencv2/core/eigen.hpp
@@ -160,7 +160,7 @@ image_transport/image_transport.h
 Eigen/Eigen
 -
 backward.hpp
-/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/local_sensing/src/backward.hpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/local_sensing/src/backward.hpp
 
 /opt/ros/noetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

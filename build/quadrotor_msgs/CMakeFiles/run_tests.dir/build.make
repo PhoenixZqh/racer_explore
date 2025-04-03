@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/quadrotor_msgs
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/quadrotor_msgs
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/quadrotor_msgs /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/quadrotor_msgs /home/zqh/phoenixZ/racer_ws/build/quadrotor_msgs /home/zqh/phoenixZ/racer_ws/build/quadrotor_msgs /home/zqh/phoenixZ/racer_ws/build/quadrotor_msgs/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

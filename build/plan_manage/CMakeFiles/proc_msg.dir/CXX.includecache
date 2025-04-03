@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PositionCommand.h
+/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PositionCommand.h
 string
 -
 vector
@@ -30,7 +30,7 @@ geometry_msgs/Vector3.h
 geometry_msgs/Vector3.h
 -
 
-/home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/plan_manage/test/process_msg.cpp
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/test/process_msg.cpp
 ros/ros.h
 -
 visualization_msgs/Marker.h

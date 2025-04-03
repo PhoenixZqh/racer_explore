@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_ws/devel/.private/so3_quadrotor_simulator:$CMAKE_PREFIX_PATH"
-export PWD='/home/zqh/phoenixZ/racer_ws/build/so3_quadrotor_simulator'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_ws/devel/.private/so3_quadrotor_simulator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/so3_quadrotor_simulator:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/so3_quadrotor_simulator:$CMAKE_PREFIX_PATH"
+export PWD='/home/zqh/phoenixZ/racer_explore/build/so3_quadrotor_simulator'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/so3_quadrotor_simulator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator:$ROS_PACKAGE_PATH"

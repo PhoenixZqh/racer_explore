@@ -1,1 +1,1 @@
-/usr/bin/cmake -S/home/racer_ws/src/RACER/uav_simulator/Utils/waypoint_generator -B/home/racer_ws/build/waypoint_generator --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -S/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator -B/home/zqh/phoenixZ/racer_explore/build/waypoint_generator --check-build-system CMakeFiles/Makefile.cmake 0

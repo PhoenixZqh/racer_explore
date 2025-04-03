@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_mtsp_solver
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/lkh_mtsp_solver
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/lkh_mtsp_solver
 
 # Utility rule file for lkh_mtsp_solver_gennodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/lkh_mtsp_solver_gennodejs.dir/clean:
 .PHONY : CMakeFiles/lkh_mtsp_solver_gennodejs.dir/clean
 
 CMakeFiles/lkh_mtsp_solver_gennodejs.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/lkh_mtsp_solver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_mtsp_solver /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/utils/lkh_mtsp_solver /home/zqh/phoenixZ/racer_ws/build/lkh_mtsp_solver /home/zqh/phoenixZ/racer_ws/build/lkh_mtsp_solver /home/zqh/phoenixZ/racer_ws/build/lkh_mtsp_solver/CMakeFiles/lkh_mtsp_solver_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/lkh_mtsp_solver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver /home/zqh/phoenixZ/racer_explore/build/lkh_mtsp_solver /home/zqh/phoenixZ/racer_explore/build/lkh_mtsp_solver /home/zqh/phoenixZ/racer_explore/build/lkh_mtsp_solver/CMakeFiles/lkh_mtsp_solver_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lkh_mtsp_solver_gennodejs.dir/depend
 

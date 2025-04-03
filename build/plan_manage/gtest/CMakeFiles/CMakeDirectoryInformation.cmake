@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/zqh/phoenixZ/racer_ws/build/plan_manage")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/zqh/phoenixZ/racer_explore/build/plan_manage")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

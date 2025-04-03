@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_ws/devel/.private/odom_visualization
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/odom_visualization
 
 Name: odom_visualization
 Description: Description of odom_visualization

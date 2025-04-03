@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/exploration_manager/share/exploration_manager/cmake/exploration_manager-msg-paths.cmake
+/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/exploration_manager/cmake/exploration_manager-msg-paths.cmake

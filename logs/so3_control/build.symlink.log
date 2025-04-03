@@ -1,21 +1,5 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/libSO3Control.so
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/libso3_control_nodelet.so
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/so3_control.pc
-Cleaning: (/home/racer_ws/devel/.private/so3_control/cmake.lock, /home/racer_ws/devel/./cmake.lock)
-Cleaning: (/home/racer_ws/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig.cmake, /home/racer_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake)
-Cleaning: (/home/racer_ws/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig-version.cmake, /home/racer_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake)
-Cleaning: (/home/racer_ws/devel/.private/so3_control/lib/libSO3Control.so, /home/racer_ws/devel/lib/libSO3Control.so)
-Cleaning: (/home/racer_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so, /home/racer_ws/devel/lib/libso3_control_nodelet.so)
-Cleaning: (/home/racer_ws/devel/.private/so3_control/lib/pkgconfig/so3_control.pc, /home/racer_ws/devel/lib/pkgconfig/so3_control.pc)
-Unlinking: /home/racer_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/libSO3Control.so
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/libso3_control_nodelet.so
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/pkgconfig/so3_control.pc
-Already unlinked: {}
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/so3_control/cmake/so3_controlConfig.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig-version.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/so3_control/cmake/so3_controlConfig-version.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libSO3Control.so, /home/zqh/phoenixZ/racer_explore/devel/lib/libSO3Control.so)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so, /home/zqh/phoenixZ/racer_explore/devel/lib/libso3_control_nodelet.so)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/pkgconfig/so3_control.pc, /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/so3_control.pc)

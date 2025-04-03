@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/waypoint_generator
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/waypoint_generator
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/waypoint_generator
 
 # Utility rule file for clean_test_results.
 
@@ -57,7 +57,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/waypoint_generator
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/zqh/phoenixZ/racer_ws/build/waypoint_generator/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/zqh/phoenixZ/racer_explore/build/waypoint_generator/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -74,6 +74,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/zqh/phoenixZ/racer_ws/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_ws/build/waypoint_generator /home/zqh/phoenixZ/racer_ws/build/waypoint_generator /home/zqh/phoenixZ/racer_ws/build/waypoint_generator/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

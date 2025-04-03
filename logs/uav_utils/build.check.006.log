@@ -1,1 +1,0 @@
-/usr/bin/cmake -S/home/zqh/phoenixZ/racer_ws/src/RACER/uav_simulator/Utils/uav_utils -B/home/zqh/phoenixZ/racer_ws/build/uav_utils --check-build-system CMakeFiles/Makefile.cmake 0

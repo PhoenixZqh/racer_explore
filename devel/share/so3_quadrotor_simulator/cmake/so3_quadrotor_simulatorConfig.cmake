@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_quadrotor_simulator/share/so3_quadrotor_simulator/cmake/so3_quadrotor_simulatorConfig.cmake
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_quadrotor_simulator/share/so3_quadrotor_simulator/cmake/so3_quadrotor_simulatorConfig.cmake

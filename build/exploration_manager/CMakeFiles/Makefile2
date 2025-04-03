@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_ws/src/RACER/swarm_exploration/exploration_manager
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_ws/build/exploration_manager
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/exploration_manager
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -212,14 +212,14 @@ CMakeFiles/exploration_manager_generate_messages_py.dir/all: CMakeFiles/_explora
 CMakeFiles/exploration_manager_generate_messages_py.dir/all: CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_py.dir/build.make CMakeFiles/exploration_manager_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_py.dir/build.make CMakeFiles/exploration_manager_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=22,23,24,25,26,27 "Built target exploration_manager_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=22,23,24,25,26,27 "Built target exploration_manager_generate_messages_py"
 .PHONY : CMakeFiles/exploration_manager_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -239,14 +239,14 @@ CMakeFiles/exploration_manager_generate_messages_py.dir/clean:
 CMakeFiles/ground_node.dir/all:
 	$(MAKE) -f CMakeFiles/ground_node.dir/build.make CMakeFiles/ground_node.dir/depend
 	$(MAKE) -f CMakeFiles/ground_node.dir/build.make CMakeFiles/ground_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=36,37,38 "Built target ground_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=36,37,38 "Built target ground_node"
 .PHONY : CMakeFiles/ground_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ground_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ground_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/ground_node.dir/rule
 
 # Convenience name for target.
@@ -271,14 +271,14 @@ CMakeFiles/exploration_manager_generate_messages_nodejs.dir/all: CMakeFiles/_exp
 CMakeFiles/exploration_manager_generate_messages_nodejs.dir/all: CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_nodejs.dir/build.make CMakeFiles/exploration_manager_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_nodejs.dir/build.make CMakeFiles/exploration_manager_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=17,18,19,20,21 "Built target exploration_manager_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=17,18,19,20,21 "Built target exploration_manager_generate_messages_nodejs"
 .PHONY : CMakeFiles/exploration_manager_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -303,14 +303,14 @@ CMakeFiles/exploration_manager_generate_messages_lisp.dir/all: CMakeFiles/_explo
 CMakeFiles/exploration_manager_generate_messages_lisp.dir/all: CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_lisp.dir/build.make CMakeFiles/exploration_manager_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_lisp.dir/build.make CMakeFiles/exploration_manager_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=12,13,14,15,16 "Built target exploration_manager_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=12,13,14,15,16 "Built target exploration_manager_generate_messages_lisp"
 .PHONY : CMakeFiles/exploration_manager_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -335,14 +335,14 @@ CMakeFiles/exploration_manager_generate_messages_eus.dir/all: CMakeFiles/_explor
 CMakeFiles/exploration_manager_generate_messages_eus.dir/all: CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_eus.dir/build.make CMakeFiles/exploration_manager_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_eus.dir/build.make CMakeFiles/exploration_manager_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target exploration_manager_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target exploration_manager_generate_messages_eus"
 .PHONY : CMakeFiles/exploration_manager_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -362,14 +362,14 @@ CMakeFiles/exploration_manager_generate_messages_eus.dir/clean:
 CMakeFiles/exploration_manager_genpy.dir/all: CMakeFiles/exploration_manager_generate_messages_py.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_genpy.dir/build.make CMakeFiles/exploration_manager_genpy.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_genpy.dir/build.make CMakeFiles/exploration_manager_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_genpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_genpy"
 .PHONY : CMakeFiles/exploration_manager_genpy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_genpy.dir/rule
 
 # Convenience name for target.
@@ -389,14 +389,14 @@ CMakeFiles/exploration_manager_genpy.dir/clean:
 CMakeFiles/exploration_manager_gencpp.dir/all: CMakeFiles/exploration_manager_generate_messages_cpp.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_gencpp.dir/build.make CMakeFiles/exploration_manager_gencpp.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_gencpp.dir/build.make CMakeFiles/exploration_manager_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_gencpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_gencpp"
 .PHONY : CMakeFiles/exploration_manager_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_gencpp.dir/rule
 
 # Convenience name for target.
@@ -421,14 +421,14 @@ CMakeFiles/exploration_manager_generate_messages_cpp.dir/all: CMakeFiles/_explor
 CMakeFiles/exploration_manager_generate_messages_cpp.dir/all: CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_cpp.dir/build.make CMakeFiles/exploration_manager_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages_cpp.dir/build.make CMakeFiles/exploration_manager_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=1,2,3,4,5 "Built target exploration_manager_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=1,2,3,4,5 "Built target exploration_manager_generate_messages_cpp"
 .PHONY : CMakeFiles/exploration_manager_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -448,14 +448,14 @@ CMakeFiles/exploration_manager_generate_messages_cpp.dir/clean:
 CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -475,14 +475,14 @@ CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -502,14 +502,14 @@ CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -529,14 +529,14 @@ CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/plan_env_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_nodejs.dir/build.make CMakeFiles/plan_env_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_nodejs.dir/build.make CMakeFiles/plan_env_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_nodejs"
 .PHONY : CMakeFiles/plan_env_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/plan_env_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plan_env_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/plan_env_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -556,14 +556,14 @@ CMakeFiles/plan_env_generate_messages_nodejs.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -583,14 +583,14 @@ CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -610,14 +610,14 @@ CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -637,14 +637,14 @@ CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -664,14 +664,14 @@ CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -691,14 +691,14 @@ CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -718,14 +718,14 @@ CMakeFiles/tests.dir/clean:
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target clean_test_results"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -745,14 +745,14 @@ CMakeFiles/clean_test_results.dir/clean:
 CMakeFiles/roscpp_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
 .PHONY : CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -772,14 +772,14 @@ CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
 CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -799,14 +799,14 @@ CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_cpp"
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -826,14 +826,14 @@ CMakeFiles/lkh_mtsp_solver_generate_messages_cpp.dir/clean:
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -853,14 +853,14 @@ CMakeFiles/run_tests.dir/clean:
 CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/all:
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/depend
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_HGrid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_HGrid"
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/rule
 
 # Convenience name for target.
@@ -880,14 +880,14 @@ CMakeFiles/_exploration_manager_generate_messages_check_deps_HGrid.dir/clean:
 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -907,14 +907,14 @@ CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/download_extra_data.dir/all:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target download_extra_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target download_extra_data"
 .PHONY : CMakeFiles/download_extra_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/download_extra_data.dir/rule
 
 # Convenience name for target.
@@ -934,14 +934,14 @@ CMakeFiles/download_extra_data.dir/clean:
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -961,14 +961,14 @@ CMakeFiles/doxygen.dir/clean:
 CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -988,14 +988,14 @@ CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 CMakeFiles/plan_env_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_cpp.dir/build.make CMakeFiles/plan_env_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_cpp.dir/build.make CMakeFiles/plan_env_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_cpp"
 .PHONY : CMakeFiles/plan_env_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/plan_env_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plan_env_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/plan_env_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1015,14 +1015,14 @@ CMakeFiles/plan_env_generate_messages_cpp.dir/clean:
 CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_py"
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1042,14 +1042,14 @@ CMakeFiles/lkh_mtsp_solver_generate_messages_py.dir/clean:
 CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1069,14 +1069,14 @@ CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
 CMakeFiles/roscpp_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
 .PHONY : CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1096,14 +1096,14 @@ CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
 CMakeFiles/exploration_manager_gennodejs.dir/all: CMakeFiles/exploration_manager_generate_messages_nodejs.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_gennodejs.dir/build.make CMakeFiles/exploration_manager_gennodejs.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_gennodejs.dir/build.make CMakeFiles/exploration_manager_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_gennodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_gennodejs"
 .PHONY : CMakeFiles/exploration_manager_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_gennodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -1123,14 +1123,14 @@ CMakeFiles/exploration_manager_gennodejs.dir/clean:
 CMakeFiles/exploration_manager_geneus.dir/all: CMakeFiles/exploration_manager_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_geneus.dir/build.make CMakeFiles/exploration_manager_geneus.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_geneus.dir/build.make CMakeFiles/exploration_manager_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_geneus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_geneus"
 .PHONY : CMakeFiles/exploration_manager_geneus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_geneus.dir/rule
 
 # Convenience name for target.
@@ -1150,14 +1150,14 @@ CMakeFiles/exploration_manager_geneus.dir/clean:
 CMakeFiles/roscpp_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
 .PHONY : CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1177,14 +1177,14 @@ CMakeFiles/roscpp_generate_messages_eus.dir/clean:
 CMakeFiles/bspline_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_eus.dir/build.make CMakeFiles/bspline_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_eus.dir/build.make CMakeFiles/bspline_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_eus"
 .PHONY : CMakeFiles/bspline_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bspline_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bspline_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/bspline_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1204,14 +1204,14 @@ CMakeFiles/bspline_generate_messages_eus.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1231,14 +1231,14 @@ CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1258,14 +1258,14 @@ CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/bspline_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_cpp.dir/build.make CMakeFiles/bspline_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_cpp.dir/build.make CMakeFiles/bspline_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_cpp"
 .PHONY : CMakeFiles/bspline_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bspline_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bspline_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/bspline_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1285,14 +1285,14 @@ CMakeFiles/bspline_generate_messages_cpp.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1312,14 +1312,14 @@ CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/std_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1339,14 +1339,14 @@ CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
 .PHONY : CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1366,14 +1366,14 @@ CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
 CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_eus"
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1393,14 +1393,14 @@ CMakeFiles/lkh_tsp_solver_generate_messages_eus.dir/clean:
 CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/all:
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/depend
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_GridTour"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_GridTour"
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/rule
 
 # Convenience name for target.
@@ -1420,14 +1420,14 @@ CMakeFiles/_exploration_manager_generate_messages_check_deps_GridTour.dir/clean:
 CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1447,14 +1447,14 @@ CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/bspline_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_nodejs.dir/build.make CMakeFiles/bspline_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_nodejs.dir/build.make CMakeFiles/bspline_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_nodejs"
 .PHONY : CMakeFiles/bspline_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bspline_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bspline_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/bspline_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1474,14 +1474,14 @@ CMakeFiles/bspline_generate_messages_nodejs.dir/clean:
 CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1501,14 +1501,14 @@ CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_py"
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/quadrotor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/quadrotor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1528,14 +1528,14 @@ CMakeFiles/quadrotor_msgs_generate_messages_py.dir/clean:
 CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1555,14 +1555,14 @@ CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1582,14 +1582,14 @@ CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/plan_env_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_lisp.dir/build.make CMakeFiles/plan_env_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_lisp.dir/build.make CMakeFiles/plan_env_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_lisp"
 .PHONY : CMakeFiles/plan_env_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/plan_env_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plan_env_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/plan_env_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1609,14 +1609,14 @@ CMakeFiles/plan_env_generate_messages_lisp.dir/clean:
 CMakeFiles/plan_env_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_py.dir/build.make CMakeFiles/plan_env_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_py.dir/build.make CMakeFiles/plan_env_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_py"
 .PHONY : CMakeFiles/plan_env_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/plan_env_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plan_env_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/plan_env_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1636,14 +1636,14 @@ CMakeFiles/plan_env_generate_messages_py.dir/clean:
 CMakeFiles/bspline_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_py.dir/build.make CMakeFiles/bspline_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_py.dir/build.make CMakeFiles/bspline_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_py"
 .PHONY : CMakeFiles/bspline_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bspline_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bspline_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/bspline_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1663,14 +1663,14 @@ CMakeFiles/bspline_generate_messages_py.dir/clean:
 CMakeFiles/exploration_manager_genlisp.dir/all: CMakeFiles/exploration_manager_generate_messages_lisp.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_genlisp.dir/build.make CMakeFiles/exploration_manager_genlisp.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_genlisp.dir/build.make CMakeFiles/exploration_manager_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_genlisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_genlisp"
 .PHONY : CMakeFiles/exploration_manager_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_genlisp.dir/rule
 
 # Convenience name for target.
@@ -1690,14 +1690,14 @@ CMakeFiles/exploration_manager_genlisp.dir/clean:
 CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_lisp"
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1717,14 +1717,14 @@ CMakeFiles/lkh_tsp_solver_generate_messages_lisp.dir/clean:
 CMakeFiles/exploration_node.dir/all:
 	$(MAKE) -f CMakeFiles/exploration_node.dir/build.make CMakeFiles/exploration_node.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_node.dir/build.make CMakeFiles/exploration_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=28,29,30,31 "Built target exploration_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=28,29,30,31 "Built target exploration_node"
 .PHONY : CMakeFiles/exploration_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_node.dir/rule
 
 # Convenience name for target.
@@ -1744,14 +1744,14 @@ CMakeFiles/exploration_node.dir/clean:
 CMakeFiles/bspline_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_lisp.dir/build.make CMakeFiles/bspline_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/bspline_generate_messages_lisp.dir/build.make CMakeFiles/bspline_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target bspline_generate_messages_lisp"
 .PHONY : CMakeFiles/bspline_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bspline_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bspline_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/bspline_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1771,14 +1771,14 @@ CMakeFiles/bspline_generate_messages_lisp.dir/clean:
 CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_py"
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1798,14 +1798,14 @@ CMakeFiles/lkh_tsp_solver_generate_messages_py.dir/clean:
 CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_nodejs"
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1825,14 +1825,14 @@ CMakeFiles/lkh_tsp_solver_generate_messages_nodejs.dir/clean:
 CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/all:
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/depend
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_PairOptResponse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_PairOptResponse"
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir/rule
 
 # Convenience name for target.
@@ -1852,14 +1852,14 @@ CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOptResponse.dir
 CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_eus"
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1879,14 +1879,14 @@ CMakeFiles/lkh_mtsp_solver_generate_messages_eus.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1906,14 +1906,14 @@ CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
 CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_lisp"
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1933,14 +1933,14 @@ CMakeFiles/lkh_mtsp_solver_generate_messages_lisp.dir/clean:
 CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/build.make CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_tsp_solver_generate_messages_cpp"
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1960,14 +1960,14 @@ CMakeFiles/lkh_tsp_solver_generate_messages_cpp.dir/clean:
 CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/all:
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/build.make CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target lkh_mtsp_solver_generate_messages_nodejs"
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1987,14 +1987,14 @@ CMakeFiles/lkh_mtsp_solver_generate_messages_nodejs.dir/clean:
 CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -2014,14 +2014,14 @@ CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -2041,14 +2041,14 @@ CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target quadrotor_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -2072,14 +2072,14 @@ CMakeFiles/exploration_manager_generate_messages.dir/all: CMakeFiles/exploration
 CMakeFiles/exploration_manager_generate_messages.dir/all: CMakeFiles/exploration_manager_generate_messages_cpp.dir/all
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages.dir/build.make CMakeFiles/exploration_manager_generate_messages.dir/depend
 	$(MAKE) -f CMakeFiles/exploration_manager_generate_messages.dir/build.make CMakeFiles/exploration_manager_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_generate_messages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target exploration_manager_generate_messages"
 .PHONY : CMakeFiles/exploration_manager_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exploration_manager_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exploration_manager_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/exploration_manager_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -2099,14 +2099,14 @@ CMakeFiles/exploration_manager_generate_messages.dir/clean:
 CMakeFiles/plan_env_generate_messages_eus.dir/all:
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_eus.dir/build.make CMakeFiles/plan_env_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/plan_env_generate_messages_eus.dir/build.make CMakeFiles/plan_env_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target plan_env_generate_messages_eus"
 .PHONY : CMakeFiles/plan_env_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/plan_env_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plan_env_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/plan_env_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -2126,14 +2126,14 @@ CMakeFiles/plan_env_generate_messages_eus.dir/clean:
 CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/all:
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/depend
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_DroneState"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_DroneState"
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/rule
 
 # Convenience name for target.
@@ -2153,14 +2153,14 @@ CMakeFiles/_exploration_manager_generate_messages_check_deps_DroneState.dir/clea
 CMakeFiles/roscpp_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
 .PHONY : CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2180,14 +2180,14 @@ CMakeFiles/roscpp_generate_messages_py.dir/clean:
 CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all:
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/depend
 	$(MAKE) -f CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/build.make CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_PairOpt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num= "Built target _exploration_manager_generate_messages_check_deps_PairOpt"
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : CMakeFiles/_exploration_manager_generate_messages_check_deps_PairOpt.dir/rule
 
 # Convenience name for target.
@@ -2208,14 +2208,14 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=34,35 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=34,35 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -2235,14 +2235,14 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=32,33 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=32,33 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -2262,14 +2262,14 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=41,42 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=41,42 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -2289,14 +2289,14 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles --progress-num=39,40 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=39,40 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_ws/build/exploration_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.

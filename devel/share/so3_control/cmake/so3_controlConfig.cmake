@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_ws/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig.cmake
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig.cmake

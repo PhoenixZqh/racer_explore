@@ -1,21 +1,5 @@
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/traj_utils/cmake/traj_utilsConfig.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/share/traj_utils/cmake/traj_utilsConfig-version.cmake
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/libtraj_utils.so
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/pkgconfig/traj_utils.pc
-Symlinking /home/zqh/phoenixZ/racer_ws/devel/lib/traj_utils/process_msg
-Cleaning: (/home/racer_ws/devel/.private/traj_utils/cmake.lock, /home/racer_ws/devel/./cmake.lock)
-Cleaning: (/home/racer_ws/devel/.private/traj_utils/share/traj_utils/cmake/traj_utilsConfig.cmake, /home/racer_ws/devel/share/traj_utils/cmake/traj_utilsConfig.cmake)
-Cleaning: (/home/racer_ws/devel/.private/traj_utils/share/traj_utils/cmake/traj_utilsConfig-version.cmake, /home/racer_ws/devel/share/traj_utils/cmake/traj_utilsConfig-version.cmake)
-Cleaning: (/home/racer_ws/devel/.private/traj_utils/lib/libtraj_utils.so, /home/racer_ws/devel/lib/libtraj_utils.so)
-Cleaning: (/home/racer_ws/devel/.private/traj_utils/lib/pkgconfig/traj_utils.pc, /home/racer_ws/devel/lib/pkgconfig/traj_utils.pc)
-Cleaning: (/home/racer_ws/devel/.private/traj_utils/lib/traj_utils/process_msg, /home/racer_ws/devel/lib/traj_utils/process_msg)
-Unlinking: /home/racer_ws/devel/share/traj_utils/cmake/traj_utilsConfig.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/share/traj_utils/cmake/traj_utilsConfig-version.cmake
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/libtraj_utils.so
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/pkgconfig/traj_utils.pc
-Already unlinked: {}
-Unlinking: /home/racer_ws/devel/lib/traj_utils/process_msg
-Already unlinked: {}
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/share/traj_utils/cmake/traj_utilsConfig.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/traj_utils/cmake/traj_utilsConfig.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/share/traj_utils/cmake/traj_utilsConfig-version.cmake, /home/zqh/phoenixZ/racer_explore/devel/share/traj_utils/cmake/traj_utilsConfig-version.cmake)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib/libtraj_utils.so, /home/zqh/phoenixZ/racer_explore/devel/lib/libtraj_utils.so)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib/pkgconfig/traj_utils.pc, /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/traj_utils.pc)
+Linked: (/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib/traj_utils/process_msg, /home/zqh/phoenixZ/racer_explore/devel/lib/traj_utils/process_msg)
