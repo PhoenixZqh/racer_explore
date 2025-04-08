@@ -1,0 +1,14 @@
+<robot name="mycarwithlidarandcamera" xmlns:xacro="http://wiki.ros.org/xacro">
+ 
+ 
+    <xacro:include filename="interial.xacro" /> 
+    <xacro:include filename="car.xacro" />
+    <xacro:include filename="cam.xacro" />
+    <xacro:include filename="lidar.xacro" />
+ 
+    <xacro:include filename="/home/zqh/phoenixZ/racer_explore/gazebo/move.xacro"/>
+    <xacro:include filename="/home/zqh/phoenixZ/racer_explore/gazebo/laser.xacro"/>
+    <xacro:include filename="/home/zqh/phoenixZ/racer_explore/gazebo/camera.xacro"/>
+    <xacro:include filename="/home/zqh/phoenixZ/racer_explore/gazebo/kinect.xacro"/>
+    
+</robot>

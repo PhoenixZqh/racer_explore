@@ -682,6 +682,9 @@ bspline_opt_DIR:PATH=/home/zqh/phoenixZ/racer_explore/devel/share/bspline_opt/cm
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
@@ -765,7 +768,7 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libcv_bridge.so
+lib:FILEPATH=/opt/ros/noetic/lib/librosconsole_bridge.so
 
 //The directory containing a CMake configuration file for lkh_mtsp_solver.
 lkh_mtsp_solver_DIR:PATH=/home/zqh/phoenixZ/racer_explore/devel/share/lkh_mtsp_solver/cmake
@@ -806,6 +809,9 @@ plan_env_DIR:PATH=/home/zqh/phoenixZ/racer_explore/devel/share/plan_env/cmake
 //The directory containing a CMake configuration file for plan_manage.
 plan_manage_DIR:PATH=/home/zqh/phoenixZ/racer_explore/devel/share/plan_manage/cmake
 
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
+
 //The directory containing a CMake configuration file for poly_traj.
 poly_traj_DIR:PATH=/home/zqh/phoenixZ/racer_explore/devel/share/poly_traj/cmake
 
@@ -814,6 +820,9 @@ quadrotor_msgs_DIR:PATH=/home/zqh/phoenixZ/racer_explore/devel/share/quadrotor_m
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/noetic/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/noetic/share/roscpp/cmake
@@ -827,6 +836,12 @@ roscpp_traits_DIR:PATH=/opt/ros/noetic/share/roscpp_traits/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/noetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/noetic/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 
@@ -838,6 +853,12 @@ std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for traj_utils.
 traj_utils_DIR:PATH=/home/zqh/phoenixZ/racer_explore/devel/share/traj_utils/cmake
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
+
+//The directory containing a CMake configuration file for xacro.
+xacro_DIR:PATH=/opt/ros/noetic/share/xacro/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake

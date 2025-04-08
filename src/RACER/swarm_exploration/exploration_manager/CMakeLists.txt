@@ -25,6 +25,9 @@ find_package(catkin REQUIRED COMPONENTS
   plan_manage
   cv_bridge
   message_generation
+  
+  xacro
+  urdf
 )
 
 add_message_files(
