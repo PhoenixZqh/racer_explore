@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /PlanningCmd1
-        - /ExplorePlanner1
         - /ExplorePlanner1/frontier11/Namespaces1
         - /ExplorePlanner1/viewpoints1
         - /Maps1/occupied_all11/Autocompute Value Bounds1
@@ -77,7 +76,7 @@ Visualization Manager:
           Marker Topic: /planning/travel_traj_1
           Name: executed_traj1
           Namespaces:
-            "": true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -85,7 +84,7 @@ Visualization Manager:
           Marker Topic: /planning/position_cmd_vis_1
           Name: position_cmd1
           Namespaces:
-            current_pose: true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -93,7 +92,7 @@ Visualization Manager:
           Marker Topic: /planning/travel_traj_2
           Name: executed_traj2
           Namespaces:
-            "": true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -101,7 +100,7 @@ Visualization Manager:
           Marker Topic: /planning/position_cmd_vis_2
           Name: position_cmd2
           Namespaces:
-            current_pose: true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -141,35 +140,35 @@ Visualization Manager:
     - Class: rviz/Group
       Displays:
         - Class: rviz/Marker
-          Enabled: true
+          Enabled: false
           Marker Topic: /planning_vis/frontier_1
           Name: frontier1
           Namespaces:
-            frontier: true
+            {}
           Queue Size: 10000
-          Value: true
+          Value: false
         - Class: rviz/Marker
           Enabled: true
           Marker Topic: /planning_vis/trajectory_1
           Name: traj1
           Namespaces:
-            B-Spline: true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
-          Enabled: true
+          Enabled: false
           Marker Topic: /planning_vis/frontier_2
           Name: frontier2
           Namespaces:
-            frontier: true
+            {}
           Queue Size: 10000
-          Value: true
+          Value: false
         - Class: rviz/Marker
           Enabled: true
           Marker Topic: /planning_vis/trajectory_2
           Name: traj2
           Namespaces:
-            B-Spline: true
+            {}
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -326,7 +325,7 @@ Visualization Manager:
                 {}
               Queue Size: 1000
               Value: false
-          Enabled: true
+          Enabled: false
           Name: viewpoints
       Enabled: true
       Name: ExplorePlanner
@@ -1091,13 +1090,13 @@ Visualization Manager:
       Use rainbow: true
       Value: true
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: /planning_vis/frontier_1
       Name: Marker
       Namespaces:
-        frontier: true
+        {}
       Queue Size: 100
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 255; 255; 243

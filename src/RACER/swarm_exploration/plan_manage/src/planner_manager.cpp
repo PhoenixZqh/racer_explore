@@ -107,9 +107,9 @@ void FastPlannerManager::setGlobalWaypoints(vector<Eigen::Vector3d> &waypoints)
 }
 
 /**
- * @brief 检测当前无人机的飞行轨迹会不会撞倒障碍物
- * TODO： 这里是无人机轨迹与障碍物会不会发生碰撞
+ * @brief 检测当前无人机的飞行轨迹会不会撞倒
  */
+//TODO： 这里是无人机轨迹与障碍物会不会发生碰撞
 bool FastPlannerManager::checkTrajCollision(double &distance)
 {
     double t_now = (ros::Time::now() - local_data_.start_time_).toSec();

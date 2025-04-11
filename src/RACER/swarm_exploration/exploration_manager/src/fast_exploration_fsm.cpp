@@ -91,7 +91,8 @@ int FastExplorationFSM::getId()
 
 void FastExplorationFSM::FSMCallback(const ros::TimerEvent &e)
 {
-    ROS_INFO_STREAM_THROTTLE(1.0, "***[FSM]: Drone " << getId() << " state: " << fd_->state_str_[int(state_)]);
+    ROS_INFO_STREAM_THROTTLE(1.0, "\n\n========================   Current Frame: ========================\n");
+    ROS_INFO_STREAM_THROTTLE(1.0, "[FSM]: Drone " << getId() << " state: " << fd_->state_str_[int(state_)]);
 
     switch (state_)
     {
@@ -631,7 +632,7 @@ void FastExplorationFSM::frontierCallback(const ros::TimerEvent &e)
 
         expl_manager_->updateFrontierStruct(fd_->odom_pos_);
 
-        cout << "cur uav odom: " << fd_->odom_pos_.transpose() << endl;
+        // cout << "cur uav odom: " << fd_->odom_pos_.transpose() << endl;
 
         vector<int> tmp_id1;
         vector<vector<int>> tmp_id2;
@@ -700,7 +701,7 @@ void FastExplorationFSM::safetyCallback(const ros::TimerEvent &e)
         bool safe = planner_manager_->checkTrajCollision(dist);
         if (!safe)
         {
-            ROS_WARN("Replan: collision detected==================================");
+            ROS_INFO("Replan: collision detected!!!!!!");
             fd_->avoid_collision_ = true;
             transitState(PLAN_TRAJ, "safetyCallback");
         }
@@ -861,7 +862,7 @@ void FastExplorationFSM::optTimerCallback(const ros::TimerEvent &e)
     if (select_id == -1)
         return;
 
-    std::cout << "#####\t" << getId() << "Select: " << select_id << "\t####" << std::endl;
+    std::cout << getId() << "\tSelect\t: " << select_id << std::endl;
     // ROS_WARN("*** drone%d select drone%d ***", getId(), select_id);
 
     // 合并配对双方网格
@@ -909,7 +910,7 @@ void FastExplorationFSM::optTimerCallback(const ros::TimerEvent &e)
 
     double alloc_time = (ros::Time::now() - t1).toSec();
 
-    std::cout << "\n==================== Grid Allocation ====================" << std::endl;
+    std::cout << "\n******************** Grid Allocation ********************" << std::endl;
     std::cout << "Drone " << getId() << " original grids: ";
     for (auto id : state1.grid_ids_)
     {
@@ -938,17 +939,17 @@ void FastExplorationFSM::optTimerCallback(const ros::TimerEvent &e)
     }
     std::cout << std::endl;
 
-    std::cout << "=========================================================\n"
+    std::cout << "************************************************************\n"
               << std::endl;
 
     //检查分配之后的路径代价
     double prev_app1 = expl_manager_->computeGridPathCost(state1.pos_, state1.grid_ids_, first_ids1, {first_ids1, first_ids2}, {second_ids1, second_ids2}, true);
     double prev_app2 = expl_manager_->computeGridPathCost(state2.pos_, state2.grid_ids_, first_ids2, {first_ids1, first_ids2}, {second_ids1, second_ids2}, true);
-    std::cout << "prev cost: " << prev_app1 << ", " << prev_app2 << ", " << prev_app1 + prev_app2 << std::endl;
+    // std::cout << "prev cost: " << prev_app1 << ", " << prev_app2 << ", " << prev_app1 + prev_app2 << std::endl;
 
     double cur_app1 = expl_manager_->computeGridPathCost(state1.pos_, ego_ids, first_ids1, {first_ids1, first_ids2}, {second_ids1, second_ids2}, true);
     double cur_app2 = expl_manager_->computeGridPathCost(state2.pos_, other_ids, first_ids2, {first_ids1, first_ids2}, {second_ids1, second_ids2}, true);
-    std::cout << "cur cost : " << cur_app1 << ", " << cur_app2 << ", " << cur_app1 + cur_app2 << std::endl;
+    // std::cout << "cur cost : " << cur_app1 << ", " << cur_app2 << ", " << cur_app1 + cur_app2 << std::endl;
 
     // 如果重新分配之后的成本比之前的高很多，放弃这次配对
     if (cur_app1 + cur_app2 > prev_app1 + prev_app2 + 0.1)
@@ -1182,10 +1183,11 @@ void FastExplorationFSM::optResMsgCallback(const exploration_manager::PairOptRes
         return;
 
     ed->wait_response_ = false; //收到回复就调整等待状态为false
-    ROS_WARN("get response %d", int(msg->status));
+    // ROS_WARN("get response %d", int(msg->status));
 
-    if (msg->status != 1)
-        return; // Receive 1 for valid opt
+    std::cout << "get response : " << int(msg->status) << std::endl;
+
+    if (msg->status != 1) return; // Receive 1 for valid opt
 
     auto &state1 = ed->swarm_state_[getId() - 1];
     auto &state2 = ed->swarm_state_[msg->from_drone_id - 1];

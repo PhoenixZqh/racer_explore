@@ -128,8 +128,6 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
     ros::Time t1 = ros::Time::now();
     auto t2 = t1;
 
-    std::cout << "开始位置: " << pos.transpose() << ", 速度: " << vel.transpose() << ", 加速度: " << acc.transpose() << std::endl;
-
     //规划全局和局部巡游，找下个视点
     ed_->frontier_tour_.clear();
     Vector3d next_pos;
@@ -140,19 +138,17 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
     // findGlobalTour(pos, vel, yaw, indices);
     findGridAndFrontierPath(pos, vel, yaw, grid_ids, frontier_ids); //查询有些网格和前沿
 
-    // 第一种情况：没网格
+    //! 第一种情况：没网格有前沿 计算当前位置到前沿视点代价最小的
     if (grid_ids.empty())
     {
         return NO_GRID;
 
-        // 没网格也得动，找到最近的前沿
         ROS_WARN("Empty grid");
 
         double min_cost = 100000;
         int min_cost_id = -1;
         vector<Vector3d> tmp_path;
 
-        //! 在前沿视点中找一个最小路费的
         for (int i = 0; i < ed_->averages_.size(); ++i)
         {
             auto tmp_cost = ViewNode::computeCost(pos, ed_->points_[i], yaw[0], ed_->yaws_[i], vel, yaw[1], tmp_path);
@@ -166,7 +162,8 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
         next_yaw = ed_->yaws_[min_cost_id];
     }
 
-    // 第二种情况，有网格没前沿
+    //! 第二种情况，有网格没前沿  计算中心到前沿平均位置的代价，不考虑当前无人机的状态
+
     else if (frontier_ids.size() == 0)
     {
         ROS_WARN("No frontier in grid");
@@ -177,7 +174,6 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
         double min_cost = 100000;
         int min_cost_id = -1;
 
-        //! 计算中心到前沿平均位置的路费，不考虑当前无人机的状态
         for (int i = 0; i < ed_->points_.size(); ++i)
         {
             // double cost = (grid_center - ed_->averages_[i]).norm();
@@ -199,7 +195,7 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
         // next_yaw = atan2(dir[1], dir[0]);
     }
 
-    // 如果只有一个前沿
+    //! 如果只有一个前沿，在前沿网格中挑一个路费最低的视点
     else if (frontier_ids.size() == 1)
     {
         ROS_WARN("Single frontier");
@@ -211,10 +207,9 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
             ed_->n_points_.clear();
             vector<vector<double>> n_yaws;
 
-            // 找当前前沿的视点信息
+            // 找当前前沿的视点信息， 然后比较视点和当前位置的最小代价
             frontier_finder_->getViewpointsInfo(pos, {frontier_ids[0]}, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
 
-            //! 如果只有一个网格，在前沿网格中挑一个路费最低的视点
             if (grid_ids.size() <= 1)
             {
                 // Only one grid is assigned
@@ -275,7 +270,7 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
         ed_->refined_ids_.clear();
         ed_->unrefined_points_.clear();
 
-        // 挑几个前沿（最多 refined_num_ 个，比如 3 个）
+        // 挑几个前沿（最多 refined_num_ 个，比如 3 个），过滤距离较远的前沿
         int knum = min(int(frontier_ids.size()), ep_->refined_num_);
         for (int i = 0; i < knum; ++i)
         {
@@ -286,7 +281,7 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
                 break;
         }
 
-        // Get top N viewpoints for the next K frontiers
+        // 获取钱3个前沿的视点
         ed_->n_points_.clear();
         vector<vector<double>> n_yaws;
         frontier_finder_->getViewpointsInfo(pos, ed_->refined_ids_, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
@@ -298,7 +293,7 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
         next_pos = ed_->refined_points_[0];
         next_yaw = refined_yaws[0];
 
-        // Get marker for view visualization
+        // 用于前沿可视化的
         for (int i = 0; i < ed_->refined_points_.size(); ++i)
         {
             Vector3d view = ed_->refined_points_[i] + 2.0 * Vector3d(cos(refined_yaws[i]), sin(refined_yaws[i]), 0);
@@ -315,10 +310,11 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
             ed_->refined_views2_.insert(ed_->refined_views2_.end(), v2.begin(), v2.end());
         }
         double local_time = (ros::Time::now() - t1).toSec();
-        ROS_INFO("Local refine time: %lf", local_time);
+        // ROS_INFO("Local refine time: %lf", local_time);
     }
 
     std::cout << "┌─────────────────────────────────────────────────────────────────────────────────────────────┐ " << std::endl;
+    std::cout << "│ 开始位置: " << pos.transpose() << ", 航向: " << yaw[0] << std::endl;
     std::cout << "│ 下一个视点"
               << "位置： " << next_pos.transpose() << ", 航向： " << next_yaw << std::endl;
     std::cout << "└─────────────────────────────────────────────────────────────────────────────────────────────┘" << std::endl;
@@ -423,7 +419,7 @@ int FastExplorationManager::planTrajToView(const Vector3d &pos, const Vector3d &
     t1 = ros::Time::now();
     planner_manager_->planYawExplore(yaw, next_yaw, true, ep_->relax_time_); // 从现在朝向转到目标朝向
     double yaw_time = (ros::Time::now() - t1).toSec();                       // 记录航向规划所需的时间
-    ROS_INFO("Traj: %lf, yaw: %lf", traj_plan_time, yaw_time);
+    // ROS_INFO("Traj wast time: %lf, yaw waste time: %lf", traj_plan_time, yaw_time);
 
     return SUCCEED;
 }
@@ -668,6 +664,12 @@ void FastExplorationManager::findGlobalTour(const Vector3d &cur_pos, const Vecto
     // if (tsp_time > 0.1) ROS_BREAK();
 }
 
+/**
+ * @brief 优化局部巡游路径
+ * @param 
+ *      输入： 当前位置、速度、yaw、候选视点集、候选航向集
+ *      输出： 优化的视点位置列表、 对应的航向角列表、完整的巡游路径
+ */
 void FastExplorationManager::refineLocalTour(const Vector3d &cur_pos, const Vector3d &cur_vel, const Vector3d &cur_yaw, const vector<vector<Vector3d>> &n_points, const vector<vector<double>> &n_yaws, vector<Vector3d> &refined_pts, vector<double> &refined_yaws)
 {
     double create_time, search_time, parse_time;
@@ -808,7 +810,8 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d> &positi
         capacity += unum;
         // std::cout << "Grid " << i << ": " << unum << std::endl;
     }
-    std::cout << "Total unkown cells: " << capacity << std::endl;
+
+    // std::cout << "Total unkown cells: " << capacity << std::endl;
     capacity = capacity * 0.75 * 0.1; //缩减容量，为了每机负载均衡
 
     // int prob_type;
@@ -910,7 +913,7 @@ void FastExplorationManager::allocateGrids(const vector<Eigen::Vector3d> &positi
     // /home/boboyu/workspaces/hkust_swarm_ws/src/swarm_exploration/utils/lkh_mtsp_solver/resource/amtsp3_1.par");
 
     double mtsp_time = (ros::Time::now() - t1).toSec();
-    std::cout << "Allocation time: " << mtsp_time << std::endl;
+    // std::cout << "Allocation time: " << mtsp_time << std::endl;
 
     // Read results
     t1 = ros::Time::now();
@@ -1014,7 +1017,7 @@ double FastExplorationManager::computeGridPathCost(const Eigen::Vector3d &pos, c
  */
 bool FastExplorationManager::findGlobalTourOfGrid(const vector<Eigen::Vector3d> &positions, const vector<Eigen::Vector3d> &velocities, vector<int> &indices, vector<vector<int>> &others, bool init)
 {
-    ROS_INFO("Find grid tour---------------");
+    ROS_INFO("Find grid tour!");
 
     auto t1 = ros::Time::now();
 

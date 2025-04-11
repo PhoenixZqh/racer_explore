@@ -120,7 +120,8 @@
     "typeinfo": "cpp",
     "variant": "cpp",
     "bit": "cpp",
-    "*.ipp": "cpp"
+    "*.ipp": "cpp",
+    "valarray": "cpp"
   },
   "python.autoComplete.extraPaths": [
     "/home/zqh/phoenixZ/racer_explore/devel/lib/python3/dist-packages",
