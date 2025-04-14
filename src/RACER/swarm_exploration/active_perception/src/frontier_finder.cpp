@@ -402,8 +402,8 @@ void FrontierFinder::updateFrontierCostMatrix()
         }
     first_new_ftr_ = frontiers_.end();
 
-    if (!frontiers_.empty())
-        std::cout << "Frontier cost mat size: " << frontiers_.front().costs_.size() << std::endl;
+    // if (!frontiers_.empty())
+    //     std::cout << "Frontier cost mat size: " << frontiers_.front().costs_.size() << std::endl;
 
     // std::cout << "cost mat size final: " << std::endl;
     // for (auto ftr : frontiers_)

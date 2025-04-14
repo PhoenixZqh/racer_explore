@@ -12,6 +12,7 @@
         <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui_$(arg robot1_name)" />
         <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher_$(arg robot1_name)" args="0 0 0 -1.57 0 -1.57 /$(arg robot1_name)_support /$(arg robot1_name)_support_depth" />
         <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot1_name)" args="-urdf -model $(arg robot1_name) -param /$(arg robot1_name)/robot_description -x 0 -y 0 -z 0" />
+        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot1_name)" />
     </group>
 
     <!-- 第二辆车 -->
@@ -32,8 +33,15 @@
     <!-- 加载 Gazebo 环境 -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="/home/zqh/phoenixZ/racer_explore/gazebo/world/racer.world" />
+        <arg name="use_sim_time" value="true"/>
     </include>
 
     <!-- 启动 RViz -->
     <node pkg="rviz" type="rviz" name="rviz" args="-d /home/zqh/文档/gazebo.rviz"/>
+
+    <!-- 深度相机位姿发布节点 -->
+    <node pkg="racer_explore" type="depth_camera_pose_publisher" name="depth_camera_pose_publisher" output="screen">
+        <param name="robot1_name" value="$(arg robot1_name)" />
+        <param name="robot2_name" value="$(arg robot2_name)" />
+    </node>
 </launch>

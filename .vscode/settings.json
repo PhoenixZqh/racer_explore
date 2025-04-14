@@ -121,7 +121,9 @@
     "variant": "cpp",
     "bit": "cpp",
     "*.ipp": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "hash_map": "cpp",
+    "hash_set": "cpp"
   },
   "python.autoComplete.extraPaths": [
     "/home/zqh/phoenixZ/racer_explore/devel/lib/python3/dist-packages",
@@ -130,5 +132,6 @@
   "python.analysis.extraPaths": [
     "/home/zqh/phoenixZ/racer_explore/devel/lib/python3/dist-packages",
     "/opt/ros/noetic/lib/python3/dist-packages"
-  ]
+  ],
+  "cmake.sourceDirectory": "/home/zqh/phoenixZ/racer_explore/3rd_party/nlopt"
 }

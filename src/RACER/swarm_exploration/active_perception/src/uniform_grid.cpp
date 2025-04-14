@@ -7,10 +7,8 @@
 
 namespace fast_planner
 {
-
-UniformGrid::UniformGrid(const shared_ptr<EDTEnvironment>& edt, ros::NodeHandle& nh, const int& level)
+UniformGrid::UniformGrid(const shared_ptr<EDTEnvironment> &edt, ros::NodeHandle &nh, const int &level)
 {
-
     this->edt_ = edt;
 
     // Read min, max, resolution here
@@ -34,20 +32,21 @@ UniformGrid::UniformGrid(const shared_ptr<EDTEnvironment>& edt, ros::NodeHandle&
     // resolution_ = size / 3;
     for (int i = 0; i < 2; ++i)
     {
-        int num        = ceil(size[i] / grid_size);
+        int num = ceil(size[i] / grid_size);
         resolution_[i] = size[i] / double(num);
         for (int j = 1; j < level; ++j)
             resolution_[i] *= 0.5;
     }
     resolution_[2] = size[2];
-    initialized_   = false;
-    level_         = level;
+    initialized_ = false;
+    level_ = level;
 
     // path_finder_.reset(new Astar);
     // path_finder_->init(nh, edt);
 }
 
-UniformGrid::~UniformGrid() {}
+UniformGrid::~UniformGrid()
+{}
 
 void UniformGrid::initGridData()
 {
@@ -76,7 +75,7 @@ void UniformGrid::initGridData()
             for (int z = 0; z < grid_num_[2]; ++z)
             {
                 Eigen::Vector3i id(x, y, z);
-                auto&           grid = grid_data_[toAddress(id)];
+                auto &grid = grid_data_[toAddress(id)];
 
                 Eigen::Vector3d pos;
                 indexToPos(id, 0.5, pos);
@@ -85,12 +84,12 @@ void UniformGrid::initGridData()
                     pos = rot_sw_ * pos + trans_sw_;
                 }
 
-                grid.center_      = pos;
+                grid.center_ = pos;
                 grid.unknown_num_ = resolution_[0] * resolution_[1] * resolution_[2] / pow(edt_->sdf_map_->getResolution(), 3);
 
                 grid.is_prev_relevant_ = true;
-                grid.is_cur_relevant_  = true;
-                grid.need_divide_      = false;
+                grid.is_cur_relevant_ = true;
+                grid.need_divide_ = false;
                 if (level_ == 1)
                     grid.active_ = true;
                 else
@@ -104,7 +103,7 @@ void UniformGrid::updateBaseCoor()
 {
     for (int i = 0; i < grid_data_.size(); ++i)
     {
-        auto& grid = grid_data_[i];
+        auto &grid = grid_data_[i];
         // if (!grid.active_) continue;
 
         Eigen::Vector3i id;
@@ -114,18 +113,18 @@ void UniformGrid::updateBaseCoor()
         Eigen::Vector3d left_bottom, right_top, left_top, right_bottom;
         indexToPos(id, 0.0, left_bottom);
         indexToPos(id, 1.0, right_top);
-        left_top[0]     = left_bottom[0];
-        left_top[1]     = right_top[1];
-        left_top[2]     = left_bottom[2];
+        left_top[0] = left_bottom[0];
+        left_top[1] = right_top[1];
+        left_top[2] = left_bottom[2];
         right_bottom[0] = right_top[0];
         right_bottom[1] = left_bottom[1];
         right_bottom[2] = left_bottom[2];
-        right_top[2]    = left_bottom[2];
+        right_top[2] = left_bottom[2];
 
-        vector<Eigen::Vector3d> vertices = { left_bottom, right_bottom, right_top, left_top };
+        vector<Eigen::Vector3d> vertices = {left_bottom, right_bottom, right_top, left_top};
         if (use_swarm_tf_)
         {
-            for (auto& vert : vertices)
+            for (auto &vert : vertices)
                 vert = rot_sw_ * vert + trans_sw_;
         }
 
@@ -140,8 +139,8 @@ void UniformGrid::updateBaseCoor()
             }
         }
         grid.vertices_ = vertices;
-        grid.vmin_     = vmin;
-        grid.vmax_     = vmax;
+        grid.vmin_ = vmin;
+        grid.vmax_ = vmax;
 
         // Compute normals of four separating lines
         grid.normals_.clear();
@@ -162,19 +161,18 @@ void UniformGrid::updateBaseCoor()
 }
 
 // TODO：具体是怎么分配网格的？
-void UniformGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, vector<int>& parti_ids, vector<int>& parti_ids_all)
+void UniformGrid::updateGridData(const int &drone_id, vector<int> &grid_ids, vector<int> &parti_ids, vector<int> &parti_ids_all)
 {
-
     // parti_ids are ids of grids that are assigned to THIS drone and should be divided
     // parti_ids_all are ids of ALL grids that should be divided
 
-    for (auto& grid : grid_data_)
+    for (auto &grid : grid_data_)
     {
         grid.is_updated_ = false;
     }
     parti_ids.clear();
 
-    bool     reset = (level_ == 2);
+    bool reset = (level_ == 2);
     Vector3d update_min, update_max;
     edt_->sdf_map_->getUpdatedBox(update_min, update_max, reset);
 
@@ -184,7 +182,7 @@ void UniformGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, vec
     // Rediscovered grid
     vector<int> rediscovered_ids;
 
-    auto have_overlap = [](const Vector3d& min1, const Vector3d& max1, const Vector3d& min2, const Vector3d& max2) {
+    auto have_overlap = [](const Vector3d &min1, const Vector3d &max1, const Vector3d &min2, const Vector3d &max2) {
         for (int m = 0; m < 2; ++m)
         {
             double bmin = max(min1[m], min2[m]);
@@ -198,7 +196,7 @@ void UniformGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, vec
     // For each grid, check overlap with updated box and update it if necessary
     for (int i = 0; i < grid_data_.size(); ++i)
     {
-        auto& grid = grid_data_[i];
+        auto &grid = grid_data_[i];
         if (!grid.active_)
             continue;
 
@@ -301,12 +299,12 @@ void UniformGrid::updateGridData(const int& drone_id, vector<int>& grid_ids, vec
     }
 }
 
-void UniformGrid::updateGridInfo(const Eigen::Vector3i& id)
+void UniformGrid::updateGridInfo(const Eigen::Vector3i &id)
 {
-    int   adr  = toAddress(id);
-    auto& grid = grid_data_[adr];
+    int adr = toAddress(id);
+    auto &grid = grid_data_[adr];
     if (grid.is_updated_)
-    {  // Ensure only one update to avoid repeated computation
+    { // Ensure only one update to avoid repeated computation
         return;
     }
     grid.is_updated_ = true;
@@ -315,10 +313,10 @@ void UniformGrid::updateGridInfo(const Eigen::Vector3i& id)
 
     Eigen::Vector3d gmin, gmax;
     // indexToPos(id, 0.0, gmin);
-    indexToPos(id, 1.0, gmax);  // Only the first 2 values of vmax is useful, should compute max here
+    indexToPos(id, 1.0, gmax); // Only the first 2 values of vmax is useful, should compute max here
 
     // Check if a voxel is inside the rotated box
-    auto inside_box = [](const Eigen::Vector3d& vox, const GridInfo& grid) {
+    auto inside_box = [](const Eigen::Vector3d &vox, const GridInfo &grid) {
         // Check four separating planes(lines)
         for (int m = 0; m < 4; ++m)
         {
@@ -332,14 +330,13 @@ void UniformGrid::updateGridInfo(const Eigen::Vector3i& id)
     const double res = edt_->sdf_map_->getResolution();
     grid.center_.setZero();
     grid.unknown_num_ = 0;
-    int free          = 0;
+    int free = 0;
     for (double x = grid.vmin_[0]; x <= grid.vmax_[0]; x += res)
     {
         for (double y = grid.vmin_[1]; y <= grid.vmax_[1]; y += res)
         {
             for (double z = grid.vmin_[2]; z <= gmax[2]; z += res)
             {
-
                 Eigen::Vector3d pos(x, y, z);
                 if (!inside_box(pos, grid))
                     continue;
@@ -370,47 +367,47 @@ void UniformGrid::updateGridInfo(const Eigen::Vector3i& id)
     }
 }
 
-int UniformGrid::toAddress(const Eigen::Vector3i& id)
+int UniformGrid::toAddress(const Eigen::Vector3i &id)
 {
     return id[0] * grid_num_(1) * grid_num_(2) + id[1] * grid_num_(2) + id[2];
 }
 
-void UniformGrid::adrToIndex(const int& adr, Eigen::Vector3i& idx)
+void UniformGrid::adrToIndex(const int &adr, Eigen::Vector3i &idx)
 {
     // id[0] * grid_num_(1) * grid_num_(2) + id[1] * grid_num_(2) + id[2];
-    int       tmp_adr = adr;
-    const int a       = grid_num_(1) * grid_num_(2);
-    const int b       = grid_num_(2);
+    int tmp_adr = adr;
+    const int a = grid_num_(1) * grid_num_(2);
+    const int b = grid_num_(2);
 
-    idx[0]  = tmp_adr / a;
+    idx[0] = tmp_adr / a;
     tmp_adr = tmp_adr % a;
-    idx[1]  = tmp_adr / b;
-    idx[2]  = tmp_adr % b;
+    idx[1] = tmp_adr / b;
+    idx[2] = tmp_adr % b;
 }
 
-void UniformGrid::posToIndex(const Eigen::Vector3d& pos, Eigen::Vector3i& id)
+void UniformGrid::posToIndex(const Eigen::Vector3d &pos, Eigen::Vector3i &id)
 {
     for (int i = 0; i < 3; ++i)
         id(i) = floor((pos(i) - min_(i)) / resolution_[i]);
 }
 
-void UniformGrid::indexToPos(const Eigen::Vector3i& id, const double& inc, Eigen::Vector3d& pos)
+void UniformGrid::indexToPos(const Eigen::Vector3i &id, const double &inc, Eigen::Vector3d &pos)
 {
     // inc: 0 for min, 1 for max, 0.5 for mid point
     for (int i = 0; i < 3; ++i)
         pos(i) = (id(i) + inc) * resolution_[i] + min_(i);
 }
 
-void UniformGrid::activateGrids(const vector<int>& ids)
+void UniformGrid::activateGrids(const vector<int> &ids)
 {
     for (auto id : ids)
     {
         grid_data_[id].active_ = true;
     }
-    extra_ids_ = ids;  // To avoid incomplete update
+    extra_ids_ = ids; // To avoid incomplete update
 }
 
-bool UniformGrid::insideGrid(const Eigen::Vector3i& id)
+bool UniformGrid::insideGrid(const Eigen::Vector3i &id)
 {
     // Check inside min max
     for (int i = 0; i < 3; ++i)
@@ -423,14 +420,14 @@ bool UniformGrid::insideGrid(const Eigen::Vector3i& id)
     return true;
 }
 
-void UniformGrid::inputFrontiers(const vector<Eigen::Vector3d>& avgs)
+void UniformGrid::inputFrontiers(const vector<Eigen::Vector3d> &avgs)
 {
-    for (auto& grid : grid_data_)
+    for (auto &grid : grid_data_)
     {
         grid.contained_frontier_ids_.clear();
     }
     Eigen::Vector3i id;
-    Eigen::Matrix3d Rt    = rot_sw_.transpose();
+    Eigen::Matrix3d Rt = rot_sw_.transpose();
     Eigen::Vector3d t_inv = -Rt * trans_sw_;
 
     for (int i = 0; i < avgs.size(); ++i)
@@ -443,24 +440,23 @@ void UniformGrid::inputFrontiers(const vector<Eigen::Vector3d>& avgs)
         posToIndex(pos, id);
         if (!insideGrid(id))
             continue;
-        auto& grid                      = grid_data_[toAddress(id)];
+        auto &grid = grid_data_[toAddress(id)];
         grid.contained_frontier_ids_[i] = 1;
     }
 }
 
-bool UniformGrid::isRelevant(const GridInfo& grid)
+bool UniformGrid::isRelevant(const GridInfo &grid)
 {
     // return grid.unknown_num_ >= min_unknown_ || grid.frontier_num_ >= min_frontier_;
     // return grid.unknown_num_ >= min_unknown_ || !grid.frontier_cell_nums_.empty();
     return grid.unknown_num_ >= min_unknown_ || !grid.contained_frontier_ids_.empty();
 }
 
-void UniformGrid::getCostMatrix(const vector<Eigen::Vector3d>& positions, const vector<Eigen::Vector3d>& velocities, const vector<int>& prev_first_grid,
-                                const vector<int>& grid_ids, Eigen::MatrixXd& mat)
+void UniformGrid::getCostMatrix(const vector<Eigen::Vector3d> &positions, const vector<Eigen::Vector3d> &velocities, const vector<int> &prev_first_grid, const vector<int> &grid_ids, Eigen::MatrixXd &mat)
 {
 }
 
-void UniformGrid::getGridTour(const vector<int>& ids, vector<Eigen::Vector3d>& tour)
+void UniformGrid::getGridTour(const vector<int> &ids, vector<Eigen::Vector3d> &tour)
 {
     tour.clear();
     for (int i = 0; i < ids.size(); ++i)
@@ -469,10 +465,10 @@ void UniformGrid::getGridTour(const vector<int>& ids, vector<Eigen::Vector3d>& t
     }
 }
 
-void UniformGrid::getFrontiersInGrid(const int& grid_id, vector<int>& ftr_ids)
+void UniformGrid::getFrontiersInGrid(const int &grid_id, vector<int> &ftr_ids)
 {
     // Find frontier having more than 1/4 within the first grid
-    auto& first_grid = grid_data_[grid_id];
+    auto &first_grid = grid_data_[grid_id];
     ftr_ids.clear();
     // for (auto pair : first_grid.frontier_cell_nums_) {
     //   ftr_ids.push_back(pair.first);
@@ -483,9 +479,8 @@ void UniformGrid::getFrontiersInGrid(const int& grid_id, vector<int>& ftr_ids)
     }
 }
 
-void UniformGrid::getGridMarker(vector<Eigen::Vector3d>& pts1, vector<Eigen::Vector3d>& pts2)
+void UniformGrid::getGridMarker(vector<Eigen::Vector3d> &pts1, vector<Eigen::Vector3d> &pts2)
 {
-
     Eigen::Vector3d p1 = min_;
     Eigen::Vector3d p2 = min_ + Eigen::Vector3d(max_[0] - min_[0], 0, 0);
     for (int i = 0; i <= grid_num_[1]; ++i)
@@ -505,10 +500,10 @@ void UniformGrid::getGridMarker(vector<Eigen::Vector3d>& pts1, vector<Eigen::Vec
         pts1.push_back(pt1);
         pts2.push_back(pt2);
     }
-    for (auto& p : pts1)
+    for (auto &p : pts1)
         p[2] = 0.5;
-    for (auto& p : pts2)
+    for (auto &p : pts2)
         p[2] = 0.5;
 }
 
-}  // namespace fast_planner
+} // namespace fast_planner

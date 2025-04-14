@@ -1,0 +1,30 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kfast_planner::GridInfo& fast_planner::HGrid::getGrid(int, const int&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:105:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kconst int[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  105 |     if (level < 0 || level >= max_level_ || id < 0 || [01;35m[Kid >= grids_[level]->grid_data_.size()[m[K)
+      |                                                       [01;35m[K~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getActiveGrids(std::vector<int>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:627:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  627 |         for (int i = 0; [01;35m[Ki < grids_[level]->grid_data_.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kbool fast_planner::HGrid::getNextGrid(const std::vector<int>&, Eigen::Vector3d&, double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:655:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  655 |     for (int i = 1; [01;35m[Ki < grid_ids.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getGridTour(const std::vector<int>&, const Vector3d&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:692:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  692 |     for (int i = 0; [01;35m[Ki < centers.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getGridMarker(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:789:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klevel[m[K’ was not declared in this scope
+  789 |         pt[2] = 0.5 + 0.1 * [01;31m[Klevel[m[K; // 每层高度略有不同
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:791:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klevel[m[K’ was not declared in this scope
+  791 |         pt[2] = 0.5 + 0.1 * [01;31m[Klevel[m[K;
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getGridMarker2(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:802:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  802 |         for (int i = 0; [01;35m[Ki < grids_[level]->grid_data_.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/active_perception.dir/build.make:141: CMakeFiles/active_perception.dir/src/hgrid.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:180: CMakeFiles/active_perception.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

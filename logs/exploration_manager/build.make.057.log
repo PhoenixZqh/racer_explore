@@ -1,0 +1,34 @@
+[35m[1mScanning dependencies of target sensor_pos[0m
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  8%] Built target ground_node
+[  8%] Built target geometry_msgs_generate_messages_lisp
+[  8%] Built target geometry_msgs_generate_messages_py
+[  8%] Built target exploration_manager_xacro_generated_to_devel_space_
+[ 19%] Built target exploration_node
+[ 19%] Built target _exploration_manager_generate_messages_check_deps_PairOptResponse
+[ 19%] Built target _exploration_manager_generate_messages_check_deps_PairOpt
+[ 19%] Built target _exploration_manager_generate_messages_check_deps_HGrid
+[ 19%] Built target _exploration_manager_generate_messages_check_deps_GridTour
+[ 19%] Built target _exploration_manager_generate_messages_check_deps_DroneState
+[ 22%] [32mBuilding CXX object CMakeFiles/sensor_pos.dir/src/pub_sensor_pos.cpp.o[0m
+[ 47%] Built target exploration_manager_generate_messages_nodejs
+[ 52%] Built target exploration_manager_generate_messages_py
+[ 66%] Built target exploration_manager_generate_messages_lisp
+[ 88%] Built target exploration_manager_generate_messages_cpp
+[ 97%] Built target exploration_manager_generate_messages_eus
+[ 97%] Built target exploration_manager_generate_messages
+[100%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos[0m
+/usr/bin/ld: CMakeFiles/sensor_pos.dir/src/pub_sensor_pos.cpp.o: in function `CameraPosePublisher::timerCallback(ros::TimerEvent const&)':
+pub_sensor_pos.cpp:(.text._ZN19CameraPosePublisher13timerCallbackERKN3ros10TimerEventE[_ZN19CameraPosePublisher13timerCallbackERKN3ros10TimerEventE]+0x12e): undefined reference to `tf::Transformer::lookupTransform(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::Time const&, tf::StampedTransform&) const'
+/usr/bin/ld: CMakeFiles/sensor_pos.dir/src/pub_sensor_pos.cpp.o: in function `CameraPosePublisher::CameraPosePublisher()':
+pub_sensor_pos.cpp:(.text._ZN19CameraPosePublisherC2Ev[_ZN19CameraPosePublisherC5Ev]+0x43): undefined reference to `tf::Transformer::DEFAULT_CACHE_TIME'
+/usr/bin/ld: pub_sensor_pos.cpp:(.text._ZN19CameraPosePublisherC2Ev[_ZN19CameraPosePublisherC5Ev]+0x6e): undefined reference to `tf::TransformListener::TransformListener(ros::Duration, bool)'
+/usr/bin/ld: pub_sensor_pos.cpp:(.text._ZN19CameraPosePublisherC2Ev[_ZN19CameraPosePublisherC5Ev]+0xb79): undefined reference to `tf::TransformListener::~TransformListener()'
+/usr/bin/ld: CMakeFiles/sensor_pos.dir/src/pub_sensor_pos.cpp.o: in function `CameraPosePublisher::~CameraPosePublisher()':
+pub_sensor_pos.cpp:(.text._ZN19CameraPosePublisherD2Ev[_ZN19CameraPosePublisherD5Ev]+0xd): undefined reference to `tf::TransformListener::~TransformListener()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/sensor_pos.dir/build.make:177: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos] Error 1
+make[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/sensor_pos.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

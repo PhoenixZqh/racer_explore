@@ -477,7 +477,7 @@ int FastExplorationManager::updateFrontierStruct(const Eigen::Vector3d &pos)
 
     double mat_time = (ros::Time::now() - t1).toSec();
     double total_time = frontier_time + view_time + mat_time;
-    ROS_INFO("Drone %d: frontier t: %lf, viewpoint t: %lf, mat: %lf", ep_->drone_id_, frontier_time, view_time, mat_time);
+    // ROS_INFO("Drone %d: frontier t: %lf, viewpoint t: %lf, mat: %lf", ep_->drone_id_, frontier_time, view_time, mat_time);
 
     ROS_INFO("Total t: %lf", (ros::Time::now() - t2).toSec());
     return ed_->frontiers_.size();

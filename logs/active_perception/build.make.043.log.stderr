@@ -1,0 +1,23 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getConsistentGrid(const std::vector<int>&, const std::vector<int>&, std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:191:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  191 |     for (int i = 1; [01;35m[Ki < last_ids.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getActiveGrids(std::vector<int>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:538:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  538 |     for (int i = 0; [01;35m[Ki < grid2_->grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kbool fast_planner::HGrid::getNextGrid(const std::vector<int>&, Eigen::Vector3d&, double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:564:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  564 |     for (int i = 1; [01;35m[Ki < grid_ids.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getGridTour(const std::vector<int>&, const Vector3d&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:698:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  698 |     for (int i = 0; [01;35m[Ki < centers.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getGridMarker2(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:802:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  802 |     for (int i = 0; [01;35m[Ki < grid1_->grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:811:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  811 |     for (int i = 0; [01;35m[Ki < grid2_->grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

@@ -28,6 +28,7 @@ find_package(catkin REQUIRED COMPONENTS
   
   xacro
   urdf
+  tf
 )
 
 add_message_files(
@@ -79,3 +80,11 @@ add_executable(ground_node
 target_link_libraries(ground_node
   ${catkin_LIBRARIES}
   )
+
+add_executable(sensor_pos
+src/pub_sensor_pos.cpp 
+)
+target_link_libraries(sensor_pos
+  ${catkin_LIBRARIES}
+  )
+

@@ -935,8 +935,8 @@ void FastPlannerManager::calcNextYaw(const double &last_yaw, double &yaw)
  * @param 
  *      in: 其他无人机的ID
  *      out： bool
- * TODO: 只计算两架无人机之间在某一时刻的距离值， 优化考虑加上速度、加速度、小车尺寸，评估碰撞时间和碰撞距离
  */
+// TODO: 只计算两架无人机之间在某一时刻的距离值， 优化考虑加上速度、加速度、小车尺寸，评估碰撞时间和碰撞距离
 bool FastPlannerManager::checkSwarmCollision(const int &id)
 {
     // 没有接收到轨迹，直接返回true

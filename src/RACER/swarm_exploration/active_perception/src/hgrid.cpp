@@ -69,6 +69,12 @@ void HGrid::inputFrontiers(const vector<Eigen::Vector3d> &avgs)
     grid2_->inputFrontiers(avgs);
 }
 
+/**
+ * @brief 更新网格状态，并根据需要细化网格
+ * @param
+ *      
+ * 
+ */
 void HGrid::updateGridData(const int &drone_id, vector<int> &grid_ids, bool reallocated, const vector<int> &last_grid_ids, vector<int> &first_ids, vector<int> &second_ids)
 {
     // Convert grid_ids to the ids of bi-level uniform grid
