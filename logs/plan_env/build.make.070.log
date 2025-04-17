@@ -1,0 +1,44 @@
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  7%] Built target obj_generator
+[  7%] Built target sensor_msgs_generate_messages_eus
+[  7%] Built target roscpp_generate_messages_py
+[  7%] Built target roscpp_generate_messages_cpp
+[  7%] Built target rosgraph_msgs_generate_messages_lisp
+[  7%] Built target rosgraph_msgs_generate_messages_py
+[  7%] Built target roscpp_generate_messages_eus
+[  7%] Built target roscpp_generate_messages_lisp
+[  7%] Built target visualization_msgs_generate_messages_py
+[  7%] Built target visualization_msgs_generate_messages_cpp
+[  7%] Built target rosgraph_msgs_generate_messages_nodejs
+[  7%] Built target visualization_msgs_generate_messages_eus
+[  7%] Built target _plan_env_generate_messages_check_deps_ChunkData
+[  7%] Built target geometry_msgs_generate_messages_cpp
+[  7%] Built target visualization_msgs_generate_messages_lisp
+[  7%] Built target visualization_msgs_generate_messages_nodejs
+[  7%] Built target _plan_env_generate_messages_check_deps_IdxList
+[  7%] Built target geometry_msgs_generate_messages_nodejs
+[  7%] Built target _plan_env_generate_messages_check_deps_ChunkStamps
+[ 38%] Built target plan_env_generate_messages_lisp
+[ 46%] Built target plan_env_generate_messages_cpp
+[ 46%] Built target plan_env_generate_messages_nodejs
+[ 61%] Built target plan_env_generate_messages_py
+[ 73%] Built target plan_env_generate_messages_eus
+[35m[1mScanning dependencies of target plan_env[0m
+[ 73%] Built target plan_env_generate_messages
+[ 76%] [32mBuilding CXX object CMakeFiles/plan_env.dir/src/map_ros.cpp.o[0m
+[ 80%] [32m[1mLinking CXX shared library /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/lib/libplan_env.so[0m
+[100%] Built target plan_env

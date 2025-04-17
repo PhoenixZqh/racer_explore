@@ -254,6 +254,52 @@ void MapROS::cloudPoseCallback(
 //   }
 // }
 
+// void MapROS::processDepthImage()
+// {
+//     proj_points_cnt = 0;
+
+//     uint16_t *row_ptr;
+//     int cols = depth_image_->cols;
+//     int rows = depth_image_->rows;
+//     double depth;
+//     Eigen::Matrix3d camera_r = camera_q_.toRotationMatrix();
+//     Eigen::Vector3d pt_cur, pt_world;
+//     const double inv_factor = 1.0 / k_depth_scaling_factor_;
+
+//     for (int v = depth_filter_margin_; v < rows - depth_filter_margin_; v += skip_pixel_)
+//     {
+//         row_ptr = depth_image_->ptr<uint16_t>(v) + depth_filter_margin_;
+//         for (int u = depth_filter_margin_; u < cols - depth_filter_margin_; u += skip_pixel_)
+//         {
+//             depth = (*row_ptr) * inv_factor;
+//             row_ptr = row_ptr + skip_pixel_;
+
+//             // // filter depth
+//             // if (depth > 0.01)
+//             //   depth += rand_noise_(eng_);
+
+//             // TODO: simplify the logic here
+//             // if (*row_ptr == 0) continue;
+
+//             if (*row_ptr == 0 || depth > depth_filter_maxdist_)
+//                 depth = depth_filter_maxdist_;
+//             else if (depth < depth_filter_mindist_)
+//                 continue;
+
+//             pt_cur(0) = (u - cx_) * depth / fx_;
+//             pt_cur(1) = (v - cy_) * depth / fy_;
+//             pt_cur(2) = depth;
+//             pt_world = camera_r * pt_cur + camera_pos_;
+//             auto &pt = point_cloud_.points[proj_points_cnt++];
+//             pt.x = pt_world[0];
+//             pt.y = pt_world[1];
+//             pt.z = pt_world[2];
+//         }
+//     }
+
+//     publishDepth();
+// }
+
 void MapROS::processDepthImage()
 {
     proj_points_cnt = 0;
@@ -263,6 +309,22 @@ void MapROS::processDepthImage()
     int rows = depth_image_->rows;
     double depth;
     Eigen::Matrix3d camera_r = camera_q_.toRotationMatrix();
+
+    // 添加显式旋转校正
+    Eigen::AngleAxisd x_correction(M_PI / 2, Eigen::Vector3d::UnitX()); // 绕X轴90度
+    Eigen::AngleAxisd y_correction(M_PI / 2, Eigen::Vector3d::UnitY()); // 绕y轴90度
+    // Eigen::AngleAxisd z_correction(M_PI / 2, Eigen::Vector3d::UnitZ());  // 绕Z轴90度
+
+    Eigen::Matrix3d correction = x_correction.matrix() * y_correction.matrix();
+    camera_r = camera_r * correction;
+
+    // 调试：打印旋转矩阵和z轴方向
+    // ROS_INFO_STREAM("Camera Rotation Matrix (after correction):\n"
+    //                 << camera_r);
+    Eigen::Vector3d camera_z(0, 0, 1);
+    Eigen::Vector3d world_z = camera_r * camera_z;
+    // ROS_INFO_STREAM("Camera z-axis in world frame: " << world_z.transpose());
+
     Eigen::Vector3d pt_cur, pt_world;
     const double inv_factor = 1.0 / k_depth_scaling_factor_;
 
@@ -273,13 +335,6 @@ void MapROS::processDepthImage()
         {
             depth = (*row_ptr) * inv_factor;
             row_ptr = row_ptr + skip_pixel_;
-
-            // // filter depth
-            // if (depth > 0.01)
-            //   depth += rand_noise_(eng_);
-
-            // TODO: simplify the logic here
-            // if (*row_ptr == 0) continue;
 
             if (*row_ptr == 0 || depth > depth_filter_maxdist_)
                 depth = depth_filter_maxdist_;

@@ -15,10 +15,6 @@ geometry_msgs/PoseStamped.h
 -
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
-thread
--
-string
--
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

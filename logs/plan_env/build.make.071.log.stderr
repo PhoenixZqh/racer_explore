@@ -1,0 +1,4 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MapROS::processDepthImage()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:325:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kworld_z[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  325 |     Eigen::Vector3d [01;35m[Kworld_z[m[K = camera_r * camera_z;
+      |                     [01;35m[K^~~~~~~[m[K

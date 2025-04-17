@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named racer2gazebo_cmd
+
+# Build rule for target.
+racer2gazebo_cmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 racer2gazebo_cmd
+.PHONY : racer2gazebo_cmd
+
+# fast build rule for target.
+racer2gazebo_cmd/fast:
+	$(MAKE) -f CMakeFiles/racer2gazebo_cmd.dir/build.make CMakeFiles/racer2gazebo_cmd.dir/build
+.PHONY : racer2gazebo_cmd/fast
+
+#=============================================================================
 # Target rules for targets named sensor_pos
 
 # Build rule for target.
@@ -1592,6 +1605,33 @@ src/pub_sensor_pos.cpp.s:
 	$(MAKE) -f CMakeFiles/sensor_pos.dir/build.make CMakeFiles/sensor_pos.dir/src/pub_sensor_pos.cpp.s
 .PHONY : src/pub_sensor_pos.cpp.s
 
+src/racer2gazebo_cmd.o: src/racer2gazebo_cmd.cpp.o
+
+.PHONY : src/racer2gazebo_cmd.o
+
+# target to build an object file
+src/racer2gazebo_cmd.cpp.o:
+	$(MAKE) -f CMakeFiles/racer2gazebo_cmd.dir/build.make CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o
+.PHONY : src/racer2gazebo_cmd.cpp.o
+
+src/racer2gazebo_cmd.i: src/racer2gazebo_cmd.cpp.i
+
+.PHONY : src/racer2gazebo_cmd.i
+
+# target to preprocess a source file
+src/racer2gazebo_cmd.cpp.i:
+	$(MAKE) -f CMakeFiles/racer2gazebo_cmd.dir/build.make CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.i
+.PHONY : src/racer2gazebo_cmd.cpp.i
+
+src/racer2gazebo_cmd.s: src/racer2gazebo_cmd.cpp.s
+
+.PHONY : src/racer2gazebo_cmd.s
+
+# target to generate assembly for a file
+src/racer2gazebo_cmd.cpp.s:
+	$(MAKE) -f CMakeFiles/racer2gazebo_cmd.dir/build.make CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.s
+.PHONY : src/racer2gazebo_cmd.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1599,6 +1639,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... racer2gazebo_cmd"
 	@echo "... sensor_pos"
 	@echo "... exploration_manager_generate_messages_py"
 	@echo "... ground_node"
@@ -1719,6 +1760,9 @@ help:
 	@echo "... src/pub_sensor_pos.o"
 	@echo "... src/pub_sensor_pos.i"
 	@echo "... src/pub_sensor_pos.s"
+	@echo "... src/racer2gazebo_cmd.o"
+	@echo "... src/racer2gazebo_cmd.i"
+	@echo "... src/racer2gazebo_cmd.s"
 .PHONY : help
 
 

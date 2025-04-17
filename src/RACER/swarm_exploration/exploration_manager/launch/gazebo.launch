@@ -1,47 +1,33 @@
 <launch>
-    <!-- 定义两个机器人的名称 -->
-    <arg name="robot1_name" default="car1" />
-    <arg name="robot2_name" default="car2" />
+    <!-- 加载机器人描述 -->
+    <param name="robot_description" command="$(find xacro)/xacro /home/zqh/phoenixZ/racer_explore/gazebo/racer.xacro" />
 
-    <!-- 第一辆车 -->
-    <group ns="$(arg robot1_name)">
-        <param name="/$(arg robot1_name)/robot_description" command="$(find xacro)/xacro /home/zqh/phoenixZ/racer_explore/gazebo/racer.xacro prefix:=$(arg robot1_name)_ namespace:=/$(arg robot1_name)" />
-        <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher_$(arg robot1_name)">
-            <remap from="robot_description" to="/$(arg robot1_name)/robot_description" />
-        </node>
-        <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui_$(arg robot1_name)" />
-        <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher_$(arg robot1_name)" args="0 0 0 -1.57 0 -1.57 /$(arg robot1_name)_support /$(arg robot1_name)_support_depth" />
-        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot1_name)" args="-urdf -model $(arg robot1_name) -param /$(arg robot1_name)/robot_description -x 0 -y 0 -z 0" />
-        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot1_name)" />
-    </group>
+    <!-- 静态变换：support 到 support_depth -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 -1.57 0 -1.57 support support_depth" />
 
-    <!-- 第二辆车 -->
-    <group ns="$(arg robot2_name)">
-        <param name="/$(arg robot2_name)/robot_description" command="$(find xacro)/xacro /home/zqh/phoenixZ/racer_explore/gazebo/racer.xacro prefix:=$(arg robot2_name)_ namespace:=/$(arg robot2_name)" />
-        <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher_$(arg robot2_name)">
-            <remap from="robot_description" to="/$(arg robot2_name)/robot_description" />
-        </node>
-        <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui_$(arg robot2_name)" />
-        <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher_$(arg robot2_name)" args="0 0 0 -1.57 0 -1.57 /$(arg robot2_name)_support /$(arg robot2_name)_support_depth" />
-        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot2_name)" args="-urdf -model $(arg robot2_name) -param /$(arg robot2_name)/robot_description -x 5 -y 5 -z 0" />
-    </group>
-
-    <!-- 添加全局框架到 odom 的静态变换 -->
-    <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_$(arg robot1_name)_odom" args="0 0 0 0 0 0 /world /$(arg robot1_name)_odom" />
-    <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_$(arg robot2_name)_odom" args="1 0 0 0 0 0 /world /$(arg robot2_name)_odom" />
-
-    <!-- 加载 Gazebo 环境 -->
-    <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="/home/zqh/phoenixZ/racer_explore/gazebo/world/racer.world" />
-        <arg name="use_sim_time" value="true"/>
-    </include>
+    <!-- 静态变换：world 到 odom -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_odom" args="0 0 0 0 0 0 world odom" />
 
     <!-- 启动 RViz -->
     <node pkg="rviz" type="rviz" name="rviz" args="-d /home/zqh/文档/gazebo.rviz"/>
 
-    <!-- 深度相机位姿发布节点 -->
-    <node pkg="racer_explore" type="depth_camera_pose_publisher" name="depth_camera_pose_publisher" output="screen">
-        <param name="robot1_name" value="$(arg robot1_name)" />
-        <param name="robot2_name" value="$(arg robot2_name)" />
-    </node>
+    <!-- 机器人状态发布 -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+
+    <!-- 关节状态发布 -->
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
+
+    <!-- 启动 Gazebo 空世界 -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="/home/zqh/phoenixZ/racer_explore/gazebo/world/racer.world" />
+        <arg name="use_sim_time" value="true"/>
+    </include>
+    
+    <!-- 生成机器人模型 -->
+    <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description" />
+
+    <!-- 启动深度相机位姿发布节点 -->
+    <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos" output="screen"/>
+    <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd" output="screen"/>
+
 </launch>

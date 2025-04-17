@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/exploration_manager
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/racer2gazebo_cmd.dir/all
 all: CMakeFiles/sensor_pos.dir/all
 all: CMakeFiles/ground_node.dir/all
 all: CMakeFiles/exploration_manager_generate_messages.dir/all
@@ -68,6 +69,7 @@ preinstall: gtest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/racer2gazebo_cmd.dir/clean
 clean: CMakeFiles/sensor_pos.dir/clean
 clean: CMakeFiles/exploration_manager_generate_messages_py.dir/clean
 clean: CMakeFiles/ground_node.dir/clean
@@ -225,13 +227,40 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/racer2gazebo_cmd.dir
+
+# All Build rule for target.
+CMakeFiles/racer2gazebo_cmd.dir/all:
+	$(MAKE) -f CMakeFiles/racer2gazebo_cmd.dir/build.make CMakeFiles/racer2gazebo_cmd.dir/depend
+	$(MAKE) -f CMakeFiles/racer2gazebo_cmd.dir/build.make CMakeFiles/racer2gazebo_cmd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=43,44 "Built target racer2gazebo_cmd"
+.PHONY : CMakeFiles/racer2gazebo_cmd.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/racer2gazebo_cmd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/racer2gazebo_cmd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles 0
+.PHONY : CMakeFiles/racer2gazebo_cmd.dir/rule
+
+# Convenience name for target.
+racer2gazebo_cmd: CMakeFiles/racer2gazebo_cmd.dir/rule
+
+.PHONY : racer2gazebo_cmd
+
+# clean rule for target.
+CMakeFiles/racer2gazebo_cmd.dir/clean:
+	$(MAKE) -f CMakeFiles/racer2gazebo_cmd.dir/build.make CMakeFiles/racer2gazebo_cmd.dir/clean
+.PHONY : CMakeFiles/racer2gazebo_cmd.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/sensor_pos.dir
 
 # All Build rule for target.
 CMakeFiles/sensor_pos.dir/all:
 	$(MAKE) -f CMakeFiles/sensor_pos.dir/build.make CMakeFiles/sensor_pos.dir/depend
 	$(MAKE) -f CMakeFiles/sensor_pos.dir/build.make CMakeFiles/sensor_pos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=43,44 "Built target sensor_pos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=45,46 "Built target sensor_pos"
 .PHONY : CMakeFiles/sensor_pos.dir/all
 
 # Build rule for subdir invocation for target.

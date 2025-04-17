@@ -42,6 +42,7 @@ RACER/swarm_exploration/exploration_manager
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/msg/_DroneState.py /home/zqh/phoenixZ/racer_explore/devel/lib/python3/dist-packages/exploration_manager/msg/_DroneState.py
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/msg/_HGrid.py /home/zqh/phoenixZ/racer_explore/devel/lib/python3/dist-packages/exploration_manager/msg/_HGrid.py
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/ground_node /home/zqh/phoenixZ/racer_explore/devel/lib/exploration_manager/ground_node
+/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/racer2gazebo_cmd /home/zqh/phoenixZ/racer_explore/devel/lib/exploration_manager/racer2gazebo_cmd
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos /home/zqh/phoenixZ/racer_explore/devel/lib/exploration_manager/sensor_pos
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/exploration_node /home/zqh/phoenixZ/racer_explore/devel/lib/exploration_manager/exploration_node
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/pkgconfig/exploration_manager.pc /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/exploration_manager.pc

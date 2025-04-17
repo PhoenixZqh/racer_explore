@@ -88,3 +88,10 @@ target_link_libraries(sensor_pos
   ${catkin_LIBRARIES}
   )
 
+add_executable(racer2gazebo_cmd
+src/racer2gazebo_cmd.cpp 
+)
+target_link_libraries(racer2gazebo_cmd
+  ${catkin_LIBRARIES}
+  )
+
