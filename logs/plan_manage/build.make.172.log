@@ -1,0 +1,10 @@
+[ 12%] [32m[1mLinking CXX shared library /root/jky/racer_explore/devel/.private/plan_manage/lib/libplan_manage.so[0m
+[ 18%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/traj_server[0m
+[ 18%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg2[0m
+[ 25%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg[0m
+[ 31%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/fast_planner_node[0m
+[ 43%] Built target plan_manage
+[ 50%] Built target proc_msg2
+[ 56%] Built target traj_server
+[ 93%] Built target fast_planner_node
+[100%] Built target proc_msg

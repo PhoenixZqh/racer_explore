@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils:$CMAKE_PREFIX_PATH"
-export PWD='/home/zqh/phoenixZ/racer_explore/build/traj_utils'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/root/jky/racer_explore/devel/.private/traj_utils:$CMAKE_PREFIX_PATH"
+export PWD='/root/jky/racer_explore/build/traj_utils'
+export ROSLISP_PACKAGE_DIRECTORIES="/root/jky/racer_explore/devel/.private/traj_utils/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils:$ROS_PACKAGE_PATH"

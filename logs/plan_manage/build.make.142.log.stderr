@@ -1,0 +1,25 @@
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:[m[K In function ‘[01m[Kdouble calcPathLength(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:62:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   62 |     for (int i = 0; [01;35m[Ki < path.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:[m[K In function ‘[01m[Kvoid bsplineCallback(const BsplineConstPtr&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:247:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  247 |     for (int i = 0; [01;35m[Ki < msg->knots.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:251:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::Point_<std::allocator<void> >, std::allocator<geometry_msgs::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  251 |     for (int i = 0; [01;35m[Ki < msg->pos_pts.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:261:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  261 |     for (int i = 0; [01;35m[Ki < msg->yaw_pts.size()[m[K; ++i) yaw_pts(i, 0) = msg->yaw_pts[i];
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:[m[K In function ‘[01m[Kvoid cmdCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:386:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  386 | [01;31m[K)[m[K;
+      | [01;31m[K^[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:[m[K In function ‘[01m[Kvoid test()[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/src/traj_server.cpp:426:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  426 |     for (int i = 0; [01;35m[Ki < samples.size()[m[K; ++i) points.row(i) = samples[i].transpose();
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/traj_server.dir/build.make:63: CMakeFiles/traj_server.dir/src/traj_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1430: CMakeFiles/traj_server.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

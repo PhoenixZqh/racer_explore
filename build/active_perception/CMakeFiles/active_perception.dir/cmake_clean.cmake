@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/active_perception/lib/libactive_perception.pdb"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/active_perception/lib/libactive_perception.so"
+  "/root/jky/racer_explore/devel/.private/active_perception/lib/libactive_perception.pdb"
+  "/root/jky/racer_explore/devel/.private/active_perception/lib/libactive_perception.so"
   "CMakeFiles/active_perception.dir/src/frontier_finder.cpp.o"
   "CMakeFiles/active_perception.dir/src/graph_node.cpp.o"
   "CMakeFiles/active_perception.dir/src/heading_planner.cpp.o"

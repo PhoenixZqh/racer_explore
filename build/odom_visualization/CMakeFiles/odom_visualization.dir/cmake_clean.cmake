@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/odom_visualization/lib/odom_visualization/odom_visualization"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/odom_visualization/lib/odom_visualization/odom_visualization.pdb"
+  "/root/jky/racer_explore/devel/.private/odom_visualization/lib/odom_visualization/odom_visualization"
+  "/root/jky/racer_explore/devel/.private/odom_visualization/lib/odom_visualization/odom_visualization.pdb"
   "CMakeFiles/odom_visualization.dir/src/odom_visualization.cpp.o"
 )
 

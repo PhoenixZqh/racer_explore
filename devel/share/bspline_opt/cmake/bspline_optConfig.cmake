@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/bspline_opt/share/bspline_opt/cmake/bspline_optConfig.cmake
+/root/jky/racer_explore/devel/.private/bspline_opt/share/bspline_opt/cmake/bspline_optConfig.cmake

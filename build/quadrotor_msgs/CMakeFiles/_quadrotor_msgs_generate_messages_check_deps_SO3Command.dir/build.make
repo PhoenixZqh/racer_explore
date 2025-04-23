@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/quadrotor_msgs
 
 # Utility rule file for _quadrotor_msgs_generate_messages_check_deps_SO3Command.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs
 include CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/progress.make
 
 CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/msg/SO3Command.msg std_msgs/Header:quadrotor_msgs/AuxCommand:geometry_msgs/Vector3:geometry_msgs/Quaternion
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /root/jky/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/msg/SO3Command.msg geometry_msgs/Quaternion:std_msgs/Header:quadrotor_msgs/AuxCommand:geometry_msgs/Vector3
 
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/clean:
 .PHONY : CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/clean
 
 CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs /root/jky/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs /root/jky/racer_explore/build/quadrotor_msgs /root/jky/racer_explore/build/quadrotor_msgs /root/jky/racer_explore/build/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/depend
 

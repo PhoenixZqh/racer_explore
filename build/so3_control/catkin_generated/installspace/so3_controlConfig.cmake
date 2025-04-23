@@ -67,14 +67,14 @@ set(so3_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(so3_control_SOURCE_PREFIX /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control)
-  set(so3_control_DEVEL_PREFIX /home/zqh/phoenixZ/racer_explore/devel/.private/so3_control)
+  set(so3_control_SOURCE_PREFIX /root/jky/racer_explore/src/RACER/uav_simulator/so3_control)
+  set(so3_control_DEVEL_PREFIX /root/jky/racer_explore/devel/.private/so3_control)
   set(so3_control_INSTALL_PREFIX "")
   set(so3_control_PREFIX ${so3_control_DEVEL_PREFIX})
 else()
   set(so3_control_SOURCE_PREFIX "")
   set(so3_control_DEVEL_PREFIX "")
-  set(so3_control_INSTALL_PREFIX /home/zqh/phoenixZ/racer_explore/install)
+  set(so3_control_INSTALL_PREFIX /root/jky/racer_explore/install)
   set(so3_control_PREFIX ${so3_control_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zqh/phoenixZ/racer_explore/install/lib;/home/zqh/phoenixZ/racer_explore/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/jky/racer_explore/install/lib;/root/jky/racer_explore/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

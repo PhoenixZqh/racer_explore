@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/share/gennodejs/ros/plan_env/msg/ChunkData.js"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/share/gennodejs/ros/plan_env/msg/ChunkStamps.js"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/share/gennodejs/ros/plan_env/msg/IdxList.js"
+  "/root/jky/racer_explore/devel/.private/plan_env/share/gennodejs/ros/plan_env/msg/ChunkData.js"
+  "/root/jky/racer_explore/devel/.private/plan_env/share/gennodejs/ros/plan_env/msg/ChunkStamps.js"
+  "/root/jky/racer_explore/devel/.private/plan_env/share/gennodejs/ros/plan_env/msg/IdxList.js"
   "CMakeFiles/plan_env_generate_messages_nodejs"
 )
 

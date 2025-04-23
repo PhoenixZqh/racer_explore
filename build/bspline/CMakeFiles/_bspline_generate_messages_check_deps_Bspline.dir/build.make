@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/bspline
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/bspline
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/bspline
 
 # Utility rule file for _bspline_generate_messages_check_deps_Bspline.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/bspline
 include CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/progress.make
 
 CMakeFiles/_bspline_generate_messages_check_deps_Bspline:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py bspline /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/msg/Bspline.msg geometry_msgs/Point
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py bspline /root/jky/racer_explore/src/RACER/swarm_exploration/bspline/msg/Bspline.msg geometry_msgs/Point
 
 _bspline_generate_messages_check_deps_Bspline: CMakeFiles/_bspline_generate_messages_check_deps_Bspline
 _bspline_generate_messages_check_deps_Bspline: CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/clean:
 .PHONY : CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/clean
 
 CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/bspline && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline /home/zqh/phoenixZ/racer_explore/build/bspline /home/zqh/phoenixZ/racer_explore/build/bspline /home/zqh/phoenixZ/racer_explore/build/bspline/CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/bspline && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/swarm_exploration/bspline /root/jky/racer_explore/src/RACER/swarm_exploration/bspline /root/jky/racer_explore/build/bspline /root/jky/racer_explore/build/bspline /root/jky/racer_explore/build/bspline/CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_bspline_generate_messages_check_deps_Bspline.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/plan_env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/plan_env
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/plan_env
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_env && $(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/plan_env/CMakeFiles /home/zqh/phoenixZ/racer_explore/build/plan_env/gtest/CMakeFiles/progress.marks
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/plan_env/CMakeFiles 0
+	cd /root/jky/racer_explore/build/plan_env && $(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/plan_env/CMakeFiles /root/jky/racer_explore/build/plan_env/gtest/CMakeFiles/progress.marks
+	cd /root/jky/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/plan_env/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+	cd /root/jky/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /root/jky/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /root/jky/racer_explore/build/plan_env && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_env && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/jky/racer_explore/build/plan_env && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_env && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/jky/racer_explore/build/plan_env && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

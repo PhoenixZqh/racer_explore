@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/path_searching/lib/pkgconfig/path_searching.pc
+/root/jky/racer_explore/devel/.private/path_searching/lib/pkgconfig/path_searching.pc

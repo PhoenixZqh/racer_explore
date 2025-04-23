@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/racer_ws/3rd_party/nlopt
+CMAKE_SOURCE_DIR = /home/racer_explore/3rd_party/nlopt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/racer_ws/3rd_party/nlopt/build
+CMAKE_BINARY_DIR = /home/racer_explore/3rd_party/nlopt/build
 
 # Utility rule file for generate-cpp.
 
@@ -57,8 +57,8 @@ CMakeFiles/generate-cpp: nlopt.hpp
 
 
 nlopt.hpp: ../src/api/nlopt-in.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/racer_ws/3rd_party/nlopt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nlopt.hpp"
-	/usr/bin/cmake -DAPI_SOURCE_DIR=/home/racer_ws/3rd_party/nlopt/src/api -P /home/racer_ws/3rd_party/nlopt/cmake/generate-cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/racer_explore/3rd_party/nlopt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nlopt.hpp"
+	/usr/bin/cmake -DAPI_SOURCE_DIR=/home/racer_explore/3rd_party/nlopt/src/api -P /home/racer_explore/3rd_party/nlopt/cmake/generate-cpp.cmake
 
 generate-cpp: CMakeFiles/generate-cpp
 generate-cpp: nlopt.hpp
@@ -76,6 +76,6 @@ CMakeFiles/generate-cpp.dir/clean:
 .PHONY : CMakeFiles/generate-cpp.dir/clean
 
 CMakeFiles/generate-cpp.dir/depend:
-	cd /home/racer_ws/3rd_party/nlopt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/racer_ws/3rd_party/nlopt /home/racer_ws/3rd_party/nlopt /home/racer_ws/3rd_party/nlopt/build /home/racer_ws/3rd_party/nlopt/build /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/generate-cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/racer_explore/3rd_party/nlopt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/racer_explore/3rd_party/nlopt /home/racer_explore/3rd_party/nlopt /home/racer_explore/3rd_party/nlopt/build /home/racer_explore/3rd_party/nlopt/build /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/generate-cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/generate-cpp.dir/depend
 

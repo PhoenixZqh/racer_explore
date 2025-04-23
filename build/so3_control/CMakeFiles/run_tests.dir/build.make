@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/so3_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/so3_control
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/so3_control
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/so3_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control /home/zqh/phoenixZ/racer_explore/build/so3_control/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/so3_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/so3_control /root/jky/racer_explore/src/RACER/uav_simulator/so3_control /root/jky/racer_explore/build/so3_control /root/jky/racer_explore/build/so3_control /root/jky/racer_explore/build/so3_control/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

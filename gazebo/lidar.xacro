@@ -7,7 +7,7 @@
  
     <xacro:property name="support_off_x" value="0" />
     <xacro:property name="support_off_y" value="0" />
-    <xacro:property name="support_off_z" value="0.6" />
+    <xacro:property name="support_off_z" value="0.4" />
     <xacro:property name="lidar_off_x" value="0" />
     <xacro:property name="lidar_off_y" value="0" />
     <xacro:property name="lidar_off_z" value="${support_off_z/2 + laser_length/2}" />

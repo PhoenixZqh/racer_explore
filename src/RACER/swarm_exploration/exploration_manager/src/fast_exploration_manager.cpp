@@ -123,35 +123,37 @@ void FastExplorationManager::initialize(ros::NodeHandle &nh)
 /**
  * @brief 根据当前网格和前沿情况，找到下一个视点，然后调用planTrajToView 生成具体的路径
  */
-int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3d &vel, const Vector3d &acc, const Vector3d &yaw)
+int FastExplorationManager::planExploreMotion(const Eigen::Vector3d &pos, const Eigen::Vector3d &vel, const Eigen::Vector3d &acc, const Eigen::Vector3d &yaw)
 {
     ros::Time t1 = ros::Time::now();
     auto t2 = t1;
 
-    //规划全局和局部巡游，找下个视点
     ed_->frontier_tour_.clear();
-    Vector3d next_pos;
+    Eigen::Vector3d next_pos;
     double next_yaw;
-    // Find the tour passing through viewpoints
-    // Optimal tour is returned as indices of frontier
-    vector<int> grid_ids, frontier_ids;
-    // findGlobalTour(pos, vel, yaw, indices);
-    findGridAndFrontierPath(pos, vel, yaw, grid_ids, frontier_ids); //查询有些网格和前沿
+    std::vector<int> grid_ids, frontier_ids;
+    findGridAndFrontierPath(pos, vel, yaw, grid_ids, frontier_ids);
 
-    //! 第一种情况：没网格有前沿 计算当前位置到前沿视点代价最小的
+    // 强制所有视点的 z=0
+    for (auto &point : ed_->points_) {
+        point.z() = 0.0; // 或 0.3 匹配相机高度
+    }
+    for (auto &avg : ed_->averages_) {
+        avg.z() = 0.0;
+    }
+
     if (grid_ids.empty())
     {
-        return NO_GRID;
-
         ROS_WARN("Empty grid");
-
         double min_cost = 100000;
         int min_cost_id = -1;
-        vector<Vector3d> tmp_path;
+        std::vector<Eigen::Vector3d> tmp_path;
 
         for (int i = 0; i < ed_->averages_.size(); ++i)
         {
-            auto tmp_cost = ViewNode::computeCost(pos, ed_->points_[i], yaw[0], ed_->yaws_[i], vel, yaw[1], tmp_path);
+            Eigen::Vector3d point = ed_->points_[i];
+            point.z() = 0.0; // 强制 z=0
+            auto tmp_cost = ViewNode::computeCost(pos, point, yaw[0], ed_->yaws_[i], vel, yaw[1], tmp_path);
             if (tmp_cost < min_cost)
             {
                 min_cost = tmp_cost;
@@ -159,27 +161,24 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
             }
         }
         next_pos = ed_->points_[min_cost_id];
+        next_pos.z() = 0.0; // 强制 z=0
         next_yaw = ed_->yaws_[min_cost_id];
     }
-
-    //! 第二种情况，有网格没前沿  计算中心到前沿平均位置的代价，不考虑当前无人机的状态
-
     else if (frontier_ids.size() == 0)
     {
         ROS_WARN("No frontier in grid");
-
-        // 拿网格巡游的第二点为中心
         Eigen::Vector3d grid_center = ed_->grid_tour_[1];
+        grid_center.z() = 0.0; // 强制 z=0
 
         double min_cost = 100000;
         int min_cost_id = -1;
 
         for (int i = 0; i < ed_->points_.size(); ++i)
         {
-            // double cost = (grid_center - ed_->averages_[i]).norm();
-            vector<Eigen::Vector3d> path;
-
-            double cost = ViewNode::computeCost(grid_center, ed_->averages_[i], 0, 0, Eigen::Vector3d(0, 0, 0), 0, path);
+            Eigen::Vector3d avg = ed_->averages_[i];
+            avg.z() = 0.0;
+            std::vector<Eigen::Vector3d> path;
+            double cost = ViewNode::computeCost(grid_center, avg, 0, 0, Eigen::Vector3d(0, 0, 0), 0, path);
             if (cost < min_cost)
             {
                 min_cost = cost;
@@ -187,39 +186,39 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
             }
         }
         next_pos = ed_->points_[min_cost_id];
+        next_pos.z() = 0.0;
         next_yaw = ed_->yaws_[min_cost_id];
-
-        // // Simply go to the center of the unknown grid
-        // next_pos = grid_center;
-        // Eigen::Vector3d dir = grid_center - pos;
-        // next_yaw = atan2(dir[1], dir[0]);
     }
-
-    //! 如果只有一个前沿，在前沿网格中挑一个路费最低的视点
     else if (frontier_ids.size() == 1)
     {
         ROS_WARN("Single frontier");
         if (ep_->refine_local_)
         {
-            // Single frontier, find the min cost viewpoint for it
             ed_->refined_ids_ = {frontier_ids[0]};
             ed_->unrefined_points_ = {ed_->points_[frontier_ids[0]]};
+            ed_->unrefined_points_[0].z() = 0.0;
             ed_->n_points_.clear();
-            vector<vector<double>> n_yaws;
+            std::vector<std::vector<double>> n_yaws;
 
-            // 找当前前沿的视点信息， 然后比较视点和当前位置的最小代价
             frontier_finder_->getViewpointsInfo(pos, {frontier_ids[0]}, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
+
+            // 强制视点 z=0
+            for (auto &points : ed_->n_points_) {
+                for (auto &p : points) {
+                    p.z() = 0.0;
+                }
+            }
 
             if (grid_ids.size() <= 1)
             {
-                // Only one grid is assigned
                 double min_cost = 100000;
                 int min_cost_id = -1;
-                vector<Vector3d> tmp_path;
+                std::vector<Eigen::Vector3d> tmp_path;
                 for (int i = 0; i < ed_->n_points_[0].size(); ++i)
                 {
-                    // 算从当前位置到这个视点的路费
-                    auto tmp_cost = ViewNode::computeCost(pos, ed_->n_points_[0][i], yaw[0], n_yaws[0][i], vel, yaw[1], tmp_path);
+                    Eigen::Vector3d point = ed_->n_points_[0][i];
+                    point.z() = 0.0;
+                    auto tmp_cost = ViewNode::computeCost(pos, point, yaw[0], n_yaws[0][i], vel, yaw[1], tmp_path);
                     if (tmp_cost < min_cost)
                     {
                         min_cost = tmp_cost;
@@ -227,90 +226,93 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
                     }
                 }
                 next_pos = ed_->n_points_[0][min_cost_id];
+                next_pos.z() = 0.0;
                 next_yaw = n_yaws[0][min_cost_id];
             }
-
-            //! 如果多个网格，加上下个网格点一起优化
             else
             {
-                // vector<Eigen::Vector3d> grid_pos = { ed_->grid_tour_[2] };
-                // Eigen::Vector3d dir = ed_->grid_tour_[2] - ed_->grid_tour_[1];
-                // vector<double> grid_yaw = { atan2(dir[1], dir[0]) };
-
                 Eigen::Vector3d grid_pos;
                 double grid_yaw;
                 if (hgrid_->getNextGrid(grid_ids, grid_pos, grid_yaw))
                 {
+                    grid_pos.z() = 0.0;
                     ed_->n_points_.push_back({grid_pos});
                     n_yaws.push_back({grid_yaw});
                 }
 
-                // 优化局部巡游：把这些视点和朝向扔进去
                 ed_->refined_points_.clear();
                 ed_->refined_views_.clear();
-                vector<double> refined_yaws;
+                std::vector<double> refined_yaws;
 
                 refineLocalTour(pos, vel, yaw, ed_->n_points_, n_yaws, ed_->refined_points_, refined_yaws);
+                for (auto &p : ed_->refined_points_) {
+                    p.z() = 0.0;
+                }
                 next_pos = ed_->refined_points_[0];
+                next_pos.z() = 0.0;
                 next_yaw = refined_yaws[0];
             }
             ed_->refined_points_ = {next_pos};
-            ed_->refined_views_ = {next_pos + 2.0 * Vector3d(cos(next_yaw), sin(next_yaw), 0)};
+            ed_->refined_views_ = {next_pos + 2.0 * Eigen::Vector3d(cos(next_yaw), sin(next_yaw), 0)};
         }
     }
-
-    // 多个前沿
     else
     {
         ROS_WARN("Multiple frontier");
-        // More than two frontiers are assigned
-        // Do refinement for the next few viewpoints in the global tour
         t1 = ros::Time::now();
 
         ed_->refined_ids_.clear();
         ed_->unrefined_points_.clear();
 
-        // 挑几个前沿（最多 refined_num_ 个，比如 3 个），过滤距离较远的前沿
-        int knum = min(int(frontier_ids.size()), ep_->refined_num_);
+        int knum = std::min(int(frontier_ids.size()), ep_->refined_num_);
         for (int i = 0; i < knum; ++i)
         {
             auto tmp = ed_->points_[frontier_ids[i]];
+            tmp.z() = 0.0;
             ed_->unrefined_points_.push_back(tmp);
             ed_->refined_ids_.push_back(frontier_ids[i]);
             if ((tmp - pos).norm() > ep_->refined_radius_ && ed_->refined_ids_.size() >= 2)
                 break;
         }
 
-        // 获取钱3个前沿的视点
         ed_->n_points_.clear();
-        vector<vector<double>> n_yaws;
+        std::vector<std::vector<double>> n_yaws;
         frontier_finder_->getViewpointsInfo(pos, ed_->refined_ids_, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
+
+        // 强制视点 z=0
+        for (auto &points : ed_->n_points_) {
+            for (auto &p : points) {
+                p.z() = 0.0;
+            }
+        }
 
         ed_->refined_points_.clear();
         ed_->refined_views_.clear();
-        vector<double> refined_yaws;
+        std::vector<double> refined_yaws;
         refineLocalTour(pos, vel, yaw, ed_->n_points_, n_yaws, ed_->refined_points_, refined_yaws);
+        for (auto &p : ed_->refined_points_) {
+            p.z() = 0.0;
+        }
         next_pos = ed_->refined_points_[0];
+        next_pos.z() = 0.0;
         next_yaw = refined_yaws[0];
 
-        // 用于前沿可视化的
         for (int i = 0; i < ed_->refined_points_.size(); ++i)
         {
-            Vector3d view = ed_->refined_points_[i] + 2.0 * Vector3d(cos(refined_yaws[i]), sin(refined_yaws[i]), 0);
+            Eigen::Vector3d view = ed_->refined_points_[i] + 2.0 * Eigen::Vector3d(cos(refined_yaws[i]), sin(refined_yaws[i]), 0);
             ed_->refined_views_.push_back(view);
         }
         ed_->refined_views1_.clear();
         ed_->refined_views2_.clear();
         for (int i = 0; i < ed_->refined_points_.size(); ++i)
         {
-            vector<Vector3d> v1, v2;
+            std::vector<Eigen::Vector3d> v1, v2;
             frontier_finder_->percep_utils_->setPose(ed_->refined_points_[i], refined_yaws[i]);
             frontier_finder_->percep_utils_->getFOV(v1, v2);
             ed_->refined_views1_.insert(ed_->refined_views1_.end(), v1.begin(), v1.end());
             ed_->refined_views2_.insert(ed_->refined_views2_.end(), v2.begin(), v2.end());
         }
         double local_time = (ros::Time::now() - t1).toSec();
-        // ROS_INFO("Local refine time: %lf", local_time);
     }
 
     std::cout << "┌─────────────────────────────────────────────────────────────────────────────────────────────┐ " << std::endl;
@@ -322,14 +324,13 @@ int FastExplorationManager::planExploreMotion(const Vector3d &pos, const Vector3
     ed_->next_pos_ = next_pos;
     ed_->next_yaw_ = next_yaw;
 
-    // 将视点信息发给专家算具体的路线
     if (planTrajToView(pos, vel, acc, yaw, next_pos, next_yaw) == FAIL)
     {
         return FAIL;
     }
 
     double total = (ros::Time::now() - t2).toSec();
-    ROS_INFO("Total time: %lf", total);
+    // ROS_INFO("Total time: %lf", total);
     ROS_ERROR_COND(total > 0.1, "Total time too long!!!");
 
     return SUCCEED;
@@ -349,12 +350,18 @@ int FastExplorationManager::planTrajToView(const Vector3d &pos, const Vector3d &
 
     bool goal_unknown = (edt_environment_->sdf_map_->getOccupancy(next_pos) == SDFMap::UNKNOWN); // 目标点是不是未知区域
     // bool start_unknown = (edt_environment_->sdf_map_->getOccupancy(pos) == SDFMap::UNKNOWN);
-    bool optimistic = ed_->plan_num_ < ep_->init_plan_num_; // 前几次规划用乐观模式（更宽松）
+    // bool optimistic = ed_->plan_num_ < ep_->init_plan_num_; // 前几次规划用乐观模式（更宽松）
+
+    bool optimistic = true; //! 测试小车用乐观模式
 
     planner_manager_->path_finder_->reset();
 
     // A*算法找路
-    if (planner_manager_->path_finder_->search(pos, next_pos, optimistic) != Astar::REACH_END)
+
+    Eigen::Vector3d modified_next_pos = next_pos;
+    modified_next_pos.z() = 0.01; //! 小车地面高度，例如 0.01 米
+
+    if (planner_manager_->path_finder_->search(pos, modified_next_pos, optimistic) != Astar::REACH_END)
     {
         ROS_ERROR("No path to next viewpoint");
         return FAIL;
@@ -479,7 +486,7 @@ int FastExplorationManager::updateFrontierStruct(const Eigen::Vector3d &pos)
     double total_time = frontier_time + view_time + mat_time;
     // ROS_INFO("Drone %d: frontier t: %lf, viewpoint t: %lf, mat: %lf", ep_->drone_id_, frontier_time, view_time, mat_time);
 
-    ROS_INFO("Total t: %lf", (ros::Time::now() - t2).toSec());
+    // ROS_INFO("Total t: %lf", (ros::Time::now() - t2).toSec());
     return ed_->frontiers_.size();
 }
 

@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/PolynomialTrajectory.l
+/root/jky/racer_explore/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/PolynomialTrajectory.l

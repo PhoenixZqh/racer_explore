@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target racer2gazebo_cmd[0m
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  5%] Built target sensor_pos
+[  5%] Built target exploration_manager_xacro_generated_to_devel_space_
+[  5%] Built target geometry_msgs_generate_messages_nodejs
+[  5%] Built target geometry_msgs_generate_messages_py
+[  5%] Built target geometry_msgs_generate_messages_eus
+[  7%] [32mBuilding CXX object CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o[0m
+[ 15%] Built target ground_node
+[ 15%] Built target _exploration_manager_generate_messages_check_deps_GridTour
+[ 18%] Built target _exploration_manager_generate_messages_check_deps_PairOptResponse
+[ 26%] Built target exploration_node
+[ 26%] Built target _exploration_manager_generate_messages_check_deps_HGrid
+[ 26%] Built target _exploration_manager_generate_messages_check_deps_PairOpt
+[ 26%] Built target _exploration_manager_generate_messages_check_deps_DroneState
+[ 39%] Built target exploration_manager_generate_messages_cpp
+[ 52%] Built target exploration_manager_generate_messages_nodejs
+[ 81%] Built target exploration_manager_generate_messages_lisp
+[ 81%] Built target exploration_manager_generate_messages_py
+[ 97%] Built target exploration_manager_generate_messages_eus
+[ 97%] Built target exploration_manager_generate_messages
+[100%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/racer2gazebo_cmd[0m
+[100%] Built target racer2gazebo_cmd

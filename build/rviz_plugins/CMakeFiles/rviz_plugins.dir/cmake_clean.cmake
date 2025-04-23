@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/rviz_plugins/lib/librviz_plugins.pdb"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/rviz_plugins/lib/librviz_plugins.so"
+  "/root/jky/racer_explore/devel/.private/rviz_plugins/lib/librviz_plugins.pdb"
+  "/root/jky/racer_explore/devel/.private/rviz_plugins/lib/librviz_plugins.so"
   "CMakeFiles/rviz_plugins.dir/src/aerialmap_display.cpp.o"
   "CMakeFiles/rviz_plugins.dir/src/goal_tool.cpp.o"
   "CMakeFiles/rviz_plugins.dir/src/moc_aerialmap_display.cpp.o"

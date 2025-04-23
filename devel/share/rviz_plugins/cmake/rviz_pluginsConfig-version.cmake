@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake
+/root/jky/racer_explore/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake

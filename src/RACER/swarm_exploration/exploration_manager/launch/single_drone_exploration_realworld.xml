@@ -4,8 +4,8 @@
     <arg name="init_x" default="0"/>
     <arg name="init_y" default="0"/>
     <arg name="init_z" default="0"/> 
-    <arg name="map_size_x" default="22"/>
-    <arg name="map_size_y" default="22"/>
+    <arg name="map_size_x" default="20"/>
+    <arg name="map_size_y" default="20"/>
     <arg name="map_size_z" default="3.5"/>
     <arg name="odom_prefix" default="odom"/>
     <arg name="simulation" default="false"/>
@@ -17,7 +17,6 @@
     <arg name="cy" default="239.10362243652344"/>
     <arg name="fx" default="385.69793701171875"/>
     <arg name="fy" default="385.69793701171875"/>
-
 
   <!-- main algorithm params -->
   <include file="$(find exploration_manager)/launch/single_drone_planner_realworld.xml">
@@ -47,7 +46,7 @@
 
     <!-- maximum velocity and acceleration the drone will reach -->
     <arg name="max_vel" value="1.0" />
-    <arg name="max_acc" value="0.8" />
+    <arg name="max_acc" value="0.5" />
     <arg name="simulation" value="$(arg simulation)" />
   </include>
 

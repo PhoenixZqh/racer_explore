@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"quadrotor_msgs\" -Ddecode_msgs_EXPORTS
 
-CXX_INCLUDES = -I/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/include -I/usr/include/eigen3 
+CXX_INCLUDES = -I/root/jky/racer_explore/devel/.private/quadrotor_msgs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/root/jky/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/include -I/usr/include/eigen3 
 

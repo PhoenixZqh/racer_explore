@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -O3 -Wall -g  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/zqh/phoenixZ/racer_explore/build/lkh_tsp_solver/gtest/lib ../lib/libgtestd.so -lpthread 
+/usr/bin/c++ -fPIC -O3 -Wall -g  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/root/jky/racer_explore/build/lkh_tsp_solver/gtest/lib ../lib/libgtestd.so -lpthread 

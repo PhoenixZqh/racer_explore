@@ -1,0 +1,52 @@
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/graph_node.cpp:[m[K In static member function ‘[01m[Kstatic double fast_planner::ViewNode::searchPath(const Vector3d&, const Vector3d&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/graph_node.cpp:57:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   57 |     for (int k = 0; [01;35m[Kk < res.size()[m[K; ++k)
+      |                     [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getConsistentGrid(const std::vector<int>&, const std::vector<int>&, std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:188:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  188 |     for (int i = 1; [01;35m[Ki < last_ids.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getActiveGrids(std::vector<int>&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:535:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  535 |     for (int i = 0; [01;35m[Ki < grid2_->grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kbool fast_planner::HGrid::getNextGrid(const std::vector<int>&, Eigen::Vector3d&, double&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:561:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  561 |     for (int i = 1; [01;35m[Ki < grid_ids.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getGridTour(const std::vector<int>&, const Vector3d&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:695:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  695 |     for (int i = 0; [01;35m[Ki < centers.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::HGrid::getGridMarker2(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:799:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  799 |     for (int i = 0; [01;35m[Ki < grid1_->grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp:808:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  808 |     for (int i = 0; [01;35m[Ki < grid2_->grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::UniformGrid::updateBaseCoor()[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:104:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  104 |     for (int i = 0; [01;35m[Ki < grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:133:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  133 |         for (int j = 1; [01;35m[Kj < vertices.size()[m[K; ++j)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::UniformGrid::updateGridData(const int&, std::vector<int>&, std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:197:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  197 |     for (int i = 0; [01;35m[Ki < grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:205:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  205 |         for (int j = 0; [01;35m[Kj < update_mins.size()[m[K; ++j)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:253:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::GridInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  253 |     for (int i = 0; [01;35m[Ki < grid_data_.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::UniformGrid::inputFrontiers(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:433:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  433 |     for (int i = 0; [01;35m[Ki < avgs.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::UniformGrid::getGridTour(const std::vector<int>&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp:462:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  462 |     for (int i = 0; [01;35m[Ki < ids.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~[m[K

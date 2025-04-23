@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/bspline/share/common-lisp/ros/bspline/msg/Bspline.lisp"
+  "/root/jky/racer_explore/devel/.private/bspline/share/common-lisp/ros/bspline/msg/Bspline.lisp"
   "CMakeFiles/bspline_generate_messages_lisp"
 )
 

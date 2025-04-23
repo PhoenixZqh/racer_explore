@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/lib/liblkh_tsp_solver.pdb"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/lib/liblkh_tsp_solver.so"
+  "/root/jky/racer_explore/devel/.private/lkh_tsp_solver/lib/liblkh_tsp_solver.pdb"
+  "/root/jky/racer_explore/devel/.private/lkh_tsp_solver/lib/liblkh_tsp_solver.so"
   "CMakeFiles/lkh_tsp_solver.dir/src/Activate.c.o"
   "CMakeFiles/lkh_tsp_solver.dir/src/AddCandidate.c.o"
   "CMakeFiles/lkh_tsp_solver.dir/src/AddExtraCandidates.c.o"

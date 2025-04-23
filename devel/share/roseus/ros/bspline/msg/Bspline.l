@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/bspline/share/roseus/ros/bspline/msg/Bspline.l
+/root/jky/racer_explore/devel/.private/bspline/share/roseus/ros/bspline/msg/Bspline.l

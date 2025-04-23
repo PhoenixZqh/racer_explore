@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib/libtraj_utils.pdb"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib/libtraj_utils.so"
+  "/root/jky/racer_explore/devel/.private/traj_utils/lib/libtraj_utils.pdb"
+  "/root/jky/racer_explore/devel/.private/traj_utils/lib/libtraj_utils.so"
   "CMakeFiles/traj_utils.dir/src/planning_visualization.cpp.o"
 )
 

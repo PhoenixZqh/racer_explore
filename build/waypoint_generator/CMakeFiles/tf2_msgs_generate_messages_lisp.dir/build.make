@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/waypoint_generator
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/waypoint_generator
 
 # Utility rule file for tf2_msgs_generate_messages_lisp.
 
@@ -70,6 +70,6 @@ CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 
 CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /root/jky/racer_explore/build/waypoint_generator /root/jky/racer_explore/build/waypoint_generator /root/jky/racer_explore/build/waypoint_generator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend
 

@@ -1,74 +1,81 @@
 #include <ros/ros.h>
 #include <geometry_msgs/Twist.h>
 #include <quadrotor_msgs/PositionCommand.h>
+#include <nav_msgs/Odometry.h>
+#include <tf/transform_datatypes.h>
 
-class CommandConverter
-{
+class CommandConverter {
 public:
-    CommandConverter()
-        : nh_("~")
-    {
+    CommandConverter() : nh_("~") {
         // 订阅 PositionCommand
         cmd_sub_ = nh_.subscribe("/planning/pos_cmd_1", 1, &CommandConverter::posCmdCallback, this);
+        // 订阅小车位置 (odom)
+        odom_sub_ = nh_.subscribe("/odom", 1, &CommandConverter::odomCallback, this);
         // 发布 Twist 到 /cmd_vel
         twist_pub_ = nh_.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
 
         // 初始化变量
-        last_yaw_ = 0.0;
-        last_time_ = ros::Time::now();
         rcv_cmd_ = false;
-
-        // 调试信息
-        // ROS_INFO("CommandConverter initialized: sub=command, pub=/cmd_vel");
+        rcv_odom_ = false;
     }
 
-    void posCmdCallback(const quadrotor_msgs::PositionCommand::ConstPtr &cmd)
-    {
+    void odomCallback(const nav_msgs::Odometry::ConstPtr &odom) {
+        // 获取小车当前位置和朝向
+        current_pose_ = odom->pose.pose;
+        // 从四元数中提取 yaw 角度
+        current_yaw_ = tf::getYaw(odom->pose.pose.orientation);
+        rcv_odom_ = true;
+    }
+
+    void posCmdCallback(const quadrotor_msgs::PositionCommand::ConstPtr &cmd) {
+        // 保存目标位置和 yaw
+        target_position_ = cmd->position;
+        target_yaw_ = cmd->yaw;
         rcv_cmd_ = true;
-        cmd_ = *cmd;
     }
 
-    void publishTwist()
-    {
+    void publishTwist() {
         geometry_msgs::Twist twist;
 
-        if (rcv_cmd_)
-        {
-            // 计算线速度：将 velocity.x, velocity.y 投影到小车前进方向
-            // 假设小车朝向与 yaw 一致，线速度为速度矢量的大小
-            double vx = cmd_.velocity.x;
-            double vy = cmd_.velocity.y;
-            twist.linear.x = sqrt(vx * vx + vy * vy); // 速度模长
+        if (rcv_cmd_ && rcv_odom_) {
+            // 计算位置误差
+            double dx = target_position_.x - current_pose_.position.x;
+            double dy = target_position_.y - current_pose_.position.y;
+            double distance_error = sqrt(dx * dx + dy * dy);
+
+            // 计算目标角度（朝向目标点）
+            double target_angle = atan2(dy, dx);
+            // 计算角度误差（目标点角度与当前 yaw 的差）
+            double angle_error = target_angle - current_yaw_;
+            // 归一化角度到 [-pi, pi]
+            angle_error = atan2(sin(angle_error), cos(angle_error));
+
+            // 比例控制生成线速度和角速度
+            const double kp_linear = 0.8;   // 线速度比例增益
+            const double kp_angular = 1.0;  // 角速度比例增益
+            const double max_linear = 1.0;  // 最大线速度 (m/s)
+            const double max_angular = 10.0; // 最大角速度 (rad/s)
+
+            // 生成线速度（基于距离误差）
+            twist.linear.x = std::min(max_linear, kp_linear * distance_error);
             twist.linear.y = 0.0;
             twist.linear.z = 0.0;
 
-            // 计算角速度：基于 yaw 的变化率
-            double current_yaw = cmd_.yaw;
-            ros::Time current_time = ros::Time::now();
-            double dt = (current_time - last_time_).toSec();
+            // 生成角速度（基于角度误差）
+            twist.angular.z = std::min(max_angular, std::max(-max_angular, kp_angular * angle_error));
+            twist.angular.x = 0.0;
+            twist.angular.y = 0.0;
 
-            if (dt > 0.0)
-            {
-                double yaw_rate = (current_yaw - last_yaw_) / dt;
-                // 限制角速度，防止突变
-                const double max_yaw_rate = 1.0; // 最大角速度（rad/s）
-                twist.angular.z = std::max(-max_yaw_rate, std::min(max_yaw_rate, yaw_rate));
-            }
-            else
-            {
+            // 如果距离误差很小，停止运动
+            if (distance_error < 0.05) { // 5cm 阈值
+                twist.linear.x = 0.0;
                 twist.angular.z = 0.0;
             }
 
-            // 更新上次的值
-            last_yaw_ = current_yaw;
-            last_time_ = current_time;
-
             // 调试信息
-            // ROS_INFO_STREAM("Converted: linear.x=" << twist.linear.x << ", angular.z=" << twist.angular.z);
-        }
-        else
-        {
-            // 未接收到命令时，发布零速度
+            ROS_INFO_STREAM("Distance error: " << distance_error << " m, Angle error: " << angle_error << " rad");
+        } else {
+            // 未接收到命令或 odom，发布零速度
             twist.linear.x = 0.0;
             twist.linear.y = 0.0;
             twist.linear.z = 0.0;
@@ -82,22 +89,20 @@ public:
 
 private:
     ros::NodeHandle nh_;
-    ros::Subscriber cmd_sub_;
+    ros::Subscriber cmd_sub_, odom_sub_;
     ros::Publisher twist_pub_;
-    quadrotor_msgs::PositionCommand cmd_;
-    bool rcv_cmd_;
-    double last_yaw_;
-    ros::Time last_time_;
+    geometry_msgs::Point target_position_; // 目标位置
+    geometry_msgs::Pose current_pose_;     // 当前位置
+    double target_yaw_, current_yaw_;      // 目标和当前 yaw
+    bool rcv_cmd_, rcv_odom_;
 };
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     ros::init(argc, argv, "command_converter");
     CommandConverter converter;
 
     ros::Rate rate(100); // 100 Hz
-    while (ros::ok())
-    {
+    while (ros::ok()) {
         converter.publishTwist();
         ros::spinOnce();
         rate.sleep();

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg.pdb"
+  "/root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg"
+  "/root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/proc_msg.pdb"
   "CMakeFiles/proc_msg.dir/test/process_msg.cpp.o"
 )
 

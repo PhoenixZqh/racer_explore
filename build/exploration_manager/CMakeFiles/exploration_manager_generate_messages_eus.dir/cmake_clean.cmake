@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/manifest.l"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/DroneState.l"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/GridTour.l"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/HGrid.l"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOpt.l"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOptResponse.l"
+  "/root/jky/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/manifest.l"
+  "/root/jky/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/DroneState.l"
+  "/root/jky/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/GridTour.l"
+  "/root/jky/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/HGrid.l"
+  "/root/jky/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOpt.l"
+  "/root/jky/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOptResponse.l"
   "CMakeFiles/exploration_manager_generate_messages_eus"
 )
 

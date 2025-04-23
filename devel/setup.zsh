@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/catkin_tools_prebuild/setup.zsh
+/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/setup.zsh

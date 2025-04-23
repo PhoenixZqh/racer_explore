@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/so3_disturbance_generator:$CMAKE_PREFIX_PATH"
-export PWD='/home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/so3_disturbance_generator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/root/jky/racer_explore/devel/.private/so3_disturbance_generator:$CMAKE_PREFIX_PATH"
+export PWD='/root/jky/racer_explore/build/so3_disturbance_generator'
+export ROSLISP_PACKAGE_DIRECTORIES="/root/jky/racer_explore/devel/.private/so3_disturbance_generator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/root/jky/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator:$ROS_PACKAGE_PATH"

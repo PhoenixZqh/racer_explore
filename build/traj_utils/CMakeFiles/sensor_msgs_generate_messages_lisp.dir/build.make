@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/traj_utils
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/traj_utils
 
 # Utility rule file for sensor_msgs_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/traj_utils && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils /home/zqh/phoenixZ/racer_explore/build/traj_utils /home/zqh/phoenixZ/racer_explore/build/traj_utils /home/zqh/phoenixZ/racer_explore/build/traj_utils/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/traj_utils && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils /root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils /root/jky/racer_explore/build/traj_utils /root/jky/racer_explore/build/traj_utils /root/jky/racer_explore/build/traj_utils/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 

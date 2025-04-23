@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/so3_quadrotor_simulator
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/so3_quadrotor_simulator
 
 # Utility rule file for roscpp_generate_messages_cpp.
 
@@ -67,6 +67,6 @@ CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 CMakeFiles/roscpp_generate_messages_cpp.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/so3_quadrotor_simulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator /home/zqh/phoenixZ/racer_explore/build/so3_quadrotor_simulator /home/zqh/phoenixZ/racer_explore/build/so3_quadrotor_simulator /home/zqh/phoenixZ/racer_explore/build/so3_quadrotor_simulator/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/so3_quadrotor_simulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator /root/jky/racer_explore/src/RACER/uav_simulator/so3_quadrotor_simulator /root/jky/racer_explore/build/so3_quadrotor_simulator /root/jky/racer_explore/build/so3_quadrotor_simulator /root/jky/racer_explore/build/so3_quadrotor_simulator/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 

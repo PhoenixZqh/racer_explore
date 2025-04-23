@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/plan_manage
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/plan_manage
 
 # Utility rule file for plan_env_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/plan_env_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/plan_env_generate_messages_lisp.dir/clean
 
 CMakeFiles/plan_env_generate_messages_lisp.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/plan_manage && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage /home/zqh/phoenixZ/racer_explore/build/plan_manage /home/zqh/phoenixZ/racer_explore/build/plan_manage /home/zqh/phoenixZ/racer_explore/build/plan_manage/CMakeFiles/plan_env_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/plan_manage && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage /root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage /root/jky/racer_explore/build/plan_manage /root/jky/racer_explore/build/plan_manage /root/jky/racer_explore/build/plan_manage/CMakeFiles/plan_env_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/plan_env_generate_messages_lisp.dir/depend
 

@@ -67,14 +67,14 @@ set(lkh_mtsp_solver_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(lkh_mtsp_solver_SOURCE_PREFIX /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver)
-  set(lkh_mtsp_solver_DEVEL_PREFIX /home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver)
+  set(lkh_mtsp_solver_SOURCE_PREFIX /root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver)
+  set(lkh_mtsp_solver_DEVEL_PREFIX /root/jky/racer_explore/devel/.private/lkh_mtsp_solver)
   set(lkh_mtsp_solver_INSTALL_PREFIX "")
   set(lkh_mtsp_solver_PREFIX ${lkh_mtsp_solver_DEVEL_PREFIX})
 else()
   set(lkh_mtsp_solver_SOURCE_PREFIX "")
   set(lkh_mtsp_solver_DEVEL_PREFIX "")
-  set(lkh_mtsp_solver_INSTALL_PREFIX /home/zqh/phoenixZ/racer_explore/install)
+  set(lkh_mtsp_solver_INSTALL_PREFIX /root/jky/racer_explore/install)
   set(lkh_mtsp_solver_PREFIX ${lkh_mtsp_solver_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(lkh_mtsp_solver_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/include;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/include " STREQUAL " ")
+if(NOT "/root/jky/racer_explore/devel/.private/lkh_mtsp_solver/include;/root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/include " STREQUAL " ")
   set(lkh_mtsp_solver_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/include;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/include")
+  set(_include_dirs "/root/jky/racer_explore/devel/.private/lkh_mtsp_solver/include;/root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/include;
         message(FATAL_ERROR "Project 'lkh_mtsp_solver' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'lkh_mtsp_solver' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'lkh_mtsp_solver' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/${idir}'.  ${_report}")
     endif()
     _list_append_unique(lkh_mtsp_solver_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/lib;/home/zqh/phoenixZ/racer_explore/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/jky/racer_explore/devel/.private/lkh_mtsp_solver/lib;/root/jky/racer_explore/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

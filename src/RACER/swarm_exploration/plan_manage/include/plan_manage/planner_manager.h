@@ -43,7 +43,9 @@ public:
   void initPlanModules(ros::NodeHandle& nh);
   void setGlobalWaypoints(vector<Eigen::Vector3d>& waypoints);
 
+  bool checkTrajCollision(double& distance,Eigen::Vector3d & ugv_odom);
   bool checkTrajCollision(double& distance);
+
   void calcNextYaw(const double& last_yaw, double& yaw);
 
   bool checkSwarmCollision(const int& drone_id);

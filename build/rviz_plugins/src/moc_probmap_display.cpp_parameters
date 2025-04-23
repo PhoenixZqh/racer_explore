@@ -2,5 +2,5 @@
 -DROS_PACKAGE_NAME="rviz_plugins"
 -DROSCONSOLE_BACKEND_LOG4CXX
 -o
-/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/src/moc_probmap_display.cpp
-/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/src/probmap_display.h
+/root/jky/racer_explore/build/rviz_plugins/src/moc_probmap_display.cpp
+/root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/src/probmap_display.h

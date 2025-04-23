@@ -1,0 +1,4 @@
+[ 50%] [32m[1mLinking CXX shared library /root/jky/racer_explore/devel/.private/traj_utils/lib/libtraj_utils.so[0m
+[ 50%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/traj_utils/lib/traj_utils/process_msg[0m
+[ 75%] Built target traj_utils
+[100%] Built target process_msg

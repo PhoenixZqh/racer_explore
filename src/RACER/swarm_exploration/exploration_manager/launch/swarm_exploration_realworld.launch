@@ -2,7 +2,7 @@
   <!-- size of map, change the size in x, y, z according to your application -->
   <arg name="map_size_x" value="20"/>
   <arg name="map_size_y" value="20"/>
-  <arg name="map_size_z" value="3.5"/>
+  <arg name="map_size_z" value="1.0"/>
 
   <!-- Global odom prefix -->
   <arg name="odom_prefix" value="/state_ukf/odom" />
@@ -12,7 +12,7 @@
   <include file="$(find exploration_manager)/launch/single_drone_exploration_realworld.xml">
     <arg name="drone_id" value="$(arg drone_id)"/>
     <arg name="init_x"   value="0"/>
-    <!-- <arg name="init_x"   value="-4.5"/> -->
+    <!-- <arg name="init_x"   value="-2.5D.5"/> -->
     <arg name="init_y"   value="0"/>
     <!-- <arg name="init_y"   value="-3"/> -->
     <arg name="init_z"   value="0"/> 

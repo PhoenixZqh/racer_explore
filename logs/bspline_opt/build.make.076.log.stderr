@@ -1,0 +1,9 @@
+make[2]: *** No rule to make target '/usr/local/lib/libnlopt.so', needed by '/home/racer_explore/devel/.private/bspline_opt/lib/libbspline_opt.so'.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/home/racer_explore/src/RACER/swarm_exploration/bspline_opt/src/bspline_optimizer.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Knlopt.hpp: No such file or directory
+    6 | #include [01;31m[K<nlopt.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/bspline_opt.dir/build.make:63: CMakeFiles/bspline_opt.dir/src/bspline_optimizer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:180: CMakeFiles/bspline_opt.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

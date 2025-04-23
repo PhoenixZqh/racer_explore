@@ -110,6 +110,44 @@ void FastPlannerManager::setGlobalWaypoints(vector<Eigen::Vector3d> &waypoints)
  * @brief 检测当前无人机的飞行轨迹会不会撞倒
  */
 //TODO： 这里是无人机轨迹与障碍物会不会发生碰撞
+bool FastPlannerManager::checkTrajCollision(double &distance, Eigen::Vector3d & ugv_odom)
+{
+    double t_now = (ros::Time::now() - local_data_.start_time_).toSec();
+
+    Eigen::Vector3d cur_pt = local_data_.position_traj_.evaluateDeBoorT(t_now); //根据B样条算出当前的位置
+    double radius = 0.0;
+    Eigen::Vector3d fut_pt;
+    double fut_t = 0.01;
+
+    // 半径最大不超过6且不超过轨迹的总时长
+    while (radius < 6.0 && t_now + fut_t < local_data_.duration_)
+    {
+        fut_pt = local_data_.position_traj_.evaluateDeBoorT(t_now + fut_t); //计算未来的位置
+
+        // fut_pt.z() = 0.3; // 强制 z=0.3米
+        // int check_radius  = (fut_pt - cur_pt).norm(); // 距离
+
+        // // 仅检查距离大于车体半径的点
+        // if (check_radius <= 3.0)
+        // {
+        //     fut_t += 0.02;
+        //     continue; // 跳过太近的点
+        // }
+        double dist = edt_environment_->sdf_map_->getDistance(fut_pt);
+        // 检查未来位置是否在膨胀障碍区
+        if (sdf_map_->getInflateOccupancy(fut_pt) == 1)
+        {
+
+            ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z(), dist);           
+            return false;
+        }
+        radius = (fut_pt - cur_pt).norm(); //更新半径
+        fut_t += 0.01;
+    }
+
+    return true;
+}
+
 bool FastPlannerManager::checkTrajCollision(double &distance)
 {
     double t_now = (ros::Time::now() - local_data_.start_time_).toSec();
@@ -117,23 +155,32 @@ bool FastPlannerManager::checkTrajCollision(double &distance)
     Eigen::Vector3d cur_pt = local_data_.position_traj_.evaluateDeBoorT(t_now); //根据B样条算出当前的位置
     double radius = 0.0;
     Eigen::Vector3d fut_pt;
-    double fut_t = 0.02;
+    double fut_t = 0.01;
 
     // 半径最大不超过6且不超过轨迹的总时长
     while (radius < 6.0 && t_now + fut_t < local_data_.duration_)
     {
         fut_pt = local_data_.position_traj_.evaluateDeBoorT(t_now + fut_t); //计算未来的位置
-        // double dist = edt_environment_->sdf_map_->getDistance(fut_pt);
+
+        // fut_pt.z() = 0.3; // 强制 z=0.3米
+        // int check_radius  = (fut_pt - cur_pt).norm(); // 距离
+
+        // // 仅检查距离大于车体半径的点
+        // if (check_radius <= 3.0)
+        // {
+        //     fut_t += 0.02;
+        //     continue; // 跳过太近的点
+        // }
+        double dist = edt_environment_->sdf_map_->getDistance(fut_pt);
         // 检查未来位置是否在膨胀障碍区
         if (sdf_map_->getInflateOccupancy(fut_pt) == 1)
         {
-            distance = radius;
-            // std::cout << "collision at: " << fut_pt.transpose() << ", dist: " << dist << std::endl;
-            std::cout << "collision at: " << fut_pt.transpose() << std::endl; //撞点坐标
+
+            ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z(), dist);           
             return false;
         }
         radius = (fut_pt - cur_pt).norm(); //更新半径
-        fut_t += 0.02;
+        fut_t += 0.01;
     }
 
     return true;

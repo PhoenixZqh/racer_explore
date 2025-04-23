@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/bspline/share/common-lisp/ros/bspline/msg/bspline-msg.asd
+/root/jky/racer_explore/devel/.private/bspline/share/common-lisp/ros/bspline/msg/bspline-msg.asd

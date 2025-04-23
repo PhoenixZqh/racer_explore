@@ -1,0 +1,25 @@
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  2%] Built target geometry_msgs_generate_messages_eus
+[  2%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/racer2gazebo_cmd[0m
+[  2%] Built target exploration_manager_xacro_generated_to_devel_space_
+[  5%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/ground_node[0m
+[  7%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos[0m
+[  7%] Built target _exploration_manager_generate_messages_check_deps_PairOptResponse
+[  7%] Built target _exploration_manager_generate_messages_check_deps_GridTour
+[  7%] Built target _exploration_manager_generate_messages_check_deps_DroneState
+[ 10%] [32m[1mLinking CXX executable /root/jky/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/exploration_node[0m
+[ 10%] Built target _exploration_manager_generate_messages_check_deps_HGrid
+[ 10%] Built target _exploration_manager_generate_messages_check_deps_PairOpt
+[ 28%] Built target exploration_manager_generate_messages_cpp
+[ 44%] Built target exploration_manager_generate_messages_py
+[ 55%] Built target exploration_manager_generate_messages_nodejs
+[ 65%] Built target exploration_manager_generate_messages_lisp
+[ 81%] Built target exploration_manager_generate_messages_eus
+[ 81%] Built target exploration_manager_generate_messages
+[ 84%] Built target racer2gazebo_cmd
+[ 86%] Built target sensor_pos
+[ 92%] Built target ground_node
+[100%] Built target exploration_node

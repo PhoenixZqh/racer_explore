@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_explore/install
+prefix=/root/jky/racer_explore/install
 
 Name: odom_visualization
 Description: Description of odom_visualization

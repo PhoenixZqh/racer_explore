@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake
+/root/jky/racer_explore/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake

@@ -698,7 +698,7 @@ void FastExplorationFSM::safetyCallback(const ros::TimerEvent &e)
     {
         //检查轨迹安全性
         double dist;
-        bool safe = planner_manager_->checkTrajCollision(dist);
+        bool safe = planner_manager_->checkTrajCollision(dist, fd_->odom_pos_);
         if (!safe)
         {
             ROS_INFO("Replan: collision detected!!!!!!");

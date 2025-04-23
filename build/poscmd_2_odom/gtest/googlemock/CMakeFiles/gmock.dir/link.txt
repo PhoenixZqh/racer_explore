@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -O3 -Wall -g  -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/gtest/lib ../lib/libgtest.so -lpthread 
+/usr/bin/c++ -fPIC -O3 -Wall -g  -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/root/jky/racer_explore/build/poscmd_2_odom/gtest/lib ../lib/libgtest.so -lpthread 

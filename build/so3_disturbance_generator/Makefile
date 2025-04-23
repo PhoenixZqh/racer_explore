@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/so3_disturbance_generator
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator/CMakeFiles /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/so3_disturbance_generator/CMakeFiles /root/jky/racer_explore/build/so3_disturbance_generator/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/so3_disturbance_generator/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

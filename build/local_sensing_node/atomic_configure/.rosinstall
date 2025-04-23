@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/zqh/phoenixZ/racer_explore/devel/.private/local_sensing_node/setup.sh
+    local-name: /root/jky/racer_explore/devel/.private/local_sensing_node/setup.sh

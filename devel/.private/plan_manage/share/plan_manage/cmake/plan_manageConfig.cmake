@@ -67,14 +67,14 @@ set(plan_manage_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(plan_manage_SOURCE_PREFIX /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage)
-  set(plan_manage_DEVEL_PREFIX /home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage)
+  set(plan_manage_SOURCE_PREFIX /root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage)
+  set(plan_manage_DEVEL_PREFIX /root/jky/racer_explore/devel/.private/plan_manage)
   set(plan_manage_INSTALL_PREFIX "")
   set(plan_manage_PREFIX ${plan_manage_DEVEL_PREFIX})
 else()
   set(plan_manage_SOURCE_PREFIX "")
   set(plan_manage_DEVEL_PREFIX "")
-  set(plan_manage_INSTALL_PREFIX /home/zqh/phoenixZ/racer_explore/install)
+  set(plan_manage_INSTALL_PREFIX /root/jky/racer_explore/install)
   set(plan_manage_PREFIX ${plan_manage_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(plan_manage_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include " STREQUAL " ")
+if(NOT "/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/include " STREQUAL " ")
   set(plan_manage_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include")
+  set(_include_dirs "/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage
         message(FATAL_ERROR "Project 'plan_manage' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'plan_manage' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'plan_manage' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/root/jky/racer_explore/src/RACER/swarm_exploration/plan_manage/${idir}'.  ${_report}")
     endif()
     _list_append_unique(plan_manage_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib;/home/zqh/phoenixZ/racer_explore/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/jky/racer_explore/devel/.private/plan_manage/lib;/root/jky/racer_explore/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

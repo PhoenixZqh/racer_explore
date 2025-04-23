@@ -1,1 +1,1 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/AuxCommand.lisp
+/root/jky/racer_explore/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/AuxCommand.lisp

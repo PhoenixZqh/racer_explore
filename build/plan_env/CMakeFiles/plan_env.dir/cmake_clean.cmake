@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/lib/libplan_env.pdb"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/lib/libplan_env.so"
+  "/root/jky/racer_explore/devel/.private/plan_env/lib/libplan_env.pdb"
+  "/root/jky/racer_explore/devel/.private/plan_env/lib/libplan_env.so"
   "CMakeFiles/plan_env.dir/src/edt_environment.cpp.o"
   "CMakeFiles/plan_env.dir/src/map_ros.cpp.o"
   "CMakeFiles/plan_env.dir/src/multi_map_manager.cpp.o"

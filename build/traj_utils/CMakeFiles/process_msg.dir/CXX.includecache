@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/src/process_msg.cpp
-visualization_msgs/Marker.h
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/src/visualization_msgs/Marker.h
-sensor_msgs/PointCloud2.h
--
-ros/ros.h
--
-pcl/point_cloud.h
--
-pcl/point_types.h
--
-pcl_conversions/pcl_conversions.h
--
-iostream
--
-vector
--
-
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string
 -
@@ -483,8 +465,6 @@ ros/init.h
 /opt/ros/noetic/include/ros/ros/init.h
 common.h
 /opt/ros/noetic/include/ros/common.h
-boost/bind.hpp
--
 xmlrpcpp/XmlRpcValue.h
 -
 
@@ -529,7 +509,7 @@ ros/message.h
 /opt/ros/noetic/include/ros/ros/message.h
 ros/serialization.h
 /opt/ros/noetic/include/ros/ros/serialization.h
-boost/bind.hpp
+boost/bind/bind.hpp
 -
 boost/thread/mutex.hpp
 -
@@ -990,6 +970,24 @@ string
 vector
 -
 time.h
+-
+
+/root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils/src/process_msg.cpp
+visualization_msgs/Marker.h
+/root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils/src/visualization_msgs/Marker.h
+sensor_msgs/PointCloud2.h
+-
+ros/ros.h
+-
+pcl/point_cloud.h
+-
+pcl/point_types.h
+-
+pcl_conversions/pcl_conversions.h
+-
+iostream
+-
+vector
 -
 
 /usr/include/eigen3/Eigen/Cholesky

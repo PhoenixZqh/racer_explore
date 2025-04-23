@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_explore/install
+prefix=/root/jky/racer_explore/install
 
 Name: poscmd_2_odom
 Description: Description of poscmd_2_odom

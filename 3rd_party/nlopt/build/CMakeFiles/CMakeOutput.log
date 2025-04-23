@@ -1,4 +1,4 @@
-The system is: Linux - 5.15.0-134-generic - x86_64
+The system is: Linux - 5.15.0-136-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,29 +23,29 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_633b5/fast && /usr/bin/make -f CMakeFiles/cmTC_633b5.dir/build.make CMakeFiles/cmTC_633b5.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_633b5.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_633b5.dir/testCCompiler.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_633b5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_633b5.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_633b5.dir/testCCompiler.c.o  -o cmTC_633b5 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_f113d/fast && /usr/bin/make -f CMakeFiles/cmTC_f113d.dir/build.make CMakeFiles/cmTC_f113d.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f113d.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f113d.dir/testCCompiler.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f113d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f113d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f113d.dir/testCCompiler.c.o  -o cmTC_f113d 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_fa2c9/fast && /usr/bin/make -f CMakeFiles/cmTC_fa2c9.dir/build.make CMakeFiles/cmTC_fa2c9.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/make cmTC_e6d79/fast && /usr/bin/make -f CMakeFiles/cmTC_e6d79.dir/build.make CMakeFiles/cmTC_e6d79.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -54,8 +54,8 @@ Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
 gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGd7PKU.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccBst8VH.s
 GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
 	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
@@ -75,15 +75,15 @@ GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o /tmp/ccGd7PKU.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o /tmp/ccBst8VH.s
 GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_fa2c9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa2c9.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o  -o cmTC_fa2c9 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_e6d79
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6d79.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o  -o cmTC_e6d79 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -95,10 +95,10 @@ Thread model: posix
 gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_fa2c9' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNKJoam.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fa2c9 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_fa2c9' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e6d79' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfSjOX6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e6d79 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e6d79' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -119,12 +119,12 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_fa2c9/fast && /usr/bin/make -f CMakeFiles/cmTC_fa2c9.dir/build.make CMakeFiles/cmTC_fa2c9.dir/build]
-  ignore line: [make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_e6d79/fast && /usr/bin/make -f CMakeFiles/cmTC_e6d79.dir/build.make CMakeFiles/cmTC_e6d79.dir/build]
+  ignore line: [make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -133,8 +133,8 @@ Parsed C implicit link information from above output:
   ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGd7PKU.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccBst8VH.s]
   ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
@@ -154,15 +154,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o /tmp/ccGd7PKU.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o /tmp/ccBst8VH.s]
   ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_fa2c9]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa2c9.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o  -o cmTC_fa2c9 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_e6d79]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6d79.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o  -o cmTC_e6d79 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -174,13 +174,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_fa2c9' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNKJoam.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fa2c9 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e6d79' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfSjOX6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e6d79 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccNKJoam.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccfSjOX6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -199,7 +199,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fa2c9] ==> ignore
+    arg [cmTC_e6d79] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
@@ -211,7 +211,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-    arg [CMakeFiles/cmTC_fa2c9.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_e6d79.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -239,26 +239,26 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_fe2ee/fast && /usr/bin/make -f CMakeFiles/cmTC_fe2ee.dir/build.make CMakeFiles/cmTC_fe2ee.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fe2ee.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_fe2ee.dir/testCXXCompiler.cxx.o -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_fe2ee
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe2ee.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_fe2ee.dir/testCXXCompiler.cxx.o  -o cmTC_fe2ee 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_c733c/fast && /usr/bin/make -f CMakeFiles/cmTC_c733c.dir/build.make CMakeFiles/cmTC_c733c.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c733c.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_c733c.dir/testCXXCompiler.cxx.o -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c733c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c733c.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_c733c.dir/testCXXCompiler.cxx.o  -o cmTC_c733c 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2c8e5/fast && /usr/bin/make -f CMakeFiles/cmTC_2c8e5.dir/build.make CMakeFiles/cmTC_2c8e5.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/make cmTC_9a83f/fast && /usr/bin/make -f CMakeFiles/cmTC_9a83f.dir/build.make CMakeFiles/cmTC_9a83f.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -267,8 +267,8 @@ Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
 gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccU0BmnR.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxVUz2E.s
 GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
 	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
@@ -292,15 +292,15 @@ GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccU0BmnR.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxVUz2E.s
 GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_2c8e5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8e5.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2c8e5 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_9a83f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a83f.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9a83f 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -312,10 +312,10 @@ Thread model: posix
 gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2c8e5' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPXKRMi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2c8e5 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2c8e5' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9a83f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyxSzz8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9a83f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9a83f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -342,12 +342,12 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_2c8e5/fast && /usr/bin/make -f CMakeFiles/cmTC_2c8e5.dir/build.make CMakeFiles/cmTC_2c8e5.dir/build]
-  ignore line: [make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_9a83f/fast && /usr/bin/make -f CMakeFiles/cmTC_9a83f.dir/build.make CMakeFiles/cmTC_9a83f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -356,8 +356,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccU0BmnR.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxVUz2E.s]
   ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
@@ -381,15 +381,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccU0BmnR.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxVUz2E.s]
   ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_2c8e5]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8e5.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2c8e5 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_9a83f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a83f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9a83f ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -401,13 +401,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2c8e5' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPXKRMi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2c8e5 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9a83f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyxSzz8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9a83f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccPXKRMi.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccyxSzz8.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -426,7 +426,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2c8e5] ==> ignore
+    arg [cmTC_9a83f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
@@ -438,7 +438,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-    arg [CMakeFiles/cmTC_2c8e5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_9a83f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -462,324 +462,324 @@ Parsed CXX implicit link information from above output:
 
 
 Determining if the include file getopt.h exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_bb913/fast && /usr/bin/make -f CMakeFiles/cmTC_bb913.dir/build.make CMakeFiles/cmTC_bb913.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bb913.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_bb913.dir/CheckIncludeFile.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_bb913
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb913.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bb913.dir/CheckIncludeFile.c.o  -o cmTC_bb913 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_d0e79/fast && /usr/bin/make -f CMakeFiles/cmTC_d0e79.dir/build.make CMakeFiles/cmTC_d0e79.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0e79.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d0e79.dir/CheckIncludeFile.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d0e79
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0e79.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d0e79.dir/CheckIncludeFile.c.o  -o cmTC_d0e79 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file unistd.h exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2ba68/fast && /usr/bin/make -f CMakeFiles/cmTC_2ba68.dir/build.make CMakeFiles/cmTC_2ba68.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2ba68.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_2ba68.dir/CheckIncludeFile.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_2ba68
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ba68.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2ba68.dir/CheckIncludeFile.c.o  -o cmTC_2ba68 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_6c3e5/fast && /usr/bin/make -f CMakeFiles/cmTC_6c3e5.dir/build.make CMakeFiles/cmTC_6c3e5.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c3e5.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6c3e5.dir/CheckIncludeFile.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6c3e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c3e5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6c3e5.dir/CheckIncludeFile.c.o  -o cmTC_6c3e5 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file stdint.h exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_bb887/fast && /usr/bin/make -f CMakeFiles/cmTC_bb887.dir/build.make CMakeFiles/cmTC_bb887.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bb887.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_bb887.dir/CheckIncludeFile.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_bb887
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb887.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bb887.dir/CheckIncludeFile.c.o  -o cmTC_bb887 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_0307a/fast && /usr/bin/make -f CMakeFiles/cmTC_0307a.dir/build.make CMakeFiles/cmTC_0307a.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0307a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0307a.dir/CheckIncludeFile.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0307a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0307a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0307a.dir/CheckIncludeFile.c.o  -o cmTC_0307a 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file time.h exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_0f84f/fast && /usr/bin/make -f CMakeFiles/cmTC_0f84f.dir/build.make CMakeFiles/cmTC_0f84f.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0f84f.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_0f84f.dir/CheckIncludeFile.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_0f84f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f84f.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0f84f.dir/CheckIncludeFile.c.o  -o cmTC_0f84f 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_f3f18/fast && /usr/bin/make -f CMakeFiles/cmTC_f3f18.dir/build.make CMakeFiles/cmTC_f3f18.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f3f18.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f3f18.dir/CheckIncludeFile.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f3f18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3f18.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f3f18.dir/CheckIncludeFile.c.o  -o cmTC_f3f18 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file sys/time.h exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_98357/fast && /usr/bin/make -f CMakeFiles/cmTC_98357.dir/build.make CMakeFiles/cmTC_98357.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_98357.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_98357.dir/CheckIncludeFile.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_98357
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98357.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_98357.dir/CheckIncludeFile.c.o  -o cmTC_98357 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_49c30/fast && /usr/bin/make -f CMakeFiles/cmTC_49c30.dir/build.make CMakeFiles/cmTC_49c30.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49c30.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_49c30.dir/CheckIncludeFile.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_49c30
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49c30.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_49c30.dir/CheckIncludeFile.c.o  -o cmTC_49c30 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function getpid exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f04d5/fast && /usr/bin/make -f CMakeFiles/cmTC_f04d5.dir/build.make CMakeFiles/cmTC_f04d5.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f04d5.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid   -o CMakeFiles/cmTC_f04d5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f04d5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f04d5.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpid    -rdynamic CMakeFiles/cmTC_f04d5.dir/CheckFunctionExists.c.o  -o cmTC_f04d5 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_a5803/fast && /usr/bin/make -f CMakeFiles/cmTC_a5803.dir/build.make CMakeFiles/cmTC_a5803.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a5803.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid   -o CMakeFiles/cmTC_a5803.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a5803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5803.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpid    -rdynamic CMakeFiles/cmTC_a5803.dir/CheckFunctionExists.c.o  -o cmTC_a5803 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function syscall exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e3cfc/fast && /usr/bin/make -f CMakeFiles/cmTC_e3cfc.dir/build.make CMakeFiles/cmTC_e3cfc.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e3cfc.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=syscall   -o CMakeFiles/cmTC_e3cfc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e3cfc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3cfc.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=syscall    -rdynamic CMakeFiles/cmTC_e3cfc.dir/CheckFunctionExists.c.o  -o cmTC_e3cfc 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_f26b0/fast && /usr/bin/make -f CMakeFiles/cmTC_f26b0.dir/build.make CMakeFiles/cmTC_f26b0.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f26b0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=syscall   -o CMakeFiles/cmTC_f26b0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f26b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f26b0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=syscall    -rdynamic CMakeFiles/cmTC_f26b0.dir/CheckFunctionExists.c.o  -o cmTC_f26b0 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function isinf exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7729f/fast && /usr/bin/make -f CMakeFiles/cmTC_7729f.dir/build.make CMakeFiles/cmTC_7729f.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7729f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isinf   -o CMakeFiles/cmTC_7729f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-<command-line>: warning: conflicting types for built-in function 'isinf'; expected 'int()' [-Wbuiltin-declaration-mismatch]
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+Run Build Command(s):/usr/bin/make cmTC_d43dc/fast && /usr/bin/make -f CMakeFiles/cmTC_d43dc.dir/build.make CMakeFiles/cmTC_d43dc.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d43dc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isinf   -o CMakeFiles/cmTC_d43dc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘isinf’; expected ‘int()’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: 'isinf' is declared in header '<math.h>'
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘isinf’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_7729f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7729f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isinf    -rdynamic CMakeFiles/cmTC_7729f.dir/CheckFunctionExists.c.o  -o cmTC_7729f 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Linking C executable cmTC_d43dc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d43dc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isinf    -rdynamic CMakeFiles/cmTC_d43dc.dir/CheckFunctionExists.c.o  -o cmTC_d43dc 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function isnan exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_98a4c/fast && /usr/bin/make -f CMakeFiles/cmTC_98a4c.dir/build.make CMakeFiles/cmTC_98a4c.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_98a4c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isnan   -o CMakeFiles/cmTC_98a4c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-<command-line>: warning: conflicting types for built-in function 'isnan'; expected 'int()' [-Wbuiltin-declaration-mismatch]
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+Run Build Command(s):/usr/bin/make cmTC_e9a36/fast && /usr/bin/make -f CMakeFiles/cmTC_e9a36.dir/build.make CMakeFiles/cmTC_e9a36.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9a36.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isnan   -o CMakeFiles/cmTC_e9a36.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘isnan’; expected ‘int()’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: 'isnan' is declared in header '<math.h>'
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘isnan’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_98a4c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98a4c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isnan    -rdynamic CMakeFiles/cmTC_98a4c.dir/CheckFunctionExists.c.o  -o cmTC_98a4c 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Linking C executable cmTC_e9a36
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9a36.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isnan    -rdynamic CMakeFiles/cmTC_e9a36.dir/CheckFunctionExists.c.o  -o cmTC_e9a36 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function gettimeofday exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_31f3e/fast && /usr/bin/make -f CMakeFiles/cmTC_31f3e.dir/build.make CMakeFiles/cmTC_31f3e.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_31f3e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettimeofday   -o CMakeFiles/cmTC_31f3e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_31f3e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31f3e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettimeofday    -rdynamic CMakeFiles/cmTC_31f3e.dir/CheckFunctionExists.c.o  -o cmTC_31f3e 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_a840f/fast && /usr/bin/make -f CMakeFiles/cmTC_a840f.dir/build.make CMakeFiles/cmTC_a840f.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a840f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettimeofday   -o CMakeFiles/cmTC_a840f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a840f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a840f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettimeofday    -rdynamic CMakeFiles/cmTC_a840f.dir/CheckFunctionExists.c.o  -o cmTC_a840f 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function qsort_r exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_07962/fast && /usr/bin/make -f CMakeFiles/cmTC_07962.dir/build.make CMakeFiles/cmTC_07962.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_07962.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=qsort_r   -o CMakeFiles/cmTC_07962.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_07962
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07962.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=qsort_r    -rdynamic CMakeFiles/cmTC_07962.dir/CheckFunctionExists.c.o  -o cmTC_07962 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_89888/fast && /usr/bin/make -f CMakeFiles/cmTC_89888.dir/build.make CMakeFiles/cmTC_89888.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89888.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=qsort_r   -o CMakeFiles/cmTC_89888.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_89888
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89888.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=qsort_r    -rdynamic CMakeFiles/cmTC_89888.dir/CheckFunctionExists.c.o  -o cmTC_89888 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function time exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_63128/fast && /usr/bin/make -f CMakeFiles/cmTC_63128.dir/build.make CMakeFiles/cmTC_63128.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_63128.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=time   -o CMakeFiles/cmTC_63128.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_63128
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63128.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=time    -rdynamic CMakeFiles/cmTC_63128.dir/CheckFunctionExists.c.o  -o cmTC_63128 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_aebfe/fast && /usr/bin/make -f CMakeFiles/cmTC_aebfe.dir/build.make CMakeFiles/cmTC_aebfe.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aebfe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=time   -o CMakeFiles/cmTC_aebfe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aebfe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aebfe.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=time    -rdynamic CMakeFiles/cmTC_aebfe.dir/CheckFunctionExists.c.o  -o cmTC_aebfe 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function copysign exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_6caef/fast && /usr/bin/make -f CMakeFiles/cmTC_6caef.dir/build.make CMakeFiles/cmTC_6caef.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6caef.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=copysign   -o CMakeFiles/cmTC_6caef.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-<command-line>: warning: conflicting types for built-in function 'copysign'; expected 'double(double,  double)' [-Wbuiltin-declaration-mismatch]
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+Run Build Command(s):/usr/bin/make cmTC_800a7/fast && /usr/bin/make -f CMakeFiles/cmTC_800a7.dir/build.make CMakeFiles/cmTC_800a7.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_800a7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=copysign   -o CMakeFiles/cmTC_800a7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘copysign’; expected ‘double(double,  double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: 'copysign' is declared in header '<math.h>'
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘copysign’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_6caef
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6caef.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=copysign    -rdynamic CMakeFiles/cmTC_6caef.dir/CheckFunctionExists.c.o  -o cmTC_6caef 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Linking C executable cmTC_800a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_800a7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=copysign    -rdynamic CMakeFiles/cmTC_800a7.dir/CheckFunctionExists.c.o  -o cmTC_800a7 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function getopt exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_6a9f0/fast && /usr/bin/make -f CMakeFiles/cmTC_6a9f0.dir/build.make CMakeFiles/cmTC_6a9f0.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6a9f0.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getopt   -o CMakeFiles/cmTC_6a9f0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_6a9f0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a9f0.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getopt    -rdynamic CMakeFiles/cmTC_6a9f0.dir/CheckFunctionExists.c.o  -o cmTC_6a9f0 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_f5517/fast && /usr/bin/make -f CMakeFiles/cmTC_f5517.dir/build.make CMakeFiles/cmTC_f5517.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f5517.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getopt   -o CMakeFiles/cmTC_f5517.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f5517
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5517.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getopt    -rdynamic CMakeFiles/cmTC_f5517.dir/CheckFunctionExists.c.o  -o cmTC_f5517 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file sys/types.h exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_77227/fast && /usr/bin/make -f CMakeFiles/cmTC_77227.dir/build.make CMakeFiles/cmTC_77227.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_77227.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_77227.dir/CheckIncludeFile.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_77227
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77227.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_77227.dir/CheckIncludeFile.c.o  -o cmTC_77227 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_0d237/fast && /usr/bin/make -f CMakeFiles/cmTC_0d237.dir/build.make CMakeFiles/cmTC_0d237.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d237.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0d237.dir/CheckIncludeFile.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0d237
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d237.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0d237.dir/CheckIncludeFile.c.o  -o cmTC_0d237 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file stddef.h exists passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7ec75/fast && /usr/bin/make -f CMakeFiles/cmTC_7ec75.dir/build.make CMakeFiles/cmTC_7ec75.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7ec75.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_7ec75.dir/CheckIncludeFile.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_7ec75
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ec75.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7ec75.dir/CheckIncludeFile.c.o  -o cmTC_7ec75 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_e1654/fast && /usr/bin/make -f CMakeFiles/cmTC_e1654.dir/build.make CMakeFiles/cmTC_e1654.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1654.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e1654.dir/CheckIncludeFile.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e1654
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1654.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e1654.dir/CheckIncludeFile.c.o  -o cmTC_e1654 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of uint32_t passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cb991/fast && /usr/bin/make -f CMakeFiles/cmTC_cb991.dir/build.make CMakeFiles/cmTC_cb991.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cb991.dir/SIZEOF_UINT32_T.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_cb991.dir/SIZEOF_UINT32_T.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32_T.c
-Linking C executable cmTC_cb991
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb991.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cb991.dir/SIZEOF_UINT32_T.c.o  -o cmTC_cb991 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_d8c21/fast && /usr/bin/make -f CMakeFiles/cmTC_d8c21.dir/build.make CMakeFiles/cmTC_d8c21.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8c21.dir/SIZEOF_UINT32_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d8c21.dir/SIZEOF_UINT32_T.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT32_T.c
+Linking C executable cmTC_d8c21
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8c21.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d8c21.dir/SIZEOF_UINT32_T.c.o  -o cmTC_d8c21 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of unsigned int passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_99b0a/fast && /usr/bin/make -f CMakeFiles/cmTC_99b0a.dir/build.make CMakeFiles/cmTC_99b0a.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_99b0a.dir/SIZEOF_UNSIGNED_INT.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_99b0a.dir/SIZEOF_UNSIGNED_INT.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_INT.c
-Linking C executable cmTC_99b0a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99b0a.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_99b0a.dir/SIZEOF_UNSIGNED_INT.c.o  -o cmTC_99b0a 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_0d415/fast && /usr/bin/make -f CMakeFiles/cmTC_0d415.dir/build.make CMakeFiles/cmTC_0d415.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d415.dir/SIZEOF_UNSIGNED_INT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0d415.dir/SIZEOF_UNSIGNED_INT.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTC_0d415
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d415.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0d415.dir/SIZEOF_UNSIGNED_INT.c.o  -o cmTC_0d415 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining size of unsigned long passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_fd2e6/fast && /usr/bin/make -f CMakeFiles/cmTC_fd2e6.dir/build.make CMakeFiles/cmTC_fd2e6.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fd2e6.dir/SIZEOF_UNSIGNED_LONG.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_fd2e6.dir/SIZEOF_UNSIGNED_LONG.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_LONG.c
-Linking C executable cmTC_fd2e6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd2e6.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fd2e6.dir/SIZEOF_UNSIGNED_LONG.c.o  -o cmTC_fd2e6 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_743db/fast && /usr/bin/make -f CMakeFiles/cmTC_743db.dir/build.make CMakeFiles/cmTC_743db.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_743db.dir/SIZEOF_UNSIGNED_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_743db.dir/SIZEOF_UNSIGNED_LONG.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_LONG.c
+Linking C executable cmTC_743db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_743db.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_743db.dir/SIZEOF_UNSIGNED_LONG.c.o  -o cmTC_743db 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the function sqrt exists in the m passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d143e/fast && /usr/bin/make -f CMakeFiles/cmTC_d143e.dir/build.make CMakeFiles/cmTC_d143e.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d143e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTC_d143e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-<command-line>: warning: conflicting types for built-in function 'sqrt'; expected 'double(double)' [-Wbuiltin-declaration-mismatch]
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+Run Build Command(s):/usr/bin/make cmTC_f53ba/fast && /usr/bin/make -f CMakeFiles/cmTC_f53ba.dir/build.make CMakeFiles/cmTC_f53ba.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f53ba.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTC_f53ba.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘sqrt’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
-/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: 'sqrt' is declared in header '<math.h>'
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘sqrt’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_d143e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d143e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sqrt    -rdynamic CMakeFiles/cmTC_d143e.dir/CheckFunctionExists.c.o  -o cmTC_d143e  -lm 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Linking C executable cmTC_f53ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f53ba.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sqrt    -rdynamic CMakeFiles/cmTC_f53ba.dir/CheckFunctionExists.c.o  -o cmTC_f53ba  -lm 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 
 Performing C SOURCE FILE Test HAVE_THREAD_LOCAL_STORAGE succeeded with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c2142/fast && /usr/bin/make -f CMakeFiles/cmTC_c2142.dir/build.make CMakeFiles/cmTC_c2142.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c2142.dir/src.c.o
-/usr/bin/cc   -DHAVE_THREAD_LOCAL_STORAGE   -o CMakeFiles/cmTC_c2142.dir/src.c.o   -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_c2142
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2142.dir/link.txt --verbose=1
-/usr/bin/cc  -DHAVE_THREAD_LOCAL_STORAGE    -rdynamic CMakeFiles/cmTC_c2142.dir/src.c.o  -o cmTC_c2142 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_cee34/fast && /usr/bin/make -f CMakeFiles/cmTC_cee34.dir/build.make CMakeFiles/cmTC_cee34.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cee34.dir/src.c.o
+/usr/bin/cc   -DHAVE_THREAD_LOCAL_STORAGE   -o CMakeFiles/cmTC_cee34.dir/src.c.o   -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cee34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cee34.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_THREAD_LOCAL_STORAGE    -rdynamic CMakeFiles/cmTC_cee34.dir/src.c.o  -o cmTC_cee34 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 Source file was:
@@ -790,19 +790,19 @@ Source file was:
         return 0;
     }
 Determining if the __cplusplus exist passed with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d97ab/fast && /usr/bin/make -f CMakeFiles/cmTC_d97ab.dir/build.make CMakeFiles/cmTC_d97ab.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d97ab.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_d97ab.dir/CheckSymbolExists.cxx.o -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-Linking CXX executable cmTC_d97ab
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d97ab.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d97ab.dir/CheckSymbolExists.cxx.o  -o cmTC_d97ab 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_621be/fast && /usr/bin/make -f CMakeFiles/cmTC_621be.dir/build.make CMakeFiles/cmTC_621be.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_621be.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_621be.dir/CheckSymbolExists.cxx.o -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_621be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_621be.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_621be.dir/CheckSymbolExists.cxx.o  -o cmTC_621be 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
-File /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <ciso646>
 
@@ -817,16 +817,16 @@ int main(int argc, char** argv)
 #endif
 }
 Performing C++ SOURCE FILE Test SUPPORTS_STDCXX11 succeeded with the following output:
-Change Dir: /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
+Change Dir: /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_44a8d/fast && /usr/bin/make -f CMakeFiles/cmTC_44a8d.dir/build.make CMakeFiles/cmTC_44a8d.dir/build
-make[1]: Entering directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_44a8d.dir/src.cxx.o
-/usr/bin/c++    -DSUPPORTS_STDCXX11   -std=c++11 -o CMakeFiles/cmTC_44a8d.dir/src.cxx.o -c /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_44a8d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44a8d.dir/link.txt --verbose=1
-/usr/bin/c++   -DSUPPORTS_STDCXX11    -rdynamic CMakeFiles/cmTC_44a8d.dir/src.cxx.o  -o cmTC_44a8d 
-make[1]: Leaving directory '/home/racer_ws/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_ce960/fast && /usr/bin/make -f CMakeFiles/cmTC_ce960.dir/build.make CMakeFiles/cmTC_ce960.dir/build
+make[1]: Entering directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ce960.dir/src.cxx.o
+/usr/bin/c++    -DSUPPORTS_STDCXX11   -std=c++11 -o CMakeFiles/cmTC_ce960.dir/src.cxx.o -c /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ce960
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce960.dir/link.txt --verbose=1
+/usr/bin/c++   -DSUPPORTS_STDCXX11    -rdynamic CMakeFiles/cmTC_ce960.dir/src.cxx.o  -o cmTC_ce960 
+make[1]: Leaving directory '/home/racer_explore/3rd_party/nlopt/build/CMakeFiles/CMakeTmp'
 
 
 Source file was:

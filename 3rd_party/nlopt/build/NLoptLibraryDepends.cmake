@@ -46,14 +46,14 @@ add_library(NLopt::nlopt SHARED IMPORTED)
 
 set_target_properties(NLopt::nlopt PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "NLOPT_DLL"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/racer_ws/3rd_party/nlopt/src/api;/home/racer_ws/3rd_party/nlopt/build"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/racer_explore/3rd_party/nlopt/src/api;/home/racer_explore/3rd_party/nlopt/build"
   INTERFACE_LINK_LIBRARIES "m"
 )
 
 # Import target "NLopt::nlopt" for configuration "Release"
 set_property(TARGET NLopt::nlopt APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(NLopt::nlopt PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/racer_ws/3rd_party/nlopt/build/libnlopt.so.0.11.1"
+  IMPORTED_LOCATION_RELEASE "/home/racer_explore/3rd_party/nlopt/build/libnlopt.so.0.11.1"
   IMPORTED_SONAME_RELEASE "libnlopt.so.0"
   )
 

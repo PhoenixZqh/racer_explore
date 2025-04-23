@@ -12,16 +12,16 @@ try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/home/zqh/phoenixZ/racer_explore/devel;/opt/ros/noetic'.split(';'):
+    for workspace in '/root/jky/racer_explore/devel;/opt/ros/noetic'.split(';'):
         python_path = os.path.join(workspace, 'lib/python3/dist-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/zqh/phoenixZ/racer_explore/devel/.private/local_sensing_node/env.sh')
+code = generate_environment_script('/root/jky/racer_explore/devel/.private/local_sensing_node/env.sh')
 
-output_filename = '/home/zqh/phoenixZ/racer_explore/build/local_sensing_node/catkin_generated/setup_cached.sh'
+output_filename = '/root/jky/racer_explore/build/local_sensing_node/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

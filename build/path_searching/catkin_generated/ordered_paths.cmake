@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/lib;/opt/ros/noetic/lib")
+set(ORDERED_PATHS "/root/jky/racer_explore/devel/.private/plan_env/lib;/opt/ros/noetic/lib")

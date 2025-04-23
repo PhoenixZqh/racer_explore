@@ -1,0 +1,105 @@
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/edt_environment.cpp:2[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:[m[K In member function ‘[01m[Kdouble fast_planner::SDFMap::getGroundHeight() const[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:65:46:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   65 |   double getGroundHeight() const { return mp_[01;31m[K->[m[Kground_height_; } // 新增获取地面高度
+      |                                              [01;31m[K^~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:23:8:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   23 | struct [01;36m[KMapParam[m[K;
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/edt_environment.cpp:[m[K In member function ‘[01m[Kdouble fast_planner::EDTEnvironment::minDistToAllBox(const Vector3d&, const double&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/edt_environment.cpp:42:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::PolynomialPrediction>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   42 |   for (int i = 0; [01;35m[Ki < obj_prediction_->size()[m[K; i++) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:[m[K In member function ‘[01m[Kdouble fast_planner::SDFMap::getGroundHeight() const[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:65:46:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   65 |   double getGroundHeight() const { return mp_[01;31m[K->[m[Kground_height_; } // 新增获取地面高度
+      |                                              [01;31m[K^~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:23:8:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   23 | struct [01;36m[KMapParam[m[K;
+      |        [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:604[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:[m[K In member function ‘[01m[Kdouble fast_planner::SDFMap::getGroundHeight() const[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:65:46:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   65 |   double getGroundHeight() const { return mp_[01;31m[K->[m[Kground_height_; } // 新增获取地面高度
+      |                                              [01;31m[K^~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:23:8:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   23 | struct [01;36m[KMapParam[m[K;
+      |        [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:[m[K In member function ‘[01m[Kdouble fast_planner::SDFMap::getGroundHeight() const[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:65:46:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   65 |   double getGroundHeight() const { return mp_[01;31m[K->[m[Kground_height_; } // 新增获取地面高度
+      |                                              [01;31m[K^~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:23:8:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kstruct fast_planner::MapParam[m[K’
+   23 | struct [01;36m[KMapParam[m[K;
+      |        [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:89: CMakeFiles/plan_env.dir/src/edt_environment.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::updateMapChunk(const std::vector<unsigned int>&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:97:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<unsigned int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+   97 |   if ([01;35m[Kadr_buffer_.size() >= chunk_size_[m[K) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:100:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  100 |     for (; [01;35m[Ki + chunk_size_ < adr_buffer_.size()[m[K; i += chunk_size_) {
+      |            [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::stampTimerCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:162:15:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::MapChunk>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  162 |   if ([01;35m[Kpub_num < data.chunks_.size()[m[K) {
+      |       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:163:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::MapChunk>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  163 |     for (int i = pub_num; [01;35m[Ki < data.chunks_.size()[m[K; ++i) {
+      |                           [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::stampMsgCallback(const ChunkStampsConstPtr&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:201:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::ChunksData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  201 |   for (int i = 0; [01;35m[Ki < multi_map_chunks_.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::findMissedChunkIds(const std::vector<int>&, const std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:224:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  224 |   for (int i = 1; [01;35m[Ki < other_idx_list.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:226:11:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  226 |     if ([01;35m[Ki == other_idx_list.size() - 1[m[K) {
+      |         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:235:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  235 |   for (int i = 0; [01;35m[Ki < self_idx_list.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:236:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  236 |     for (int j = 0; [01;35m[Kj < not_in_other.size()[m[K; j += 2) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::sendChunks(const int&, const int&, const std::vector<int>&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:259:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  259 |   for (int i = 0; [01;35m[Ki < idx_list.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::chunkTimerCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:326:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<plan_env::ChunkData_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  326 |   for (int i = 0; [01;35m[Ki < chunk_buffer_.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:337:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<plan_env::ChunkData_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  337 |     for (int j = 1; [01;35m[Kj < buffer.size()[m[K; ++j) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::mergeChunkIds(const std::vector<int>&, const std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:411:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  411 |   for (int i = 0; [01;35m[Ki < list2.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:414:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  414 |     for (int j = 0; [01;35m[Kj < output.size()[m[K; j += 2) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::insertChunkToMap(const fast_planner::MapChunk&, const int&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:474:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  474 |   for (int i = 0; [01;35m[Ki < chunk.voxel_adrs_.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::SDFMap::initMap(ros::NodeHandle&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:718:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  718 |   for (int j = 1; [01;35m[Kj < mp_->vertices_.size()[m[K; ++j) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MapROS::updateESDFCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:125:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass fast_planner::SDFMap[m[K’ has no member named ‘[01m[KupdateESDF3d[m[K’; did you mean ‘[01m[KupdateESDF2d[m[K’?
+  125 |     map_->[01;31m[KupdateESDF3d[m[K();
+      |           [01;31m[K^~~~~~~~~~~~[m[K
+      |           [32m[KupdateESDF2d[m[K
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:128: CMakeFiles/plan_env.dir/src/multi_map_manager.cpp.o] Error 1
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:63: CMakeFiles/plan_env.dir/src/sdf_map.cpp.o] Error 1
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:115: CMakeFiles/plan_env.dir/src/map_ros.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:639: CMakeFiles/plan_env.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/fast_planner_node"
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/fast_planner_node.pdb"
+  "/root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/fast_planner_node"
+  "/root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/fast_planner_node.pdb"
   "CMakeFiles/fast_planner_node.dir/src/fast_planner_node.cpp.o"
   "CMakeFiles/fast_planner_node.dir/src/kino_replan_fsm.cpp.o"
   "CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o"

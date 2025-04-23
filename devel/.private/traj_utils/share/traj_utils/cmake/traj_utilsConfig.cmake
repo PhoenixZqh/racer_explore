@@ -67,14 +67,14 @@ set(traj_utils_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(traj_utils_SOURCE_PREFIX /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils)
-  set(traj_utils_DEVEL_PREFIX /home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils)
+  set(traj_utils_SOURCE_PREFIX /root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils)
+  set(traj_utils_DEVEL_PREFIX /root/jky/racer_explore/devel/.private/traj_utils)
   set(traj_utils_INSTALL_PREFIX "")
   set(traj_utils_PREFIX ${traj_utils_DEVEL_PREFIX})
 else()
   set(traj_utils_SOURCE_PREFIX "")
   set(traj_utils_DEVEL_PREFIX "")
-  set(traj_utils_INSTALL_PREFIX /home/zqh/phoenixZ/racer_explore/install)
+  set(traj_utils_INSTALL_PREFIX /root/jky/racer_explore/install)
   set(traj_utils_PREFIX ${traj_utils_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(traj_utils_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/include " STREQUAL " ")
+if(NOT "/root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils/include " STREQUAL " ")
   set(traj_utils_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/include")
+  set(_include_dirs "/root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/
         message(FATAL_ERROR "Project 'traj_utils' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'traj_utils' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'traj_utils' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/root/jky/racer_explore/src/RACER/swarm_exploration/traj_utils/${idir}'.  ${_report}")
     endif()
     _list_append_unique(traj_utils_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib;/home/zqh/phoenixZ/racer_explore/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/jky/racer_explore/devel/.private/traj_utils/lib;/root/jky/racer_explore/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

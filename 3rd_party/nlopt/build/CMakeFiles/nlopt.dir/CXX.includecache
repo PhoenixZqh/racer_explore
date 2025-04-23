@@ -22,11 +22,11 @@ nlopt_config.h
 nlopt.h
 ../src/util/nlopt.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/ags.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/ags.cc
 ags.h
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/ags.h
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/ags.h
 solver.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/solver.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/solver.hpp
 iostream
 -
 cstring
@@ -36,19 +36,19 @@ exception
 limits
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/ags.h
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/ags.h
 nlopt-util.h
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/nlopt-util.h
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/nlopt-util.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/data_types.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/data_types.hpp
 stdexcept
 -
 string
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/evolvent.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/evolvent.cc
 evolvent.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/evolvent.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/evolvent.hpp
 cassert
 -
 cmath
@@ -56,13 +56,13 @@ cmath
 algorithm
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/evolvent.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/evolvent.hpp
 vector
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/local_optimizer.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/local_optimizer.cc
 local_optimizer.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/local_optimizer.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/local_optimizer.hpp
 cmath
 -
 algorithm
@@ -70,17 +70,17 @@ algorithm
 limits
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/local_optimizer.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/local_optimizer.hpp
 data_types.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/data_types.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/data_types.hpp
 memory
 -
 vector
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/solver.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/solver.cc
 solver.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/solver.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/solver.hpp
 algorithm
 -
 cmath
@@ -88,13 +88,13 @@ cmath
 iostream
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/solver.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/solver.hpp
 data_types.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/data_types.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/data_types.hpp
 evolvent.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/evolvent.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/evolvent.hpp
 local_optimizer.hpp
-/home/racer_ws/3rd_party/nlopt/src/algs/ags/local_optimizer.hpp
+/home/racer_explore/3rd_party/nlopt/src/algs/ags/local_optimizer.hpp
 vector
 -
 memory
@@ -108,7 +108,7 @@ functional
 limits
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/global.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/global.cc
 iostream
 -
 iterator
@@ -118,31 +118,31 @@ algorithm
 stack
 -
 stogo_config.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/stogo_config.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/stogo_config.h
 global.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/global.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/global.h
 local.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/local.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/local.h
 nlopt-util.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/nlopt-util.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/nlopt-util.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/global.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/global.h
 nlopt-util.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/nlopt-util.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/nlopt-util.h
 queue
 -
 tools.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/tools.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/tools.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/linalg.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/linalg.cc
 iostream
 -
 math.h
 -
 linalg.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/linalg.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/linalg.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/linalg.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/linalg.h
 iostream
 -
 math.h
@@ -150,51 +150,51 @@ math.h
 float.h
 -
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/local.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/local.cc
 iostream
 -
 stdlib.h
 -
 stogo_config.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/stogo_config.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/stogo_config.h
 global.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/global.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/global.h
 local.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/local.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/local.h
 tools.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/tools.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/tools.h
 nlopt.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/nlopt.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/nlopt.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/local.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/local.h
 tools.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/tools.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/tools.h
 global.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/global.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/global.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/stogo.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/stogo.cc
 stogo.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/stogo.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/stogo.h
 global.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/global.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/global.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/stogo.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/stogo.h
 nlopt-util.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/nlopt-util.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/nlopt-util.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/stogo_config.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/stogo_config.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/tools.cc
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/tools.cc
 float.h
 -
 iostream
 -
 stogo_config.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/stogo_config.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/stogo_config.h
 tools.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/tools.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/tools.h
 
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/tools.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/tools.h
 float.h
 -
 iostream
@@ -206,7 +206,7 @@ iterator
 list
 -
 linalg.h
-/home/racer_ws/3rd_party/nlopt/src/algs/stogo/linalg.h
+/home/racer_explore/3rd_party/nlopt/src/algs/stogo/linalg.h
 
 nlopt_config.h
 

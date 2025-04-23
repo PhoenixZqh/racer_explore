@@ -1,6 +1,6 @@
-devel_space: /home/zqh/phoenixZ/racer_explore/devel
+devel_space: /root/jky/racer_explore/devel
 install: false
-install_space: /home/zqh/phoenixZ/racer_explore/install
+install_space: /root/jky/racer_explore/install
 profile: default
-source_space: /home/zqh/phoenixZ/racer_explore/src
-workspace: /home/zqh/phoenixZ/racer_explore
+source_space: /root/jky/racer_explore/src
+workspace: /root/jky/racer_explore

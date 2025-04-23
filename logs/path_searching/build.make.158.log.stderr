@@ -1,0 +1,113 @@
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::Astar::init(ros::NodeHandle&, const Ptr&)[m[K’:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_size_2d_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap_size_3d_[m[K’?
+   29 |   [01;31m[Kmap_size_2d_[m[K = map_size_3d.head<2>(); // 只取x和y
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+      |   [32m[Kmap_size_3d_[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:[m[K At global scope:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:50:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint fast_planner::Astar::search(const Vector2d&, const Vector2d&, bool)[m[K’
+   50 | int [01;31m[KAstar[m[K::search(const Eigen::Vector2d &start_pt, const Eigen::Vector2d &end_pt, bool optimistic) {
+      |     [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:46:7:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kint fast_planner::Astar::search(const Vector3d&, const Vector3d&, bool)[m[K’
+   46 |   int [01;36m[Ksearch[m[K(
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:179:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble fast_planner::Astar::pathLength(const std::vector<Eigen::Matrix<double, 2, 1> >&)[m[K’
+  179 | double [01;31m[KAstar[m[K::pathLength(const vector<Eigen::Vector2d> &path) {
+      |        [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:49:17:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kstatic double fast_planner::Astar::pathLength(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+   49 |   static double [01;36m[KpathLength[m[K(const vector<Eigen::Vector3d>& path);
+      |                 [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:186:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid fast_planner::Astar::backtrack(fast_planner::Node* const&, const Vector2d&)[m[K’
+  186 | void [01;31m[KAstar[m[K::backtrack(const NodePtr &end_node, const Eigen::Vector2d &end) {
+      |      [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:59:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid fast_planner::Astar::backtrack(fast_planner::Node* const&, const Vector3d&)[m[K’
+   59 |   void [01;36m[Kbacktrack[m[K(const NodePtr& end_node, const Eigen::Vector3d& end);
+      |        [01;36m[K^~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:197:30:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> > fast_planner::Astar::getPath()[m[K’
+  197 | std::vector<Eigen::Vector2d> [01;31m[KAstar[m[K::getPath() {
+      |                              [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:51:32:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > fast_planner::Astar::getPath()[m[K’
+   51 |   std::vector<Eigen::Vector3d> [01;36m[KgetPath[m[K();
+      |                                [01;36m[K^~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:201:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble fast_planner::Astar::getDiagHeu(const Vector2d&, const Vector2d&)[m[K’
+  201 | double [01;31m[KAstar[m[K::getDiagHeu(const Eigen::Vector2d &x1, const Eigen::Vector2d &x2) {
+      |        [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:61:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kdouble fast_planner::Astar::getDiagHeu(const Vector3d&, const Vector3d&)[m[K’
+   61 |   double [01;36m[KgetDiagHeu[m[K(const Eigen::Vector3d& x1, const Eigen::Vector3d& x2);
+      |          [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:215:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble fast_planner::Astar::getManhHeu(const Vector2d&, const Vector2d&)[m[K’
+  215 | double [01;31m[KAstar[m[K::getManhHeu(const Eigen::Vector2d &x1, const Eigen::Vector2d &x2) {
+      |        [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:62:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kdouble fast_planner::Astar::getManhHeu(const Vector3d&, const Vector3d&)[m[K’
+   62 |   double [01;36m[KgetManhHeu[m[K(const Eigen::Vector3d& x1, const Eigen::Vector3d& x2);
+      |          [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:221:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble fast_planner::Astar::getEuclHeu(const Vector2d&, const Vector2d&)[m[K’
+  221 | double [01;31m[KAstar[m[K::getEuclHeu(const Eigen::Vector2d &x1, const Eigen::Vector2d &x2) {
+      |        [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:63:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kdouble fast_planner::Astar::getEuclHeu(const Vector3d&, const Vector3d&)[m[K’
+   63 |   double [01;36m[KgetEuclHeu[m[K(const Eigen::Vector3d& x1, const Eigen::Vector3d& x2);
+      |          [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:225:30:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> > fast_planner::Astar::getVisited()[m[K’
+  225 | std::vector<Eigen::Vector2d> [01;31m[KAstar[m[K::getVisited() {
+      |                              [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:52:32:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > fast_planner::Astar::getVisited()[m[K’
+   52 |   std::vector<Eigen::Vector3d> [01;36m[KgetVisited[m[K();
+      |                                [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:231:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid fast_planner::Astar::posToIndex(const Vector2d&, Eigen::Vector2i&)[m[K’
+  231 | void [01;31m[KAstar[m[K::posToIndex(const Eigen::Vector2d &pt, Eigen::Vector2i &idx) {
+      |      [01;31m[K^~~~~[m[K
+In file included from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:60:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid fast_planner::Astar::posToIndex(const Vector3d&, Eigen::Vector3i&)[m[K’
+   60 |   void [01;36m[KposToIndex[m[K(const Eigen::Vector3d& pt, Eigen::Vector3i& idx);
+      |        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass fast_planner::Astar[m[K’ defined here
+   38 | class [01;36m[KAstar[m[K {
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:366[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h:4[m[K,
+                 from [01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, 3, 1>; Src = Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false>; Func = Eigen::internal::assign_op<double, double>][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:804:27:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Matrix<double, 3, 1>; Src = Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false>; Func = Eigen::internal::assign_op<double, double>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:782:18:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Matrix<double, 3, 1>; Src = Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:714:32:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false>; Derived = Eigen::Matrix<double, 3, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:225:24:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<double, 3, 1>, 2, 1, false>; _Scalar = double; int _Rows = 3; int _Cols = 1; int _Options = 0; int _MaxRows = 3; int _MaxCols = 1][m[K’
+[01m[K/root/jky/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:30:29:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:833:3:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_MATRICES_OF_DIFFERENT_SIZES
+  833 |   [01;31m[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE[m[K(ActualDstTypeCleaned,Src)
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/path_searching.dir/build.make:76: CMakeFiles/path_searching.dir/src/astar2.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:580: CMakeFiles/path_searching.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

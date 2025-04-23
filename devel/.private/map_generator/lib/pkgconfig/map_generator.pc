@@ -1,4 +1,4 @@
-prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator
+prefix=/root/jky/racer_explore/devel/.private/map_generator
 
 Name: map_generator
 Description: Description of map_generator

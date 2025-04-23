@@ -1,4 +1,4 @@
-# Install script for directory: /home/racer_ws/3rd_party/nlopt/src/api
+# Install script for directory: /home/racer_explore/3rd_party/nlopt/src/api
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man3" TYPE FILE FILES
-    "/home/racer_ws/3rd_party/nlopt/src/api/nlopt.3"
-    "/home/racer_ws/3rd_party/nlopt/src/api/nlopt_minimize.3"
-    "/home/racer_ws/3rd_party/nlopt/src/api/nlopt_minimize_constrained.3"
+    "/home/racer_explore/3rd_party/nlopt/src/api/nlopt.3"
+    "/home/racer_explore/3rd_party/nlopt/src/api/nlopt_minimize.3"
+    "/home/racer_explore/3rd_party/nlopt/src/api/nlopt_minimize_constrained.3"
     )
 endif()
 

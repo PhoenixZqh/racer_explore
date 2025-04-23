@@ -1,4 +1,4 @@
-# Install script for directory: /home/racer_ws/3rd_party/nlopt/test
+# Install script for directory: /home/racer_explore/3rd_party/nlopt/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

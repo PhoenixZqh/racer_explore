@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/lkh_tsp_solver
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/lkh_tsp_solver
 
 # Utility rule file for lkh_tsp_solver_geneus.
 
@@ -67,6 +67,6 @@ CMakeFiles/lkh_tsp_solver_geneus.dir/clean:
 .PHONY : CMakeFiles/lkh_tsp_solver_geneus.dir/clean
 
 CMakeFiles/lkh_tsp_solver_geneus.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/lkh_tsp_solver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver /home/zqh/phoenixZ/racer_explore/build/lkh_tsp_solver /home/zqh/phoenixZ/racer_explore/build/lkh_tsp_solver /home/zqh/phoenixZ/racer_explore/build/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver_geneus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/lkh_tsp_solver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver /root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver /root/jky/racer_explore/build/lkh_tsp_solver /root/jky/racer_explore/build/lkh_tsp_solver /root/jky/racer_explore/build/lkh_tsp_solver/CMakeFiles/lkh_tsp_solver_geneus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lkh_tsp_solver_geneus.dir/depend
 

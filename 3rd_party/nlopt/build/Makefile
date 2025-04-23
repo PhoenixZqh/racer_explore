@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/racer_ws/3rd_party/nlopt
+CMAKE_SOURCE_DIR = /home/racer_explore/3rd_party/nlopt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/racer_ws/3rd_party/nlopt/build
+CMAKE_BINARY_DIR = /home/racer_explore/3rd_party/nlopt/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ test/fast: test
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/racer_ws/3rd_party/nlopt/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/racer_explore/3rd_party/nlopt/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,9 +159,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/racer_ws/3rd_party/nlopt/build/CMakeFiles /home/racer_ws/3rd_party/nlopt/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/racer_explore/3rd_party/nlopt/build/CMakeFiles /home/racer_explore/3rd_party/nlopt/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/racer_ws/3rd_party/nlopt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/racer_explore/3rd_party/nlopt/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

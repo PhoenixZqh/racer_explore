@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/bspline/share/gennodejs/ros/bspline/msg/Bspline.js"
+  "/root/jky/racer_explore/devel/.private/bspline/share/gennodejs/ros/bspline/msg/Bspline.js"
   "CMakeFiles/bspline_generate_messages_nodejs"
 )
 

@@ -7,11 +7,11 @@ C_FLAGS = -g -fPIC
 
 C_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"lkh_tsp_solver\" -Dlkh_tsp_solver_EXPORTS
 
-C_INCLUDES = -I/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/include -isystem /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+C_INCLUDES = -I/root/jky/racer_explore/devel/.private/lkh_tsp_solver/include -isystem /root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
 CXX_FLAGS = -O3 -Wall -g -fPIC   -std=gnu++14
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"lkh_tsp_solver\" -Dlkh_tsp_solver_EXPORTS
 
-CXX_INCLUDES = -I/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/include -isystem /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/root/jky/racer_explore/devel/.private/lkh_tsp_solver/include -isystem /root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

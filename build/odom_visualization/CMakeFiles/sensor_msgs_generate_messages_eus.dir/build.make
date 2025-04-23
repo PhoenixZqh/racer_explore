@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/odom_visualization
+CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/Utils/odom_visualization
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/odom_visualization
+CMAKE_BINARY_DIR = /root/jky/racer_explore/build/odom_visualization
 
 # Utility rule file for sensor_msgs_generate_messages_eus.
 
@@ -67,6 +67,6 @@ CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 
 CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend:
-	cd /home/zqh/phoenixZ/racer_explore/build/odom_visualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/odom_visualization /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/odom_visualization /home/zqh/phoenixZ/racer_explore/build/odom_visualization /home/zqh/phoenixZ/racer_explore/build/odom_visualization /home/zqh/phoenixZ/racer_explore/build/odom_visualization/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/jky/racer_explore/build/odom_visualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/Utils/odom_visualization /root/jky/racer_explore/src/RACER/uav_simulator/Utils/odom_visualization /root/jky/racer_explore/build/odom_visualization /root/jky/racer_explore/build/odom_visualization /root/jky/racer_explore/build/odom_visualization/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
 
