@@ -1,1 +1,1 @@
-/root/jky/racer_explore/devel/.private/exploration_manager/share/gennodejs/ros/exploration_manager/_index.js
+/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/gennodejs/ros/exploration_manager/_index.js

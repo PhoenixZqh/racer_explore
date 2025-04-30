@@ -67,14 +67,14 @@ set(path_searching_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(path_searching_SOURCE_PREFIX /root/jky/racer_explore/src/RACER/swarm_exploration/path_searching)
-  set(path_searching_DEVEL_PREFIX /root/jky/racer_explore/devel/.private/path_searching)
+  set(path_searching_SOURCE_PREFIX /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching)
+  set(path_searching_DEVEL_PREFIX /home/zqh/phoenixZ/racer_explore/devel/.private/path_searching)
   set(path_searching_INSTALL_PREFIX "")
   set(path_searching_PREFIX ${path_searching_DEVEL_PREFIX})
 else()
   set(path_searching_SOURCE_PREFIX "")
   set(path_searching_DEVEL_PREFIX "")
-  set(path_searching_INSTALL_PREFIX /root/jky/racer_explore/install)
+  set(path_searching_INSTALL_PREFIX /home/zqh/phoenixZ/racer_explore/install)
   set(path_searching_PREFIX ${path_searching_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/jky/racer_explore/install/lib;/root/jky/racer_explore/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zqh/phoenixZ/racer_explore/install/lib;/home/zqh/phoenixZ/racer_explore/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

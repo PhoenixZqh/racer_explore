@@ -41,10 +41,6 @@
         <origin xyz="${support_off_x} ${support_off_y} ${support_off_z}" />
     </joint>
  
- 
- 
- 
- 
     <link name="laser">
         <visual>
             <geometry>

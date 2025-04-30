@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/poly_traj
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/poly_traj
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/poly_traj
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -67,6 +67,6 @@ CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /root/jky/racer_explore/build/poly_traj && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/swarm_exploration/poly_traj /root/jky/racer_explore/src/RACER/swarm_exploration/poly_traj /root/jky/racer_explore/build/poly_traj /root/jky/racer_explore/build/poly_traj /root/jky/racer_explore/build/poly_traj/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/poly_traj && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj /home/zqh/phoenixZ/racer_explore/build/poly_traj /home/zqh/phoenixZ/racer_explore/build/poly_traj /home/zqh/phoenixZ/racer_explore/build/poly_traj/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

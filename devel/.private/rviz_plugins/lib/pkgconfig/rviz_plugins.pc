@@ -1,4 +1,4 @@
-prefix=/root/jky/racer_explore/devel/.private/rviz_plugins
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/rviz_plugins
 
 Name: rviz_plugins
 Description: Description of rviz_plugins

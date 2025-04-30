@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/Utils/pose_utils
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/pose_utils
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/pose_utils
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/pose_utils
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/pose_utils/CMakeFiles /root/jky/racer_explore/build/pose_utils/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/pose_utils/CMakeFiles /home/zqh/phoenixZ/racer_explore/build/pose_utils/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/pose_utils/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/pose_utils/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

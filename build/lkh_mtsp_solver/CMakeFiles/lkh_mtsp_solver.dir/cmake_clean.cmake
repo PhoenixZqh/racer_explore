@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/lkh_mtsp_solver/lib/liblkh_mtsp_solver.pdb"
-  "/root/jky/racer_explore/devel/.private/lkh_mtsp_solver/lib/liblkh_mtsp_solver.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/lib/liblkh_mtsp_solver.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/lib/liblkh_mtsp_solver.so"
   "CMakeFiles/lkh_mtsp_solver.dir/src/Activate.c.o"
   "CMakeFiles/lkh_mtsp_solver.dir/src/AddCandidate.c.o"
   "CMakeFiles/lkh_mtsp_solver.dir/src/AddExtraCandidates.c.o"

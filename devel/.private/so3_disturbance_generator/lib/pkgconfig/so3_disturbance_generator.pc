@@ -1,4 +1,4 @@
-prefix=/root/jky/racer_explore/devel/.private/so3_disturbance_generator
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/so3_disturbance_generator
 
 Name: so3_disturbance_generator
 Description: Description of so3_disturbance_generator

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/lkh_mtsp_solver/lib/python3/dist-packages/lkh_mtsp_solver/srv/_SolveMTSP.py"
-  "/root/jky/racer_explore/devel/.private/lkh_mtsp_solver/lib/python3/dist-packages/lkh_mtsp_solver/srv/__init__.py"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/lib/python3/dist-packages/lkh_mtsp_solver/srv/_SolveMTSP.py"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/lib/python3/dist-packages/lkh_mtsp_solver/srv/__init__.py"
   "CMakeFiles/lkh_mtsp_solver_generate_messages_py"
 )
 

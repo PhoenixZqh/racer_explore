@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/jky/racer_explore/src/RACER/swarm_exploration/poly_traj/src/polynomial_traj.cpp" "/root/jky/racer_explore/build/poly_traj/CMakeFiles/poly_traj.dir/src/polynomial_traj.cpp.o"
+  "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/src/polynomial_traj.cpp" "/home/zqh/phoenixZ/racer_explore/build/poly_traj/CMakeFiles/poly_traj.dir/src/polynomial_traj.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/root/jky/racer_explore/src/RACER/swarm_exploration/poly_traj/include"
+  "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/include"
   "/usr/include/eigen3"
   )
 

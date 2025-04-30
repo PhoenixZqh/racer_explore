@@ -1,8 +1,8 @@
-# Install script for directory: /root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins
+# Install script for directory: /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/jky/racer_explore/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zqh/phoenixZ/racer_explore/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,98 +49,98 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/jky/racer_explore/install/_setup_util.py")
+   "/home/zqh/phoenixZ/racer_explore/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/jky/racer_explore/install" TYPE PROGRAM FILES "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE PROGRAM FILES "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/jky/racer_explore/install/env.sh")
+   "/home/zqh/phoenixZ/racer_explore/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/jky/racer_explore/install" TYPE PROGRAM FILES "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE PROGRAM FILES "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/jky/racer_explore/install/setup.bash;/root/jky/racer_explore/install/local_setup.bash")
+   "/home/zqh/phoenixZ/racer_explore/install/setup.bash;/home/zqh/phoenixZ/racer_explore/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/jky/racer_explore/install" TYPE FILE FILES
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/setup.bash"
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/setup.bash"
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/jky/racer_explore/install/setup.sh;/root/jky/racer_explore/install/local_setup.sh")
+   "/home/zqh/phoenixZ/racer_explore/install/setup.sh;/home/zqh/phoenixZ/racer_explore/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/jky/racer_explore/install" TYPE FILE FILES
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/setup.sh"
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/setup.sh"
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/jky/racer_explore/install/setup.zsh;/root/jky/racer_explore/install/local_setup.zsh")
+   "/home/zqh/phoenixZ/racer_explore/install/setup.zsh;/home/zqh/phoenixZ/racer_explore/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/jky/racer_explore/install" TYPE FILE FILES
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/setup.zsh"
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/setup.zsh"
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/jky/racer_explore/install/.rosinstall")
+   "/home/zqh/phoenixZ/racer_explore/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/jky/racer_explore/install" TYPE FILE FILES "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/zqh/phoenixZ/racer_explore/install" TYPE FILE FILES "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/rviz_plugins.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/rviz_plugins.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/cmake" TYPE FILE FILES
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig.cmake"
-    "/root/jky/racer_explore/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig-version.cmake"
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig.cmake"
+    "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -150,12 +150,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/root/jky/racer_explore/devel/.private/rviz_plugins/lib/librviz_plugins.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/zqh/phoenixZ/racer_explore/devel/.private/rviz_plugins/lib/librviz_plugins.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so"
-         OLD_RPATH "/opt/ros/noetic/lib:/root/jky/racer_explore/devel/.private/quadrotor_msgs/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so")
@@ -167,20 +167,20 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/plugin_description.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/plugin_description.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/media" TYPE DIRECTORY FILES "/root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/media/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/media" TYPE DIRECTORY FILES "/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/media/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/icons" TYPE DIRECTORY FILES "/root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/icons/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/icons" TYPE DIRECTORY FILES "/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins/icons/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/jky/racer_explore/build/rviz_plugins/gtest/cmake_install.cmake")
+  include("/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/gtest/cmake_install.cmake")
 
 endif()
 
@@ -192,5 +192,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/jky/racer_explore/build/rviz_plugins/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zqh/phoenixZ/racer_explore/build/rviz_plugins/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

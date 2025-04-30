@@ -117,14 +117,14 @@ bool FastPlannerManager::checkTrajCollision(double &distance, Eigen::Vector3d & 
     Eigen::Vector3d cur_pt = local_data_.position_traj_.evaluateDeBoorT(t_now); //根据B样条算出当前的位置
     double radius = 0.0;
     Eigen::Vector3d fut_pt;
-    double fut_t = 0.01;
+    double fut_t = 0.015;
 
     // 半径最大不超过6且不超过轨迹的总时长
     while (radius < 6.0 && t_now + fut_t < local_data_.duration_)
     {
         fut_pt = local_data_.position_traj_.evaluateDeBoorT(t_now + fut_t); //计算未来的位置
 
-        // fut_pt.z() = 0.3; // 强制 z=0.3米
+        fut_pt.z() = 0.3; // 强制 z=0.3米
         // int check_radius  = (fut_pt - cur_pt).norm(); // 距离
 
         // // 仅检查距离大于车体半径的点
@@ -133,12 +133,11 @@ bool FastPlannerManager::checkTrajCollision(double &distance, Eigen::Vector3d & 
         //     fut_t += 0.02;
         //     continue; // 跳过太近的点
         // }
-        double dist = edt_environment_->sdf_map_->getDistance(fut_pt);
         // 检查未来位置是否在膨胀障碍区
-        if (sdf_map_->getInflateOccupancy(fut_pt) == 1)
+        if (sdf_map_->getInflateOccupancy(fut_pt))
         {
 
-            ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z(), dist);           
+            ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z());           
             return false;
         }
         radius = (fut_pt - cur_pt).norm(); //更新半径

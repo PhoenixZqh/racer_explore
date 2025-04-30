@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/map_generator/src/map_recorder.cpp
+pcl/io/pcd_io.h
+-
+pcl/point_cloud.h
+-
+pcl/point_types.h
+-
+pcl_conversions/pcl_conversions.h
+-
+ros/ros.h
+-
+sensor_msgs/PointCloud2.h
+-
+
 /opt/ros/noetic/include/pcl_conversions/pcl_conversions.h
 vector
 -
@@ -858,20 +872,6 @@ string
 vector
 -
 time.h
--
-
-/root/jky/racer_explore/src/RACER/uav_simulator/map_generator/src/map_recorder.cpp
-pcl/io/pcd_io.h
--
-pcl/point_cloud.h
--
-pcl/point_types.h
--
-pcl_conversions/pcl_conversions.h
--
-ros/ros.h
--
-sensor_msgs/PointCloud2.h
 -
 
 /usr/include/eigen3/Eigen/Cholesky

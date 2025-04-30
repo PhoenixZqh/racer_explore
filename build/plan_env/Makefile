@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/plan_env
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/plan_env
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/plan_env
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/plan_env/CMakeFiles /root/jky/racer_explore/build/plan_env/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/plan_env/CMakeFiles /home/zqh/phoenixZ/racer_explore/build/plan_env/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/plan_env/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/plan_env/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

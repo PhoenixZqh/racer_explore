@@ -49,6 +49,7 @@
     <remap from="/planning_vis/frontier" to="/planning_vis/frontier_$(arg drone_id)" />
     <remap from="/planning_vis/viewpoints" to="/planning_vis/viewpoints_$(arg drone_id)" />
 
+    <remap from="/sdf_map/depth_cloud" to="/sdf_map/depth_cloud_$(arg drone_id)" />
     <remap from="/sdf_map/occupancy_all" to="/sdf_map/occupancy_all_$(arg drone_id)" />
     <remap from="/sdf_map/occupancy_local" to="/sdf_map/occupancy_local_$(arg drone_id)" />
     <remap from="/sdf_map/occupancy_local_inflate" to="/sdf_map/occupancy_local_inflate_$(arg drone_id)" />
@@ -61,11 +62,11 @@
     <param name="sdf_map/map_size_x"   value="$(arg map_size_x)" /> 
     <param name="sdf_map/map_size_y"   value="$(arg map_size_y)" /> 
     <param name="sdf_map/map_size_z"   value="$(arg map_size_z)" /> 
-    <param name="sdf_map/obstacles_inflation"     value="0.199" /> 
+    <param name="sdf_map/obstacles_inflation"     value="0.2" /> 
     <!-- <param name="sdf_map/obstacles_inflation"     value="0.0" />  -->
     <param name="sdf_map/local_bound_inflate"    value="0.5"/>
     <param name="sdf_map/local_map_margin" value="50"/>
-    <param name="sdf_map/ground_height"        value="-0.1"/>
+    <param name="sdf_map/ground_height"        value="-0.01"/>
     <param name="sdf_map/default_dist"        value="0.5"/>
     
     <param name="sdf_map/p_hit"  value="0.68"/>
@@ -78,11 +79,11 @@
     <param name="sdf_map/virtual_ceil_height"   value="-10"/>
     <param name="sdf_map/optimistic" value="true" type="bool"/>
     <param name="sdf_map/signed_dist" value="false" type="bool"/>
-    <param name="sdf_map/box_min_x" value="-8" type="double"/>
-    <param name="sdf_map/box_min_y" value="-8" type="double"/>
-    <param name="sdf_map/box_min_z" value="0.05" type="double"/>
-    <param name="sdf_map/box_max_x" value="8" type="double"/>
-    <param name="sdf_map/box_max_y" value="8" type="double"/>
+    <param name="sdf_map/box_min_x" value="-11" type="double"/>
+    <param name="sdf_map/box_min_y" value="-11" type="double"/>
+    <param name="sdf_map/box_min_z" value="0.02" type="double"/>
+    <param name="sdf_map/box_max_x" value="11" type="double"/>
+    <param name="sdf_map/box_max_y" value="11" type="double"/>
     <param name="sdf_map/box_max_z" value="0.8" type="double"/>
     <param name="sdf_map/no_drone_1" value="$(arg single_expo)" type="bool"/>
 
@@ -146,7 +147,7 @@
     <param name="exploration/drone_num" value="$(arg drone_num)" type="double"/>
     <param name="exploration/drone_id" value="$(arg drone_id)" type="int"/>
 
-    <param name="frontier/cluster_min" value="40" type="int"/>
+    <param name="frontier/cluster_min" value="100" type="int"/>
     <param name="frontier/cluster_size_xy" value="2.0" type="double"/>
     <param name="frontier/cluster_size_z" value="1.5" type="double"/>
     <param name="frontier/min_candidate_dist" value="0.5" type="double"/>

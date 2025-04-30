@@ -1,1 +1,1 @@
-/root/jky/racer_explore/devel/.private/local_sensing_node/lib/pkgconfig/local_sensing_node.pc
+/home/zqh/phoenixZ/racer_explore/devel/.private/local_sensing_node/lib/pkgconfig/local_sensing_node.pc

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/quadrotor_msgs/lib/libencode_msgs.pdb"
-  "/root/jky/racer_explore/devel/.private/quadrotor_msgs/lib/libencode_msgs.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/lib/libencode_msgs.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/lib/libencode_msgs.so"
   "CMakeFiles/encode_msgs.dir/src/encode_msgs.cpp.o"
 )
 

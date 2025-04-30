@@ -1,4 +1,4 @@
-prefix=/root/jky/racer_explore/install
+prefix=/home/zqh/phoenixZ/racer_explore/install
 
 Name: lkh_mtsp_solver
 Description: Description of lkh_mtsp_solver

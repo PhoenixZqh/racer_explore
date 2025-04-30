@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/plan_manage/lib/libplan_manage.pdb"
-  "/root/jky/racer_explore/devel/.private/plan_manage/lib/libplan_manage.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/libplan_manage.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/libplan_manage.so"
   "CMakeFiles/plan_manage.dir/src/planner_manager.cpp.o"
   "CMakeFiles/plan_manage.dir/src/planner_manager_dev.cpp.o"
 )

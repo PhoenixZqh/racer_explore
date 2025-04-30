@@ -1,8 +1,8 @@
-prefix=/root/jky/racer_explore/devel/.private/quadrotor_msgs
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs
 
 Name: quadrotor_msgs
 Description: Description of quadrotor_msgs
 Version: 0.0.0
-Cflags: -I/root/jky/racer_explore/devel/.private/quadrotor_msgs/include
+Cflags: -I/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include
 Libs: -L${prefix}/lib -lencode_msgs -ldecode_msgs
 Requires: message_runtime

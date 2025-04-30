@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/so3_disturbance_generator
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator
 
 # Utility rule file for rosgraph_msgs_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend:
-	cd /root/jky/racer_explore/build/so3_disturbance_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator /root/jky/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator /root/jky/racer_explore/build/so3_disturbance_generator /root/jky/racer_explore/build/so3_disturbance_generator /root/jky/racer_explore/build/so3_disturbance_generator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_disturbance_generator /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator /home/zqh/phoenixZ/racer_explore/build/so3_disturbance_generator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 

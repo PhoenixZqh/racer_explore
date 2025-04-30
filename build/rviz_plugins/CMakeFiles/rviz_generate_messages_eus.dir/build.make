@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/rviz_plugins
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/rviz_plugins
 
 # Utility rule file for rviz_generate_messages_eus.
 
@@ -67,6 +67,6 @@ CMakeFiles/rviz_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/rviz_generate_messages_eus.dir/clean
 
 CMakeFiles/rviz_generate_messages_eus.dir/depend:
-	cd /root/jky/racer_explore/build/rviz_plugins && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins /root/jky/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins /root/jky/racer_explore/build/rviz_plugins /root/jky/racer_explore/build/rviz_plugins /root/jky/racer_explore/build/rviz_plugins/CMakeFiles/rviz_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/rviz_plugins && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/rviz_plugins /home/zqh/phoenixZ/racer_explore/build/rviz_plugins /home/zqh/phoenixZ/racer_explore/build/rviz_plugins /home/zqh/phoenixZ/racer_explore/build/rviz_plugins/CMakeFiles/rviz_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rviz_generate_messages_eus.dir/depend
 

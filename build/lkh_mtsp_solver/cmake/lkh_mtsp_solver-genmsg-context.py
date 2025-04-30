@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/root/jky/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/srv/SolveMTSP.srv"
+services_str = "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/srv/SolveMTSP.srv"
 pkg_name = "lkh_mtsp_solver"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

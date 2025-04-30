@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/waypoint_generator/lib/waypoint_generator/waypoint_generator"
-  "/root/jky/racer_explore/devel/.private/waypoint_generator/lib/waypoint_generator/waypoint_generator.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/waypoint_generator/lib/waypoint_generator/waypoint_generator"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/waypoint_generator/lib/waypoint_generator/waypoint_generator.pdb"
   "CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o"
 )
 

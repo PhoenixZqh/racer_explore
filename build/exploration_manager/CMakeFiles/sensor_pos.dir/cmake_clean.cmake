@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos"
-  "/root/jky/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/exploration_manager/sensor_pos.pdb"
   "CMakeFiles/sensor_pos.dir/src/pub_sensor_pos.cpp.o"
 )
 

@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/pub_sensor_pos.cpp
+ros/ros.h
+-
+tf2_ros/transform_listener.h
+-
+geometry_msgs/PoseStamped.h
+-
+tf2_geometry_msgs/tf2_geometry_msgs.h
+-
+
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string
 -
@@ -1240,15 +1250,5 @@ string
 vector
 -
 time.h
--
-
-/root/jky/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/pub_sensor_pos.cpp
-ros/ros.h
--
-tf2_ros/transform_listener.h
--
-geometry_msgs/PoseStamped.h
--
-tf2_geometry_msgs/tf2_geometry_msgs.h
 -
 

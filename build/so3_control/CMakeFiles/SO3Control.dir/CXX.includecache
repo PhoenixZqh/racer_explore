@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/include/so3_control/SO3Control.h
+Eigen/Geometry
+-
+
+/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/so3_control/src/SO3Control.cpp
+iostream
+-
+so3_control/SO3Control.h
+-
+ros/ros.h
+-
+
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h
@@ -664,18 +676,6 @@ string
 vector
 -
 time.h
--
-
-/root/jky/racer_explore/src/RACER/uav_simulator/so3_control/include/so3_control/SO3Control.h
-Eigen/Geometry
--
-
-/root/jky/racer_explore/src/RACER/uav_simulator/so3_control/src/SO3Control.cpp
-iostream
--
-so3_control/SO3Control.h
--
-ros/ros.h
 -
 
 /usr/include/eigen3/Eigen/Cholesky

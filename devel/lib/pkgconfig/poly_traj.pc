@@ -1,1 +1,1 @@
-/root/jky/racer_explore/devel/.private/poly_traj/lib/pkgconfig/poly_traj.pc
+/home/zqh/phoenixZ/racer_explore/devel/.private/poly_traj/lib/pkgconfig/poly_traj.pc

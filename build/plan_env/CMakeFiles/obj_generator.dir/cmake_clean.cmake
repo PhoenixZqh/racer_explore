@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/plan_env/lib/plan_env/obj_generator"
-  "/root/jky/racer_explore/devel/.private/plan_env/lib/plan_env/obj_generator.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/lib/plan_env/obj_generator"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/lib/plan_env/obj_generator.pdb"
   "CMakeFiles/obj_generator.dir/src/obj_generator.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/traj_server"
-  "/root/jky/racer_explore/devel/.private/plan_manage/lib/plan_manage/traj_server.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/traj_server"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/plan_manage/lib/plan_manage/traj_server.pdb"
   "CMakeFiles/traj_server.dir/src/traj_server.cpp.o"
 )
 

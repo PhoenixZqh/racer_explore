@@ -1,1 +1,1 @@
-/root/jky/racer_explore/devel/.private/bspline_opt/lib/pkgconfig/bspline_opt.pc
+/home/zqh/phoenixZ/racer_explore/devel/.private/bspline_opt/lib/pkgconfig/bspline_opt.pc

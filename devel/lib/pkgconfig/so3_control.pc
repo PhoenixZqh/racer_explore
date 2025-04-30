@@ -1,1 +1,1 @@
-/root/jky/racer_explore/devel/.private/so3_control/lib/pkgconfig/so3_control.pc
+/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/pkgconfig/so3_control.pc

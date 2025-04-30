@@ -1,4 +1,4 @@
-prefix=/root/jky/racer_explore/devel/.private/catkin_tools_prebuild
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/swarm_exploration/bspline_opt
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/bspline_opt
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/bspline_opt
 
 # Utility rule file for sensor_msgs_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 
 CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend:
-	cd /root/jky/racer_explore/build/bspline_opt && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/swarm_exploration/bspline_opt /root/jky/racer_explore/src/RACER/swarm_exploration/bspline_opt /root/jky/racer_explore/build/bspline_opt /root/jky/racer_explore/build/bspline_opt /root/jky/racer_explore/build/bspline_opt/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/bspline_opt && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt /home/zqh/phoenixZ/racer_explore/build/bspline_opt /home/zqh/phoenixZ/racer_explore/build/bspline_opt /home/zqh/phoenixZ/racer_explore/build/bspline_opt/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
 

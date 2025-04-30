@@ -10,3 +10,37 @@ Symlinking /home/zqh/phoenixZ/racer_explore/devel/./local_setup.bash
 Symlinking /home/zqh/phoenixZ/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
 Symlinking /home/zqh/phoenixZ/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
 Symlinking /home/zqh/phoenixZ/racer_explore/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/setup.bash, /root/jky/racer_explore/devel/./setup.bash)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/setup.sh, /root/jky/racer_explore/devel/./setup.sh)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/local_setup.sh, /root/jky/racer_explore/devel/./local_setup.sh)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/local_setup.zsh, /root/jky/racer_explore/devel/./local_setup.zsh)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/_setup_util.py, /root/jky/racer_explore/devel/./_setup_util.py)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/setup.zsh, /root/jky/racer_explore/devel/./setup.zsh)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/env.sh, /root/jky/racer_explore/devel/./env.sh)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/cmake.lock, /root/jky/racer_explore/devel/./cmake.lock)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/local_setup.bash, /root/jky/racer_explore/devel/./local_setup.bash)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake, /root/jky/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake, /root/jky/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake)
+Cleaning: (/root/jky/racer_explore/devel/.private/catkin_tools_prebuild/lib/pkgconfig/catkin_tools_prebuild.pc, /root/jky/racer_explore/devel/lib/pkgconfig/catkin_tools_prebuild.pc)
+Unlinking: /root/jky/racer_explore/devel/./setup.bash
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/./setup.sh
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/./local_setup.sh
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/./local_setup.zsh
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/./_setup_util.py
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/./setup.zsh
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/./env.sh
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/./local_setup.bash
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Already unlinked: {}
+Unlinking: /root/jky/racer_explore/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Already unlinked: {}

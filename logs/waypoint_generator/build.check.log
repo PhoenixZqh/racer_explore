@@ -1,1 +1,0 @@
-/usr/bin/cmake -S/root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator -B/root/jky/racer_explore/build/waypoint_generator --check-build-system CMakeFiles/Makefile.cmake 0

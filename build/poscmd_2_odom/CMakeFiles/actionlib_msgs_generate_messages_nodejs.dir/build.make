@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/poscmd_2_odom
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/poscmd_2_odom
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/poscmd_2_odom
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom
 
 # Utility rule file for actionlib_msgs_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 
 CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend:
-	cd /root/jky/racer_explore/build/poscmd_2_odom && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/poscmd_2_odom /root/jky/racer_explore/src/RACER/uav_simulator/poscmd_2_odom /root/jky/racer_explore/build/poscmd_2_odom /root/jky/racer_explore/build/poscmd_2_odom /root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/poscmd_2_odom /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/poscmd_2_odom /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
 

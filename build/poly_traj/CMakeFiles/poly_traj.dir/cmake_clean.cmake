@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/poly_traj/lib/libpoly_traj.pdb"
-  "/root/jky/racer_explore/devel/.private/poly_traj/lib/libpoly_traj.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/poly_traj/lib/libpoly_traj.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/poly_traj/lib/libpoly_traj.so"
   "CMakeFiles/poly_traj.dir/src/polynomial_traj.cpp.o"
 )
 

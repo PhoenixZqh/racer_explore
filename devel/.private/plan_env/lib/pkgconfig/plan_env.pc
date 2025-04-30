@@ -1,8 +1,8 @@
-prefix=/root/jky/racer_explore/devel/.private/plan_env
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env
 
 Name: plan_env
 Description: Description of plan_env
 Version: 0.0.0
-Cflags: -I/root/jky/racer_explore/devel/.private/plan_env/include -I/root/jky/racer_explore/src/RACER/swarm_exploration/plan_env/include
+Cflags: -I/home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include -I/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include
 Libs: -L${prefix}/lib -lplan_env
 Requires: roscpp std_msgs message_runtime

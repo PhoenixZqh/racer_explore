@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/waypoint_generator
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/waypoint_generator
 
 # Utility rule file for tf_generate_messages_py.
 
@@ -70,6 +70,6 @@ CMakeFiles/tf_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/tf_generate_messages_py.dir/clean
 
 CMakeFiles/tf_generate_messages_py.dir/depend:
-	cd /root/jky/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /root/jky/racer_explore/build/waypoint_generator /root/jky/racer_explore/build/waypoint_generator /root/jky/racer_explore/build/waypoint_generator/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator /home/zqh/phoenixZ/racer_explore/build/waypoint_generator/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tf_generate_messages_py.dir/depend
 

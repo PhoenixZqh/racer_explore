@@ -1,4 +1,4 @@
-prefix=/root/jky/racer_explore/install
+prefix=/home/zqh/phoenixZ/racer_explore/install
 
 Name: multi_map_server
 Description: Description of multi_map_server

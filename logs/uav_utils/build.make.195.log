@@ -1,7 +1,0 @@
-/usr/bin/cmake -S/root/jky/racer_explore/src/RACER/uav_simulator/Utils/uav_utils -B/root/jky/racer_explore/build/uav_utils --check-build-system CMakeFiles/Makefile.cmake 0
-/usr/bin/cmake -E cmake_progress_start /root/jky/racer_explore/build/uav_utils/CMakeFiles /root/jky/racer_explore/build/uav_utils/CMakeFiles/progress.marks
-/usr/bin/make -f CMakeFiles/Makefile2 all
-make[1]: Entering directory '/root/jky/racer_explore/build/uav_utils'
-make[1]: Nothing to be done for 'all'.
-make[1]: Leaving directory '/root/jky/racer_explore/build/uav_utils'
-/usr/bin/cmake -E cmake_progress_start /root/jky/racer_explore/build/uav_utils/CMakeFiles 0

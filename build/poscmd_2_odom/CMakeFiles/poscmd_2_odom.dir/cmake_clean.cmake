@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/poscmd_2_odom/lib/poscmd_2_odom/poscmd_2_odom"
-  "/root/jky/racer_explore/devel/.private/poscmd_2_odom/lib/poscmd_2_odom/poscmd_2_odom.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/poscmd_2_odom/lib/poscmd_2_odom/poscmd_2_odom"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/poscmd_2_odom/lib/poscmd_2_odom/poscmd_2_odom.pdb"
   "CMakeFiles/poscmd_2_odom.dir/src/poscmd_2_odom.cpp.o"
 )
 

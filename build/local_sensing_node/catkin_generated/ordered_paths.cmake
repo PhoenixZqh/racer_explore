@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/root/jky/racer_explore/devel/.private/quadrotor_msgs/lib;/opt/ros/noetic/lib")
+set(ORDERED_PATHS "/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/lib;/opt/ros/noetic/lib")

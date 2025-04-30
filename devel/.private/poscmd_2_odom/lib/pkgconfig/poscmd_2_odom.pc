@@ -1,4 +1,4 @@
-prefix=/root/jky/racer_explore/devel/.private/poscmd_2_odom
+prefix=/home/zqh/phoenixZ/racer_explore/devel/.private/poscmd_2_odom
 
 Name: poscmd_2_odom
 Description: Description of poscmd_2_odom

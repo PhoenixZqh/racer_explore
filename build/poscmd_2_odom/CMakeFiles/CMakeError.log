@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp
+Change Dir: /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_3e7d2/fast && /usr/bin/make -f CMakeFiles/cmTC_3e7d2.dir/build.make CMakeFiles/cmTC_3e7d2.dir/build
-make[1]: Entering directory '/root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3e7d2.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3e7d2.dir/src.c.o   -c /root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_3e7d2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e7d2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_3e7d2.dir/src.c.o  -o cmTC_3e7d2 
-/usr/bin/ld: CMakeFiles/cmTC_3e7d2.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_e7591/fast && /usr/bin/make -f CMakeFiles/cmTC_e7591.dir/build.make CMakeFiles/cmTC_e7591.dir/build
+make[1]: Entering directory '/home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7591.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e7591.dir/src.c.o   -c /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e7591
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7591.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_e7591.dir/src.c.o  -o cmTC_e7591 
+/usr/bin/ld: CMakeFiles/cmTC_e7591.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_3e7d2.dir/build.make:87: cmTC_3e7d2] Error 1
-make[1]: Leaving directory '/root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_3e7d2/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_e7591.dir/build.make:87: cmTC_e7591] Error 1
+make[1]: Leaving directory '/home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e7591/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp
+Change Dir: /home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_6c194/fast && /usr/bin/make -f CMakeFiles/cmTC_6c194.dir/build.make CMakeFiles/cmTC_6c194.dir/build
-make[1]: Entering directory '/root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6c194.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6c194.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_6c194
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c194.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6c194.dir/CheckFunctionExists.c.o  -o cmTC_6c194  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_d290f/fast && /usr/bin/make -f CMakeFiles/cmTC_d290f.dir/build.make CMakeFiles/cmTC_d290f.dir/build
+make[1]: Entering directory '/home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d290f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d290f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d290f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d290f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d290f.dir/CheckFunctionExists.c.o  -o cmTC_d290f  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_6c194.dir/build.make:87: cmTC_6c194] Error 1
-make[1]: Leaving directory '/root/jky/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_6c194/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_d290f.dir/build.make:87: cmTC_d290f] Error 1
+make[1]: Leaving directory '/home/zqh/phoenixZ/racer_explore/build/poscmd_2_odom/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d290f/fast] Error 2
 
 
 

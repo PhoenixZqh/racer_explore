@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/map_generator/lib/map_generator/map_recorder"
-  "/root/jky/racer_explore/devel/.private/map_generator/lib/map_generator/map_recorder.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/map_recorder"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/map_recorder.pdb"
   "CMakeFiles/map_recorder.dir/src/map_recorder.cpp.o"
 )
 

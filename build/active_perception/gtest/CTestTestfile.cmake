@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /usr/src/googletest
-# Build directory: /root/jky/racer_explore/build/active_perception/gtest
+# Build directory: /home/zqh/phoenixZ/racer_explore/build/active_perception/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

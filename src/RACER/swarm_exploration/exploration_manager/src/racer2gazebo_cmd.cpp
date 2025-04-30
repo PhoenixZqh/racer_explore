@@ -7,16 +7,27 @@
 class CommandConverter {
 public:
     CommandConverter() : nh_("~") {
+        // 从参数服务器获取话题前缀和后缀
+        nh_.param<std::string>("car_id", car_id_, "car1");
+        nh_.param<std::string>("cmd_suffix", cmd_suffix_, "_1");
+
+        // 构造话题名称
+        std::string cmd_topic = "/planning/pos_cmd" + cmd_suffix_;
+        std::string odom_topic = "/" + car_id_ + "/odom";
+        std::string twist_topic = "/" + car_id_ + "/cmd_vel";
+
         // 订阅 PositionCommand
-        cmd_sub_ = nh_.subscribe("/planning/pos_cmd_1", 1, &CommandConverter::posCmdCallback, this);
+        cmd_sub_ = nh_.subscribe(cmd_topic, 1, &CommandConverter::posCmdCallback, this);
         // 订阅小车位置 (odom)
-        odom_sub_ = nh_.subscribe("/odom", 1, &CommandConverter::odomCallback, this);
+        odom_sub_ = nh_.subscribe(odom_topic, 1, &CommandConverter::odomCallback, this);
         // 发布 Twist 到 /cmd_vel
-        twist_pub_ = nh_.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
+        twist_pub_ = nh_.advertise<geometry_msgs::Twist>(twist_topic, 1);
 
         // 初始化变量
         rcv_cmd_ = false;
         rcv_odom_ = false;
+
+        ROS_INFO("CommandConverter initialized for %s with cmd suffix %s", car_id_.c_str(), cmd_suffix_.c_str());
     }
 
     void odomCallback(const nav_msgs::Odometry::ConstPtr &odom) {
@@ -51,10 +62,10 @@ public:
             angle_error = atan2(sin(angle_error), cos(angle_error));
 
             // 比例控制生成线速度和角速度
-            const double kp_linear = 0.8;   // 线速度比例增益
-            const double kp_angular = 1.0;  // 角速度比例增益
-            const double max_linear = 1.0;  // 最大线速度 (m/s)
-            const double max_angular = 10.0; // 最大角速度 (rad/s)
+            const double kp_linear = 0.4;   // 线速度比例增益
+            const double kp_angular = 0.8;  // 角速度比例增益
+            const double max_linear = 1.2;  // 最大线速度 (m/s)
+            const double max_angular = 3.0; // 最大角速度 (rad/s)
 
             // 生成线速度（基于距离误差）
             twist.linear.x = std::min(max_linear, kp_linear * distance_error);
@@ -67,13 +78,13 @@ public:
             twist.angular.y = 0.0;
 
             // 如果距离误差很小，停止运动
-            if (distance_error < 0.05) { // 5cm 阈值
+            if (distance_error < 0.1) { 
                 twist.linear.x = 0.0;
                 twist.angular.z = 0.0;
             }
 
             // 调试信息
-            ROS_INFO_STREAM("Distance error: " << distance_error << " m, Angle error: " << angle_error << " rad");
+            ROS_INFO_STREAM("[" << car_id_ << "] Distance error: " << distance_error << " m, Angle error: " << angle_error << " rad");
         } else {
             // 未接收到命令或 odom，发布零速度
             twist.linear.x = 0.0;
@@ -95,6 +106,8 @@ private:
     geometry_msgs::Pose current_pose_;     // 当前位置
     double target_yaw_, current_yaw_;      // 目标和当前 yaw
     bool rcv_cmd_, rcv_odom_;
+    std::string car_id_;                   // 车辆ID，例如 "car1", "car2"
+    std::string cmd_suffix_;               // 命令话题后缀，例如 "_1", "_2"
 };
 
 int main(int argc, char **argv) {

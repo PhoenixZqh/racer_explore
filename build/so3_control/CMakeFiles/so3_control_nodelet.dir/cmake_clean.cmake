@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/jky/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.pdb"
-  "/root/jky/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.pdb"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/so3_control/lib/libso3_control_nodelet.so"
   "CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o"
 )
 

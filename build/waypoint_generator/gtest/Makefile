@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/jky/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator
+CMAKE_SOURCE_DIR = /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/waypoint_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/jky/racer_explore/build/waypoint_generator
+CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/waypoint_generator
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -140,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/jky/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/waypoint_generator/CMakeFiles /root/jky/racer_explore/build/waypoint_generator/gtest/CMakeFiles/progress.marks
-	cd /root/jky/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/jky/racer_explore/build/waypoint_generator/CMakeFiles 0
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/waypoint_generator/CMakeFiles /home/zqh/phoenixZ/racer_explore/build/waypoint_generator/gtest/CMakeFiles/progress.marks
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/phoenixZ/racer_explore/build/waypoint_generator/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/jky/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,17 +157,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/jky/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/jky/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/jky/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -194,6 +194,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/jky/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zqh/phoenixZ/racer_explore/build/waypoint_generator && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
