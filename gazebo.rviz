@@ -7,7 +7,6 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
-        - /PointCloud25
       Splitter Ratio: 0.49705880880355835
     Tree Height: 1107
   - Class: rviz/Selection
@@ -201,15 +200,15 @@ Visualization Manager:
                   {}
                 car1_front_wheel:
                   {}
-                car1_left_wheel:
-                  {}
-                car1_right_wheel:
-                  {}
                 car1_support:
                   car1_laser:
                     {}
                   car1_support_depth:
                     {}
+              car1_left_wheel:
+                {}
+              car1_right_wheel:
+                {}
           car2_odom:
             car2_base_footprint:
               car2_base_link:
@@ -217,15 +216,15 @@ Visualization Manager:
                   {}
                 car2_front_wheel:
                   {}
-                car2_left_wheel:
-                  {}
-                car2_right_wheel:
-                  {}
                 car2_support:
                   car2_laser:
                     {}
                   car2_support_depth:
                     {}
+              car2_left_wheel:
+                {}
+              car2_right_wheel:
+                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -533,10 +532,10 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz/PointCloud2
-      Color: 255; 170; 255
+      Color: 255; 255; 255
       Color Transformer: FlatColor
       Decay Time: 0
-      Enabled: false
+      Enabled: true
       Invert Rainbow: false
       Max Color: 255; 170; 255
       Min Color: 0; 0; 0
@@ -551,7 +550,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: false
+      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -617,13 +616,13 @@ Visualization Manager:
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: /multi_map_manager/marker_2
       Name: Marker
       Namespaces:
         {}
       Queue Size: 100
-      Value: true
+      Value: false
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: /planning_vis/frontier_1
@@ -637,7 +636,7 @@ Visualization Manager:
       Marker Topic: /planning_vis/frontier_2
       Name: Marker
       Namespaces:
-        frontier: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -694,7 +693,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 31.412696838378906
+      Distance: 28.51702117919922
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -702,17 +701,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.7467960119247437
-        Y: -0.44699421525001526
-        Z: 2.016538381576538
+        X: 0.05142292380332947
+        Y: -1.5091629028320312
+        Z: 1.3698502779006958
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.3247965574264526
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 3.1335601806640625
+      Yaw: 3.1385610103607178
     Saved: ~
 Window Geometry:
   Displays:

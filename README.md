@@ -1,1 +1,6 @@
-# racer_explore
+# 调试记录
+
+1. gazebo仿真环境下深度相机点云朝向不对？
+   **在xacro中添加rpy， 不要在map_ros中更改**
+2. 障碍物膨胀不能太大
+3.

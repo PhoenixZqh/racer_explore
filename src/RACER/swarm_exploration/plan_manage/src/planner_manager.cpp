@@ -110,7 +110,7 @@ void FastPlannerManager::setGlobalWaypoints(vector<Eigen::Vector3d> &waypoints)
  * @brief 检测当前无人机的飞行轨迹会不会撞倒
  */
 //TODO： 这里是无人机轨迹与障碍物会不会发生碰撞
-bool FastPlannerManager::checkTrajCollision(double &distance, Eigen::Vector3d & ugv_odom)
+bool FastPlannerManager::checkTrajCollision(double &distance, Eigen::Vector3d &ugv_odom)
 {
     double t_now = (ros::Time::now() - local_data_.start_time_).toSec();
 
@@ -120,28 +120,67 @@ bool FastPlannerManager::checkTrajCollision(double &distance, Eigen::Vector3d & 
     double fut_t = 0.015;
 
     // 半径最大不超过6且不超过轨迹的总时长
+    // while (radius < 6.0 && t_now + fut_t < local_data_.duration_)
+    // {
+    //     fut_pt = local_data_.position_traj_.evaluateDeBoorT(t_now + fut_t); //计算未来的位置
+
+    //     fut_pt.z() = 0.4; // 强制 z=0.3米
+    //     // int check_radius  = (fut_pt - cur_pt).norm(); // 距离
+
+    //     // 检查未来位置是否在膨胀障碍区
+    //     if (sdf_map_->getInflateOccupancy(fut_pt))
+    //     {
+    //         ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z());
+    //         return false;
+    //     }
+    //     radius = (fut_pt - cur_pt).norm(); //更新半径
+    //     fut_t += 0.02;
+    // }
+
     while (radius < 6.0 && t_now + fut_t < local_data_.duration_)
     {
-        fut_pt = local_data_.position_traj_.evaluateDeBoorT(t_now + fut_t); //计算未来的位置
+        fut_pt = local_data_.position_traj_.evaluateDeBoorT(t_now + fut_t); // 计算未来的位置
+        fut_pt.z() = 0.3;                                                   // 强制 z=0.3米
 
-        fut_pt.z() = 0.3; // 强制 z=0.3米
-        // int check_radius  = (fut_pt - cur_pt).norm(); // 距离
+        // 计算到当前位置的距离
+        radius = (fut_pt - cur_pt).norm();
 
-        // // 仅检查距离大于车体半径的点
-        // if (check_radius <= 3.0)
-        // {
-        //     fut_t += 0.02;
-        //     continue; // 跳过太近的点
-        // }
-        // 检查未来位置是否在膨胀障碍区
+        // 检查以 fut_pt 为中心的圆形区域（半径 0.15m）是否安全
+        float car_radius = 0.5; // 小车半径
+        int num_samples = 18;   // 采样点数（可调整）
+        bool collision_detected = false;
+
+        // 检查 fut_pt 本身
         if (sdf_map_->getInflateOccupancy(fut_pt))
         {
+            collision_detected = true;
+        }
+        else
+        {
+            // 在圆周上采样多个点
+            for (int i = 0; i < num_samples; ++i)
+            {
+                float theta = 2.0 * M_PI * i / num_samples; // 均匀分布的角度
+                Eigen::Vector3d sample_pt = fut_pt;
+                sample_pt.x() += car_radius * cos(theta);
+                sample_pt.y() += car_radius * sin(theta);
+                // z 保持不变（0.3m）
 
-            ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z());           
+                if (sdf_map_->getInflateOccupancy(sample_pt))
+                {
+                    collision_detected = true;
+                    break;
+                }
+            }
+        }
+
+        if (collision_detected)
+        {
+            ROS_INFO("[Collision] Collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z(), radius);
             return false;
         }
-        radius = (fut_pt - cur_pt).norm(); //更新半径
-        fut_t += 0.01;
+
+        fut_t += 0.015;
     }
 
     return true;
@@ -174,8 +213,7 @@ bool FastPlannerManager::checkTrajCollision(double &distance)
         // 检查未来位置是否在膨胀障碍区
         if (sdf_map_->getInflateOccupancy(fut_pt) == 1)
         {
-
-            ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z(), dist);           
+            ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: %f", fut_pt.x(), fut_pt.y(), fut_pt.z(), dist);
             return false;
         }
         radius = (fut_pt - cur_pt).norm(); //更新半径
@@ -1002,7 +1040,8 @@ bool FastPlannerManager::checkSwarmCollision(const int &id)
         // if ((self_pos - other_pos).head<2>().norm() < 0.2) return false;
 
         //计算欧几里德距离，小于0.5米认为有碰撞
-        if ((self_pos - other_pos).head<2>().norm() < 0.5) return false;
+        // if ((self_pos - other_pos).head<2>().norm() < 0.5) return false;
+        if ((self_pos - other_pos).head<2>().norm() < 1.0) return false;
 
         self_t += 0.02;
         other_t += 0.02;

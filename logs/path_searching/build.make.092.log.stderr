@@ -1,0 +1,4 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:[m[K In static member function ‘[01m[Kstatic double fast_planner::Astar::pathLength(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/src/astar2.cpp:210:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  210 |     for (int i = 0; [01;35m[Ki < path.size() - 1[m[K; ++i) length += (path[i + 1] - path[i]).norm();
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K

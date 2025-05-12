@@ -1,0 +1,28 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:313:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  313 |     double [01;31m[KBitesize_t[m[K min_lookahead_distance_, max_lookahead_distance_;
+      |            [01;31m[K^~~~~~~~~~[m[K
+      |                      [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:313:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_lookahead_distance_[m[K’ does not name a type
+  313 |     double Bitesize_t [01;31m[Kmin_lookahead_distance_[m[K, max_lookahead_distance_;
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In constructor ‘[01m[KCommandConverter::CommandConverter()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:156:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_lookahead_distance_[m[K’ was not declared in this scope; did you mean ‘[01m[Klookahead_distance_[m[K’?
+  156 |         nh_.param<double>("min_lookahead_distance", [01;31m[Kmin_lookahead_distance_[m[K, 0.2); // 最小 0.2m
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                     [32m[Klookahead_distance_[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:157:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_lookahead_distance_[m[K’ was not declared in this scope; did you mean ‘[01m[Klookahead_distance_[m[K’?
+  157 |         nh_.param<double>("max_lookahead_distance", [01;31m[Kmax_lookahead_distance_[m[K, 0.6); // 最大 0.6m
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                     [32m[Klookahead_distance_[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In member function ‘[01m[Kvoid CommandConverter::publishTwist()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:221:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_lookahead_distance_[m[K’ was not declared in this scope; did you mean ‘[01m[Klookahead_distance_[m[K’?
+  221 |                 dynamic_lookahead = std::max([01;31m[Kmin_lookahead_distance_[m[K, std::min(max_lookahead_distance_, lookahead_distance_ * (1.0 - curvature / M_PI)));
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                              [32m[Klookahead_distance_[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:221:80:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_lookahead_distance_[m[K’ was not declared in this scope; did you mean ‘[01m[Klookahead_distance_[m[K’?
+  221 |                 dynamic_lookahead = std::max(min_lookahead_distance_, std::min([01;31m[Kmax_lookahead_distance_[m[K, lookahead_distance_ * (1.0 - curvature / M_PI)));
+      |                                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                [32m[Klookahead_distance_[m[K
+make[2]: *** [CMakeFiles/racer2gazebo_cmd.dir/build.make:63: CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/racer2gazebo_cmd.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

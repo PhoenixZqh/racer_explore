@@ -1,0 +1,1276 @@
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::checkTrajCollision(double&, Eigen::Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:130:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K-Wformat=[m[K]
+  130 |             ROS_INFO([01;35m[K"[Collision] collision at: [%f, %f, %f], dist: %f"[m[K, fut_pt.x(), fut_pt.y(), fut_pt.z());
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:130:70:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  130 |             ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: [01;36m[K%f[m[K", fut_pt.x(), fut_pt.y(), fut_pt.z());
+      |                                                                     [01;36m[K~^[m[K
+      |                                                                      [01;36m[K|[m[K
+      |                                                                      [01;36m[Kdouble[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:183:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  183 | [01;31m[Kreturn[m[K true;
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:186:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  186 | bool [01;31m[KFastPlannerManager[m[K::checkTrajCollision(double &distance)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool checkTrajCollision(double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:188:40:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  188 |     double t_now = (ros::Time::now() - [01;31m[Klocal_data_[m[K.start_time_).toSec();
+      |                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:209:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kedt_environment_[m[K’ was not declared in this scope
+  209 |         double dist = [01;31m[Kedt_environment_[m[K->sdf_map_->getDistance(fut_pt);
+      |                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:211:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf_map_[m[K’ was not declared in this scope
+  211 |         if ([01;31m[Ksdf_map_[m[K->getInflateOccupancy(fut_pt) == 1)
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:227:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  227 | bool [01;31m[KFastPlannerManager[m[K::kinodynamicReplan(const Eigen::Vector3d &start_pt, const Eigen::Vector3d &start_vel, const Eigen::Vector3d &start_acc, const Eigen::Vector3d &end_pt, const Eigen::Vector3d &end_vel, const double &time_lb)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool kinodynamicReplan(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:249:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkino_path_finder_[m[K’ was not declared in this scope
+  249 |     [01;31m[Kkino_path_finder_[m[K->reset();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:251:19:[m[K [01;31m[Kerror: [m[K‘[01m[KKinodynamicAstar[m[K’ has not been declared
+  251 |     if (status == [01;31m[KKinodynamicAstar[m[K::NO_PATH)
+      |                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:257:23:[m[K [01;31m[Kerror: [m[K‘[01m[KKinodynamicAstar[m[K’ has not been declared
+  257 |         if (status == [01;31m[KKinodynamicAstar[m[K::NO_PATH)
+      |                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:263:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  263 |     [01;31m[Kplan_data_[m[K.kino_path_ = kino_path_finder_->getKinoTraj(0.01);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:269:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  269 |     double ts = [01;31m[Kpp_[m[K.ctrl_pt_dist / pp_.max_vel_;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:279:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  279 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:281:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  281 |     [01;31m[KNonUniformBspline[m[K init(ctrl_pts, pp_.bspline_degree_, ts);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:284:25:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  284 |     int cost_function = [01;31m[KBsplineOptimizer[m[K::NORMAL_PHASE;
+      |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:285:41:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  285 |     if (pp_.min_time_) cost_function |= [01;31m[KBsplineOptimizer[m[K::MINTIME;
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:287:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit[m[K’ was not declared in this scope; did you mean ‘[01m[Kros::init[m[K’?
+  287 |     [01;31m[Kinit[m[K.getBoundaryStates(2, 0, start, end);
+      |     [01;31m[K^~~~[m[K
+      |     [32m[Kros::init[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/ros/init.h:108:18:[m[K [01;36m[Knote: [m[K‘[01m[Kros::init[m[K’ declared here
+  108 | ROSCPP_DECL void [01;36m[Kinit[m[K(const VP_string& remapping_args, const std::string& name, uint32_t options = 0);
+      |                  [01;36m[K^~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::checkTrajCollision(double&, Eigen::Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:130:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K-Wformat=[m[K]
+  130 |             ROS_INFO([01;35m[K"[Collision] collision at: [%f, %f, %f], dist: %f"[m[K, fut_pt.x(), fut_pt.y(), fut_pt.z());
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:130:70:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  130 |             ROS_INFO("[Collision] collision at: [%f, %f, %f], dist: [01;36m[K%f[m[K", fut_pt.x(), fut_pt.y(), fut_pt.z());
+      |                                                                     [01;36m[K~^[m[K
+      |                                                                      [01;36m[K|[m[K
+      |                                                                      [01;36m[Kdouble[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:183:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  183 | [01;31m[Kreturn[m[K true;
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:186:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  186 | bool [01;31m[KFastPlannerManager[m[K::checkTrajCollision(double &distance)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool checkTrajCollision(double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:188:40:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  188 |     double t_now = (ros::Time::now() - [01;31m[Klocal_data_[m[K.start_time_).toSec();
+      |                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:288:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  288 |     [01;31m[Kbspline_optimizers_[m[K[0]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:292:22:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  292 |     cost_function |= [01;31m[KBsplineOptimizer[m[K::SWARM;
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:293:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  293 |     vector<NonUniformBspline[01;31m[K>[m[K trajs;
+      |                             [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:209:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kedt_environment_[m[K’ was not declared in this scope
+  209 |         double dist = [01;31m[Kedt_environment_[m[K->sdf_map_->getDistance(fut_pt);
+      |                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:211:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf_map_[m[K’ was not declared in this scope
+  211 |         if ([01;31m[Ksdf_map_[m[K->getInflateOccupancy(fut_pt) == 1)
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:227:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  227 | bool [01;31m[KFastPlannerManager[m[K::kinodynamicReplan(const Eigen::Vector3d &start_pt, const Eigen::Vector3d &start_vel, const Eigen::Vector3d &start_acc, const Eigen::Vector3d &end_pt, const Eigen::Vector3d &end_vel, const double &time_lb)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:294:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+  294 |     [01;31m[Kswarm_traj_data_[m[K.getValidTrajs(trajs);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:298:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  298 |     [01;31m[Klocal_data_[m[K.position_traj_.setUniformBspline(ctrl_pts, pp_.bspline_degree_, ts);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool kinodynamicReplan(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:249:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkino_path_finder_[m[K’ was not declared in this scope
+  249 |     [01;31m[Kkino_path_finder_[m[K->reset();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:251:19:[m[K [01;31m[Kerror: [m[K‘[01m[KKinodynamicAstar[m[K’ has not been declared
+  251 |     if (status == [01;31m[KKinodynamicAstar[m[K::NO_PATH)
+      |                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:257:23:[m[K [01;31m[Kerror: [m[K‘[01m[KKinodynamicAstar[m[K’ has not been declared
+  257 |         if (status == [01;31m[KKinodynamicAstar[m[K::NO_PATH)
+      |                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:309:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  309 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:265:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_search[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  265 |     double [01;35m[Kt_search[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:306:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_opt[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  306 |     double [01;35m[Kt_opt[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:313:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  313 | void [01;31m[KFastPlannerManager[m[K::planExploreTraj(const vector<Eigen::Vector3d> &tour, const Eigen::Vector3d &cur_vel, const Eigen::Vector3d &cur_acc, const double &time_lb)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:263:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  263 |     [01;31m[Kplan_data_[m[K.kino_path_ = kino_path_finder_->getKinoTraj(0.01);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:269:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  269 |     double ts = [01;31m[Kpp_[m[K.ctrl_pt_dist / pp_.max_vel_;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:279:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  279 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:281:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  281 |     [01;31m[KNonUniformBspline[m[K init(ctrl_pts, pp_.bspline_degree_, ts);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:284:25:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  284 |     int cost_function = [01;31m[KBsplineOptimizer[m[K::NORMAL_PHASE;
+      |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:285:41:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  285 |     if (pp_.min_time_) cost_function |= [01;31m[KBsplineOptimizer[m[K::MINTIME;
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:287:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit[m[K’ was not declared in this scope; did you mean ‘[01m[Kros::init[m[K’?
+  287 |     [01;31m[Kinit[m[K.getBoundaryStates(2, 0, start, end);
+      |     [01;31m[K^~~~[m[K
+      |     [32m[Kros::init[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/obj_predictor.h:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/edt_environment.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/ros/init.h:108:18:[m[K [01;36m[Knote: [m[K‘[01m[Kros::init[m[K’ declared here
+  108 | ROSCPP_DECL void [01;36m[Kinit[m[K(const VP_string& remapping_args, const std::string& name, uint32_t options = 0);
+      |                  [01;36m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:288:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  288 |     [01;31m[Kbspline_optimizers_[m[K[0]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:292:22:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  292 |     cost_function |= [01;31m[KBsplineOptimizer[m[K::SWARM;
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:293:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  293 |     vector<NonUniformBspline[01;31m[K>[m[K trajs;
+      |                             [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid planExploreTraj(const std::vector<Eigen::Matrix<double, 3, 1> >&, const Vector3d&, const Vector3d&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:325:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  325 |         times(i) = (pos.row(i + 1) - pos.row(i)).norm() / ([01;31m[Kpp_[m[K.max_vel_ * 0.5);
+      |                                                            [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:327:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::PolynomialTraj[m[K’?
+  327 |     [01;31m[KPolynomialTraj[m[K init_traj;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::PolynomialTraj[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/plan_container.hpp:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:16[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h:62:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::PolynomialTraj[m[K’ declared here
+   62 | class [01;36m[KPolynomialTraj[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:328:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ is not a class, namespace, or enumeration
+  328 |     [01;31m[KPolynomialTraj[m[K::waypointsTraj(pos, cur_vel, zero, cur_acc, zero, times, init_traj);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:328:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_traj[m[K’ was not declared in this scope
+  328 |     PolynomialTraj::waypointsTraj(pos, cur_vel, zero, cur_acc, zero, times, [01;31m[Kinit_traj[m[K);
+      |                                                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:294:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+  294 |     [01;31m[Kswarm_traj_data_[m[K.getValidTrajs(trajs);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:333:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  333 |     int seg_num = init_traj.getLength() / [01;31m[Kpp_[m[K.ctrl_pt_dist;
+      |                                           [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:348:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  348 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:350:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  350 |     [01;31m[KNonUniformBspline[m[K tmp_traj(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:352:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  352 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::NORMAL_PHASE;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:353:37:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  353 |     if (pp_.min_time_) cost_func |= [01;31m[KBsplineOptimizer[m[K::MINTIME;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:298:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  298 |     [01;31m[Klocal_data_[m[K.position_traj_.setUniformBspline(ctrl_pts, pp_.bspline_degree_, ts);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:356:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp_traj[m[K’ was not declared in this scope
+  356 |     [01;31m[Ktmp_traj[m[K.getBoundaryStates(2, 0, start, end);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:309:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  309 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:265:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_search[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  265 |     double [01;35m[Kt_search[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:306:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt_opt[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  306 |     double [01;35m[Kt_opt[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:313:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  313 | void [01;31m[KFastPlannerManager[m[K::planExploreTraj(const vector<Eigen::Vector3d> &tour, const Eigen::Vector3d &cur_vel, const Eigen::Vector3d &cur_acc, const double &time_lb)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:360:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  360 |     [01;31m[Kbspline_optimizers_[m[K[0]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:364:18:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  364 |     cost_func |= [01;31m[KBsplineOptimizer[m[K::SWARM;
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:365:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  365 |     vector<NonUniformBspline[01;31m[K>[m[K trajs;
+      |                             [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:366:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+  366 |     [01;31m[Kswarm_traj_data_[m[K.getValidTrajs(trajs);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:370:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  370 |     [01;31m[Klocal_data_[m[K.position_traj_.setUniformBspline(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid planExploreTraj(const std::vector<Eigen::Matrix<double, 3, 1> >&, const Vector3d&, const Vector3d&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:325:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  325 |         times(i) = (pos.row(i + 1) - pos.row(i)).norm() / ([01;31m[Kpp_[m[K.max_vel_ * 0.5);
+      |                                                            [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:327:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::PolynomialTraj[m[K’?
+  327 |     [01;31m[KPolynomialTraj[m[K init_traj;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::PolynomialTraj[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/plan_container.hpp:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:16[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h:62:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::PolynomialTraj[m[K’ declared here
+   62 | class [01;36m[KPolynomialTraj[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:328:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ is not a class, namespace, or enumeration
+  328 |     [01;31m[KPolynomialTraj[m[K::waypointsTraj(pos, cur_vel, zero, cur_acc, zero, times, init_traj);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:328:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_traj[m[K’ was not declared in this scope
+  328 |     PolynomialTraj::waypointsTraj(pos, cur_vel, zero, cur_acc, zero, times, [01;31m[Kinit_traj[m[K);
+      |                                                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:372:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  372 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:379:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  379 | bool [01;31m[KFastPlannerManager[m[K::planGlobalTraj(const Eigen::Vector3d &start_pos)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:333:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  333 |     int seg_num = init_traj.getLength() / [01;31m[Kpp_[m[K.ctrl_pt_dist;
+      |                                           [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:348:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  348 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:350:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  350 |     [01;31m[KNonUniformBspline[m[K tmp_traj(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:352:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  352 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::NORMAL_PHASE;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:353:37:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  353 |     if (pp_.min_time_) cost_func |= [01;31m[KBsplineOptimizer[m[K::MINTIME;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool planGlobalTraj(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:381:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  381 |     [01;31m[Kplan_data_[m[K.clearTopoPaths();
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:356:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp_traj[m[K’ was not declared in this scope
+  356 |     [01;31m[Ktmp_traj[m[K.getBoundaryStates(2, 0, start, end);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:393:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  393 |     for (int i = 0; [01;35m[Ki < points.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:360:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  360 |     [01;31m[Kbspline_optimizers_[m[K[0]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:364:18:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  364 |     cost_func |= [01;31m[KBsplineOptimizer[m[K::SWARM;
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:365:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  365 |     vector<NonUniformBspline[01;31m[K>[m[K trajs;
+      |                             [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:366:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+  366 |     [01;31m[Kswarm_traj_data_[m[K.getValidTrajs(trajs);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:370:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  370 |     [01;31m[Klocal_data_[m[K.position_traj_.setUniformBspline(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:372:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  372 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:379:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  379 | bool [01;31m[KFastPlannerManager[m[K::planGlobalTraj(const Eigen::Vector3d &start_pos)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool planGlobalTraj(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:381:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  381 |     [01;31m[Kplan_data_[m[K.clearTopoPaths();
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:393:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  393 |     for (int i = 0; [01;35m[Ki < points.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:424:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  424 |         time(i) = (pos.row(i + 1) - pos.row(i)).norm() / ([01;31m[Kpp_[m[K.max_vel_ * 0.5);
+      |                                                           [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:426:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  426 |     time(0) += [01;31m[Kpp_[m[K.max_vel_ / (2 * pp_.max_acc_);
+      |                [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:429:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::PolynomialTraj[m[K’?
+  429 |     [01;31m[KPolynomialTraj[m[K gl_traj;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::PolynomialTraj[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/plan_container.hpp:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:16[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h:62:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::PolynomialTraj[m[K’ declared here
+   62 | class [01;36m[KPolynomialTraj[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:430:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ is not a class, namespace, or enumeration
+  430 |     [01;31m[KPolynomialTraj[m[K::waypointsTraj(pos, zero, zero, zero, zero, time, gl_traj);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:430:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kgl_traj[m[K’ was not declared in this scope
+  430 |     PolynomialTraj::waypointsTraj(pos, zero, zero, zero, zero, time, [01;31m[Kgl_traj[m[K);
+      |                                                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:433:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  433 |     [01;31m[Kglobal_data_[m[K.setGlobalTraj(gl_traj, time_now);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:438:32:[m[K [01;31m[Kerror: [m[K‘[01m[KparamLocalTraj[m[K’ was not declared in this scope
+  438 |     Eigen::MatrixXd ctrl_pts = [01;31m[KparamLocalTraj[m[K(0.0, dt, duration);
+      |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:439:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  439 |     [01;31m[KNonUniformBspline[m[K bspline(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:443:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline[m[K’ was not declared in this scope; did you mean ‘[01m[Ksplice[m[K’?
+  443 |     global_data_.setLocalTraj([01;31m[Kbspline[m[K, 0.0, duration, 0.0);
+      |                               [01;31m[K^~~~~~~[m[K
+      |                               [32m[Ksplice[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:444:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  444 |     [01;31m[Klocal_data_[m[K.position_traj_ = bspline;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:448:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  448 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:453:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  453 | bool [01;31m[KFastPlannerManager[m[K::topoReplan(bool collide)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool topoReplan(bool)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:459:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  459 |     double t_now = (time_now - [01;31m[Kglobal_data_[m[K.global_start_time_).toSec();
+      |                                [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:424:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  424 |         time(i) = (pos.row(i + 1) - pos.row(i)).norm() / ([01;31m[Kpp_[m[K.max_vel_ * 0.5);
+      |                                                           [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:462:32:[m[K [01;31m[Kerror: [m[K‘[01m[KparamLocalTraj[m[K’ was not declared in this scope
+  462 |     Eigen::MatrixXd ctrl_pts = [01;31m[KparamLocalTraj[m[K(t_now, local_traj_dt, local_traj_duration);
+      |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:463:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  463 |     [01;31m[KNonUniformBspline[m[K init_traj(ctrl_pts, pp_.bspline_degree_, local_traj_dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:426:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  426 |     time(0) += [01;31m[Kpp_[m[K.max_vel_ / (2 * pp_.max_acc_);
+      |                [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:429:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::PolynomialTraj[m[K’?
+  429 |     [01;31m[KPolynomialTraj[m[K gl_traj;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::PolynomialTraj[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/plan_container.hpp:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:16[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/poly_traj/include/poly_traj/polynomial_traj.h:62:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::PolynomialTraj[m[K’ declared here
+   62 | class [01;36m[KPolynomialTraj[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:430:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPolynomialTraj[m[K’ is not a class, namespace, or enumeration
+  430 |     [01;31m[KPolynomialTraj[m[K::waypointsTraj(pos, zero, zero, zero, zero, time, gl_traj);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:464:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  464 |     [01;31m[Klocal_data_[m[K.start_time_ = time_now;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:430:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kgl_traj[m[K’ was not declared in this scope
+  430 |     PolynomialTraj::waypointsTraj(pos, zero, zero, zero, zero, time, [01;31m[Kgl_traj[m[K);
+      |                                                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:471:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_traj[m[K’ was not declared in this scope
+  471 |         refineTraj([01;31m[Kinit_traj[m[K);
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:433:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  433 |     [01;31m[Kglobal_data_[m[K.setGlobalTraj(gl_traj, time_now);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:471:9:[m[K [01;31m[Kerror: [m[K‘[01m[KrefineTraj[m[K’ was not declared in this scope
+  471 |         [01;31m[KrefineTraj[m[K(init_traj);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:482:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  482 |         [01;31m[Kplan_data_[m[K.initial_local_segment_ = init_traj;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:482:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_traj[m[K’ was not declared in this scope
+  482 |         plan_data_.initial_local_segment_ = [01;31m[Kinit_traj[m[K;
+      |                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:438:32:[m[K [01;31m[Kerror: [m[K‘[01m[KparamLocalTraj[m[K’ was not declared in this scope
+  438 |     Eigen::MatrixXd ctrl_pts = [01;31m[KparamLocalTraj[m[K(0.0, dt, duration);
+      |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:439:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  439 |     [01;31m[KNonUniformBspline[m[K bspline(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:443:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline[m[K’ was not declared in this scope; did you mean ‘[01m[Ksplice[m[K’?
+  443 |     global_data_.setLocalTraj([01;31m[Kbspline[m[K, 0.0, duration, 0.0);
+      |                               [01;31m[K^~~~~~~[m[K
+      |                               [32m[Ksplice[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:444:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  444 |     [01;31m[Klocal_data_[m[K.position_traj_ = bspline;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:484:9:[m[K [01;31m[Kerror: [m[K‘[01m[KfindCollisionRange[m[K’ was not declared in this scope
+  484 |         [01;31m[KfindCollisionRange[m[K(colli_start, colli_end, start_pts, end_pts);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:498:18:[m[K [01;31m[Kerror: [m[K‘[01m[KGraphNode[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::GraphNode[m[K’?
+  498 |             list<[01;31m[KGraphNode[m[K::Ptr> graph;
+      |                  [01;31m[K^~~~~~~~~[m[K
+      |                  [32m[Kfast_planner::GraphNode[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/topo_prm.h:59:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::GraphNode[m[K’ declared here
+   59 | class [01;36m[KGraphNode[m[K {
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:498:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  498 |             list<GraphNode::Ptr[01;31m[K>[m[K graph;
+      |                                [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:498:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:500:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopo_prm_[m[K’ was not declared in this scope
+  500 |             [01;31m[Ktopo_prm_[m[K->findTopoPaths(colli_start.front(), colli_end.back(), start_pts, end_pts, graph, raw_paths, filtered_paths, select_paths);
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:448:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  448 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:453:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  453 | bool [01;31m[KFastPlannerManager[m[K::topoReplan(bool collide)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:516:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  516 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:518:48:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  518 |                 optimize_threads.emplace_back(&[01;31m[KFastPlannerManager[m[K::optimizeTopoBspline, this, t_now, local_traj_duration, select_paths[i], i);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:518:89:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  518 |                 optimize_threads.emplace_back(&FastPlannerManager::optimizeTopoBspline, [01;31m[Kthis[m[K, t_now, local_traj_duration, select_paths[i], i);
+      |                                                                                         [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:522:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  522 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i) optimize_threads[i].join();
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:527:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kbest_traj[m[K’
+  527 |             NonUniformBspline[01;31m[K [m[K[32m[Kbest_traj[m[K;
+      |                              [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+      |                              [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool topoReplan(bool)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:459:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  459 |     double t_now = (time_now - [01;31m[Kglobal_data_[m[K.global_start_time_).toSec();
+      |                                [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:528:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_traj[m[K’ was not declared in this scope
+  528 |             selectBestTraj([01;31m[Kbest_traj[m[K);
+      |                            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:462:32:[m[K [01;31m[Kerror: [m[K‘[01m[KparamLocalTraj[m[K’ was not declared in this scope
+  462 |     Eigen::MatrixXd ctrl_pts = [01;31m[KparamLocalTraj[m[K(t_now, local_traj_dt, local_traj_duration);
+      |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:528:13:[m[K [01;31m[Kerror: [m[K‘[01m[KselectBestTraj[m[K’ was not declared in this scope
+  528 |             [01;31m[KselectBestTraj[m[K(best_traj);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:463:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  463 |     [01;31m[KNonUniformBspline[m[K init_traj(ctrl_pts, pp_.bspline_degree_, local_traj_dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:464:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  464 |     [01;31m[Klocal_data_[m[K.start_time_ = time_now;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:529:13:[m[K [01;31m[Kerror: [m[K‘[01m[KrefineTraj[m[K’ was not declared in this scope
+  529 |             [01;31m[KrefineTraj[m[K(best_traj);
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:471:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_traj[m[K’ was not declared in this scope
+  471 |         refineTraj([01;31m[Kinit_traj[m[K);
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:471:9:[m[K [01;31m[Kerror: [m[K‘[01m[KrefineTraj[m[K’ was not declared in this scope
+  471 |         [01;31m[KrefineTraj[m[K(init_traj);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:536:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  536 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  544 | void [01;31m[KFastPlannerManager[m[K::selectBestTraj(NonUniformBspline &traj)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:41:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KselectBestTraj[m[K’ declared void
+  544 | void FastPlannerManager::selectBestTraj([01;31m[KNonUniformBspline[m[K &traj)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:482:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  482 |         [01;31m[Kplan_data_[m[K.initial_local_segment_ = init_traj;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:41:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  544 | void FastPlannerManager::selectBestTraj([01;31m[KNonUniformBspline[m[K &traj)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:482:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_traj[m[K’ was not declared in this scope
+  482 |         plan_data_.initial_local_segment_ = [01;31m[Kinit_traj[m[K;
+      |                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:60:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj[m[K’ was not declared in this scope
+  544 | void FastPlannerManager::selectBestTraj(NonUniformBspline &[01;31m[Ktraj[m[K)
+      |                                                            [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  552 | void [01;31m[KFastPlannerManager[m[K::refineTraj(NonUniformBspline &best_traj)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:37:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KrefineTraj[m[K’ declared void
+  552 | void FastPlannerManager::refineTraj([01;31m[KNonUniformBspline[m[K &best_traj)
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:37:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  552 | void FastPlannerManager::refineTraj([01;31m[KNonUniformBspline[m[K &best_traj)
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_traj[m[K’ was not declared in this scope
+  552 | void FastPlannerManager::refineTraj(NonUniformBspline &[01;31m[Kbest_traj[m[K)
+      |                                                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:587:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  587 | void [01;31m[KFastPlannerManager[m[K::updateTrajInfo()
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid updateTrajInfo()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:589:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  589 |     [01;31m[Klocal_data_[m[K.velocity_traj_ = local_data_.position_traj_.getDerivative();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  598 | void [01;31m[KFastPlannerManager[m[K::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:41:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KreparamBspline[m[K’ declared void
+  598 | void FastPlannerManager::reparamBspline([01;31m[KNonUniformBspline[m[K &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:41:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  598 | void FastPlannerManager::reparamBspline([01;31m[KNonUniformBspline[m[K &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline[m[K’ was not declared in this scope; did you mean ‘[01m[Ksplice[m[K’?
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &[01;31m[Kbspline[m[K, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                                            [01;31m[K^~~~~~~[m[K
+      |                                                            [32m[Ksplice[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:69:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, [01;31m[Kdouble[m[K ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:99:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K&[m[K’ token
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd [01;31m[K&[m[Kctrl_pts, double &dt, double &time_inc)
+      |                                                                                                   [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kctrl_pts[m[K’ was not declared in this scope
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &[01;31m[Kctrl_pts[m[K, double &dt, double &time_inc)
+      |                                                                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:484:9:[m[K [01;31m[Kerror: [m[K‘[01m[KfindCollisionRange[m[K’ was not declared in this scope
+  484 |         [01;31m[KfindCollisionRange[m[K(colli_start, colli_end, start_pts, end_pts);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:110:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, [01;31m[Kdouble[m[K &dt, double &time_inc)
+      |                                                                                                              [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:122:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, [01;31m[Kdouble[m[K &time_inc)
+      |                                                                                                                          [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:619:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  619 | void [01;31m[KFastPlannerManager[m[K::optimizeTopoBspline(
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:498:18:[m[K [01;31m[Kerror: [m[K‘[01m[KGraphNode[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::GraphNode[m[K’?
+  498 |             list<[01;31m[KGraphNode[m[K::Ptr> graph;
+      |                  [01;31m[K^~~~~~~~~[m[K
+      |                  [32m[Kfast_planner::GraphNode[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:9[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/topo_prm.h:59:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::GraphNode[m[K’ declared here
+   59 | class [01;36m[KGraphNode[m[K {
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:498:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  498 |             list<GraphNode::Ptr[01;31m[K>[m[K graph;
+      |                                [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:498:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid optimizeTopoBspline(double, double, std::vector<Eigen::Matrix<double, 3, 1> >, int)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:625:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopo_prm_[m[K’ was not declared in this scope
+  625 |     int seg_num = [01;31m[Ktopo_prm_[m[K->pathLength(guide_path) / pp_.ctrl_pt_dist;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:625:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  625 |     int seg_num = topo_prm_->pathLength(guide_path) / [01;31m[Kpp_[m[K.ctrl_pt_dist;
+      |                                                       [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:500:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopo_prm_[m[K’ was not declared in this scope
+  500 |             [01;31m[Ktopo_prm_[m[K->findTopoPaths(colli_start.front(), colli_end.back(), start_pts, end_pts, graph, raw_paths, filtered_paths, select_paths);
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:516:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  516 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:518:48:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  518 |                 optimize_threads.emplace_back(&[01;31m[KFastPlannerManager[m[K::optimizeTopoBspline, this, t_now, local_traj_duration, select_paths[i], i);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:518:89:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  518 |                 optimize_threads.emplace_back(&FastPlannerManager::optimizeTopoBspline, [01;31m[Kthis[m[K, t_now, local_traj_duration, select_paths[i], i);
+      |                                                                                         [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:522:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  522 |             for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i) optimize_threads[i].join();
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:527:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kbest_traj[m[K’
+  527 |             NonUniformBspline[01;31m[K [m[K[32m[Kbest_traj[m[K;
+      |                              [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+      |                              [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:628:32:[m[K [01;31m[Kerror: [m[K‘[01m[KreparamLocalTraj[m[K’ was not declared in this scope
+  628 |     Eigen::MatrixXd ctrl_pts = [01;31m[KreparamLocalTraj[m[K(start_t, duration, dt);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:528:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_traj[m[K’ was not declared in this scope
+  528 |             selectBestTraj([01;31m[Kbest_traj[m[K);
+      |                            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:630:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  630 |     [01;31m[KNonUniformBspline[m[K tmp_traj(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:632:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp_traj[m[K’ was not declared in this scope
+  632 |     [01;31m[Ktmp_traj[m[K.getBoundaryStates(2, 0, start, end);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:642:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  642 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 6[m[K) ROS_WARN("Incorrect guide for 3 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:647:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  647 |         for (int i = 0; [01;35m[Ki < tmp_pts.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:649:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  649 |             if (i % 2 == 1 && i >= 5 && [01;35m[Ki <= tmp_pts.size() - 6[m[K) guide_pts.push_back(tmp_pts[i]);
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:651:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  651 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 8[m[K) ROS_WARN("Incorrect guide for 4 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:528:13:[m[K [01;31m[Kerror: [m[K‘[01m[KselectBestTraj[m[K’ was not declared in this scope
+  528 |             [01;31m[KselectBestTraj[m[K(best_traj);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:529:13:[m[K [01;31m[Kerror: [m[K‘[01m[KrefineTraj[m[K’ was not declared in this scope
+  529 |             [01;31m[KrefineTraj[m[K(best_traj);
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:660:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  660 |     [01;31m[Kbspline_optimizers_[m[K[traj_id]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:662:58:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  662 |     bspline_optimizers_[traj_id]->optimize(ctrl_pts, dt, [01;31m[KBsplineOptimizer[m[K::GUIDE_PHASE, 0, 1);
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:536:5:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateTrajInfo[m[K’ was not declared in this scope
+  536 |     [01;31m[KupdateTrajInfo[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  544 | void [01;31m[KFastPlannerManager[m[K::selectBestTraj(NonUniformBspline &traj)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:41:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KselectBestTraj[m[K’ declared void
+  544 | void FastPlannerManager::selectBestTraj([01;31m[KNonUniformBspline[m[K &traj)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:41:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  544 | void FastPlannerManager::selectBestTraj([01;31m[KNonUniformBspline[m[K &traj)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:663:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  663 |     [01;31m[Kplan_data_[m[K.topo_traj_pos1_[traj_id] = NonUniformBspline(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:669:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  669 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::NORMAL_PHASE;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:544:60:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj[m[K’ was not declared in this scope
+  544 | void FastPlannerManager::selectBestTraj(NonUniformBspline &[01;31m[Ktraj[m[K)
+      |                                                            [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  552 | void [01;31m[KFastPlannerManager[m[K::refineTraj(NonUniformBspline &best_traj)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:656:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  656 |     double [01;35m[Ktm1[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:37:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KrefineTraj[m[K’ declared void
+  552 | void FastPlannerManager::refineTraj([01;31m[KNonUniformBspline[m[K &best_traj)
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:665:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  665 |     double [01;35m[Ktm2[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:676:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm3[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  676 |     double [01;35m[Ktm3[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:680:17:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  680 | Eigen::MatrixXd [01;31m[KFastPlannerManager[m[K::paramLocalTraj(double start_t, double &dt, double &duration)
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:37:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  552 | void FastPlannerManager::refineTraj([01;31m[KNonUniformBspline[m[K &best_traj)
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:552:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_traj[m[K’ was not declared in this scope
+  552 | void FastPlannerManager::refineTraj(NonUniformBspline &[01;31m[Kbest_traj[m[K)
+      |                                                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:587:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  587 | void [01;31m[KFastPlannerManager[m[K::updateTrajInfo()
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[KEigen::MatrixXd paramLocalTraj(double, double&, double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:684:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  684 |     [01;31m[Kglobal_data_[m[K.getTrajInfoInSphere(start_t, pp_.local_traj_len_, pp_.ctrl_pt_dist, point_set, start_end_derivative, dt, duration);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid updateTrajInfo()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:589:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  589 |     [01;31m[Klocal_data_[m[K.velocity_traj_ = local_data_.position_traj_.getDerivative();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  598 | void [01;31m[KFastPlannerManager[m[K::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:41:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KreparamBspline[m[K’ declared void
+  598 | void FastPlannerManager::reparamBspline([01;31m[KNonUniformBspline[m[K &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:41:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  598 | void FastPlannerManager::reparamBspline([01;31m[KNonUniformBspline[m[K &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:684:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  684 |     global_data_.getTrajInfoInSphere(start_t, [01;31m[Kpp_[m[K.local_traj_len_, pp_.ctrl_pt_dist, point_set, start_end_derivative, dt, duration);
+      |                                               [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:687:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  687 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline[m[K’ was not declared in this scope; did you mean ‘[01m[Ksplice[m[K’?
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &[01;31m[Kbspline[m[K, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                                            [01;31m[K^~~~~~~[m[K
+      |                                                            [32m[Ksplice[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:69:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, [01;31m[Kdouble[m[K ratio, Eigen::MatrixXd &ctrl_pts, double &dt, double &time_inc)
+      |                                                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:99:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K&[m[K’ token
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd [01;31m[K&[m[Kctrl_pts, double &dt, double &time_inc)
+      |                                                                                                   [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:689:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  689 |     [01;31m[Kplan_data_[m[K.local_start_end_derivative_ = start_end_derivative;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:694:17:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  694 | Eigen::MatrixXd [01;31m[KFastPlannerManager[m[K::reparamLocalTraj(
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kctrl_pts[m[K’ was not declared in this scope
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &[01;31m[Kctrl_pts[m[K, double &dt, double &time_inc)
+      |                                                                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:110:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, [01;31m[Kdouble[m[K &dt, double &time_inc)
+      |                                                                                                              [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:598:122:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+  598 | void FastPlannerManager::reparamBspline(NonUniformBspline &bspline, double ratio, Eigen::MatrixXd &ctrl_pts, double &dt, [01;31m[Kdouble[m[K &time_inc)
+      |                                                                                                                          [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:619:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  619 | void [01;31m[KFastPlannerManager[m[K::optimizeTopoBspline(
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid optimizeTopoBspline(double, double, std::vector<Eigen::Matrix<double, 3, 1> >, int)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:625:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopo_prm_[m[K’ was not declared in this scope
+  625 |     int seg_num = [01;31m[Ktopo_prm_[m[K->pathLength(guide_path) / pp_.ctrl_pt_dist;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[KEigen::MatrixXd reparamLocalTraj(const double&, const double&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:700:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  700 |     [01;31m[Kglobal_data_[m[K.getTrajInfoInDuration(start_t, duration, dt, point_set, start_end_derivative);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:625:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  625 |     int seg_num = topo_prm_->pathLength(guide_path) / [01;31m[Kpp_[m[K.ctrl_pt_dist;
+      |                                                       [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:701:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  701 |     [01;31m[Kplan_data_[m[K.local_start_end_derivative_ = start_end_derivative;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:705:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  705 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:706:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  706 |         dt, point_set, start_end_derivative, [01;31m[Kpp_[m[K.bspline_degree_, ctrl_pts);
+      |                                              [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:712:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  712 | void [01;31m[KFastPlannerManager[m[K::findCollisionRange(vector<Eigen::Vector3d> &colli_start, vector<Eigen::Vector3d> &colli_end, vector<Eigen::Vector3d> &start_pts, vector<Eigen::Vector3d> &end_pts)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid findCollisionRange(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:716:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  716 |     [01;31m[KNonUniformBspline[m[K *initial_traj = &plan_data_.initial_local_segment_;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:628:32:[m[K [01;31m[Kerror: [m[K‘[01m[KreparamLocalTraj[m[K’ was not declared in this scope
+  628 |     Eigen::MatrixXd ctrl_pts = [01;31m[KreparamLocalTraj[m[K(start_t, duration, dt);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:630:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  630 |     [01;31m[KNonUniformBspline[m[K tmp_traj(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:716:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_traj[m[K’ was not declared in this scope
+  716 |     NonUniformBspline *[01;31m[Kinitial_traj[m[K = &plan_data_.initial_local_segment_;
+      |                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:632:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp_traj[m[K’ was not declared in this scope
+  632 |     [01;31m[Ktmp_traj[m[K.getBoundaryStates(2, 0, start, end);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:716:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  716 |     NonUniformBspline *initial_traj = &[01;31m[Kplan_data_[m[K.initial_local_segment_;
+      |                                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:642:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  642 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 6[m[K) ROS_WARN("Incorrect guide for 3 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:647:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  647 |         for (int i = 0; [01;35m[Ki < tmp_pts.size()[m[K; ++i)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:649:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  649 |             if (i % 2 == 1 && i >= 5 && [01;35m[Ki <= tmp_pts.size() - 6[m[K) guide_pts.push_back(tmp_pts[i]);
+      |                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:651:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  651 |         if ([01;35m[Kguide_pts.size() != int(ctrl_pts.rows()) - 8[m[K) ROS_WARN("Incorrect guide for 4 degree");
+      |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:724:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kedt_environment_[m[K’ was not declared in this scope
+  724 |         safe = [01;31m[Kedt_environment_[m[K->evaluateCoarseEDT(ptc, -1.0) < topo_prm_->clearance_ ? false : true;
+      |                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:724:65:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopo_prm_[m[K’ was not declared in this scope
+  724 |         safe = edt_environment_->evaluateCoarseEDT(ptc, -1.0) < [01;31m[Ktopo_prm_[m[K->clearance_ ? false : true;
+      |                                                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:779:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  779 | void [01;31m[KFastPlannerManager[m[K::planYaw(const Eigen::Vector3d &start_yaw)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:660:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  660 |     [01;31m[Kbspline_optimizers_[m[K[traj_id]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:662:58:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  662 |     bspline_optimizers_[traj_id]->optimize(ctrl_pts, dt, [01;31m[KBsplineOptimizer[m[K::GUIDE_PHASE, 0, 1);
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid planYaw(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:784:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  784 |     auto &pos = [01;31m[Klocal_data_[m[K.position_traj_;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:663:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  663 |     [01;31m[Kplan_data_[m[K.topo_traj_pos1_[traj_id] = NonUniformBspline(ctrl_pts, pp_.bspline_degree_, dt);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:669:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  669 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::NORMAL_PHASE;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:656:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  656 |     double [01;35m[Ktm1[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:665:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  665 |     double [01;35m[Ktm2[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:676:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktm3[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  676 |     double [01;35m[Ktm3[m[K = (ros::Time::now() - t1).toSec();
+      |            [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:680:17:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  680 | Eigen::MatrixXd [01;31m[KFastPlannerManager[m[K::paramLocalTraj(double start_t, double &dt, double &duration)
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:811:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  811 |             [01;31m[KcalcNextYaw[m[K(last_yaw, waypt(0));
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[KEigen::MatrixXd paramLocalTraj(double, double&, double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:684:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  684 |     [01;31m[Kglobal_data_[m[K.getTrajInfoInSphere(start_t, pp_.local_traj_len_, pp_.ctrl_pt_dist, point_set, start_end_derivative, dt, duration);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:684:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  684 |     global_data_.getTrajInfoInSphere(start_t, [01;31m[Kpp_[m[K.local_traj_len_, pp_.ctrl_pt_dist, point_set, start_end_derivative, dt, duration);
+      |                                               [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:687:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  687 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:689:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  689 |     [01;31m[Kplan_data_[m[K.local_start_end_derivative_ = start_end_derivative;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:694:17:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  694 | Eigen::MatrixXd [01;31m[KFastPlannerManager[m[K::reparamLocalTraj(
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[KEigen::MatrixXd reparamLocalTraj(const double&, const double&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:700:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_data_[m[K’ was not declared in this scope
+  700 |     [01;31m[Kglobal_data_[m[K.getTrajInfoInDuration(start_t, duration, dt, point_set, start_end_derivative);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:701:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  701 |     [01;31m[Kplan_data_[m[K.local_start_end_derivative_ = start_end_derivative;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:705:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ has not been declared
+  705 |     [01;31m[KNonUniformBspline[m[K::parameterizeToBspline(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:706:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  706 |         dt, point_set, start_end_derivative, [01;31m[Kpp_[m[K.bspline_degree_, ctrl_pts);
+      |                                              [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:712:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  712 | void [01;31m[KFastPlannerManager[m[K::findCollisionRange(vector<Eigen::Vector3d> &colli_start, vector<Eigen::Vector3d> &colli_end, vector<Eigen::Vector3d> &start_pts, vector<Eigen::Vector3d> &end_pts)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid findCollisionRange(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:716:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNonUniformBspline[m[K’ was not declared in this scope; did you mean ‘[01m[Kfast_planner::NonUniformBspline[m[K’?
+  716 |     [01;31m[KNonUniformBspline[m[K *initial_traj = &plan_data_.initial_local_segment_;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfast_planner::NonUniformBspline[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h:7[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline_opt/include/bspline_opt/bspline_optimizer.h:5[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/planner_manager.h:4[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfast_planner::NonUniformBspline[m[K’ declared here
+   13 | class [01;36m[KNonUniformBspline[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:716:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_traj[m[K’ was not declared in this scope
+  716 |     NonUniformBspline *[01;31m[Kinitial_traj[m[K = &plan_data_.initial_local_segment_;
+      |                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:716:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  716 |     NonUniformBspline *initial_traj = &[01;31m[Kplan_data_[m[K.initial_local_segment_;
+      |                                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:834:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  834 |     [01;31m[KcalcNextYaw[m[K(last_yaw, end_yaw(0));
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:724:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kedt_environment_[m[K’ was not declared in this scope
+  724 |         safe = [01;31m[Kedt_environment_[m[K->evaluateCoarseEDT(ptc, -1.0) < topo_prm_->clearance_ ? false : true;
+      |                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:724:65:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopo_prm_[m[K’ was not declared in this scope
+  724 |         safe = edt_environment_->evaluateCoarseEDT(ptc, -1.0) < [01;31m[Ktopo_prm_[m[K->clearance_ ? false : true;
+      |                                                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:779:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  779 | void [01;31m[KFastPlannerManager[m[K::planYaw(const Eigen::Vector3d &start_yaw)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:838:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  838 |     [01;31m[Kbspline_optimizers_[m[K[1]->setWaypoints(waypts, waypt_idx);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:839:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  839 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::SMOOTHNESS | BsplineOptimizer::WAYPOINTS |
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:839:52:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  839 |     int cost_func = BsplineOptimizer::SMOOTHNESS | [01;31m[KBsplineOptimizer[m[K::WAYPOINTS |
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:840:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  840 |                     [01;31m[KBsplineOptimizer[m[K::START | BsplineOptimizer::END;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:840:47:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  840 |                     BsplineOptimizer::START | [01;31m[KBsplineOptimizer[m[K::END;
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid planYaw(const Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:784:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  784 |     auto &pos = [01;31m[Klocal_data_[m[K.position_traj_;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:848:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  848 |     local_data_.yaw_traj_.setUniformBspline(yaw, [01;31m[Kpp_[m[K.bspline_degree_, dt_yaw);
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:853:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  853 |     for (int i = 0; [01;35m[Ki < waypts.size()[m[K; ++i) path_yaw.push_back(waypts[i][0]);
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:811:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  811 |             [01;31m[KcalcNextYaw[m[K(last_yaw, waypt(0));
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:854:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  854 |     [01;31m[Kplan_data_[m[K.path_yaw_ = path_yaw;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:862:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  862 | void [01;31m[KFastPlannerManager[m[K::planYawExplore(const Eigen::Vector3d &start_yaw, const double &end_yaw, bool lookfwd, const double &relax_time)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid planYawExplore(const Vector3d&, const double&, bool, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:865:21:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  865 |     double dt_yaw = [01;31m[Klocal_data_[m[K.duration_ / double(seg_num); // time of B-spline segment
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:897:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  897 |         const int relax_num1 = [01;31m[Kpp_[m[K.relax_time1_ / dt_yaw;
+      |                                [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:911:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  911 |                 [01;31m[KcalcNextYaw[m[K(last_yaw, waypt(0));
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:897:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krelax_num1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  897 |         const int [01;35m[Krelax_num1[m[K = pp_.relax_time1_ / dt_yaw;
+      |                   [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:834:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  834 |     [01;31m[KcalcNextYaw[m[K(last_yaw, end_yaw(0));
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:943:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  943 |     [01;31m[KcalcNextYaw[m[K(last_yaw, end_yaw3d(0));
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:966:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  966 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::SMOOTHNESS | BsplineOptimizer::START | BsplineOptimizer::END |
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:966:52:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  966 |     int cost_func = BsplineOptimizer::SMOOTHNESS | [01;31m[KBsplineOptimizer[m[K::START | BsplineOptimizer::END |
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:966:78:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  966 |     int cost_func = BsplineOptimizer::SMOOTHNESS | BsplineOptimizer::START | [01;31m[KBsplineOptimizer[m[K::END |
+      |                                                                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:967:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  967 |                     [01;31m[KBsplineOptimizer[m[K::WAYPOINTS;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:838:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  838 |     [01;31m[Kbspline_optimizers_[m[K[1]->setWaypoints(waypts, waypt_idx);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:839:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  839 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::SMOOTHNESS | BsplineOptimizer::WAYPOINTS |
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:839:52:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  839 |     int cost_func = BsplineOptimizer::SMOOTHNESS | [01;31m[KBsplineOptimizer[m[K::WAYPOINTS |
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:840:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  840 |                     [01;31m[KBsplineOptimizer[m[K::START | BsplineOptimizer::END;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:840:47:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  840 |                     BsplineOptimizer::START | [01;31m[KBsplineOptimizer[m[K::END;
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:848:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  848 |     local_data_.yaw_traj_.setUniformBspline(yaw, [01;31m[Kpp_[m[K.bspline_degree_, dt_yaw);
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:853:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  853 |     for (int i = 0; [01;35m[Ki < waypts.size()[m[K; ++i) path_yaw.push_back(waypts[i][0]);
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:970:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  970 |     [01;31m[Kbspline_optimizers_[m[K[1]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:854:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  854 |     [01;31m[Kplan_data_[m[K.path_yaw_ = path_yaw;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:980:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  980 |     [01;31m[Kplan_data_[m[K.dt_yaw_ = dt_yaw;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:862:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  862 | void [01;31m[KFastPlannerManager[m[K::planYawExplore(const Eigen::Vector3d &start_yaw, const double &end_yaw, bool lookfwd, const double &relax_time)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:986:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  986 | void [01;31m[KFastPlannerManager[m[K::calcNextYaw(const double &last_yaw, double &yaw)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1021:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+ 1021 | bool [01;31m[KFastPlannerManager[m[K::checkSwarmCollision(const int &id)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kvoid planYawExplore(const Vector3d&, const double&, bool, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:865:21:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+  865 |     double dt_yaw = [01;31m[Klocal_data_[m[K.duration_ / double(seg_num); // time of B-spline segment
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool checkSwarmCollision(const int&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1024:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+ 1024 |     if ([01;31m[Kswarm_traj_data_[m[K.receive_flags_[id - 1] == false) return true;
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:897:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kpp_[m[K’ was not declared in this scope
+  897 |         const int relax_num1 = [01;31m[Kpp_[m[K.relax_time1_ / dt_yaw;
+      |                                [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1026:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+ 1026 |     auto &traj = [01;31m[Kswarm_traj_data_[m[K.swarm_trajs_[id - 1]; //获取其他无人机轨迹
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:911:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  911 |                 [01;31m[KcalcNextYaw[m[K(last_yaw, waypt(0));
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:897:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krelax_num1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  897 |         const int [01;35m[Krelax_num1[m[K = pp_.relax_time1_ / dt_yaw;
+      |                   [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1028:48:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+ 1028 |     double self_t = 0.02 + (ros::Time::now() - [01;31m[Klocal_data_[m[K.start_time_).toSec(); //计算当前无人机轨迹的当前时间
+      |                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1040:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+ 1040 |         if ((self_pos - other_pos).head<2>([01;31m[K)[m[K.norm() < 0.5) return false;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1048:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ 1048 | [01;31m[K}[m[K // namespace fast_planner
+      | [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:943:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcalcNextYaw[m[K’ was not declared in this scope
+  943 |     [01;31m[KcalcNextYaw[m[K(last_yaw, end_yaw3d(0));
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:966:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  966 |     int cost_func = [01;31m[KBsplineOptimizer[m[K::SMOOTHNESS | BsplineOptimizer::START | BsplineOptimizer::END |
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:966:52:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  966 |     int cost_func = BsplineOptimizer::SMOOTHNESS | [01;31m[KBsplineOptimizer[m[K::START | BsplineOptimizer::END |
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:966:78:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  966 |     int cost_func = BsplineOptimizer::SMOOTHNESS | BsplineOptimizer::START | [01;31m[KBsplineOptimizer[m[K::END |
+      |                                                                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:967:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBsplineOptimizer[m[K’ has not been declared
+  967 |                     [01;31m[KBsplineOptimizer[m[K::WAYPOINTS;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:970:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbspline_optimizers_[m[K’ was not declared in this scope
+  970 |     [01;31m[Kbspline_optimizers_[m[K[1]->setBoundaryStates(start, end);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:980:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplan_data_[m[K’ was not declared in this scope
+  980 |     [01;31m[Kplan_data_[m[K.dt_yaw_ = dt_yaw;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:986:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+  986 | void [01;31m[KFastPlannerManager[m[K::calcNextYaw(const double &last_yaw, double &yaw)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1021:6:[m[K [01;31m[Kerror: [m[K‘[01m[KFastPlannerManager[m[K’ has not been declared
+ 1021 | bool [01;31m[KFastPlannerManager[m[K::checkSwarmCollision(const int &id)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In function ‘[01m[Kbool checkSwarmCollision(const int&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1024:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+ 1024 |     if ([01;31m[Kswarm_traj_data_[m[K.receive_flags_[id - 1] == false) return true;
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1026:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_traj_data_[m[K’ was not declared in this scope
+ 1026 |     auto &traj = [01;31m[Kswarm_traj_data_[m[K.swarm_trajs_[id - 1]; //获取其他无人机轨迹
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1028:48:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_data_[m[K’ was not declared in this scope
+ 1028 |     double self_t = 0.02 + (ros::Time::now() - [01;31m[Klocal_data_[m[K.start_time_).toSec(); //计算当前无人机轨迹的当前时间
+      |                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1040:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+ 1040 |         if ((self_pos - other_pos).head<2>([01;31m[K)[m[K.norm() < 0.5) return false;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:1048:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ 1048 | [01;31m[K}[m[K // namespace fast_planner
+      | [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::checkTrajCollision(double&, Eigen::Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:180:11:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  180 |     [01;35m[Kfut_t += 0.015[m[K;
+      |     [01;35m[K~~~~~~^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::checkTrajCollision(double&, Eigen::Vector3d&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/src/planner_manager.cpp:180:11:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  180 |     [01;35m[Kfut_t += 0.015[m[K;
+      |     [01;35m[K~~~~~~^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/fast_planner_node.dir/build.make:115: CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/fast_planner_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/plan_manage.dir/build.make:63: CMakeFiles/plan_manage.dir/src/planner_manager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1214: CMakeFiles/plan_manage.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

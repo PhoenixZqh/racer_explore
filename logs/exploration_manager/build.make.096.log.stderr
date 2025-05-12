@@ -1,0 +1,15 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In member function ‘[01m[Kvoid CommandConverter::posCmdCallback(const ConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:190:33:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::Point[m[K’ {aka ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >[m[K’} and ‘[01m[Kconst _velocity_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::Vector3_<std::allocator<void> >[m[K’})
+  190 |         target_velocity_ = cmd->[01;31m[Kvelocity[m[K;
+      |                                 [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PositionCommand.h:19[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:141[m[K:
+[01m[K/opt/ros/noetic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Point_<std::allocator<void> >& geometry_msgs::Point_<std::allocator<void> >::operator=(const geometry_msgs::Point_<std::allocator<void> >&)[m[K’
+   22 | struct [01;36m[KPoint_[m[K
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/noetic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst _velocity_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::Vector3_<std::allocator<void> >[m[K’} to ‘[01m[Kconst geometry_msgs::Point_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Point_<std::allocator<void> >& geometry_msgs::Point_<std::allocator<void> >::operator=(geometry_msgs::Point_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Point.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst _velocity_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::Vector3_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >&&[m[K’
+make[2]: *** [CMakeFiles/racer2gazebo_cmd.dir/build.make:63: CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/racer2gazebo_cmd.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

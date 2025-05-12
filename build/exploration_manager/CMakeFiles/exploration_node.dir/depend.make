@@ -356,6 +356,11 @@ CMakeFiles/exploration_node.dir/src/exploration_node.cpp.o: /usr/include/eigen3/
 CMakeFiles/exploration_node.dir/src/exploration_node.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
 CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/bspline/include/bspline/Bspline.h
+CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/DroneState.h
+CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/GridTour.h
+CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/HGrid.h
+CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/PairOpt.h
+CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/PairOptResponse.h
 CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/ChunkData.h
 CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/ChunkStamps.h
 CMakeFiles/exploration_node.dir/src/fast_exploration_fsm.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/IdxList.h

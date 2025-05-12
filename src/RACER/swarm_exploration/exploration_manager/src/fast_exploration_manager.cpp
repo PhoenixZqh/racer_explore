@@ -135,10 +135,12 @@ int FastExplorationManager::planExploreMotion(const Eigen::Vector3d &pos, const 
     findGridAndFrontierPath(pos, vel, yaw, grid_ids, frontier_ids);
 
     // 强制所有视点的 z=0
-    for (auto &point : ed_->points_) {
+    for (auto &point : ed_->points_)
+    {
         point.z() = 0.0; // 或 0.3 匹配相机高度
     }
-    for (auto &avg : ed_->averages_) {
+    for (auto &avg : ed_->averages_)
+    {
         avg.z() = 0.0;
     }
 
@@ -203,8 +205,10 @@ int FastExplorationManager::planExploreMotion(const Eigen::Vector3d &pos, const 
             frontier_finder_->getViewpointsInfo(pos, {frontier_ids[0]}, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
 
             // 强制视点 z=0
-            for (auto &points : ed_->n_points_) {
-                for (auto &p : points) {
+            for (auto &points : ed_->n_points_)
+            {
+                for (auto &p : points)
+                {
                     p.z() = 0.0;
                 }
             }
@@ -245,7 +249,8 @@ int FastExplorationManager::planExploreMotion(const Eigen::Vector3d &pos, const 
                 std::vector<double> refined_yaws;
 
                 refineLocalTour(pos, vel, yaw, ed_->n_points_, n_yaws, ed_->refined_points_, refined_yaws);
-                for (auto &p : ed_->refined_points_) {
+                for (auto &p : ed_->refined_points_)
+                {
                     p.z() = 0.0;
                 }
                 next_pos = ed_->refined_points_[0];
@@ -280,8 +285,10 @@ int FastExplorationManager::planExploreMotion(const Eigen::Vector3d &pos, const 
         frontier_finder_->getViewpointsInfo(pos, ed_->refined_ids_, ep_->top_view_num_, ep_->max_decay_, ed_->n_points_, n_yaws);
 
         // 强制视点 z=0
-        for (auto &points : ed_->n_points_) {
-            for (auto &p : points) {
+        for (auto &points : ed_->n_points_)
+        {
+            for (auto &p : points)
+            {
                 p.z() = 0.0;
             }
         }
@@ -290,7 +297,8 @@ int FastExplorationManager::planExploreMotion(const Eigen::Vector3d &pos, const 
         ed_->refined_views_.clear();
         std::vector<double> refined_yaws;
         refineLocalTour(pos, vel, yaw, ed_->n_points_, n_yaws, ed_->refined_points_, refined_yaws);
-        for (auto &p : ed_->refined_points_) {
+        for (auto &p : ed_->refined_points_)
+        {
             p.z() = 0.0;
         }
         next_pos = ed_->refined_points_[0];
@@ -359,7 +367,7 @@ int FastExplorationManager::planTrajToView(const Vector3d &pos, const Vector3d &
     // A*算法找路
 
     Eigen::Vector3d modified_next_pos = next_pos;
-    modified_next_pos.z() = 0.01; //! 小车地面高度，例如 0.01 米
+    modified_next_pos.z() = 0.001; //! 小车地面高度，例如 0.01 米
 
     if (planner_manager_->path_finder_->search(pos, modified_next_pos, optimistic) != Astar::REACH_END)
     {

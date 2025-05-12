@@ -951,7 +951,7 @@ void FastExplorationFSM::optTimerCallback(const ros::TimerEvent &e)
     double cur_app2 = expl_manager_->computeGridPathCost(state2.pos_, other_ids, first_ids2, {first_ids1, first_ids2}, {second_ids1, second_ids2}, true);
     // std::cout << "cur cost : " << cur_app1 << ", " << cur_app2 << ", " << cur_app1 + cur_app2 << std::endl;
 
-    // 如果重新分配之后的成本比之前的高很多，放弃这次配对
+    // 如果重新分配之后的成本比之前的高很多，放弃这次配对, 原来为0.1
     if (cur_app1 + cur_app2 > prev_app1 + prev_app2 + 0.1)
     {
         ROS_ERROR("Larger cost after reallocation");

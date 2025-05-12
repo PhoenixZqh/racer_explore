@@ -1,0 +1,4 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In member function ‘[01m[Kvoid CommandConverter::publishTwist()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:261:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkp_angular[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  261 |             const double [01;35m[Kkp_angular[m[K = 2.0;  // 角速度增益
+      |                          [01;35m[K^~~~~~~~~~[m[K

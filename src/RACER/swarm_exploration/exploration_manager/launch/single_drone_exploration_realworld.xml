@@ -45,13 +45,13 @@
     <arg name="fy" value="$(arg fy)"/>
 
     <!-- maximum velocity and acceleration the drone will reach -->
-    <arg name="max_vel" value="1.2" />
-    <arg name="max_acc" value="0.5" />
+    <arg name="max_vel" value="1.5" />
+    <arg name="max_acc" value="0.8" />
     <arg name="simulation" value="$(arg simulation)" />
   </include>
 
   <!-- trajectory server -->
-  <node pkg="plan_manage" name="traj_server_$(arg drone_id)" type="traj_server" output="screen">
+  <node pkg="plan_manage" name="traj_server_$(arg drone_id)" type="traj_server" output="log">
     <remap from="/odom_world" to="$(arg odom_prefix)_$(arg drone_id)"/>
 
     <remap from="/planning/bspline" to="/planning/bspline_$(arg drone_id)" />

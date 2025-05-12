@@ -1,0 +1,86 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In function ‘[01m[Kvoid publishTwist()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:154:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+  154 |     [01;31m[Kgeometry_msgs[m[K::Twist twist;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:156:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krcv_cmd_[m[K’ was not declared in this scope
+  156 |     if ([01;31m[Krcv_cmd_[m[K && rcv_odom_)
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:156:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krcv_odom_[m[K’ was not declared in this scope
+  156 |     if (rcv_cmd_ && [01;31m[Krcv_odom_[m[K)
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:159:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position_[m[K’ was not declared in this scope
+  159 |         double dx = [01;31m[Ktarget_position_[m[K.x - current_pose_.position.x;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:159:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_pose_[m[K’ was not declared in this scope
+  159 |         double dx = target_position_.x - [01;31m[Kcurrent_pose_[m[K.position.x;
+      |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:161:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksqrt[m[K’ was not declared in this scope
+  161 |         double distance_error = [01;31m[Ksqrt[m[K(dx * dx + dy * dy);
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:31:[m[K [01;31m[Kerror: [m[K‘[01m[Katan2[m[K’ was not declared in this scope
+  164 |         double target_angle = [01;31m[Katan2[m[K(dy, dx);
+      |                               [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:166:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+  166 |         double angle_to_target = target_angle - [01;31m[Kcurrent_yaw_[m[K;
+      |                                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:167:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksin[m[K’ was not declared in this scope
+  167 |         angle_to_target = atan2([01;31m[Ksin[m[K(angle_to_target), cos(angle_to_target));
+      |                                 [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:167:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kcos[m[K’ was not declared in this scope
+  167 |         angle_to_target = atan2(sin(angle_to_target), [01;31m[Kcos[m[K(angle_to_target));
+      |                                                       [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:170:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_yaw_[m[K’ was not declared in this scope
+  170 |         double yaw_error = [01;31m[Ktarget_yaw_[m[K - current_yaw_;
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:186:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist[m[K’ was not declared in this scope
+  186 |             [01;31m[Ktwist[m[K.linear.x = 0.0;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:187:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfabs[m[K’ was not declared in this scope
+  187 |             if ([01;31m[Kfabs[m[K(yaw_error) > angle_threshold)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:189:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  189 |                 twist.angular.z = std::[01;31m[Kmin[m[K(max_angular, std::max(-max_angular, kp_angular * yaw_error));
+      |                                        [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:189:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  189 |                 twist.angular.z = std::min(max_angular, std::[01;31m[Kmax[m[K(-max_angular, kp_angular * yaw_error));
+      |                                                              [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:199:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist[m[K’ was not declared in this scope
+  199 |             [01;31m[Ktwist[m[K.linear.x = std::min(max_linear, kp_linear * distance_error);
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:199:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  199 |             twist.linear.x = std::[01;31m[Kmin[m[K(max_linear, kp_linear * distance_error);
+      |                                   [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:204:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  204 |                 twist.angular.z = std::[01;31m[Kmin[m[K(max_angular, std::max(-max_angular, kp_angular * yaw_error));
+      |                                        [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:204:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  204 |                 twist.angular.z = std::min(max_angular, std::[01;31m[Kmax[m[K(-max_angular, kp_angular * yaw_error));
+      |                                                              [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:208:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  208 |                 twist.angular.z = std::[01;31m[Kmin[m[K(max_angular, std::max(-max_angular, kp_angular * angle_to_target));
+      |                                        [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:208:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  208 |                 twist.angular.z = std::min(max_angular, std::[01;31m[Kmax[m[K(-max_angular, kp_angular * angle_to_target));
+      |                                                              [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:212:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist[m[K’ was not declared in this scope
+  212 |         [01;31m[Ktwist[m[K.linear.y = 0.0;
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:217:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar_id_[m[K’ was not declared in this scope
+  217 |         ROS_INFO_STREAM("[" << [01;31m[Kcar_id_[m[K << "] Dist err: " << distance_error << " | Angle to target: " << angle_to_target << " | Yaw error: " << yaw_error);
+      |                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:217:9:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO_STREAM[m[K’ was not declared in this scope
+  217 |         [01;31m[KROS_INFO_STREAM[m[K("[" << car_id_ << "] Dist err: " << distance_error << " | Angle to target: " << angle_to_target << " | Yaw error: " << yaw_error);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:222:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist[m[K’ was not declared in this scope
+  222 |         [01;31m[Ktwist[m[K.linear.x = twist.linear.y = twist.linear.z = 0.0;
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:226:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist_pub_[m[K’ was not declared in this scope
+  226 |     [01;31m[Ktwist_pub_[m[K.publish(twist);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:226:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist[m[K’ was not declared in this scope
+  226 |     twist_pub_.publish([01;31m[Ktwist[m[K);
+      |                        [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/racer2gazebo_cmd.dir/build.make:63: CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/racer2gazebo_cmd.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

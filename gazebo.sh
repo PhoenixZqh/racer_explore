@@ -1,3 +1,4 @@
+rosclean purge
 
 source ~/phoenixZ/racer_explore/devel/setup.bash
 

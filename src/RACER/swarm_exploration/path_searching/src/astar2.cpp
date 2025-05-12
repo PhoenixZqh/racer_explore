@@ -55,18 +55,18 @@ int Astar::search(const Eigen::Vector3d &start_pt, const Eigen::Vector3d &end_pt
 {
     NodePtr cur_node = path_node_pool_[0];
     cur_node->parent = NULL;
-    
+
     // 统一将 Z 坐标设置为固定值，避免影响路径搜索
     const double fixed_z = 0.3; // 或者设为地图中你想用的 z 层
     cur_node->position = start_pt;
     cur_node->position(2) = fixed_z;
-    
+
     posToIndex(start_pt, cur_node->index);
     cur_node->g_score = 0.0;
     cur_node->f_score = lambda_heu_ * getDiagHeu(cur_node->position, end_pt);
 
     Eigen::Vector3i end_index;
-    posToIndex(end_pt, end_index);   
+    posToIndex(end_pt, end_index);
 
     open_set_.push(cur_node);
     open_set_map_.insert(make_pair(cur_node->index, cur_node));
@@ -85,7 +85,6 @@ int Astar::search(const Eigen::Vector3d &start_pt, const Eigen::Vector3d &end_pt
             backtrack(cur_node, end_pt);
             return REACH_END;
         }
-
 
         // Early termination if time up
         if ((ros::Time::now() - t1).toSec() > max_search_time_)
@@ -110,8 +109,7 @@ int Astar::search(const Eigen::Vector3d &start_pt, const Eigen::Vector3d &end_pt
                 step << dx, dy, 0.0; // 只考虑 2D 搜索
                 if (step.norm() < 1e-3) continue;
                 nbr_pos = cur_pos + step;
-                nbr_pos(2) = fixed_z;  // 关键补充，防止访问错误 z 层
-
+                nbr_pos(2) = fixed_z; // 关键补充，防止访问错误 z 层
 
                 // Check safety
                 if (!edt_env_->sdf_map_->isInBox(nbr_pos))
@@ -179,13 +177,10 @@ int Astar::search(const Eigen::Vector3d &start_pt, const Eigen::Vector3d &end_pt
                 open_set_.push(neighbor);
                 open_set_map_.insert(make_pair(neighbor->index, neighbor));
             }
-
-       
     }
 
     return NO_PATH;
 }
-
 
 double Astar::getEarlyTerminateCost()
 {
@@ -248,7 +243,6 @@ double Astar::getDiagHeu(const Eigen::Vector3d &x1, const Eigen::Vector3d &x2)
 
     return tie_breaker_ * h;
 }
-
 
 double Astar::getManhHeu(const Eigen::Vector3d &x1, const Eigen::Vector3d &x2)
 {

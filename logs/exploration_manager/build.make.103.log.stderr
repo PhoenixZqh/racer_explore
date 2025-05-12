@@ -1,0 +1,4 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In member function ‘[01m[Kvoid PurePursuitController::publishTwist()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:240:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klocal_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  240 |         double [01;35m[Klocal_x[m[K = cos(current_yaw_) * dx + sin(current_yaw_) * dy;
+      |                [01;35m[K^~~~~~~[m[K
