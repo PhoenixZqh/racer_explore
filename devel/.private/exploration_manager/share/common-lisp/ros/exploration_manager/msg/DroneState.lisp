@@ -41,7 +41,12 @@
     :reader yaw
     :initarg :yaw
     :type cl:float
-    :initform 0.0))
+    :initform 0.0)
+   (cur_state
+    :reader cur_state
+    :initarg :cur_state
+    :type cl:integer
+    :initform 0))
 )
 
 (cl:defclass DroneState (<DroneState>)
@@ -86,6 +91,11 @@
 (cl:defmethod yaw-val ((m <DroneState>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader exploration_manager-msg:yaw-val is deprecated.  Use exploration_manager-msg:yaw instead.")
   (yaw m))
+
+(cl:ensure-generic-function 'cur_state-val :lambda-list '(m))
+(cl:defmethod cur_state-val ((m <DroneState>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader exploration_manager-msg:cur_state-val is deprecated.  Use exploration_manager-msg:cur_state instead.")
+  (cur_state m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <DroneState>) ostream)
   "Serializes a message object of type '<DroneState>"
   (cl:let* ((signed (cl:slot-value msg 'drone_id)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
@@ -148,6 +158,12 @@
     (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream))
+  (cl:let* ((signed (cl:slot-value msg 'cur_state)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    )
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <DroneState>) istream)
   "Deserializes a message object of type '<DroneState>"
@@ -222,6 +238,12 @@
       (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
     (cl:setf (cl:slot-value msg 'yaw) (roslisp-utils:decode-single-float-bits bits)))
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'cur_state) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<DroneState>)))
@@ -232,16 +254,16 @@
   "exploration_manager/DroneState")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<DroneState>)))
   "Returns md5sum for a message object of type '<DroneState>"
-  "b3d2ae28cc1da43ded73b6bd55766455")
+  "d5585437c78c5e2a88978fc6a150fd46")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'DroneState)))
   "Returns md5sum for a message object of type 'DroneState"
-  "b3d2ae28cc1da43ded73b6bd55766455")
+  "d5585437c78c5e2a88978fc6a150fd46")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<DroneState>)))
   "Returns full string definition for message of type '<DroneState>"
-  (cl:format cl:nil "int32 drone_id~%~%int8[] grid_ids~%float64 recent_attempt_time~%float64 stamp~%~%# only used for simulation~%float32[] pos~%float32[] vel~%float32 yaw~%~%"))
+  (cl:format cl:nil "int32 drone_id~%~%int8[] grid_ids~%float64 recent_attempt_time~%float64 stamp~%~%# only used for simulation~%float32[] pos~%float32[] vel~%float32 yaw~%int32 cur_state~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'DroneState)))
   "Returns full string definition for message of type 'DroneState"
-  (cl:format cl:nil "int32 drone_id~%~%int8[] grid_ids~%float64 recent_attempt_time~%float64 stamp~%~%# only used for simulation~%float32[] pos~%float32[] vel~%float32 yaw~%~%"))
+  (cl:format cl:nil "int32 drone_id~%~%int8[] grid_ids~%float64 recent_attempt_time~%float64 stamp~%~%# only used for simulation~%float32[] pos~%float32[] vel~%float32 yaw~%int32 cur_state~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <DroneState>))
   (cl:+ 0
      4
@@ -250,6 +272,7 @@
      8
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'pos) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'vel) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+     4
      4
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <DroneState>))
@@ -262,4 +285,5 @@
     (cl:cons ':pos (pos msg))
     (cl:cons ':vel (vel msg))
     (cl:cons ':yaw (yaw msg))
+    (cl:cons ':cur_state (cur_state msg))
 ))

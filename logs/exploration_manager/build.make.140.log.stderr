@@ -1,0 +1,147 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:38:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_exploration[m[K’ does not name a type
+   38 |     void droneStateCallback(const [01;31m[Kswarm_exploration[m[K::DroneState::ConstPtr &msg)
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:38:64:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   38 |     void droneStateCallback(const swarm_exploration::DroneState[01;31m[K::[m[KConstPtr &msg)
+      |                                                                [01;31m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:38:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   38 |     void droneStateCallback[34m[K([m[Kconst swarm_exploration::DroneState[01;31m[K:[m[K[32m[K:[m[KConstPtr &msg)
+      |                            [34m[K~[m[K                                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                [32m[K)[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:38:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   38 |     void droneStateCallback(const swarm_exploration::[01;31m[KDroneState[m[K::ConstPtr &msg)
+      |                                                      [01;31m[K^~~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:38:66:[m[K [01;31m[Kerror: [m[K‘[01m[KConstPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   38 |     void droneStateCallback(const swarm_exploration::DroneState::[01;31m[KConstPtr[m[K &msg)
+      |                                                                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In constructor ‘[01m[KCommandConverter::CommandConverter()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:154:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCommandConverter::car_id_num_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  154 |     int [01;35m[Kcar_id_num_[m[K;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:152:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool CommandConverter::mission_done_[m[K’ [[01;35m[K-Wreorder[m[K]
+  152 |     bool [01;35m[Kmission_done_[m[K;
+      |          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:11:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   11 |     [01;35m[KCommandConverter[m[K()
+      |     [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe(std::string&, int, void (CommandConverter::*)(...), CommandConverter*)[m[K’
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;31m[K)[m[K;
+      |                                                                                                            [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:400:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)[m[K’
+  400 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:400:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:411:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)[m[K’
+  411 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:411:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (CommandConverter::)(...)[m[K’ have incompatible cv-qualifiers
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:463:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)[m[K’
+  463 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:463:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:473:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)[m[K’
+  473 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:473:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (CommandConverter::)(...)[m[K’ have incompatible cv-qualifiers
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:527:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  527 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:527:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:538:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  538 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:538:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (CommandConverter::)(...)[m[K’ have incompatible cv-qualifiers
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:592:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  592 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:592:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:603:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  603 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:603:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (CommandConverter::)(...)[m[K’ have incompatible cv-qualifiers
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:654:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)[m[K’
+  654 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:654:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(M)[m[K’ and ‘[01m[Kvoid (CommandConverter::*)(...)[m[K’
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:702:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)[m[K’
+  702 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:702:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (CommandConverter::*)(...)[m[K’
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:748:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  748 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:748:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(const boost::shared_ptr<const M>&)>[m[K’ and ‘[01m[Kvoid (CommandConverter::*)(...)[m[K’
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:797:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  797 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:797:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid (CommandConverter::*)(...)[m[K’
+   29 |         drone_state_sub_ = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:834:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(ros::SubscribeOptions&)[m[K’
+  834 |   Subscriber [01;36m[Ksubscribe[m[K(SubscribeOptions& ops);
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:834:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+make[2]: *** [CMakeFiles/racer2gazebo_cmd.dir/build.make:63: CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/racer2gazebo_cmd.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

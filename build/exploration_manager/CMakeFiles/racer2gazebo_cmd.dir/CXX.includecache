@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/DroneState.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/zqh/phoenixZ/racer_explore/devel/.private/quadrotor_msgs/include/quadrotor_msgs/PositionCommand.h
 string
 -
@@ -40,6 +56,8 @@ quadrotor_msgs/PositionCommand.h
 nav_msgs/Odometry.h
 -
 tf/transform_datatypes.h
+-
+exploration_manager/DroneState.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h

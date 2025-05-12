@@ -14,7 +14,7 @@
 
 (defclass exploration_manager::DroneState
   :super ros::object
-  :slots (_drone_id _grid_ids _recent_attempt_time _stamp _pos _vel _yaw ))
+  :slots (_drone_id _grid_ids _recent_attempt_time _stamp _pos _vel _yaw _cur_state ))
 
 (defmethod exploration_manager::DroneState
   (:init
@@ -26,6 +26,7 @@
     ((:pos __pos) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:vel __vel) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:yaw __yaw) 0.0)
+    ((:cur_state __cur_state) 0)
     )
    (send-super :init)
    (setq _drone_id (round __drone_id))
@@ -35,6 +36,7 @@
    (setq _pos __pos)
    (setq _vel __vel)
    (setq _yaw (float __yaw))
+   (setq _cur_state (round __cur_state))
    self)
   (:drone_id
    (&optional __drone_id)
@@ -57,6 +59,9 @@
   (:yaw
    (&optional __yaw)
    (if __yaw (setq _yaw __yaw)) _yaw)
+  (:cur_state
+   (&optional __cur_state)
+   (if __cur_state (setq _cur_state __cur_state)) _cur_state)
   (:serialization-length
    ()
    (+
@@ -73,6 +78,8 @@
     ;; float32[] _vel
     (* 4    (length _vel)) 4
     ;; float32 _yaw
+    4
+    ;; int32 _cur_state
     4
     ))
   (:serialize
@@ -102,6 +109,8 @@
        )
      ;; float32 _yaw
        (sys::poke _yaw (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
+     ;; int32 _cur_state
+       (write-long _cur_state s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -136,11 +145,13 @@
      ))
    ;; float32 _yaw
      (setq _yaw (sys::peek buf ptr- :float)) (incf ptr- 4)
+   ;; int32 _cur_state
+     (setq _cur_state (sys::peek buf ptr- :integer)) (incf ptr- 4)
    ;;
    self)
   )
 
-(setf (get exploration_manager::DroneState :md5sum-) "b3d2ae28cc1da43ded73b6bd55766455")
+(setf (get exploration_manager::DroneState :md5sum-) "d5585437c78c5e2a88978fc6a150fd46")
 (setf (get exploration_manager::DroneState :datatype-) "exploration_manager/DroneState")
 (setf (get exploration_manager::DroneState :definition-)
       "int32 drone_id
@@ -153,10 +164,11 @@ float64 stamp
 float32[] pos
 float32[] vel
 float32 yaw
+int32 cur_state
 ")
 
 
 
-(provide :exploration_manager/DroneState "b3d2ae28cc1da43ded73b6bd55766455")
+(provide :exploration_manager/DroneState "d5585437c78c5e2a88978fc6a150fd46")
 
 

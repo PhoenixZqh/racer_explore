@@ -25,6 +25,7 @@ class DroneState {
       this.pos = null;
       this.vel = null;
       this.yaw = null;
+      this.cur_state = null;
     }
     else {
       if (initObj.hasOwnProperty('drone_id')) {
@@ -69,6 +70,12 @@ class DroneState {
       else {
         this.yaw = 0.0;
       }
+      if (initObj.hasOwnProperty('cur_state')) {
+        this.cur_state = initObj.cur_state
+      }
+      else {
+        this.cur_state = 0;
+      }
     }
   }
 
@@ -88,6 +95,8 @@ class DroneState {
     bufferOffset = _arraySerializer.float32(obj.vel, buffer, bufferOffset, null);
     // Serialize message field [yaw]
     bufferOffset = _serializer.float32(obj.yaw, buffer, bufferOffset);
+    // Serialize message field [cur_state]
+    bufferOffset = _serializer.int32(obj.cur_state, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -109,6 +118,8 @@ class DroneState {
     data.vel = _arrayDeserializer.float32(buffer, bufferOffset, null)
     // Deserialize message field [yaw]
     data.yaw = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [cur_state]
+    data.cur_state = _deserializer.int32(buffer, bufferOffset);
     return data;
   }
 
@@ -117,7 +128,7 @@ class DroneState {
     length += object.grid_ids.length;
     length += 4 * object.pos.length;
     length += 4 * object.vel.length;
-    return length + 36;
+    return length + 40;
   }
 
   static datatype() {
@@ -127,7 +138,7 @@ class DroneState {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'b3d2ae28cc1da43ded73b6bd55766455';
+    return 'd5585437c78c5e2a88978fc6a150fd46';
   }
 
   static messageDefinition() {
@@ -143,6 +154,7 @@ class DroneState {
     float32[] pos
     float32[] vel
     float32 yaw
+    int32 cur_state
     `;
   }
 
@@ -199,6 +211,13 @@ class DroneState {
     }
     else {
       resolved.yaw = 0.0
+    }
+
+    if (msg.cur_state !== undefined) {
+      resolved.cur_state = msg.cur_state;
+    }
+    else {
+      resolved.cur_state = 0
     }
 
     return resolved;

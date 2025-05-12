@@ -1,0 +1,7 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In member function ‘[01m[Kvoid CommandConverter::publishTwist()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:95:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_timeout_[m[K’ was not declared in this scope
+   95 |             if (distance_error < [01;31m[Kdistance_timeout_[m[K && fabs(yaw_error) < angle_threshold)
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/racer2gazebo_cmd.dir/build.make:63: CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/racer2gazebo_cmd.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

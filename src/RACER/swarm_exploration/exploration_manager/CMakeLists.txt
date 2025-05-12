@@ -25,7 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
   plan_manage
   cv_bridge
   message_generation
-  
+  nav_msgs
   xacro
   urdf
   tf

@@ -778,6 +778,7 @@ void FastExplorationFSM::droneStateTimerCallback(const ros::TimerEvent &e)
         msg.grid_ids.push_back(id);
     msg.recent_attempt_time = state.recent_attempt_time_;
     msg.stamp = state.stamp_;
+    msg.cur_state = state_;
 
     drone_state_pub_.publish(msg);
 }

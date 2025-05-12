@@ -8,3 +8,4 @@ float64 stamp
 float32[] pos
 float32[] vel
 float32 yaw
+int32 cur_state

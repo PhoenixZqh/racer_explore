@@ -8,7 +8,7 @@ import struct
 
 
 class DroneState(genpy.Message):
-  _md5sum = "b3d2ae28cc1da43ded73b6bd55766455"
+  _md5sum = "d5585437c78c5e2a88978fc6a150fd46"
   _type = "exploration_manager/DroneState"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int32 drone_id
@@ -20,9 +20,10 @@ float64 stamp
 # only used for simulation
 float32[] pos
 float32[] vel
-float32 yaw"""
-  __slots__ = ['drone_id','grid_ids','recent_attempt_time','stamp','pos','vel','yaw']
-  _slot_types = ['int32','int8[]','float64','float64','float32[]','float32[]','float32']
+float32 yaw
+int32 cur_state"""
+  __slots__ = ['drone_id','grid_ids','recent_attempt_time','stamp','pos','vel','yaw','cur_state']
+  _slot_types = ['int32','int8[]','float64','float64','float32[]','float32[]','float32','int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -32,7 +33,7 @@ float32 yaw"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       drone_id,grid_ids,recent_attempt_time,stamp,pos,vel,yaw
+       drone_id,grid_ids,recent_attempt_time,stamp,pos,vel,yaw,cur_state
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -55,6 +56,8 @@ float32 yaw"""
         self.vel = []
       if self.yaw is None:
         self.yaw = 0.
+      if self.cur_state is None:
+        self.cur_state = 0
     else:
       self.drone_id = 0
       self.grid_ids = []
@@ -63,6 +66,7 @@ float32 yaw"""
       self.pos = []
       self.vel = []
       self.yaw = 0.
+      self.cur_state = 0
 
   def _get_types(self):
     """
@@ -92,8 +96,8 @@ float32 yaw"""
       buff.write(_struct_I.pack(length))
       pattern = '<%sf'%length
       buff.write(struct.Struct(pattern).pack(*self.vel))
-      _x = self.yaw
-      buff.write(_get_struct_f().pack(_x))
+      _x = self
+      buff.write(_get_struct_fi().pack(_x.yaw, _x.cur_state))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -137,9 +141,10 @@ float32 yaw"""
       s = struct.Struct(pattern)
       end += s.size
       self.vel = s.unpack(str[start:end])
+      _x = self
       start = end
-      end += 4
-      (self.yaw,) = _get_struct_f().unpack(str[start:end])
+      end += 8
+      (_x.yaw, _x.cur_state,) = _get_struct_fi().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -168,8 +173,8 @@ float32 yaw"""
       buff.write(_struct_I.pack(length))
       pattern = '<%sf'%length
       buff.write(self.vel.tostring())
-      _x = self.yaw
-      buff.write(_get_struct_f().pack(_x))
+      _x = self
+      buff.write(_get_struct_fi().pack(_x.yaw, _x.cur_state))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -214,9 +219,10 @@ float32 yaw"""
       s = struct.Struct(pattern)
       end += s.size
       self.vel = numpy.frombuffer(str[start:end], dtype=numpy.float32, count=length)
+      _x = self
       start = end
-      end += 4
-      (self.yaw,) = _get_struct_f().unpack(str[start:end])
+      end += 8
+      (_x.yaw, _x.cur_state,) = _get_struct_fi().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -231,12 +237,12 @@ def _get_struct_2d():
     if _struct_2d is None:
         _struct_2d = struct.Struct("<2d")
     return _struct_2d
-_struct_f = None
-def _get_struct_f():
-    global _struct_f
-    if _struct_f is None:
-        _struct_f = struct.Struct("<f")
-    return _struct_f
+_struct_fi = None
+def _get_struct_fi():
+    global _struct_fi
+    if _struct_fi is None:
+        _struct_fi = struct.Struct("<fi")
+    return _struct_fi
 _struct_i = None
 def _get_struct_i():
     global _struct_i

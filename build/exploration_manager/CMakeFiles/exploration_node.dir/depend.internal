@@ -3,6 +3,9 @@
 
 CMakeFiles/exploration_node.dir/src/exploration_node.cpp.o
  /home/zqh/phoenixZ/racer_explore/devel/.private/bspline/include/bspline/Bspline.h
+ /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/DroneState.h
+ /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/PairOpt.h
+ /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/PairOptResponse.h
  /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/include/exploration_manager/fast_exploration_fsm.h
  /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/exploration_node.cpp
  /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_manage/include/plan_manage/backward.hpp

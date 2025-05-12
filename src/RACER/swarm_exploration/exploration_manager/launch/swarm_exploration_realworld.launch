@@ -11,9 +11,9 @@
 
   <include file="$(find exploration_manager)/launch/single_drone_exploration_realworld.xml">
     <arg name="drone_id" value="1"/>
-    <arg name="init_x"   value="0"/>
+    <arg name="init_x"   value="-5"/>
     <!-- <arg name="init_x"   value="-2.5D.5"/> -->
-    <arg name="init_y"   value="0"/>
+    <arg name="init_y"   value="-5"/>
     <!-- <arg name="init_y"   value="-3"/> -->
     <arg name="init_z"   value="0"/> 
     <arg name="map_size_x" value="$(arg map_size_x)"/>
@@ -33,9 +33,9 @@
 
   <include file="$(find exploration_manager)/launch/single_drone_exploration_realworld.xml">
     <arg name="drone_id" value="2"/>
-    <arg name="init_x"   value="-6"/>
+    <arg name="init_x"   value="5"/>
     <!-- <arg name="init_x"   value="-2.5D.5"/> -->
-    <arg name="init_y"   value="6"/>
+    <arg name="init_y"   value="5"/>
     <!-- <arg name="init_y"   value="-3"/> -->
     <arg name="init_z"   value="0"/> 
     <arg name="map_size_x" value="$(arg map_size_x)"/>

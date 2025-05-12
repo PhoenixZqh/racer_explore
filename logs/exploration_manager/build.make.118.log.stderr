@@ -1,0 +1,138 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:175:39:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ in namespace ‘[01m[Knav_msgs[m[K’ does not name a type
+  175 |     void odomCallback(const nav_msgs::[01;31m[KOdometry[m[K::ConstPtr &odom)
+      |                                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:175:58:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  175 |     void odomCallback(const nav_msgs::Odometry::ConstPtr [01;31m[K&[m[Kodom)
+      |                                                          [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:175:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  175 |     void odomCallback[34m[K([m[Kconst nav_msgs::Odometry::ConstPtr[01;31m[K [m[K[32m[K&[m[Kodom)
+      |                      [34m[K~[m[K                                  [01;31m[K^[m[K[32m[K~[m[K
+      |                                                         [32m[K)[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:175:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  175 |     void odomCallback(const nav_msgs::Odometry::ConstPtr [01;31m[K&[m[Kodom)
+      |                                                          [01;31m[K^[m[K
+      |                                                           [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:175:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom[m[K’ does not name a type
+  175 |     void odomCallback(const nav_msgs::Odometry::ConstPtr &[01;31m[Kodom[m[K)
+      |                                                           [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In constructor ‘[01m[KPathTracker::PathTracker()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe(std::string&, int, void (PathTracker::*)(...) &, PathTracker*)[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;31m[K)[m[K;
+      |                                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:400:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)[m[K’
+  400 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:400:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(M)[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:411:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)[m[K’
+  411 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:411:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’ have incompatible cv-qualifiers
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:463:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)[m[K’
+  463 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:463:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:473:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)[m[K’
+  473 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:473:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’ have incompatible cv-qualifiers
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:527:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  527 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:527:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(M)[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:538:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  538 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:538:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’ have incompatible cv-qualifiers
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:592:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  592 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:592:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:603:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  603 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:603:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (PathTracker::)(...) &[m[K’ have incompatible cv-qualifiers
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:654:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)[m[K’
+  654 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:654:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(M)[m[K’ and ‘[01m[Kvoid (PathTracker::*)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:702:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)[m[K’
+  702 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:702:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (PathTracker::*)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:748:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  748 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:748:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(const boost::shared_ptr<const M>&)>[m[K’ and ‘[01m[Kvoid (PathTracker::*)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:797:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  797 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:797:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:82:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid (PathTracker::*)(...) &[m[K’
+  164 |         odom_sub_ = nh_.subscribe(odom_topic, 1, &PathTracker::odomCallback, this[01;36m[K)[m[K;
+      |                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:138[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:834:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(ros::SubscribeOptions&)[m[K’
+  834 |   Subscriber [01;36m[Ksubscribe[m[K(SubscribeOptions& ops);
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:834:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+make[2]: *** [CMakeFiles/racer2gazebo_cmd.dir/build.make:63: CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/racer2gazebo_cmd.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

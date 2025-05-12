@@ -6,7 +6,8 @@
 class DepthCameraPosePublisher
 {
 public:
-    DepthCameraPosePublisher() : nh_("~")
+    DepthCameraPosePublisher()
+        : nh_("~")
     {
         // 从参数服务器获取车辆ID
         nh_.param<std::string>("car_id", car_id_, "car1");
@@ -27,8 +28,8 @@ public:
         rate_ = std::make_shared<ros::Rate>(10.0); // 10Hz
 
         // 调试信息
-        ROS_INFO("Initialized DepthCameraPosePublisher for %s: source_frame=%s, target_frame=%s, topic=%s",
-                 car_id_.c_str(), source_frame_.c_str(), target_frame_.c_str(), pose_topic_.c_str());
+        // ROS_INFO("Initialized DepthCameraPosePublisher for %s: source_frame=%s, target_frame=%s, topic=%s",
+        //          car_id_.c_str(), source_frame_.c_str(), target_frame_.c_str(), pose_topic_.c_str());
     }
 
     void publishPose()
@@ -86,8 +87,7 @@ public:
             }
             catch (tf2::TransformException &ex)
             {
-                ROS_WARN_STREAM("[" << car_id_ << "] Failed to get transform from " << source_frame_ 
-                                << " to " << target_frame_ << ": " << ex.what());
+                // ROS_WARN_STREAM("[" << car_id_ << "] Failed to get transform from " << source_frame_ << " to " << target_frame_ << ": " << ex.what());
             }
 
             rate_->sleep();
@@ -100,10 +100,10 @@ private:
     std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
     ros::Publisher pose_pub_;
     std::shared_ptr<ros::Rate> rate_;
-    std::string car_id_;        // 车辆ID，例如 "car1"
-    std::string pose_topic_;    // 发布话题，例如 "/car1/depth_camera_pose"
-    std::string source_frame_;  // 源TF帧，例如 "car1_support_depth"
-    std::string target_frame_;  // 目标TF帧，例如 "world"
+    std::string car_id_;       // 车辆ID，例如 "car1"
+    std::string pose_topic_;   // 发布话题，例如 "/car1/depth_camera_pose"
+    std::string source_frame_; // 源TF帧，例如 "car1_support_depth"
+    std::string target_frame_; // 目标TF帧，例如 "world"
 };
 
 int main(int argc, char **argv)

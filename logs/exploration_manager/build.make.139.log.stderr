@@ -1,0 +1,120 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:64:25:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K#[m[K’ in program
+   64 |     void publishTwist() [01;31m[K#[m[Kinclude<exploration_manager / DroneState.h>
+      |                         [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:34:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_exploration[m[K’ does not name a type
+   34 |     void droneStateCallback(const [01;31m[Kswarm_exploration[m[K::DroneState::ConstPtr &msg)
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:34:64:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   34 |     void droneStateCallback(const swarm_exploration::DroneState[01;31m[K::[m[KConstPtr &msg)
+      |                                                                [01;31m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:34:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   34 |     void droneStateCallback[34m[K([m[Kconst swarm_exploration::DroneState[01;31m[K:[m[K[32m[K:[m[KConstPtr &msg)
+      |                            [34m[K~[m[K                                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                [32m[K)[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:34:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   34 |     void droneStateCallback(const swarm_exploration::[01;31m[KDroneState[m[K::ConstPtr &msg)
+      |                                                      [01;31m[K^~~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:34:66:[m[K [01;31m[Kerror: [m[K‘[01m[KConstPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   34 |     void droneStateCallback(const swarm_exploration::DroneState::[01;31m[KConstPtr[m[K &msg)
+      |                                                                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:64:23:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   64 |     void publishTwist([01;31m[K)[m[K #include<exploration_manager / DroneState.h>
+      |                       [01;31m[K^[m[K
+      |                        [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:64:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kinclude[m[K’ does not name a type
+   64 |     void publishTwist() #[01;31m[Kinclude[m[K<exploration_manager / DroneState.h>
+      |                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist[m[K’ does not name a type
+   68 |     [01;31m[Ktwist[m[K.angular.x = twist.angular.y = twist.angular.z = 0.0;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist_pub_[m[K’ does not name a type
+   69 |     [01;31m[Ktwist_pub_[m[K.publish(twist);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:70:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+   70 |     [01;31m[Kreturn[m[K;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:71:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   71 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In constructor ‘[01m[KCommandConverter::CommandConverter()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:12:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KCommandConverter[m[K’ does not have any field named ‘[01m[Knh_[m[K’
+   12 |         : [01;31m[Knh_[m[K("~"), car_id_num_(-1), mission_done_(false)
+      |           [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:12:21:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KCommandConverter[m[K’ does not have any field named ‘[01m[Kcar_id_num_[m[K’
+   12 |         : nh_("~"), [01;31m[Kcar_id_num_[m[K(-1), mission_done_(false)
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:12:38:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KCommandConverter[m[K’ does not have any field named ‘[01m[Kmission_done_[m[K’
+   12 |         : nh_("~"), car_id_num_(-1), [01;31m[Kmission_done_[m[K(false)
+      |                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:14:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knh_[m[K’ was not declared in this scope
+   14 |         [01;31m[Knh_[m[K.param<std::string>("car_id", car_id_, "car1");
+      |         [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:14:30:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   14 |         nh_.param<std::string[01;31m[K>[m[K("car_id", car_id_, "car1");
+      |                              [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:14:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar_id_[m[K’ was not declared in this scope
+   14 |         nh_.param<std::string>("car_id", [01;31m[Kcar_id_[m[K, "car1");
+      |                                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:15:30:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   15 |         nh_.param<std::string[01;31m[K>[m[K("cmd_suffix", cmd_suffix_, "_1");
+      |                              [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:15:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_suffix_[m[K’ was not declared in this scope
+   15 |         nh_.param<std::string>("cmd_suffix", [01;31m[Kcmd_suffix_[m[K, "_1");
+      |                                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:25:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcar_id_num_[m[K’ was not declared in this scope
+   25 |         ss >> prefix >> [01;31m[Kcar_id_num_[m[K;
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_sub_[m[K’ was not declared in this scope
+   27 |         [01;31m[Kcmd_sub_[m[K = nh_.subscribe(cmd_topic, 1, &CommandConverter::posCmdCallback, this);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub_[m[K’ was not declared in this scope
+   28 |         [01;31m[Kodom_sub_[m[K = nh_.subscribe(odom_topic, 1, &CommandConverter::odomCallback, this);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_state_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdrone_state_topic[m[K’?
+   29 |         [01;31m[Kdrone_state_sub_[m[K = nh_.subscribe(drone_state_topic, 10, &CommandConverter::droneStateCallback, this);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kdrone_state_topic[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In member function ‘[01m[Kvoid CommandConverter::odomCallback(const ConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:52:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_pose_[m[K’ was not declared in this scope
+   52 |         [01;31m[Kcurrent_pose_[m[K = odom->pose.pose;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+   53 |         [01;31m[Kcurrent_yaw_[m[K = tf::getYaw(odom->pose.pose.orientation);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krcv_odom_[m[K’ was not declared in this scope
+   54 |         [01;31m[Krcv_odom_[m[K = true;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In member function ‘[01m[Kvoid CommandConverter::posCmdCallback(const ConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position_[m[K’ was not declared in this scope
+   59 |         [01;31m[Ktarget_position_[m[K = cmd->position;
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:60:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_yaw_[m[K’ was not declared in this scope
+   60 |         [01;31m[Ktarget_yaw_[m[K = cmd->yaw;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krcv_cmd_[m[K’ was not declared in this scope
+   61 |         [01;31m[Krcv_cmd_[m[K = true;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:73:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+   73 | [01;31m[Kif[m[K (rcv_cmd_ && rcv_odom_)
+      | [01;31m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:127:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+  127 | [01;31m[Kelse[m[K
+      | [01;31m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:133:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist_pub_[m[K’ does not name a type
+  133 | [01;31m[Ktwist_pub_[m[K.publish(twist);
+      | [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:134:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  134 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:136:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+  136 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:147:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  147 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/racer2gazebo_cmd.dir/build.make:63: CMakeFiles/racer2gazebo_cmd.dir/src/racer2gazebo_cmd.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/racer2gazebo_cmd.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

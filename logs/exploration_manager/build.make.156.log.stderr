@@ -1,0 +1,10 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:[m[K In constructor ‘[01m[KCommandConverter::CommandConverter()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:164:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCommandConverter::car_id_num_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  164 |     int [01;35m[Kcar_id_num_[m[K;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:162:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool CommandConverter::mission_done_[m[K’ [[01;35m[K-Wreorder[m[K]
+  162 |     bool [01;35m[Kmission_done_[m[K;
+      |          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/src/racer2gazebo_cmd.cpp:11:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   11 |     [01;35m[KCommandConverter[m[K()
+      |     [01;35m[K^~~~~~~~~~~~~~~~[m[K

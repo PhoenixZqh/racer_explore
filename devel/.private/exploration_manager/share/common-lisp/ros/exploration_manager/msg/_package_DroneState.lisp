@@ -13,4 +13,6 @@
           VEL
           YAW-VAL
           YAW
+          CUR_STATE-VAL
+          CUR_STATE
 ))

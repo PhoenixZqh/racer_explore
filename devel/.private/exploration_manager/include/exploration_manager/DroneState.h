@@ -30,7 +30,8 @@ struct DroneState_
     , stamp(0.0)
     , pos()
     , vel()
-    , yaw(0.0)  {
+    , yaw(0.0)
+    , cur_state(0)  {
     }
   DroneState_(const ContainerAllocator& _alloc)
     : drone_id(0)
@@ -39,7 +40,8 @@ struct DroneState_
     , stamp(0.0)
     , pos(_alloc)
     , vel(_alloc)
-    , yaw(0.0)  {
+    , yaw(0.0)
+    , cur_state(0)  {
   (void)_alloc;
     }
 
@@ -65,6 +67,9 @@ struct DroneState_
 
    typedef float _yaw_type;
   _yaw_type yaw;
+
+   typedef int32_t _cur_state_type;
+  _cur_state_type cur_state;
 
 
 
@@ -101,7 +106,8 @@ bool operator==(const ::exploration_manager::DroneState_<ContainerAllocator1> & 
     lhs.stamp == rhs.stamp &&
     lhs.pos == rhs.pos &&
     lhs.vel == rhs.vel &&
-    lhs.yaw == rhs.yaw;
+    lhs.yaw == rhs.yaw &&
+    lhs.cur_state == rhs.cur_state;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -158,12 +164,12 @@ struct MD5Sum< ::exploration_manager::DroneState_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "b3d2ae28cc1da43ded73b6bd55766455";
+    return "d5585437c78c5e2a88978fc6a150fd46";
   }
 
   static const char* value(const ::exploration_manager::DroneState_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xb3d2ae28cc1da43dULL;
-  static const uint64_t static_value2 = 0xed73b6bd55766455ULL;
+  static const uint64_t static_value1 = 0xd5585437c78c5e2aULL;
+  static const uint64_t static_value2 = 0x88978fc6a150fd46ULL;
 };
 
 template<class ContainerAllocator>
@@ -192,6 +198,7 @@ struct Definition< ::exploration_manager::DroneState_<ContainerAllocator> >
 "float32[] pos\n"
 "float32[] vel\n"
 "float32 yaw\n"
+"int32 cur_state\n"
 ;
   }
 
@@ -217,6 +224,7 @@ namespace serialization
       stream.next(m.pos);
       stream.next(m.vel);
       stream.next(m.yaw);
+      stream.next(m.cur_state);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -261,6 +269,8 @@ struct Printer< ::exploration_manager::DroneState_<ContainerAllocator> >
     }
     s << indent << "yaw: ";
     Printer<float>::stream(s, indent + "  ", v.yaw);
+    s << indent << "cur_state: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.cur_state);
   }
 };
 
