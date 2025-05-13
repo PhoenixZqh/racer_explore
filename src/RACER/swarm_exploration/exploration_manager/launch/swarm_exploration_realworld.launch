@@ -6,14 +6,14 @@
 
   <!-- Global odom prefix -->
   <arg name="odom_prefix" value="/state_ukf/odom" />
-  <arg name="drone_num" value="3" />
+  <arg name="drone_num" value="4" />
   <!-- <arg name="drone_id" default="1" /> -->
 
   <include file="$(find exploration_manager)/launch/single_drone_exploration_realworld.xml">
     <arg name="drone_id" value="1"/>
-    <arg name="init_x"   value="-5"/>
+    <arg name="init_x"   value="0"/>
     <!-- <arg name="init_x"   value="-2.5D.5"/> -->
-    <arg name="init_y"   value="-5"/>
+    <arg name="init_y"   value="0"/>
     <!-- <arg name="init_y"   value="-3"/> -->
     <arg name="init_z"   value="0"/> 
     <arg name="map_size_x" value="$(arg map_size_x)"/>
@@ -33,9 +33,9 @@
 
   <include file="$(find exploration_manager)/launch/single_drone_exploration_realworld.xml">
     <arg name="drone_id" value="2"/>
-    <arg name="init_x"   value="5"/>
+    <arg name="init_x"   value="7"/>
     <!-- <arg name="init_x"   value="-2.5D.5"/> -->
-    <arg name="init_y"   value="5"/>
+    <arg name="init_y"   value="0"/>
     <!-- <arg name="init_y"   value="-3"/> -->
     <arg name="init_z"   value="0"/> 
     <arg name="map_size_x" value="$(arg map_size_x)"/>
@@ -47,6 +47,29 @@
     <arg name="odometry_topic" value="/car2/odom" />
     <arg name="sensor_pose_topic" value="/car2/depth_camera_pose" />
     <arg name="depth_topic" value="/car2/depth/image_raw" />
+    <arg name="cx" value="320.0"/>
+    <arg name="cy" value="240.0"/>
+    <arg name="fx" value="554.1"/>
+    <arg name="fy" value="554.1"/>
+  </include>
+
+
+  <include file="$(find exploration_manager)/launch/single_drone_exploration_realworld.xml">
+    <arg name="drone_id" value="3"/>
+    <arg name="init_x"   value="-7"/>
+    <!-- <arg name="init_x"   value="-2.5D.5"/> -->
+    <arg name="init_y"   value="0"/>
+    <!-- <arg name="init_y"   value="-3"/> -->
+    <arg name="init_z"   value="0"/> 
+    <arg name="map_size_x" value="$(arg map_size_x)"/>
+    <arg name="map_size_y" value="$(arg map_size_y)"/>
+    <arg name="map_size_z" value="$(arg map_size_z)"/>
+    <arg name="odom_prefix" value="$(arg odom_prefix)"/>
+    <arg name="drone_num" value="$(arg drone_num)"/>
+    <arg name="simulation" value="false" />
+    <arg name="odometry_topic" value="/car3/odom" />
+    <arg name="sensor_pose_topic" value="/car3/depth_camera_pose" />
+    <arg name="depth_topic" value="/car3/depth/image_raw" />
     <arg name="cx" value="320.0"/>
     <arg name="cy" value="240.0"/>
     <arg name="fx" value="554.1"/>

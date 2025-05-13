@@ -112,22 +112,6 @@ pcl/point_types.h
 pcl/kdtree/kdtree_flann.h
 -
 
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/hgrid.h
-ros/ros.h
--
-Eigen/Eigen
--
-memory
--
-vector
--
-list
--
-unordered_map
--
-utility
--
-
 /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/perception_utils.h
 ros/ros.h
 -
@@ -138,16 +122,6 @@ iostream
 memory
 -
 vector
--
-
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h
-plan_env/edt_environment.h
--
-unordered_map
--
-utility
--
-bspline/non_uniform_bspline.h
 -
 
 /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/uniform_grid.h
@@ -190,16 +164,6 @@ pcl/filters/voxel_grid.h
 Eigen/Eigenvalues
 -
 
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/graph_node.cpp
-active_perception/graph_node.h
--
-path_searching/astar2.h
--
-plan_env/sdf_map.h
--
-plan_env/raycast.h
--
-
 /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/heading_planner.cpp
 active_perception/heading_planner.h
 -
@@ -224,34 +188,6 @@ pcl/filters/voxel_grid.h
 pcl/filters/extract_indices.h
 -
 
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/hgrid.cpp
-active_perception/graph_node.h
--
-active_perception/hgrid.h
--
-active_perception/uniform_grid.h
--
-path_searching/astar2.h
--
-plan_env/edt_environment.h
--
-plan_env/sdf_map.h
--
-
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/perception_utils.cpp
-active_perception/perception_utils.h
--
-pcl/filters/voxel_grid.h
--
-
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/traj_visibility.cpp
-active_perception/traj_visibility.h
--
-plan_env/raycast.h
--
-plan_env/sdf_map.h
--
-
 /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/uniform_grid.cpp
 active_perception/graph_node.h
 -
@@ -264,14 +200,6 @@ plan_env/edt_environment.h
 plan_env/multi_map_manager.h
 -
 plan_env/sdf_map.h
--
-
-/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h
-Eigen/Eigen
--
-algorithm
--
-iostream
 -
 
 /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include/path_searching/astar2.h

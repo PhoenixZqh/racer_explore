@@ -127,7 +127,7 @@ void FastExplorationFSM::FSMCallback(const ros::TimerEvent &e)
 
     case IDLE: {
         double check_interval = (ros::Time::now() - fd_->last_check_frontier_time_).toSec();
-        if (check_interval > 10) //! 100s 太长
+        if (check_interval > 3) //! 100s 太长
         {
             // if (!expl_manager_->updateFrontierStruct(fd_->odom_pos_)) {
             ROS_WARN("Go back to (0,0,1)");

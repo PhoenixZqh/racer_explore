@@ -410,6 +410,8 @@ CMakeFiles/ground_node.dir/src/fast_exploration_manager.cpp.o: /usr/include/pcl-
 CMakeFiles/ground_node.dir/src/fast_exploration_manager.cpp.o: /usr/include/pcl-1.10/pcl/point_types.h
 CMakeFiles/ground_node.dir/src/fast_exploration_manager.cpp.o: /usr/include/pcl-1.10/pcl/register_point_struct.h
 
+CMakeFiles/ground_node.dir/src/ground_node.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/GridTour.h
+CMakeFiles/ground_node.dir/src/ground_node.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/HGrid.h
 CMakeFiles/ground_node.dir/src/ground_node.cpp.o: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/frontier_finder.h
 CMakeFiles/ground_node.dir/src/ground_node.cpp.o: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/include/active_perception/traj_visibility.h
 CMakeFiles/ground_node.dir/src/ground_node.cpp.o: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include/bspline/non_uniform_bspline.h

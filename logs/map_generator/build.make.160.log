@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target map_pub[0m
+[35m[1mScanning dependencies of target click_map[0m
+[35m[1mScanning dependencies of target pilar_map[0m
+[35m[1mScanning dependencies of target map_recorder[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/click_map.dir/src/click_map.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/map_pub.dir/src/map_publisher.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/pilar_map.dir/src/random_pilar_map.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/map_recorder.dir/src/map_recorder.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/pilar_map[0m
+[ 75%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/map_pub[0m
+[ 75%] Built target pilar_map
+[ 75%] Built target map_pub
+[ 87%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/map_recorder[0m
+[100%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/map_generator/click_map[0m
+[100%] Built target map_recorder
+[100%] Built target click_map

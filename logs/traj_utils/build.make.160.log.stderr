@@ -1,0 +1,4 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/src/process_msg.cpp:[m[K In function ‘[01m[Kvoid cloudCallback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/src/process_msg.cpp:39:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   39 |   for (int i = 0; [01;35m[Ki < pts.points.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K

@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/zqh/phoenixZ/racer_explore/build/map_generator'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/map_generator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/map_generator:$ROS_PACKAGE_PATH"

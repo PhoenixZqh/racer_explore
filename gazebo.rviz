@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1
       Splitter Ratio: 0.49705880880355835
     Tree Height: 1107
   - Class: rviz/Selection
@@ -68,66 +67,6 @@ Visualization Manager:
       Value: false
       Width: 0.019999999552965164
     - Alpha: 1
-      Class: rviz/RobotModel
-      Collision Enabled: false
-      Enabled: true
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-        car1_back_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_base_footprint:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_front_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_laser:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_left_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_right_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_support:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        car1_support_depth:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-      Name: RobotModel
-      Robot Description: /car1/robot_description
-      TF Prefix: ""
-      Update Interval: 0
-      Value: true
-      Visual Enabled: true
-    - Alpha: 1
       Class: rviz/Axes
       Enabled: true
       Length: 1
@@ -183,6 +122,26 @@ Visualization Manager:
           Value: true
         car2_support_depth:
           Value: true
+        car3_back_wheel:
+          Value: true
+        car3_base_footprint:
+          Value: true
+        car3_base_link:
+          Value: true
+        car3_front_wheel:
+          Value: true
+        car3_laser:
+          Value: true
+        car3_left_wheel:
+          Value: true
+        car3_odom:
+          Value: true
+        car3_right_wheel:
+          Value: true
+        car3_support:
+          Value: true
+        car3_support_depth:
+          Value: true
         world:
           Value: true
       Marker Alpha: 1
@@ -224,6 +183,22 @@ Visualization Manager:
               car2_left_wheel:
                 {}
               car2_right_wheel:
+                {}
+          car3_odom:
+            car3_base_footprint:
+              car3_base_link:
+                car3_back_wheel:
+                  {}
+                car3_front_wheel:
+                  {}
+                car3_support:
+                  car3_laser:
+                    {}
+                  car3_support_depth:
+                    {}
+              car3_left_wheel:
+                {}
+              car3_right_wheel:
                 {}
       Update Interval: 0
       Value: true
@@ -359,6 +334,126 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        car1_back_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_front_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_support:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car1_support_depth:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: /car1/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        car3_back_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_front_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_support:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        car3_support_depth:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: /car3/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
     - Class: rviz/Image
       Enabled: false
       Image Topic: /car2/depth/image_raw
@@ -413,6 +508,22 @@ Visualization Manager:
       Shaft Radius: 0.05000000074505806
       Shape: Arrow
       Topic: /car2/depth_camera_pose
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Pose
+      Queue Size: 10
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Arrow
+      Topic: /car3/depth_camera_pose
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -636,7 +747,7 @@ Visualization Manager:
       Marker Topic: /planning_vis/frontier_2
       Name: Marker
       Namespaces:
-        {}
+        frontier: true
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -660,6 +771,14 @@ Visualization Manager:
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: /planning/position_cmd_vis_2
+      Name: Marker
+      Namespaces:
+        current_pose: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /planning/position_cmd_vis_3
       Name: Marker
       Namespaces:
         current_pose: true
@@ -693,7 +812,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 28.51702117919922
+      Distance: 25.09497833251953
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -709,9 +828,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5697963237762451
+      Pitch: 1.549796223640442
       Target Frame: <Fixed Frame>
-      Yaw: 3.1385610103607178
+      Yaw: 3.1435606479644775
     Saved: ~
 Window Geometry:
   Displays:

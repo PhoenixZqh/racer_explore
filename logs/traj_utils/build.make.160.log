@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target process_msg[0m
+[ 25%] [32m[1mLinking CXX shared library /home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib/libtraj_utils.so[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/process_msg.dir/src/process_msg.cpp.o[0m
+[ 75%] Built target traj_utils
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/src/process_msg.cpp:[m[K In function ‘[01m[Kvoid cloudCallback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/traj_utils/src/process_msg.cpp:39:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   39 |   for (int i = 0; [01;35m[Ki < pts.points.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable /home/zqh/phoenixZ/racer_explore/devel/.private/traj_utils/lib/traj_utils/process_msg[0m
+[100%] Built target process_msg
