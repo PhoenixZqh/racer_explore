@@ -368,36 +368,36 @@ void MapROS::processDepthImage()
             pt_world = camera_r * pt_cur + camera_pos_;
 
             // 过滤其他无人机的点云
-            // bool is_drone_point = false;
-            // for (const auto &state : drone_states_)
-            // {
-            //     int drone_id = state.first;
+            bool is_drone_point = false;
+            for (const auto &state : drone_states_)
+            {
+                int drone_id = state.first;
 
-            //     // 跳过自身无人机（假设自身 ID 存储在 map_->mm_->drone_id_）
+                // 跳过自身无人机（假设自身 ID 存储在 map_->mm_->drone_id_）
 
-            //     // ROS_WARN("Self drone ID: %d, other drone id: %d", map_->mm_->drone_id_, drone_id);
+                // ROS_WARN("Self drone ID: %d, other drone id: %d", map_->mm_->drone_id_, drone_id);
 
-            //     if (drone_id == map_->mm_->drone_id_) continue;
+                if (drone_id == map_->mm_->drone_id_) continue;
 
-            //     Eigen::Vector4d drone_state = state.second;
-            //     Eigen::Vector3d drone_pos(drone_state[0], drone_state[1], drone_state[2]);
-            //     double yaw = drone_state[3];
+                Eigen::Vector4d drone_state = state.second;
+                Eigen::Vector3d drone_pos(drone_state[0], drone_state[1], drone_state[2]);
+                double yaw = drone_state[3];
 
-            //     // 计算无人机边界框（考虑 yaw 旋转）
-            //     Eigen::Matrix3d rot;
-            //     rot << cos(yaw), -sin(yaw), 0,
-            //         sin(yaw), cos(yaw), 0,
-            //         0, 0, 1;
-            //     Eigen::Vector3d rel_pos = rot.transpose() * (pt_world - drone_pos);
+                // 计算无人机边界框（考虑 yaw 旋转）
+                Eigen::Matrix3d rot;
+                rot << cos(yaw), -sin(yaw), 0,
+                    sin(yaw), cos(yaw), 0,
+                    0, 0, 1;
+                Eigen::Vector3d rel_pos = rot.transpose() * (pt_world - drone_pos);
 
-            //     // 检查点是否在无人机边界框内
-            //     if (rel_pos.cwiseAbs().maxCoeff() < drone_size_.maxCoeff() / 2)
-            //     {
-            //         is_drone_point = true;
-            //         break;
-            //     }
-            // }
-            // if (is_drone_point) continue;
+                // 检查点是否在无人机边界框内
+                if (rel_pos.cwiseAbs().maxCoeff() < drone_size_.maxCoeff() / 2)
+                {
+                    is_drone_point = true;
+                    break;
+                }
+            }
+            if (is_drone_point) continue;
 
             auto &pt = point_cloud_.points[proj_points_cnt++];
             pt.x = pt_world[0];

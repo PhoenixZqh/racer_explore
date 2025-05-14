@@ -1,0 +1,20 @@
+[  0%] Built target exploration_manager_xacro_generated_to_devel_space_
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  6%] Built target sensor_pos
+[  6%] Built target geometry_msgs_generate_messages_cpp
+[ 12%] Built target racer2gazebo_cmd
+[ 12%] Built target geometry_msgs_generate_messages_lisp
+[ 12%] Built target geometry_msgs_generate_messages_nodejs
+[ 21%] Built target ground_node
+[ 33%] Built target exploration_node
+[ 33%] Built target _exploration_manager_generate_messages_check_deps_HGrid
+[ 33%] Built target _exploration_manager_generate_messages_check_deps_PairOptResponse
+[ 33%] Built target _exploration_manager_generate_messages_check_deps_GridTour
+[ 33%] Built target _exploration_manager_generate_messages_check_deps_PairOpt
+[ 81%] Built target exploration_manager_generate_messages_cpp
+[ 81%] Built target exploration_manager_generate_messages_lisp
+[ 81%] Built target exploration_manager_generate_messages_nodejs
+[ 84%] Built target exploration_manager_generate_messages_py
+[100%] Built target exploration_manager_generate_messages_eus
+[100%] Built target exploration_manager_generate_messages

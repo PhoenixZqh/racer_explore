@@ -1,0 +1,19 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[ 11%] Built target geometry_msgs_generate_messages_eus
+[ 11%] [32m[1mLinking CXX shared library /home/zqh/phoenixZ/racer_explore/devel/.private/bspline/lib/libbspline.so[0m
+[ 11%] Built target std_msgs_generate_messages_lisp
+[ 11%] Built target geometry_msgs_generate_messages_nodejs
+[ 11%] Built target std_msgs_generate_messages_nodejs
+[ 11%] Built target geometry_msgs_generate_messages_lisp
+[ 11%] Built target _bspline_generate_messages_check_deps_Bspline
+[ 66%] Built target bspline_generate_messages_nodejs
+[ 66%] Built target bspline_generate_messages_cpp
+[ 77%] Built target bspline_generate_messages_py
+[ 77%] Built target bspline_generate_messages_eus
+[ 88%] Built target bspline_generate_messages_lisp
+[ 88%] Built target bspline_generate_messages
+[100%] Built target bspline
