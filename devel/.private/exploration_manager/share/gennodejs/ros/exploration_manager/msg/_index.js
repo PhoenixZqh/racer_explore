@@ -8,7 +8,6 @@ let DeletedGoals = require('./DeletedGoals.js');
 let PairOpt = require('./PairOpt.js');
 let GridIds = require('./GridIds.js');
 let HGrid = require('./HGrid.js');
-let DroneState = require('./DroneState.js');
 
 module.exports = {
   SentGoals: SentGoals,
@@ -18,5 +17,4 @@ module.exports = {
   PairOpt: PairOpt,
   GridIds: GridIds,
   HGrid: HGrid,
-  DroneState: DroneState,
 };

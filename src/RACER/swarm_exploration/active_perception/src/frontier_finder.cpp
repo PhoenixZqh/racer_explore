@@ -1,24 +1,18 @@
 #include <active_perception/frontier_finder.h>
 #include <plan_env/raycast.h>
 #include <plan_env/sdf_map.h>
-// #include <path_searching/astar2.h>
-
 #include <active_perception/graph_node.h>
 #include <active_perception/perception_utils.h>
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 #include <plan_env/edt_environment.h>
 #include <plan_env/multi_map_manager.h>
-
-// use PCL region growing segmentation
-// #include <pcl/point_types.h>
-// #include <pcl/search/search.h>
-// #include <pcl/search/kdtree.h>
-// #include <pcl/features/normal_3d.h>
-// #include <pcl/segmentation/region_growing.h>
 #include <pcl/filters/voxel_grid.h>
-
 #include <Eigen/Eigenvalues>
+#include <queue>
+#include <vector>
+#include <ros/ros.h>
+#include <mutex>
 
 namespace fast_planner
 {
@@ -62,22 +56,40 @@ void FrontierFinder::searchFrontiers()
     ros::Time t1 = ros::Time::now();
     tmp_frontiers_.clear();
 
-    // 获取SDF地图中更新的区域边界框
+    // 初始化检查
+    if (!edt_env_ || !edt_env_->sdf_map_)
+    {
+        ROS_ERROR_THROTTLE(1.0, "searchFrontiers: SDF map not initialized");
+        return;
+    }
+
+    // 优化 frontier_flag_ 重置
+    size_t voxel_num = edt_env_->sdf_map_->getVoxelNum();
+    if (frontier_flag_.size() != voxel_num)
+    {
+        frontier_flag_.resize(voxel_num, 0);
+    }
+    else
+    {
+        std::fill(frontier_flag_.begin(), frontier_flag_.end(), 0);
+    }
+
+    // 获取更新区域
     Vector3d update_min, update_max;
     edt_env_->sdf_map_->getUpdatedBox(update_min, update_max, false);
 
-    // 获取其他飞机探索到的边界框列表
+    // 获取外部块
     vector<Eigen::Vector3d> chunk_mins, chunk_maxs;
     edt_env_->sdf_map_->mm_->getChunkBoxes(chunk_mins, chunk_maxs, false);
 
-    // 合并更新区域和外部块的边界框到一个列表
+    // 合并边界框
     vector<Eigen::Vector3d> mins, maxs;
     mins.push_back(update_min);
     mins.insert(mins.end(), chunk_mins.begin(), chunk_mins.end());
     maxs.push_back(update_max);
     maxs.insert(maxs.end(), chunk_maxs.begin(), chunk_maxs.end());
 
-    // Removed changed frontiers in updated map
+    // 移除已更改的边界
     auto resetFlag = [&](list<Frontier>::iterator &iter, list<Frontier> &frontiers) {
         Eigen::Vector3i idx;
         for (auto cell : iter->cells_)
@@ -88,16 +100,13 @@ void FrontierFinder::searchFrontiers()
         iter = frontiers.erase(iter);
     };
 
-    // std::cout << "Before remove: " << frontiers_.size() << std::endl;
-
     removed_ids_.clear();
     int rmv_idx = 0;
     for (auto iter = frontiers_.begin(); iter != frontiers_.end();)
     {
-        // 如果边界与更新区域或外部块有重叠，并且边界状态已改变
         if (haveAnyOverlap(iter->box_min_, iter->box_max_, mins, maxs) && isFrontierChanged(*iter))
         {
-            resetFlag(iter, frontiers_); //重置标志并移除边界
+            resetFlag(iter, frontiers_);
             removed_ids_.push_back(rmv_idx);
         }
         else
@@ -106,7 +115,6 @@ void FrontierFinder::searchFrontiers()
             ++iter;
         }
     }
-    // std::cout << "After remove: " << frontiers_.size() << std::endl;
     for (auto iter = dormant_frontiers_.begin(); iter != dormant_frontiers_.end();)
     {
         if (haveAnyOverlap(iter->box_min_, iter->box_max_, mins, maxs) && isFrontierChanged(*iter))
@@ -115,18 +123,16 @@ void FrontierFinder::searchFrontiers()
             ++iter;
     }
 
-    // 获取 SDF 地图的整体边界框
+    // 获取地图边界
     Vector3d box_min, box_max;
     edt_env_->sdf_map_->getBox(box_min, box_max);
 
-    //定义搜索区域：将更新区域和外部块边界框稍微膨胀
+    // 定义搜索区域（减小膨胀）
     vector<Eigen::Vector3d> search_mins, search_maxs;
     for (int i = 0; i < mins.size(); ++i)
     {
-        search_mins.push_back(mins[i] - Vector3d(1, 1, 0.2));
-        search_maxs.push_back(maxs[i] + Vector3d(1, 1, 0.2));
-
-        // 限制范围在sdfmap范围内
+        search_mins.push_back(mins[i] - Vector3d(0.3, 0.3, 0.1));
+        search_maxs.push_back(maxs[i] + Vector3d(0.3, 0.3, 0.1));
         for (int k = 0; k < 3; ++k)
         {
             search_mins[i][k] = max(search_mins[i][k], box_min[k]);
@@ -134,7 +140,7 @@ void FrontierFinder::searchFrontiers()
         }
     }
 
-    // 将搜索区域的边界框转换为体素索引
+    // 转换为体素索引
     vector<Eigen::Vector3i> min_ids(mins.size()), max_ids(mins.size());
     for (int i = 0; i < mins.size(); ++i)
     {
@@ -142,73 +148,137 @@ void FrontierFinder::searchFrontiers()
         edt_env_->sdf_map_->posToIndex(search_maxs[i], max_ids[i]);
     }
 
-    // 在搜索区域内扫描新的边界种子
+    // 使用步进采样遍历体素
+    const int step = 2; // 每 2 个体素采样一次
+    auto *sdf_map = edt_env_->sdf_map_.get();
     for (int i = 0; i < min_ids.size(); ++i)
     {
         auto min_id = min_ids[i];
         auto max_id = max_ids[i];
-
-        for (int z = min_id(2); z <= max_id(2); ++z)
-            for (int x = min_id(0); x <= max_id(0); ++x)
-                for (int y = min_id(1); y <= max_id(1); ++y)
+        for (int x = min_id(0); x <= max_id(0); x += step)
+        {
+            for (int y = min_id(1); y <= max_id(1); y += step)
+            {
+                for (int z = min_id(2); z <= max_id(2); z += step)
                 {
                     Eigen::Vector3i cur(x, y, z);
-                    // 检查条件：
-                    // 1. 未标记为边界 (frontier_flag_ == 0)
-                    // 2. 当前体素是已知的空闲区域 (knownfree)
-                    // 3. 邻居有未知区域 (isNeighborUnknown)
+                    int adr = sdf_map->toAddress(cur);
+                    if (adr >= static_cast<int>(frontier_flag_.size()) ||
+                        frontier_flag_[adr] == 1 ||
+                        sdf_map->getOccupancy(cur) != SDFMap::FREE)
+                        continue;
 
-                    if (frontier_flag_[toadr(cur)] == 0 && knownfree(cur) && isNeighborUnknown(cur))
+                    bool has_unknown = false;
+                    auto six_nbrs = sixNeighbors(cur);
+                    for (const auto &snbr : six_nbrs)
                     {
-                        // 从种子单元扩展，生成完整的边界簇
+                        if (sdf_map->isInMap(snbr) && sdf_map->getOccupancy(snbr) == SDFMap::UNKNOWN)
+                        {
+                            has_unknown = true;
+                            break;
+                        }
+                    }
+                    if (has_unknown)
+                    {
                         expandFrontier(cur);
                     }
                 }
+            }
+        }
     }
 
-    splitLargeFrontiers(tmp_frontiers_);
+    // 批量写入 tmp_frontiers_（线程安全）
+    if (!tmp_frontiers_.empty())
+    {
+        std::lock_guard<std::mutex> lock(frontier_mutex_);
+        splitLargeFrontiers(tmp_frontiers_);
+    }
+
+    // 性能监控
+    double dt = (ros::Time::now() - t1).toSec();
+    if (dt > 0.05) ROS_WARN_THROTTLE(1.0, "searchFrontiers took %f sec", dt);
 }
 
 void FrontierFinder::expandFrontier(const Eigen::Vector3i &first /* , const int& depth, const int& parent_id */)
 {
-    // Data for clustering
-    queue<Eigen::Vector3i> cell_queue;
-    vector<Eigen::Vector3d> expanded;
-    Vector3d pos;
+    // 一次性初始化检查
+    if (!edt_env_ || !edt_env_->sdf_map_ || frontier_flag_.empty())
+    {
+        ROS_ERROR_THROTTLE(1.0, "expandFrontier: SDF map or frontier_flag_ not initialized");
+        return;
+    }
 
+    // Data for clustering
+    std::queue<Eigen::Vector3i> cell_queue;
+    std::vector<Eigen::Vector3d> expanded;
+    Eigen::Vector3d pos;
+
+    // 验证初始索引
+    if (!inmap(first)) return; // 静默跳过无效索引，减少日志
+    int adr = toadr(first);
+    if (adr >= static_cast<int>(frontier_flag_.size())) return;
+
+    pos.setZero();
     edt_env_->sdf_map_->indexToPos(first, pos);
     expanded.push_back(pos);
     cell_queue.push(first);
-    frontier_flag_[toadr(first)] = 1;
+    frontier_flag_[adr] = 1;
+
+    // 增大最大扩展点数
+    const size_t max_expanded_size = 100000;
+
+    // 缓存 SDFMap 指针
+    auto *sdf_map = edt_env_->sdf_map_.get();
 
     // Search frontier cluster based on region growing (distance clustering)
     while (!cell_queue.empty())
     {
         auto cur = cell_queue.front();
         cell_queue.pop();
-        auto nbrs = allNeighbors(cur);
-        for (auto nbr : nbrs)
+        auto nbrs = allNeighbors(cur); // 26 个邻居
+        for (const auto &nbr : nbrs)
         {
-            // Qualified cell should be inside bounding box and frontier cell not clustered
-            int adr = toadr(nbr);
-            if (frontier_flag_[adr] == 1 || !edt_env_->sdf_map_->isInBox(nbr) || !(knownfree(nbr) && isNeighborUnknown(nbr)))
-                continue;
+            if (!sdf_map->isInMap(nbr)) continue;
 
-            edt_env_->sdf_map_->indexToPos(nbr, pos);
-            if (pos[2] < 0.2)
-                continue; // Remove noise close to ground
+            int adr = sdf_map->toAddress(nbr);
+            if (adr >= static_cast<int>(frontier_flag_.size()) || frontier_flag_[adr] == 1) continue;
+
+            // 批量检查 knownfree 和 isNeighborUnknown
+            if (sdf_map->getOccupancy(nbr) != SDFMap::FREE) continue;
+            bool has_unknown = false;
+            auto six_nbrs = sixNeighbors(nbr);
+            for (const auto &snbr : six_nbrs)
+            {
+                if (sdf_map->isInMap(snbr) && sdf_map->getOccupancy(snbr) == SDFMap::UNKNOWN)
+                {
+                    has_unknown = true;
+                    break;
+                }
+            }
+            if (!has_unknown) continue;
+
+            pos.setZero();
+            sdf_map->indexToPos(nbr, pos);
+            if (pos[2] < 0.2) continue;
+
+            if (expanded.size() >= max_expanded_size)
+            {
+                ROS_WARN_THROTTLE(1.0, "expandFrontier: frontier too large, size: %zu", expanded.size());
+                break;
+            }
+
             expanded.push_back(pos);
             cell_queue.push(nbr);
             frontier_flag_[adr] = 1;
         }
     }
-    if (expanded.size() > cluster_min_)
+
+    if (expanded.size() > static_cast<size_t>(cluster_min_))
     {
-        // Compute detailed info
         Frontier frontier;
         frontier.cells_ = expanded;
         computeFrontierInfo(frontier);
-        tmp_frontiers_.push_back(frontier);
+        tmp_frontiers_.push_back(frontier); // 延迟锁到批量写入
     }
 }
 
@@ -271,9 +341,6 @@ bool FrontierFinder::splitHorizontally(const Frontier &frontier, list<Frontier> 
         }
     }
     Eigen::Vector2d first_pc = vectors.col(max_idx);
-    // std::cout << "max idx: " << max_idx << std::endl;
-    // std::cout << "mean: " << mean.transpose() << ", first pc: " << first_pc.transpose() <<
-    // std::endl;
 
     // Split the frontier into two groups along the first PC
     Frontier ftr1, ftr2;
@@ -330,11 +397,6 @@ bool FrontierFinder::isInBoxes(const vector<pair<Vector3d, Vector3d>> &boxes, co
  */
 void FrontierFinder::updateFrontierCostMatrix()
 {
-    // std::cout << "cost mat size before remove: " << std::endl;
-    // for (auto ftr : frontiers_)
-    //   std::cout << "(" << ftr.costs_.size() << "," << ftr.paths_.size() << "), ";
-    // std::cout << "" << std::endl;
-
     // 如果有移除的前沿ID，则清理对应的成本和路径
     if (!removed_ids_.empty())
     {
@@ -356,14 +418,12 @@ void FrontierFinder::updateFrontierCostMatrix()
                 cost_iter = it->costs_.erase(cost_iter);
                 path_iter = it->paths_.erase(path_iter);
             }
-            // std::cout << "(" << it->costs_.size() << "," << it->paths_.size() << "), ";
         }
         removed_ids_.clear();
     }
 
     // 定义更新成本的 lambda 函数：计算两个前沿之间的路径和成本
     auto updateCost = [](const list<Frontier>::iterator &it1, const list<Frontier>::iterator &it2) {
-        // std::cout << "(" << it1->id_ << "," << it2->id_ << "), ";
         // Search path from old cluster's top viewpoint to new cluster'
         Viewpoint &vui = it1->viewpoints_.front();
         Viewpoint &vuj = it2->viewpoints_.front();
@@ -381,7 +441,6 @@ void FrontierFinder::updateFrontierCostMatrix()
         it2->paths_.push_back(path_ij);
     };
 
-    // std::cout << "cost mat add: " << std::endl;
     // 计算老前沿和新前沿之间的成本和路径
     for (auto it1 = frontiers_.begin(); it1 != first_new_ftr_; ++it1)
         for (auto it2 = first_new_ftr_; it2 != frontiers_.end(); ++it2)
@@ -393,7 +452,6 @@ void FrontierFinder::updateFrontierCostMatrix()
         {
             if (it1 == it2)
             {
-                // std::cout << "(" << it1->id_ << "," << it2->id_ << "), ";
                 it1->costs_.push_back(0);
                 it1->paths_.push_back({});
             }
@@ -401,14 +459,6 @@ void FrontierFinder::updateFrontierCostMatrix()
                 updateCost(it1, it2);
         }
     first_new_ftr_ = frontiers_.end();
-
-    // if (!frontiers_.empty())
-    //     std::cout << "Frontier cost mat size: " << frontiers_.front().costs_.size() << std::endl;
-
-    // std::cout << "cost mat size final: " << std::endl;
-    // for (auto ftr : frontiers_)
-    //   std::cout << "(" << ftr.costs_.size() << "," << ftr.paths_.size() << "), ";
-    // std::cout << "" << std::endl;
 }
 
 void FrontierFinder::mergeFrontiers(Frontier &ftr1, const Frontier &ftr2)
@@ -535,8 +585,6 @@ void FrontierFinder::computeFrontiersToVisit()
     {
         ft.id_ = idx++;
     }
-    // std::cout << "\nnew num: " << new_num << ", new dormant: " << new_dormant_num << std::endl;
-    std::cout << "Frontier num: " << frontiers_.size() << ", " << dormant_frontiers_.size() << std::endl;
 }
 
 /**
@@ -626,7 +674,6 @@ void FrontierFinder::getFrontiers(vector<vector<Eigen::Vector3d>> &clusters)
     clusters.clear();
     for (auto frontier : frontiers_)
         clusters.push_back(frontier.cells_);
-    // clusters.push_back(frontier.filtered_cells_);
 }
 
 void FrontierFinder::getDormantFrontiers(vector<vector<Vector3d>> &clusters)
@@ -636,7 +683,7 @@ void FrontierFinder::getDormantFrontiers(vector<vector<Vector3d>> &clusters)
         clusters.push_back(ft.cells_);
 }
 
-void FrontierFinder::getFrontierBoxes(vector<pair<Eigen::Vector3d, Eigen::Vector3d>> &boxes)
+void FrontierFinder::getFrontierBoxes(vector<pair<Eigen::Vector3d, Vector3d>> &boxes)
 {
     boxes.clear();
     for (auto frontier : frontiers_)
@@ -679,33 +726,26 @@ void FrontierFinder::getFullCostMatrix(const Vector3d &cur_pos, const Vector3d &
     // Use Asymmetric TSP
     int dimen = frontiers_.size();
     mat.resize(dimen + 1, dimen + 1);
-    // std::cout << "mat size: " << mat.rows() << ", " << mat.cols() << std::endl;
     // Fill block for clusters
     int i = 1, j = 1;
     for (auto ftr : frontiers_)
     {
         for (auto cs : ftr.costs_)
         {
-            // std::cout << "(" << i << ", " << j << ")"
-            // << ", ";
             mat(i, j++) = cs;
         }
         ++i;
         j = 1;
     }
-    // std::cout << "" << std::endl;
 
     // Fill block from current state to clusters
     mat.leftCols<1>().setZero();
     for (auto ftr : frontiers_)
     {
-        // std::cout << "(0, " << j << ")"
-        // << ", ";
         Viewpoint vj = ftr.viewpoints_.front();
         vector<Vector3d> path;
         mat(0, j++) = ViewNode::computeCost(cur_pos, vj.pos_, cur_yaw[0], vj.yaw_, cur_vel, cur_yaw[1], path);
     }
-    // std::cout << "" << std::endl;
 }
 
 void FrontierFinder::getSwarmCostMatrix(const vector<Vector3d> &positions, const vector<Vector3d> &velocities, const vector<double> yaws, Eigen::MatrixXd &mat)
@@ -766,9 +806,6 @@ void FrontierFinder::getSwarmCostMatrix(const vector<Vector3d> &positions, const
     {
         mat(i, i) = 1000;
     }
-
-    // std::cout << "mat: " << std::endl;
-    // std::cout << mat << std::endl;
 }
 
 void FrontierFinder::getSwarmCostMatrix(const vector<Vector3d> &positions, const vector<Vector3d> &velocities, const vector<double> &yaws, const vector<int> &ftr_ids, const vector<Eigen::Vector3d> &grid_pos, Eigen::MatrixXd &mat)
@@ -777,7 +814,6 @@ void FrontierFinder::getSwarmCostMatrix(const vector<Vector3d> &positions, const
     getSwarmCostMatrix(positions, velocities, yaws, full_mat);
 
     // Get part of the full matrix according to selected frontier
-
     const int drone_num = positions.size();
     const int ftr_num = ftr_ids.size();
     int dimen = 1 + drone_num + ftr_num;
@@ -899,11 +935,6 @@ int FrontierFinder::deleteFrontiers(const vector<uint16_t> &ids)
             iter = frontiers_.erase(iter);
             removed_ids_.push_back(rmv_idx);
             tmp_ids.pop_back();
-            // Eigen::Vector3i idx;
-            // for (auto cell : iter->cells_) {
-            //   edt_env_->sdf_map_->posToIndex(cell, idx);
-            //   frontier_flag_[toadr(idx)] = 0;
-            // }
         }
         else
         {
@@ -1043,8 +1074,7 @@ void FrontierFinder::sampleViewpoints(Frontier &frontier)
                 continue;
 
             //* 计算平均yaw角度 */
-            auto &cells = frontier.filtered_cells_; //已知区域和未知区域的边界点（过滤后）
-            // std::cout << "test filter cell: " << cells.size() << std::endl;
+            auto &cells = frontier.filtered_cells_;                              //已知区域和未知区域的边界点（过滤后）
             Eigen::Vector3d ref_dir = (cells.front() - sample_pos).normalized(); // 参考方向：第一个单元到采样点的方向
             double avg_yaw = 0.0;
             for (int i = 1; i < cells.size(); ++i)
@@ -1065,9 +1095,7 @@ void FrontierFinder::sampleViewpoints(Frontier &frontier)
             {
                 Viewpoint vp = {sample_pos, avg_yaw, visib_num};
                 frontier.viewpoints_.push_back(vp);
-                // int gain = findMaxGainYaw(sample_pos, frontier, sample_yaw);
             }
-            // }
         }
 }
 
@@ -1089,7 +1117,6 @@ bool FrontierFinder::isFrontierCovered()
     auto checkChanges = [&](const list<Frontier> &frontiers) {
         for (auto ftr : frontiers)
         {
-            // haveOverlap(ftr.box_min_, ftr.box_max_, update_min, update_max)
             if (!haveAnyOverlap(ftr.box_min_, ftr.box_max_, mins, maxs))
                 continue;
             const int change_thresh = min_view_finish_fraction_ * ftr.cells_.size();
@@ -1192,7 +1219,6 @@ Eigen::Vector3i FrontierFinder::searchClearVoxel(const Eigen::Vector3i &pt)
     vector<Eigen::Vector3i> nbrs;
     Eigen::Vector3i cur, start_idx;
     init_que.push(pt);
-    // visited_flag_[toadr(pt)] = 1;
 
     while (!init_que.empty())
     {
@@ -1208,11 +1234,6 @@ Eigen::Vector3i FrontierFinder::searchClearVoxel(const Eigen::Vector3i &pt)
         for (auto nbr : nbrs)
         {
             int adr = toadr(nbr);
-            // if (visited_flag_[adr] == 0)
-            // {
-            //   init_que.push(nbr);
-            //   visited_flag_[adr] = 1;
-            // }
         }
     }
     return start_idx;

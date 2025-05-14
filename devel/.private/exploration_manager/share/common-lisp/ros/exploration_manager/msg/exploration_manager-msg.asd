@@ -7,8 +7,6 @@
   :components ((:file "_package")
     (:file "DeletedGoals" :depends-on ("_package_DeletedGoals"))
     (:file "_package_DeletedGoals" :depends-on ("_package"))
-    (:file "DroneState" :depends-on ("_package_DroneState"))
-    (:file "_package_DroneState" :depends-on ("_package"))
     (:file "GridIds" :depends-on ("_package_GridIds"))
     (:file "_package_GridIds" :depends-on ("_package"))
     (:file "GridTour" :depends-on ("_package_GridTour"))

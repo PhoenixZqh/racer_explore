@@ -130,7 +130,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/exploration_manager/msg" TYPE FILE FILES
-    "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/DroneState.msg"
     "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOpt.msg"
     "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOptResponse.msg"
     "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/HGrid.msg"

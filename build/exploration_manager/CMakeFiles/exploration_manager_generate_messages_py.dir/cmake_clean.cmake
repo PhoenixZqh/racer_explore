@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/msg/_DroneState.py"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/msg/_GridTour.py"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/msg/_HGrid.py"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages/exploration_manager/msg/_PairOpt.py"

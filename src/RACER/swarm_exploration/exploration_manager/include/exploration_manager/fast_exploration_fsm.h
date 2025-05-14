@@ -4,7 +4,7 @@
 #include <Eigen/Eigen>
 
 #include <bspline/Bspline.h>
-#include <exploration_manager/DroneState.h>
+#include <msg_set/DroneState.h>
 #include <exploration_manager/PairOpt.h>
 #include <exploration_manager/PairOptResponse.h>
 #include <nav_msgs/Odometry.h>
@@ -76,7 +76,7 @@ private:
 
     // Swarm
     void droneStateTimerCallback(const ros::TimerEvent &e);
-    void droneStateMsgCallback(const exploration_manager::DroneStateConstPtr &msg);
+    void droneStateMsgCallback(const msg_set::DroneStateConstPtr &msg);
     void optTimerCallback(const ros::TimerEvent &e);
     void optMsgCallback(const exploration_manager::PairOptConstPtr &msg);
     void optResMsgCallback(const exploration_manager::PairOptResponseConstPtr &msg);

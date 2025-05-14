@@ -1,8 +1,9 @@
 <launch>
-    <!-- 定义三个机器人的名称 -->
+    <!-- 定义四个机器人的名称 -->
     <arg name="robot1_name" default="car1" />
     <arg name="robot2_name" default="car2" />
     <arg name="robot3_name" default="car3" />
+    <arg name="robot4_name" default="car4" />
 
     <!-- 第一辆车 -->
     <group ns="$(arg robot1_name)">
@@ -12,12 +13,12 @@
         </node>
         <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui_$(arg robot1_name)" />
         <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher_$(arg robot1_name)" args="0 0 0 0 0 0 /$(arg robot1_name)_support /$(arg robot1_name)_support_depth" />
-        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot1_name)" args="-urdf -model $(arg robot1_name) -param /$(arg robot1_name)/robot_description -x 0 -y 0 -z 0" />
-        <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd_$(arg robot1_name)" output="screen">
+        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot1_name)" args="-urdf -model $(arg robot1_name) -param /$(arg robot1_name)/robot_description -x -5 -y -5 -z 0" />
+        <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd_$(arg robot1_name)" output="log">
             <param name="car_id" value="$(arg robot1_name)" />
             <param name="cmd_suffix" value="_1" />
         </node>
-        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot1_name)" output="screen">
+        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot1_name)" output="log">
             <param name="car_id" value="$(arg robot1_name)" />
         </node>
     </group>
@@ -30,12 +31,12 @@
         </node>
         <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui_$(arg robot2_name)" />
         <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher_$(arg robot2_name)" args="0 0 0 0 0 0 /$(arg robot2_name)_support /$(arg robot2_name)_support_depth" />
-        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot2_name)" args="-urdf -model $(arg robot2_name) -param /$(arg robot2_name)/robot_description -x 7 -y 0 -z 0" />
-        <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd_$(arg robot2_name)" output="screen">
+        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot2_name)" args="-urdf -model $(arg robot2_name) -param /$(arg robot2_name)/robot_description -x -5 -y 5 -z 0" />
+        <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd_$(arg robot2_name)" output="log">
             <param name="car_id" value="$(arg robot2_name)" />
             <param name="cmd_suffix" value="_2" />
         </node>
-        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot2_name)" output="screen">
+        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot2_name)" output="log">
             <param name="car_id" value="$(arg robot2_name)" />
         </node>
     </group>
@@ -48,13 +49,31 @@
         </node>
         <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui_$(arg robot3_name)" />
         <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher_$(arg robot3_name)" args="0 0 0 0 0 0 /$(arg robot3_name)_support /$(arg robot3_name)_support_depth" />
-        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot3_name)" args="-urdf -model $(arg robot3_name) -param /$(arg robot3_name)/robot_description -x -7 -y 0 -z 0" />
-        <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd_$(arg robot3_name)" output="screen">
+        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot3_name)" args="-urdf -model $(arg robot3_name) -param /$(arg robot3_name)/robot_description -x 5 -y -5 -z 0" />
+        <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd_$(arg robot3_name)" output="log">
             <param name="car_id" value="$(arg robot3_name)" />
             <param name="cmd_suffix" value="_3" />
         </node>
-        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot3_name)" output="screen">
+        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot3_name)" output="log">
             <param name="car_id" value="$(arg robot3_name)" />
+        </node>
+    </group>
+
+    <!-- 第四辆车 -->
+    <group ns="$(arg robot4_name)">
+        <param name="/$(arg robot4_name)/robot_description" command="$(find xacro)/xacro /home/zqh/phoenixZ/racer_explore/gazebo/racer.xacro prefix:=$(arg robot4_name)_ namespace:=/$(arg robot4_name)" />
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher_$(arg robot4_name)">
+            <remap from="robot_description" to="/$(arg robot4_name)/robot_description" />
+        </node>
+        <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui_$(arg robot4_name)" />
+        <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher_$(arg robot4_name)" args="0 0 0 0 0 0 /$(arg robot4_name)_support /$(arg robot4_name)_support_depth" />
+        <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot4_name)" args="-urdf -model $(arg robot4_name) -param /$(arg robot4_name)/robot_description -x 5 -y 5 -z 0" />
+        <node pkg="exploration_manager" type="racer2gazebo_cmd" name="racer2gazebo_cmd_$(arg robot4_name)" output="log">
+            <param name="car_id" value="$(arg robot4_name)" />
+            <param name="cmd_suffix" value="_4" />
+        </node>
+        <node pkg="exploration_manager" type="sensor_pos" name="sensor_pos_$(arg robot4_name)" output="log">
+            <param name="car_id" value="$(arg robot4_name)" />
         </node>
     </group>
 
@@ -62,6 +81,7 @@
     <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_$(arg robot1_name)_odom" args="0 0 0 0 0 0 /world /$(arg robot1_name)_odom" />
     <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_$(arg robot2_name)_odom" args="0 0 0 0 0 0 /world /$(arg robot2_name)_odom" />
     <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_$(arg robot3_name)_odom" args="0 0 0 0 0 0 /world /$(arg robot3_name)_odom" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_$(arg robot4_name)_odom" args="0 0 0 0 0 0 /world /$(arg robot4_name)_odom" />
 
     <!-- 加载 Gazebo 环境 -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/multi_map_server
 include CMakeFiles/_multi_map_server_generate_messages_check_deps_SparseMap3D.dir/progress.make
 
 CMakeFiles/_multi_map_server_generate_messages_check_deps_SparseMap3D:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py multi_map_server /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/multi_map_server/msg/SparseMap3D.msg nav_msgs/MapMetaData:geometry_msgs/Quaternion:multi_map_server/VerticalOccupancyGridList:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py multi_map_server /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/multi_map_server/msg/SparseMap3D.msg geometry_msgs/Point:geometry_msgs/Quaternion:nav_msgs/MapMetaData:multi_map_server/VerticalOccupancyGridList:std_msgs/Header:geometry_msgs/Pose
 
 _multi_map_server_generate_messages_check_deps_SparseMap3D: CMakeFiles/_multi_map_server_generate_messages_check_deps_SparseMap3D
 _multi_map_server_generate_messages_check_deps_SparseMap3D: CMakeFiles/_multi_map_server_generate_messages_check_deps_SparseMap3D.dir/build.make

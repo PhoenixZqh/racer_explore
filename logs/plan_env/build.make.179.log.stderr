@@ -1,0 +1,13 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::SDFMap::initMap(ros::NodeHandle&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:139:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  139 |     for (int j = 1; [01;35m[Kj < mp_->vertices_.size()[m[K; ++j)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MapROS::processDepthImage()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:390:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_size[m[K’ was not declared in this scope; did you mean ‘[01m[Kdrone_size_[m[K’?
+  390 |                 if (rel_pos.cwiseAbs().maxCoeff() < [01;31m[Kdrone_size[m[K.maxCoeff() / 2)
+      |                                                     [01;31m[K^~~~~~~~~~[m[K
+      |                                                     [32m[Kdrone_size_[m[K
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:115: CMakeFiles/plan_env.dir/src/map_ros.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:1074: CMakeFiles/plan_env.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

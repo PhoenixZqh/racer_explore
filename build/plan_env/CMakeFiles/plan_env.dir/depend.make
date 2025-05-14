@@ -364,6 +364,7 @@ CMakeFiles/plan_env.dir/src/edt_environment.cpp.o: /usr/include/pcl-1.10/pcl/poi
 CMakeFiles/plan_env.dir/src/edt_environment.cpp.o: /usr/include/pcl-1.10/pcl/point_types.h
 CMakeFiles/plan_env.dir/src/edt_environment.cpp.o: /usr/include/pcl-1.10/pcl/register_point_struct.h
 
+CMakeFiles/plan_env.dir/src/map_ros.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/msg_set/include/msg_set/DroneState.h
 CMakeFiles/plan_env.dir/src/map_ros.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/ChunkData.h
 CMakeFiles/plan_env.dir/src/map_ros.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/ChunkStamps.h
 CMakeFiles/plan_env.dir/src/map_ros.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/IdxList.h
@@ -1935,6 +1936,7 @@ CMakeFiles/plan_env.dir/src/raycast.cpp.o: /usr/include/eigen3/Eigen/src/plugins
 CMakeFiles/plan_env.dir/src/raycast.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 CMakeFiles/plan_env.dir/src/raycast.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
+CMakeFiles/plan_env.dir/src/sdf_map.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/msg_set/include/msg_set/DroneState.h
 CMakeFiles/plan_env.dir/src/sdf_map.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/ChunkData.h
 CMakeFiles/plan_env.dir/src/sdf_map.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/ChunkStamps.h
 CMakeFiles/plan_env.dir/src/sdf_map.cpp.o: /home/zqh/phoenixZ/racer_explore/devel/.private/plan_env/include/plan_env/IdxList.h

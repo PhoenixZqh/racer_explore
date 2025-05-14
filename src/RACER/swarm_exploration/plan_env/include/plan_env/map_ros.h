@@ -13,6 +13,7 @@
 #include <geometry_msgs/PoseStamped.h>
 #include <nav_msgs/Odometry.h>
 // #include <swarm_msgs/swarm_drone_basecoor.h>
+#include <msg_set/DroneState.h>
 
 #include <memory>
 #include <random>
@@ -40,6 +41,8 @@ private:
         const sensor_msgs::PointCloud2ConstPtr &msg, const geometry_msgs::PoseStampedConstPtr &pose);
     void updateESDFCallback(const ros::TimerEvent & /*event*/);
     void visCallback(const ros::TimerEvent & /*event*/);
+    void droneStateCallback(const msg_set::DroneStateConstPtr &msg); // 订阅小车状态
+
     //   void basecoorCallback(const swarm_msgs::swarm_drone_basecoorConstPtr& msg);
 
     void publishMapAll();
@@ -69,6 +72,7 @@ private:
         update_range_pub_, depth_pub_;
     ros::Timer esdf_timer_, vis_timer_;
     ros::Subscriber basecoor_sub_;
+    ros::Subscriber drone_state_sub_;
 
     // params, depth projection
     double cx_, cy_, fx_, fy_;
@@ -102,6 +106,9 @@ private:
     ros::Time map_start_time_;
 
     friend SDFMap;
+
+    std::map<int, Eigen::Vector4d> drone_states_; // 管理无人车状态
+    Eigen::Vector3d drone_size_;                  // 无人车尺寸管理
 };
 } // namespace fast_planner
 

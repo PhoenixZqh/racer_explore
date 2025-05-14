@@ -1,0 +1,13 @@
+AlgoID:
+  MOVE_POSITION       : 11
+  FOLLOW_GOAL         : 12
+  SWARM_FORMATION     : 13
+  ATTACK_GOAL         : 14
+  BUTTER_FLY          : 15
+  SEARCH_GOAL         : 16
+  SWARM_EXPLORATION   : 17
+  SINGLE_EXPLORATION  : 18
+  SINGLE_AVOIDANCE    : 19
+  AIR_DROP            : 20
+  GPS_COMPANY         : 21
+  RETURN              : 22

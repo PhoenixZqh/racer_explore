@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_explore/devel/.private/msg_set/share/common-lisp/ros/msg_set/msg/DroneState.lisp

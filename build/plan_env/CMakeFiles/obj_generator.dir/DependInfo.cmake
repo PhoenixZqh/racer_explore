@@ -24,6 +24,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
   "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/msg_set/include"
+  "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/msg_set/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv4"
@@ -31,6 +33,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"
+  "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/../msg_set"
   )
 
 # Targets to which this target links.

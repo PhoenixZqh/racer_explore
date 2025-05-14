@@ -3,13 +3,13 @@
 #include <quadrotor_msgs/PositionCommand.h>
 #include <nav_msgs/Odometry.h>
 #include <tf/transform_datatypes.h>
-#include <exploration_manager/DroneState.h>
+#include <msg_set/DroneState.h>
 
 class CommandConverter
 {
 public:
     CommandConverter()
-        : nh_("~"), car_id_num_(-1), mission_done_(false)
+        : nh_("~"), car_id_num_(-1), mission_done_(false), mission_done_time_(0.0)
     {
         nh_.param<std::string>("car_id", car_id_, "car1");
         nh_.param<std::string>("cmd_suffix", cmd_suffix_, "_1");
@@ -45,14 +45,18 @@ public:
         ROS_INFO("CommandConverter initialized for %s with cmd suffix %s", car_id_.c_str(), cmd_suffix_.c_str());
     }
 
-    void droneStateCallback(const exploration_manager::DroneStateConstPtr &msg)
+    void droneStateCallback(const msg_set::DroneStateConstPtr &msg)
     {
         if (msg->drone_id == car_id_num_)
         {
             if (msg->cur_state == 5)
             {
-                mission_done_ = true;
-                ROS_INFO("[%s] Mission completed. Stopping...", car_id_.c_str());
+                if (!mission_done_)
+                {
+                    mission_done_ = true;
+                    mission_done_time_ = ros::Time::now(); // Record the time when mission is done
+                    ROS_INFO("[%s] Mission completed. Will stop in 5 seconds...", car_id_.c_str());
+                }
             }
             else
             {
@@ -79,12 +83,13 @@ public:
     {
         geometry_msgs::Twist twist;
 
-        if (mission_done_)
+        if (mission_done_ && (ros::Time::now() - mission_done_time_).toSec() >= 5.0)
         {
-            // 任务完成，停止一切运动
+            // 任务完成且过了5秒，停止一切运动
             twist.linear.x = twist.linear.y = twist.linear.z = 0.0;
             twist.angular.x = twist.angular.y = twist.angular.z = 0.0;
             twist_pub_.publish(twist);
+            ROS_INFO_STREAM("[" << car_id_ << "] Stopping after 5 seconds delay.");
             return;
         }
 
@@ -160,6 +165,7 @@ private:
     double target_yaw_, current_yaw_;
     bool rcv_cmd_, rcv_odom_;
     bool mission_done_;
+    ros::Time mission_done_time_; // New variable to store the time when mission is done
     std::string car_id_, cmd_suffix_;
     int car_id_num_;
 };

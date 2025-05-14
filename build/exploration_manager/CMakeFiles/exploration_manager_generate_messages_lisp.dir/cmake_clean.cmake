@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/common-lisp/ros/exploration_manager/msg/DroneState.lisp"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/common-lisp/ros/exploration_manager/msg/GridTour.lisp"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/common-lisp/ros/exploration_manager/msg/HGrid.lisp"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/common-lisp/ros/exploration_manager/msg/PairOpt.lisp"

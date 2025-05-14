@@ -1,0 +1,17 @@
+# floder
+*build
+atomic_configure
+catkin
+catkin_generated
+cmake
+CMakeFiles
+*devel
+# Cmake
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+CTestCustom.cmake
+CTestTestfile.cmake
+CTestConfiguration.ini
+CATKIN_IGNORE
+

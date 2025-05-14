@@ -146,8 +146,8 @@ bool FastPlannerManager::checkTrajCollision(double &distance, Eigen::Vector3d &u
         radius = (fut_pt - cur_pt).norm();
 
         // 检查以 fut_pt 为中心的圆形区域（半径 0.15m）是否安全
-        float car_radius = 0.4; // 小车半径
-        int num_samples = 10;   // 采样点数（可调整）
+        float car_radius = 0.6; // 小车半径
+        int num_samples = 15;   // 采样点数（可调整）
         bool collision_detected = false;
 
         // 检查 fut_pt 本身

@@ -1,0 +1,34 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:238:93:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+  238 |         for (int u = depth_filter_margin_; u < cols - depth_filter_margin_; u += skip_pixel [01;31m[K\[m[Kn        {
+      |                                                                                             [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K In constructor ‘[01m[Kfast_planner::MapROS::MapROS()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   13 | [01;35m[KMapROS[m[K::MapROS()
+      | [01;35m[K^~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::SDFMap::initMap(ros::NodeHandle&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:139:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  139 |     for (int j = 1; [01;35m[Kj < mp_->vertices_.size()[m[K; ++j)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MapROS::processDepthImage()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:238:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kskip_pixel[m[K’ was not declared in this scope; did you mean ‘[01m[Kskip_pixel_[m[K’?
+  238 |         for (int u = depth_filter_margin_; u < cols - depth_filter_margin_; u += [01;31m[Kskip_pixel[m[K \n        {
+      |                                                                                  [01;31m[K^~~~~~~~~~[m[K
+      |                                                                                  [32m[Kskip_pixel_[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:238:92:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kn[m[K’
+  238 |         for [34m[K([m[Kint u = depth_filter_margin_; u < cols - depth_filter_margin_; u += skip_pixel[01;31m[K [m[K\[32m[Kn[m[K        {
+      |             [34m[K~[m[K                                                                              [01;31m[K^[m[K [32m[K~[m[K
+      |                                                                                            [32m[K)[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:238:94:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  238 |         for (int u = depth_filter_margin_; u < cols - depth_filter_margin_; u += skip_pixel \[01;31m[Kn[m[K        {
+      |                                                                                              [01;31m[K^[m[K
+      |                                                                                              [32m[Kyn[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:211:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdepth[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  211 |     double [01;35m[Kdepth[m[K;
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:226:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinv_factor[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  226 |     const double [01;35m[Kinv_factor[m[K = 1.0 / k_depth_scaling_factor_;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:115: CMakeFiles/plan_env.dir/src/map_ros.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:1074: CMakeFiles/plan_env.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

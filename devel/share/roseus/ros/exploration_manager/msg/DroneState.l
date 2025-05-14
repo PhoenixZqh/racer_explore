@@ -1,1 +1,0 @@
-/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/DroneState.l

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/DroneState.h
+/home/zqh/phoenixZ/racer_explore/devel/.private/msg_set/include/msg_set/DroneState.h
 string
 -
 vector
@@ -57,7 +57,7 @@ nav_msgs/Odometry.h
 -
 tf/transform_datatypes.h
 -
-exploration_manager/DroneState.h
+msg_set/DroneState.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h

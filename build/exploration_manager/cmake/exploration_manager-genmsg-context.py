@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/DroneState.msg;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOpt.msg;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOptResponse.msg;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/HGrid.msg;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/GridTour.msg"
+messages_str = "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOpt.msg;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOptResponse.msg;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/HGrid.msg;/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/GridTour.msg"
 services_str = ""
 pkg_name = "exploration_manager"
 dependencies_str = "geometry_msgs"

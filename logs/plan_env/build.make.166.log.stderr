@@ -1,0 +1,15 @@
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:16:10:[m[K [01;31m[Kfatal error: [m[Kexploration_manager/DroneState.h: No such file or directory
+   16 | #include [01;31m[K<exploration_manager/DroneState.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:16:10:[m[K [01;31m[Kfatal error: [m[Kexploration_manager/DroneState.h: No such file or directory
+   16 | #include [01;31m[K<exploration_manager/DroneState.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:63: CMakeFiles/plan_env.dir/src/sdf_map.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:115: CMakeFiles/plan_env.dir/src/map_ros.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:639: CMakeFiles/plan_env.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/DroneState.h"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/GridTour.h"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/HGrid.h"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/include/exploration_manager/PairOpt.h"

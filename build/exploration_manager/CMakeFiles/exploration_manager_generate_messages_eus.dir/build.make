@@ -53,7 +53,6 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/exploration_manager
 # Include the progress variables for this target.
 include CMakeFiles/exploration_manager_generate_messages_eus.dir/progress.make
 
-CMakeFiles/exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/DroneState.l
 CMakeFiles/exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOpt.l
 CMakeFiles/exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOptResponse.l
 CMakeFiles/exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/HGrid.l
@@ -61,39 +60,33 @@ CMakeFiles/exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_e
 CMakeFiles/exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/manifest.l
 
 
-/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/DroneState.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/DroneState.l: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/DroneState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from exploration_manager/DroneState.msg"
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/DroneState.msg -Iexploration_manager:/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p exploration_manager -o /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg
-
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOpt.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOpt.l: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOpt.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from exploration_manager/PairOpt.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from exploration_manager/PairOpt.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOpt.msg -Iexploration_manager:/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p exploration_manager -o /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg
 
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOptResponse.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOptResponse.l: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOptResponse.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from exploration_manager/PairOptResponse.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from exploration_manager/PairOptResponse.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/PairOptResponse.msg -Iexploration_manager:/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p exploration_manager -o /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg
 
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/HGrid.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/HGrid.l: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/HGrid.msg
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/HGrid.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from exploration_manager/HGrid.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from exploration_manager/HGrid.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/HGrid.msg -Iexploration_manager:/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p exploration_manager -o /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg
 
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/GridTour.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/GridTour.l: /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/GridTour.msg
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/GridTour.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from exploration_manager/GridTour.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from exploration_manager/GridTour.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg/GridTour.msg -Iexploration_manager:/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p exploration_manager -o /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg
 
 /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp manifest code for exploration_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zqh/phoenixZ/racer_explore/build/exploration_manager/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for exploration_manager"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager exploration_manager geometry_msgs
 
 exploration_manager_generate_messages_eus: CMakeFiles/exploration_manager_generate_messages_eus
-exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/DroneState.l
 exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOpt.l
 exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/PairOptResponse.l
 exploration_manager_generate_messages_eus: /home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/roseus/ros/exploration_manager/msg/HGrid.l

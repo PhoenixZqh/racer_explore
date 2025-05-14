@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs
 include CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/progress.make
 
 CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/msg/SO3Command.msg std_msgs/Header:quadrotor_msgs/AuxCommand:geometry_msgs/Quaternion:geometry_msgs/Vector3
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/msg/SO3Command.msg geometry_msgs/Vector3:std_msgs/Header:quadrotor_msgs/AuxCommand:geometry_msgs/Quaternion
 
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/build.make

@@ -3,8 +3,6 @@
   (:export
    "<DELETEDGOALS>"
    "DELETEDGOALS"
-   "<DRONESTATE>"
-   "DRONESTATE"
    "<GRIDIDS>"
    "GRIDIDS"
    "<GRIDTOUR>"

@@ -1,0 +1,261 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/obj_predictor.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::ObjHistory::poseCallback(const PoseStampedConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/obj_predictor.cpp:28:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::__cxx11::list<Eigen::Matrix<double, 4, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+   28 |   if ([01;35m[Khistory_.size() > queue_size_[m[K) history_.pop_front();
+      |       [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/edt_environment.cpp:[m[K In member function ‘[01m[Kdouble fast_planner::EDTEnvironment::minDistToAllBox(const Vector3d&, const double&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/edt_environment.cpp:42:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::PolynomialPrediction>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   42 |   for (int i = 0; [01;35m[Ki < obj_prediction_->size()[m[K; i++) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::init()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:50:13:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktime[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   50 |   for (auto [01;35m[Ktime[m[K : last_chunk_stamp_time_) time = 0.0;
+      |             [01;35m[K^~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::updateMapChunk(const std::vector<unsigned int>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:97:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<unsigned int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+   97 |   if ([01;35m[Kadr_buffer_.size() >= chunk_size_[m[K) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:100:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  100 |     for (; [01;35m[Ki + chunk_size_ < adr_buffer_.size()[m[K; i += chunk_size_) {
+      |            [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::stampTimerCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:162:15:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::MapChunk>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  162 |   if ([01;35m[Kpub_num < data.chunks_.size()[m[K) {
+      |       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:163:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::MapChunk>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  163 |     for (int i = pub_num; [01;35m[Ki < data.chunks_.size()[m[K; ++i) {
+      |                           [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::stampMsgCallback(const ChunkStampsConstPtr&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:201:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::ChunksData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  201 |   for (int i = 0; [01;35m[Ki < multi_map_chunks_.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::findMissedChunkIds(const std::vector<int>&, const std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:224:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  224 |   for (int i = 1; [01;35m[Ki < other_idx_list.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:226:11:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  226 |     if ([01;35m[Ki == other_idx_list.size() - 1[m[K) {
+      |         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:235:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  235 |   for (int i = 0; [01;35m[Ki < self_idx_list.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:236:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  236 |     for (int j = 0; [01;35m[Kj < not_in_other.size()[m[K; j += 2) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::sendChunks(const int&, const int&, const std::vector<int>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:259:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  259 |   for (int i = 0; [01;35m[Ki < idx_list.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::chunkTimerCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:326:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<plan_env::ChunkData_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  326 |   for (int i = 0; [01;35m[Ki < chunk_buffer_.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:337:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<plan_env::ChunkData_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  337 |     for (int j = 1; [01;35m[Kj < buffer.size()[m[K; ++j) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::mergeChunkIds(const std::vector<int>&, const std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:411:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  411 |   for (int i = 0; [01;35m[Ki < list2.size()[m[K; i += 2) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:414:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  414 |     for (int j = 0; [01;35m[Kj < output.size()[m[K; j += 2) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MultiMapManager::insertChunkToMap(const fast_planner::MapChunk&, const int&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/multi_map_manager.cpp:474:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  474 |   for (int i = 0; [01;35m[Ki < chunk.voxel_adrs_.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kexploration_manager[m[K’ does not name a type
+   44 |     void droneStateCallback(const [01;31m[Kexploration_manager[m[K::DroneStateConstPtr &msg); // 订阅小车状态
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:2[m[K:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kexploration_manager[m[K’ does not name a type
+   44 |     void droneStateCallback(const [01;31m[Kexploration_manager[m[K::DroneStateConstPtr &msg); // 订阅小车状态
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:75:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   44 |     void droneStateCallback(const exploration_manager::DroneStateConstPtr [01;31m[K&[m[Kmsg); // 订阅小车状态
+      |                                                                           [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:75:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   44 |     void droneStateCallback(const exploration_manager::DroneStateConstPtr [01;31m[K&[m[Kmsg); // 订阅小车状态
+      |                                                                           [01;31m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   44 |     void droneStateCallback[34m[K([m[Kconst exploration_manager::DroneStateConstPtr[01;31m[K [m[K[32m[K&[m[Kmsg); // 订阅小车状态
+      |                            [34m[K~[m[K                                             [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                          [32m[K)[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   44 |     void droneStateCallback[34m[K([m[Kconst exploration_manager::DroneStateConstPtr[01;31m[K [m[K[32m[K&[m[Kmsg); // 订阅小车状态
+      |                            [34m[K~[m[K                                             [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                          [32m[K)[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:75:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   44 |     void droneStateCallback(const exploration_manager::DroneStateConstPtr [01;31m[K&[m[Kmsg); // 订阅小车状态
+      |                                                                           [01;31m[K^[m[K
+      |                                                                            [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:75:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   44 |     void droneStateCallback(const exploration_manager::DroneStateConstPtr [01;31m[K&[m[Kmsg); // 订阅小车状态
+      |                                                                           [01;31m[K^[m[K
+      |                                                                            [32m[K;[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   44 |     void droneStateCallback(const exploration_manager::DroneStateConstPtr &[01;31m[Kmsg[m[K); // 订阅小车状态
+      |                                                                            [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/map_ros.h:44:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   44 |     void droneStateCallback(const exploration_manager::DroneStateConstPtr &[01;31m[Kmsg[m[K); // 订阅小车状态
+      |                                                                            [01;31m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MapROS::init()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe(const char [24], int, void (fast_planner::MapROS::*)(...) &, fast_planner::MapROS*)[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;31m[K)[m[K;
+      |                                                                                                        [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:400:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)[m[K’
+  400 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:400:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(M)[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:411:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)[m[K’
+  411 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:411:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’ have incompatible cv-qualifiers
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:463:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)[m[K’
+  463 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:463:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:473:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)[m[K’
+  473 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:473:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’ have incompatible cv-qualifiers
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:527:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  527 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:527:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(M)[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:538:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  538 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:538:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(M) const[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’ have incompatible cv-qualifiers
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:592:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  592 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:592:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:603:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  603 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:603:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::)(...) &[m[K’ have incompatible cv-qualifiers
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:654:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)[m[K’
+  654 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:654:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(M)[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::*)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:702:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)[m[K’
+  702 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:702:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::*)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:748:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  748 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:748:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(const boost::shared_ptr<const M>&)>[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::*)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:797:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  797 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:797:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:77:104:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid (fast_planner::MapROS::*)(...) &[m[K’
+   77 |     drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this[01;36m[K)[m[K;
+      |                                                                                                        [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include/plan_env/sdf_map.h:8[m[K,
+                 from [01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:834:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(ros::SubscribeOptions&)[m[K’
+  834 |   Subscriber [01;36m[Ksubscribe[m[K(SubscribeOptions& ops);
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:834:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::SDFMap::initMap(ros::NodeHandle&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/sdf_map.cpp:139:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  139 |     for (int j = 1; [01;35m[Kj < mp_->vertices_.size()[m[K; ++j)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K At global scope:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:205:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarm_msgs[m[K’ does not name a type; did you mean ‘[01m[Knav_msgs[m[K’?
+  205 | void MapROS::droneStateCallback(const [01;31m[Kswarm_msgs[m[K::DroneState::ConstPtr &msg)
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+      |                                       [32m[Knav_msgs[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:205:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  205 | void MapROS::droneStateCallback(const swarm_msgs::DroneState[01;31m[K::[m[KConstPtr &msg)
+      |                                                             [01;31m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:205:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  205 | void MapROS::droneStateCallback[34m[K([m[Kconst swarm_msgs::DroneState[01;31m[K:[m[K[32m[K:[m[KConstPtr &msg)
+      |                                [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                             [32m[K)[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:205:61:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  205 | void MapROS::droneStateCallback(const swarm_msgs::DroneState[01;31m[K::[m[KConstPtr &msg)
+      |                                                             [01;31m[K^~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::MapROS::processDepthImage()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/src/map_ros.cpp:385:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_size[m[K’ was not declared in this scope; did you mean ‘[01m[Kdrone_state[m[K’?
+  385 |                 if (rel_pos.cwiseAbs().maxCoeff() < [01;31m[Kdrone_size[m[K.maxCoeff() / 2)
+      |                                                     [01;31m[K^~~~~~~~~~[m[K
+      |                                                     [32m[Kdrone_state[m[K
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:63: CMakeFiles/plan_env.dir/src/sdf_map.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:115: CMakeFiles/plan_env.dir/src/map_ros.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1074: CMakeFiles/plan_env.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -29,13 +29,14 @@ find_package(catkin REQUIRED COMPONENTS
   xacro
   urdf
   tf
+  msg_set
 )
 
 add_message_files(
   FILES
   # SentGoals.msg
   # DeletedGoals.msg
-  DroneState.msg
+  # DroneState.msg
   PairOpt.msg
   PairOptResponse.msg
   HGrid.msg
@@ -61,6 +62,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}/include
   ${EIGEN3_INCLUDE_DIR}
   ${PCL_INCLUDE_DIRS}
+  "../msg_set"
 )
 
 

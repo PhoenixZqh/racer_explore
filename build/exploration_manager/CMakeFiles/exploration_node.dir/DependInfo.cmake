@@ -31,8 +31,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/zqh/phoenixZ/racer_explore/devel/.private/bspline/include"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_tsp_solver/include"
   "/home/zqh/phoenixZ/racer_explore/devel/.private/lkh_mtsp_solver/include"
+  "/home/zqh/phoenixZ/racer_explore/devel/.private/msg_set/include"
   "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_mtsp_solver/include"
   "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/utils/lkh_tsp_solver/include"
+  "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/msg_set/include"
   "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/plan_env/include"
   "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/bspline/include"
   "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/path_searching/include"
@@ -48,6 +50,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/pcl-1.10"
   "/usr/include/ni"
   "/usr/include/openni2"
+  "/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager/../msg_set"
   )
 
 # Targets to which this target links.

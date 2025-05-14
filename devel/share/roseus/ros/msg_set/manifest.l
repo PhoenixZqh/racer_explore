@@ -1,0 +1,1 @@
+/home/zqh/phoenixZ/racer_explore/devel/.private/msg_set/share/roseus/ros/msg_set/manifest.l

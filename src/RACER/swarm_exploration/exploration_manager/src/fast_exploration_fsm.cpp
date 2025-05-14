@@ -76,7 +76,7 @@ void FastExplorationFSM::init(ros::NodeHandle &nh)
     replan_pub_ = nh.advertise<std_msgs::Empty>("/planning/replan", 10);    // 通知轨迹服务器（traj_server）需要重新规划轨迹
     new_pub_ = nh.advertise<std_msgs::Empty>("/planning/new", 10);          //通知下游模块有新的规划任务
     bspline_pub_ = nh.advertise<bspline::Bspline>("/planning/bspline", 10); //发布本地无人机的新规划轨迹（B 样条形式），供轨迹服务器执行
-    drone_state_pub_ = nh.advertise<exploration_manager::DroneState>("/swarm_expl/drone_state_send", 10);
+    drone_state_pub_ = nh.advertise<msg_set::DroneState>("/swarm_expl/drone_state_send", 10);
     opt_pub_ = nh.advertise<exploration_manager::PairOpt>("/swarm_expl/pair_opt_send", 10); //发送配对优化请求给其他无人机，包含建议的网格分配（ego_ids, other_ids）
     opt_res_pub_ = nh.advertise<exploration_manager::PairOptResponse>("/swarm_expl/pair_opt_res_send", 10);
     swarm_traj_pub_ = nh.advertise<bspline::Bspline>("/planning/swarm_traj_send", 100);             //广播本地无人机的最新轨迹给其他无人机
@@ -127,7 +127,7 @@ void FastExplorationFSM::FSMCallback(const ros::TimerEvent &e)
 
     case IDLE: {
         double check_interval = (ros::Time::now() - fd_->last_check_frontier_time_).toSec();
-        if (check_interval > 3) //! 100s 太长
+        if (check_interval > 5) //! 100s 太长
         {
             // if (!expl_manager_->updateFrontierStruct(fd_->odom_pos_)) {
             ROS_WARN("Go back to (0,0,1)");
@@ -751,7 +751,7 @@ void FastExplorationFSM::transitState(EXPL_STATE new_state, string pos_call)
 void FastExplorationFSM::droneStateTimerCallback(const ros::TimerEvent &e)
 {
     // Broadcast own state periodically
-    exploration_manager::DroneState msg;
+    msg_set::DroneState msg;
     msg.drone_id = getId();
 
     auto &state = expl_manager_->ed_->swarm_state_[msg.drone_id - 1];
@@ -783,7 +783,7 @@ void FastExplorationFSM::droneStateTimerCallback(const ros::TimerEvent &e)
     drone_state_pub_.publish(msg);
 }
 
-void FastExplorationFSM::droneStateMsgCallback(const exploration_manager::DroneStateConstPtr &msg)
+void FastExplorationFSM::droneStateMsgCallback(const msg_set::DroneStateConstPtr &msg)
 {
     // Update other drones' states
     if (msg->drone_id == getId())
@@ -955,7 +955,7 @@ void FastExplorationFSM::optTimerCallback(const ros::TimerEvent &e)
     // 如果重新分配之后的成本比之前的高很多，放弃这次配对, 原来为0.1
     if (cur_app1 + cur_app2 > prev_app1 + prev_app2 + 0.1)
     {
-        ROS_ERROR("Larger cost after reallocation");
+        // ROS_ERROR("Larger cost after reallocation");
         if (state_ != WAIT_TRIGGER)
         {
             return;

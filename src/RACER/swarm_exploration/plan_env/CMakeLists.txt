@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   message_filters
   message_generation
+  msg_set
 )
 
 add_message_files(
@@ -48,6 +49,7 @@ include_directories(
     ${Eigen3_INCLUDE_DIRS} 
     ${PCL_INCLUDE_DIRS}
     ${OpenCV_INCLUDE_DIRS}
+    "../msg_set"
 )
 
 link_directories(${PCL_LIBRARY_DIRS})

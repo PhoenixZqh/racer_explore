@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zqh/phoenixZ/racer_explore/build/quadrotor_msgs
 include CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/progress.make
 
 CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/msg/Odometry.msg geometry_msgs/Pose:geometry_msgs/TwistWithCovariance:geometry_msgs/Quaternion:std_msgs/Header:nav_msgs/Odometry:geometry_msgs/Twist:geometry_msgs/Vector3:geometry_msgs/Point:geometry_msgs/PoseWithCovariance
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/zqh/phoenixZ/racer_explore/src/RACER/uav_simulator/Utils/quadrotor_msgs/msg/Odometry.msg geometry_msgs/Vector3:nav_msgs/Odometry:geometry_msgs/PoseWithCovariance:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Twist:geometry_msgs/TwistWithCovariance:geometry_msgs/Point
 
 _quadrotor_msgs_generate_messages_check_deps_Odometry: CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry
 _quadrotor_msgs_generate_messages_check_deps_Odometry: CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/build.make

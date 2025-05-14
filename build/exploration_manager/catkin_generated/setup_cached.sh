@@ -8,9 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/zqh/phoenixZ/racer_explore/build/exploration_manager'
-export PYTHONPATH="/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/zqh/phoenixZ/racer_explore/devel/.private/exploration_manager/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/exploration_manager:$ROS_PACKAGE_PATH"

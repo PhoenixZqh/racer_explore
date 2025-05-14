@@ -1,0 +1,55 @@
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FrontierFinder::searchFrontiers()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:132:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  132 |     for (int i = 0; [01;35m[Ki < mins.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:145:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  145 |     for (int i = 0; [01;35m[Ki < mins.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:154:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  154 |     for (int i = 0; [01;35m[Ki < min_ids.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FrontierFinder::updateFrontierCostMatrix()[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:409:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  409 |             for (int i = 0; [01;35m[Ki < removed_ids_.size()[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FrontierFinder::haveAnyOverlap(const Vector3d&, const Vector3d&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:509:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  509 |     for (int i = 0; [01;35m[Ki < mins.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FrontierFinder::getViewpointsInfo(const Vector3d&, const std::vector<int>&, const int&, const double&, std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, std::vector<std::vector<double> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:647:36:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kconst int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  647 |                     if ([01;35m[Kpts.size() >= view_num[m[K || view.visib_num_ <= visib_thresh)
+      |                         [01;35m[K~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:659:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kconst int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  659 |                         if ([01;35m[Kpts.size() >= view_num[m[K || view.visib_num_ <= visib_thresh)
+      |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FrontierFinder::getPathForTour(const Vector3d&, const std::vector<int>&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:713:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  713 |     for (int i = 0; [01;35m[Ki < frontier_ids.size() - 1[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kint fast_planner::FrontierFinder::addFrontiers(const std::vector<std::pair<Eigen::Matrix<double, 3, 1>, double> >&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:984:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  984 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FrontierFinder::findViewpoints(const Vector3d&, const Vector3d&, std::vector<fast_planner::Viewpoint>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:991:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kleft_angle_[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  991 |     double [01;35m[Kleft_angle_[m[K, right_angle_, vertical_angle_, ray_length_;
+      |            [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FrontierFinder::sampleViewpoints(fast_planner::Frontier&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:1080:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+ 1080 |             for (int i = 1; [01;35m[Ki < cells.size()[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[KEigen::Vector3i fast_planner::FrontierFinder::searchClearVoxel(const Vector3i&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:1236:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kadr[m[K’ [[01;35m[K-Wunused-variable[m[K]
+ 1236 |             int [01;35m[Kadr[m[K = toadr(nbr);
+      |                 [01;35m[K^~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FrontierFinder::findViewpoints(const Vector3d&, const Vector3d&, std::vector<fast_planner::Viewpoint>&)[m[K’:
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:1003:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvertical_angle_[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+ 1003 |         for (double [01;35m[Kphi_v[m[K = -vertical_angle_; phi_v <= vertical_angle_; phi_v += vertical_angle_ / 3)
+      |                     [01;35m[K^~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:1007:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kray_length_[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+ 1007 |             end[0] = sample[0] + [01;35m[Kray_length_ * cos(phi_v)[m[K * cos(hc + phi_h);
+      |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/zqh/phoenixZ/racer_explore/src/RACER/swarm_exploration/active_perception/src/frontier_finder.cpp:1031:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kright_angle_[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+ 1031 |         double yaw = [01;35m[Khc - M_PI_2 + M_PI / 9.0 * i + right_angle_[m[K;
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K

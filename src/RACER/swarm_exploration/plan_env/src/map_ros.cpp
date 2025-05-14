@@ -43,6 +43,11 @@ void MapROS::init()
     node_.param("map_ros/show_all_map", show_all_map_, false);
     node_.param("map_ros/frame_id", frame_id_, string("world"));
 
+    // 无人车尺寸参数
+    node_.param("map_ros/drone_size_x", drone_size_(0), 0.5);
+    node_.param("map_ros/drone_size_y", drone_size_(1), 0.5);
+    node_.param("map_ros/drone_size_z", drone_size_(2), 0.285);
+
     proj_points_.resize(640 * 480 / (skip_pixel_ * skip_pixel_));
     point_cloud_.points.resize(640 * 480 / (skip_pixel_ * skip_pixel_));
     // proj_points_.reserve(640 * 480 / map_->mp_->skip_pixel_ / map_->mp_->skip_pixel_);
@@ -73,6 +78,8 @@ void MapROS::init()
     esdf_pub_ = node_.advertise<sensor_msgs::PointCloud2>("/sdf_map/esdf", 10);
     update_range_pub_ = node_.advertise<visualization_msgs::Marker>("/sdf_map/update_range", 10);
     depth_pub_ = node_.advertise<sensor_msgs::PointCloud2>("/sdf_map/depth_cloud", 10);
+
+    drone_state_sub_ = node_.subscribe("/swarm_expl/drone_state", 10, &MapROS::droneStateCallback, this);
 
     // basecoor_sub_ = node_.subscribe("/sdf_map/basecoor", 10, &MapROS::basecoorCallback, this);
 
@@ -200,6 +207,15 @@ void MapROS::cloudPoseCallback(
     }
 }
 
+void MapROS::droneStateCallback(const msg_set::DroneState::ConstPtr &msg)
+{
+    if (msg->pos.size() >= 3)
+    {
+        Eigen::Vector4d state(msg->pos[0], msg->pos[1], msg->pos[2], msg->yaw);
+        drone_states_[msg->drone_id] = state;
+    }
+}
+
 // void MapROS::basecoorCallback(const swarm_msgs::swarm_drone_basecoorConstPtr& msg) {
 
 //   if (msg->self_id != map_->mm_->drone_id_ && msg->self_id != map_->mm_->vis_drone_id_) return;
@@ -300,6 +316,7 @@ void MapROS::cloudPoseCallback(
 //     publishDepth();
 // }
 
+//TODO: 处理深度相机数据时， 应该将扫描到的小车点云给过滤掉
 void MapROS::processDepthImage()
 {
     proj_points_cnt = 0;
@@ -336,15 +353,52 @@ void MapROS::processDepthImage()
             depth = (*row_ptr) * inv_factor;
             row_ptr = row_ptr + skip_pixel_;
 
+            // 过滤无效或超出范围的深度值
             if (*row_ptr == 0 || depth > depth_filter_maxdist_)
                 depth = depth_filter_maxdist_;
             else if (depth < depth_filter_mindist_)
                 continue;
 
+            // 像素坐标转相机坐标
             pt_cur(0) = (u - cx_) * depth / fx_;
             pt_cur(1) = (v - cy_) * depth / fy_;
             pt_cur(2) = depth;
+
+            // 相机坐标转世界坐标
             pt_world = camera_r * pt_cur + camera_pos_;
+
+            // 过滤其他无人机的点云
+            // bool is_drone_point = false;
+            // for (const auto &state : drone_states_)
+            // {
+            //     int drone_id = state.first;
+
+            //     // 跳过自身无人机（假设自身 ID 存储在 map_->mm_->drone_id_）
+
+            //     // ROS_WARN("Self drone ID: %d, other drone id: %d", map_->mm_->drone_id_, drone_id);
+
+            //     if (drone_id == map_->mm_->drone_id_) continue;
+
+            //     Eigen::Vector4d drone_state = state.second;
+            //     Eigen::Vector3d drone_pos(drone_state[0], drone_state[1], drone_state[2]);
+            //     double yaw = drone_state[3];
+
+            //     // 计算无人机边界框（考虑 yaw 旋转）
+            //     Eigen::Matrix3d rot;
+            //     rot << cos(yaw), -sin(yaw), 0,
+            //         sin(yaw), cos(yaw), 0,
+            //         0, 0, 1;
+            //     Eigen::Vector3d rel_pos = rot.transpose() * (pt_world - drone_pos);
+
+            //     // 检查点是否在无人机边界框内
+            //     if (rel_pos.cwiseAbs().maxCoeff() < drone_size_.maxCoeff() / 2)
+            //     {
+            //         is_drone_point = true;
+            //         break;
+            //     }
+            // }
+            // if (is_drone_point) continue;
+
             auto &pt = point_cloud_.points[proj_points_cnt++];
             pt.x = pt_world[0];
             pt.y = pt_world[1];
